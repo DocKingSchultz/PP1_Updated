@@ -1,0 +1,98 @@
+// generated with ast extension for cup
+// version 0.8
+// 28/8/2023 12:16:2
+
+
+package rs.ac.bg.etf.pp1.ast;
+
+public class AddExpr extends Expr {
+
+    private Expr expr;
+    private Add_sub_OP add_sub_OP;
+    private Term term;
+
+    public AddExpr (Expr expr, Add_sub_OP add_sub_OP, Term term) {
+        this.expr=expr;
+        if(expr!=null) expr.setParent(this);
+        this.add_sub_OP=add_sub_OP;
+        if(add_sub_OP!=null) add_sub_OP.setParent(this);
+        this.term=term;
+        if(term!=null) term.setParent(this);
+    }
+
+    public Expr getExpr() {
+        return expr;
+    }
+
+    public void setExpr(Expr expr) {
+        this.expr=expr;
+    }
+
+    public Add_sub_OP getAdd_sub_OP() {
+        return add_sub_OP;
+    }
+
+    public void setAdd_sub_OP(Add_sub_OP add_sub_OP) {
+        this.add_sub_OP=add_sub_OP;
+    }
+
+    public Term getTerm() {
+        return term;
+    }
+
+    public void setTerm(Term term) {
+        this.term=term;
+    }
+
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
+
+    public void childrenAccept(Visitor visitor) {
+        if(expr!=null) expr.accept(visitor);
+        if(add_sub_OP!=null) add_sub_OP.accept(visitor);
+        if(term!=null) term.accept(visitor);
+    }
+
+    public void traverseTopDown(Visitor visitor) {
+        accept(visitor);
+        if(expr!=null) expr.traverseTopDown(visitor);
+        if(add_sub_OP!=null) add_sub_OP.traverseTopDown(visitor);
+        if(term!=null) term.traverseTopDown(visitor);
+    }
+
+    public void traverseBottomUp(Visitor visitor) {
+        if(expr!=null) expr.traverseBottomUp(visitor);
+        if(add_sub_OP!=null) add_sub_OP.traverseBottomUp(visitor);
+        if(term!=null) term.traverseBottomUp(visitor);
+        accept(visitor);
+    }
+
+    public String toString(String tab) {
+        StringBuffer buffer=new StringBuffer();
+        buffer.append(tab);
+        buffer.append("AddExpr(\n");
+
+        if(expr!=null)
+            buffer.append(expr.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        if(add_sub_OP!=null)
+            buffer.append(add_sub_OP.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        if(term!=null)
+            buffer.append(term.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        buffer.append(tab);
+        buffer.append(") [AddExpr]");
+        return buffer.toString();
+    }
+}

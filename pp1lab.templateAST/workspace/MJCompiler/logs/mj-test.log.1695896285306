@@ -1,0 +1,45 @@
+INFO  12:17:33,903 - Compiling source file: C:\Users\filip.jankovic\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  12:17:33,918 - #2 program
+INFO  12:17:33,918 - #45 MJProgram
+INFO  12:17:33,918 - #45 int
+INFO  12:17:33,919 - #45 a1
+INFO  12:17:33,919 - #34 ;
+INFO  12:17:33,919 - #7 const
+INFO  12:17:33,920 - #45 bool
+INFO  12:17:33,920 - #45 a2
+INFO  12:17:33,920 - #24 =
+INFO  12:17:33,920 - #44 true
+INFO  12:17:33,921 - #35 ,
+INFO  12:17:33,921 - #45 a3
+INFO  12:17:33,921 - #24 =
+INFO  12:17:33,921 - #44 false
+INFO  12:17:33,921 - #34 ;
+INFO  12:17:33,921 - #45 char
+INFO  12:17:33,923 - #45 c
+INFO  12:17:33,923 - #34 ;
+INFO  12:17:33,923 - #45 int
+INFO  12:17:33,923 - #45 a4
+INFO  12:17:33,923 - #36 [
+INFO  12:17:33,923 - #37 ]
+INFO  12:17:33,923 - #34 ;
+INFO  12:17:33,924 - #40 {
+INFO  12:17:33,924 - #6 void
+INFO  12:17:33,924 - #45 main
+INFO  12:17:33,924 - #38 (
+INFO  12:17:33,924 - #39 )
+INFO  12:17:33,924 - #45 char
+INFO  12:17:33,925 - #45 m
+INFO  12:17:33,925 - #34 ;
+INFO  12:17:33,925 - #45 int
+INFO  12:17:33,925 - #45 a5
+INFO  12:17:33,925 - #35 ,
+INFO  12:17:33,925 - #45 s1
+INFO  12:17:33,925 - #35 ,
+INFO  12:17:33,925 - #45 s2
+INFO  12:17:33,926 - #35 ,
+INFO  12:17:33,926 - #45 s3
+INFO  12:17:33,926 - #34 ;
+INFO  12:17:33,926 - #7 const
+ERROR 12:17:33,926 - 
+Sintaksna greska na liniji 7
+ERROR 12:17:33,926 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 7

@@ -1,0 +1,66 @@
+INFO  12:18:05,308 - Compiling source file: C:\Users\filip.jankovic\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  12:18:05,324 - #2 program
+INFO  12:18:05,324 - #45 MJProgram
+INFO  12:18:05,324 - #45 int
+INFO  12:18:05,325 - #45 a1
+INFO  12:18:05,326 - #34 ;
+INFO  12:18:05,326 - #7 const
+INFO  12:18:05,327 - #45 bool
+INFO  12:18:05,327 - #45 a2
+INFO  12:18:05,327 - #24 =
+INFO  12:18:05,327 - #44 true
+INFO  12:18:05,327 - #35 ,
+INFO  12:18:05,327 - #45 a3
+INFO  12:18:05,327 - #24 =
+INFO  12:18:05,327 - #44 false
+INFO  12:18:05,328 - #34 ;
+INFO  12:18:05,328 - #45 char
+INFO  12:18:05,328 - #45 c
+INFO  12:18:05,328 - #34 ;
+INFO  12:18:05,328 - #45 int
+INFO  12:18:05,328 - #45 a4
+INFO  12:18:05,329 - #36 [
+INFO  12:18:05,329 - #37 ]
+INFO  12:18:05,329 - #34 ;
+INFO  12:18:05,329 - #40 {
+INFO  12:18:05,329 - #6 void
+INFO  12:18:05,329 - #45 main
+INFO  12:18:05,329 - #38 (
+INFO  12:18:05,329 - #39 )
+INFO  12:18:05,329 - #45 char
+INFO  12:18:05,329 - #45 m
+INFO  12:18:05,329 - #34 ;
+INFO  12:18:05,330 - #45 int
+INFO  12:18:05,330 - #45 a5
+INFO  12:18:05,330 - #35 ,
+INFO  12:18:05,330 - #45 s1
+INFO  12:18:05,330 - #35 ,
+INFO  12:18:05,330 - #45 s2
+INFO  12:18:05,330 - #35 ,
+INFO  12:18:05,330 - #45 s3
+INFO  12:18:05,330 - #34 ;
+INFO  12:18:05,330 - #45 bool
+INFO  12:18:05,330 - #45 k
+INFO  12:18:05,330 - #36 [
+INFO  12:18:05,330 - #37 ]
+INFO  12:18:05,330 - #34 ;
+INFO  12:18:05,330 - #40 {
+INFO  12:18:05,330 - #45 s1
+INFO  12:18:05,331 - #24 =
+INFO  12:18:05,332 - #42 5
+INFO  12:18:05,333 - #34 ;
+INFO  12:18:05,333 - #45 s2
+INFO  12:18:05,333 - #24 =
+INFO  12:18:05,333 - #42 5
+INFO  12:18:05,333 - #17 +
+INFO  12:18:05,334 - #42 2
+INFO  12:18:05,334 - #34 ;
+INFO  12:18:05,335 - #45 s3
+INFO  12:18:05,335 - #24 =
+INFO  12:18:05,335 - #42 5
+INFO  12:18:05,335 - #21 *
+ERROR 12:18:05,335 - 
+Sintaksna greska na liniji 11
+ERROR 12:18:05,335 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 11
+INFO  12:18:05,339 - Print calls = 0
+ERROR 12:18:05,339 - Parsiranje NIJE uspesno zavrseno!
