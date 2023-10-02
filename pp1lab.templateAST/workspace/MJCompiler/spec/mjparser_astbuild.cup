@@ -70,11 +70,8 @@ terminal Character CHAR;
 terminal Boolean BOOL;
 terminal String IDENT;
 
-nonterminal Program program;
-nonterminal Prog_id prog_id;
 nonterminal Declaration_list declaration_list;
 nonterminal Declaration_part declaration_part;
-nonterminal  Type type;
 nonterminal Rhs rhs;
 nonterminal Const_dec const_dec;
 nonterminal Const_decl_list const_decl_list;
@@ -98,6 +95,9 @@ nonterminal Term_list term_list;
 nonterminal Term term;
 nonterminal Factor_list factor_list;
 nonterminal Factor factor;
+
+nonterminal rs.etf.pp1.symboltable.concepts.Obj prog_id, program;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct type;
 
 
 
