@@ -1,19 +1,19 @@
 // generated with ast extension for cup
 // version 0.8
-// 2/9/2023 16:31:4
+// 3/9/2023 18:22:25
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public abstract class VisitorAdaptor implements Visitor { 
 
-    public void visit(Rhs rhs) { }
     public void visit(Statement statement) { }
     public void visit(Var_list var_list) { }
     public void visit(Factor_list factor_list) { }
     public void visit(Const_decl_list const_decl_list) { }
     public void visit(Statements_list statements_list) { }
     public void visit(Main_variables main_variables) { }
+    public void visit(Main main) { }
     public void visit(Mull_div_mod_OP mull_div_mod_OP) { }
     public void visit(Declaration_part declaration_part) { }
     public void visit(Ident_expr_list ident_expr_list) { }
@@ -64,16 +64,16 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(Statements Statements) { visit(); }
     public void visit(NoMainVariables NoMainVariables) { visit(); }
     public void visit(MainVariables MainVariables) { visit(); }
-    public void visit(Method Method) { visit(); }
+    public void visit(MainIdent MainIdent) { visit(); }
+    public void visit(MainMethod MainMethod) { visit(); }
     public void visit(VarOrArrayId VarOrArrayId) { visit(); }
     public void visit(VarId VarId) { visit(); }
     public void visit(SingleVarIdList SingleVarIdList) { visit(); }
     public void visit(MultipleVarIdList MultipleVarIdList) { visit(); }
     public void visit(Var_dec Var_dec) { visit(); }
-    public void visit(BoolInitializer BoolInitializer) { visit(); }
-    public void visit(CharInitializer CharInitializer) { visit(); }
-    public void visit(IntInitializer IntInitializer) { visit(); }
-    public void visit(ConstId ConstId) { visit(); }
+    public void visit(ConstIdChar ConstIdChar) { visit(); }
+    public void visit(ConstIdBool ConstIdBool) { visit(); }
+    public void visit(ConstIdInt ConstIdInt) { visit(); }
     public void visit(SingleConstDeclarationPart SingleConstDeclarationPart) { visit(); }
     public void visit(PluralConstIdList PluralConstIdList) { visit(); }
     public void visit(Type Type) { visit(); }

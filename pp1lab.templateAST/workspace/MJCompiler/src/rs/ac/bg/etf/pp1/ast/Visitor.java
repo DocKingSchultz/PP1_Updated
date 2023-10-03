@@ -1,19 +1,19 @@
 // generated with ast extension for cup
 // version 0.8
-// 2/9/2023 16:31:4
+// 3/9/2023 18:22:25
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public interface Visitor { 
 
-    public void visit(Rhs rhs);
     public void visit(Statement statement);
     public void visit(Var_list var_list);
     public void visit(Factor_list factor_list);
     public void visit(Const_decl_list const_decl_list);
     public void visit(Statements_list statements_list);
     public void visit(Main_variables main_variables);
+    public void visit(Main main);
     public void visit(Mull_div_mod_OP mull_div_mod_OP);
     public void visit(Declaration_part declaration_part);
     public void visit(Ident_expr_list ident_expr_list);
@@ -64,16 +64,16 @@ public interface Visitor {
     public void visit(Statements Statements);
     public void visit(NoMainVariables NoMainVariables);
     public void visit(MainVariables MainVariables);
-    public void visit(Method Method);
+    public void visit(MainIdent MainIdent);
+    public void visit(MainMethod MainMethod);
     public void visit(VarOrArrayId VarOrArrayId);
     public void visit(VarId VarId);
     public void visit(SingleVarIdList SingleVarIdList);
     public void visit(MultipleVarIdList MultipleVarIdList);
     public void visit(Var_dec Var_dec);
-    public void visit(BoolInitializer BoolInitializer);
-    public void visit(CharInitializer CharInitializer);
-    public void visit(IntInitializer IntInitializer);
-    public void visit(ConstId ConstId);
+    public void visit(ConstIdChar ConstIdChar);
+    public void visit(ConstIdBool ConstIdBool);
+    public void visit(ConstIdInt ConstIdInt);
     public void visit(SingleConstDeclarationPart SingleConstDeclarationPart);
     public void visit(PluralConstIdList PluralConstIdList);
     public void visit(Type Type);

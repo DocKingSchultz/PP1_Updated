@@ -67,13 +67,11 @@ terminal COLON, SEMI, COMMA;
 terminal LEFTSQPAR, RIGHTSQPAR, LPAREN, RPAREN, LBRACE, RBRACE;
 terminal Integer INT;
 terminal Character CHAR;
-terminal Boolean BOOL;
+terminal Integer BOOL;
 terminal String IDENT;
 
 nonterminal Declaration_list declaration_list;
 nonterminal Declaration_part declaration_part;
-nonterminal  Type type;
-nonterminal Rhs rhs;
 nonterminal Const_dec const_dec;
 nonterminal Const_decl_list const_decl_list;
 nonterminal Const_declaration_part const_declaration_part;
@@ -86,9 +84,6 @@ nonterminal Main_variables main_variables;
 nonterminal Statements_list statements_list;
 nonterminal Statement statement; 
 nonterminal Designator_statement designator_statement;
-nonterminal Designator designator;
-nonterminal Expr expr;
-nonterminal Ident_expr_list ident_expr_list;
 nonterminal Add_sub_OP add_sub_OP;
 nonterminal Mull_div_mod_OP mull_div_mod_OP;
 nonterminal Assign assign;
@@ -97,7 +92,9 @@ nonterminal Term term;
 nonterminal Factor_list factor_list;
 nonterminal Factor factor;
 
-nonterminal rs.etf.pp1.symboltable.concepts.Obj prog_id, program;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj prog_id, program, main;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj designator, ident_expr_list;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct type, expr;
 
 
 
@@ -126,14 +123,11 @@ const_decl_list ::= (PluralConstIdList) const_decl_list:c1 COMMA const_declarati
 					(SingleConstDeclarationPart) const_declaration_part:c1 {: RESULT=new SingleConstDeclarationPart(c1); RESULT.setLine(c1left); :}
 ;
 
-const_declaration_part ::= (ConstId) IDENT:id EQUAL rhs:r1 {: RESULT=new ConstId(id, r1); RESULT.setLine(idleft); :}
-;
-
-rhs ::= (IntInitializer) INT:i {: RESULT=new IntInitializer(i); RESULT.setLine(ileft); :} 
-	  	| 
-	 	(CharInitializer) CHAR:c {: RESULT=new CharInitializer(c); RESULT.setLine(cleft); :} 
-	 	|
-	 	(BoolInitializer) BOOL:b {: RESULT=new BoolInitializer(b); RESULT.setLine(bleft); :}
+const_declaration_part ::= (ConstIdInt) IDENT:id EQUAL INT:value {: RESULT=new ConstIdInt(id, value); RESULT.setLine(idleft); :} 
+						   | 
+						   (ConstIdBool) IDENT:id EQUAL  BOOL:value {: RESULT=new ConstIdBool(id, value); RESULT.setLine(idleft); :} 
+						   | 
+					       (ConstIdChar) IDENT:id EQUAL  CHAR:value {: RESULT=new ConstIdChar(id, value); RESULT.setLine(idleft); :} 
 ;
 var_dec ::= (Var_dec) type:t var_list:v1 SEMI {: RESULT=new Var_dec(t, v1); RESULT.setLine(tleft); :}
 ;
@@ -145,8 +139,12 @@ var_part ::= (VarId) IDENT: id {: RESULT=new VarId(id); RESULT.setLine(idleft); 
 			 |
 			 (VarOrArrayId) IDENT:id LEFTSQPAR RIGHTSQPAR {: RESULT=new VarOrArrayId(id); RESULT.setLine(idleft); :}
 ;
-method_dec ::= (Method) VOID IDENT:main LPAREN RPAREN main_variables:m1 LBRACE statements_list:s2 RBRACE {: RESULT=new Method(main, m1, s2); RESULT.setLine(mainleft); :}
+method_dec ::= (MainMethod) VOID main:m1 LPAREN RPAREN main_variables:m2 LBRACE statements_list:s3 RBRACE {: RESULT=new MainMethod(m1, m2, s3); RESULT.setLine(m1left); :}
 ;
+
+main ::= (MainIdent)IDENT:name_main {: RESULT=new MainIdent(name_main); RESULT.setLine(name_mainleft); :}
+;
+
 main_variables ::= (MainVariables) main_variables:m1 var_dec:v2 {: RESULT=new MainVariables(m1, v2); RESULT.setLine(m1left); :}
 					|
 				   (NoMainVariables) {: RESULT=new NoMainVariables(); :} /* epislon */

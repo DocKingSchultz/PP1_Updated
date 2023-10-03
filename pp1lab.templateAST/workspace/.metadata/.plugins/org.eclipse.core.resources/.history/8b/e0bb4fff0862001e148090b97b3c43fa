@@ -1,0 +1,78 @@
+// generated with ast extension for cup
+// version 0.8
+// 3/9/2023 18:5:49
+
+
+package rs.ac.bg.etf.pp1.ast;
+
+public class Print extends Statement {
+
+    private Expr expr;
+    private Const_to_print const_to_print;
+
+    public Print (Expr expr, Const_to_print const_to_print) {
+        this.expr=expr;
+        if(expr!=null) expr.setParent(this);
+        this.const_to_print=const_to_print;
+        if(const_to_print!=null) const_to_print.setParent(this);
+    }
+
+    public Expr getExpr() {
+        return expr;
+    }
+
+    public void setExpr(Expr expr) {
+        this.expr=expr;
+    }
+
+    public Const_to_print getConst_to_print() {
+        return const_to_print;
+    }
+
+    public void setConst_to_print(Const_to_print const_to_print) {
+        this.const_to_print=const_to_print;
+    }
+
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
+
+    public void childrenAccept(Visitor visitor) {
+        if(expr!=null) expr.accept(visitor);
+        if(const_to_print!=null) const_to_print.accept(visitor);
+    }
+
+    public void traverseTopDown(Visitor visitor) {
+        accept(visitor);
+        if(expr!=null) expr.traverseTopDown(visitor);
+        if(const_to_print!=null) const_to_print.traverseTopDown(visitor);
+    }
+
+    public void traverseBottomUp(Visitor visitor) {
+        if(expr!=null) expr.traverseBottomUp(visitor);
+        if(const_to_print!=null) const_to_print.traverseBottomUp(visitor);
+        accept(visitor);
+    }
+
+    public String toString(String tab) {
+        StringBuffer buffer=new StringBuffer();
+        buffer.append(tab);
+        buffer.append("Print(\n");
+
+        if(expr!=null)
+            buffer.append(expr.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        if(const_to_print!=null)
+            buffer.append(const_to_print.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        buffer.append(tab);
+        buffer.append(") [Print]");
+        return buffer.toString();
+    }
+}

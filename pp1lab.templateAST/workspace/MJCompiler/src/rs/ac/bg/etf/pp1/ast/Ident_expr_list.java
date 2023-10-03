@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 2/9/2023 16:31:4
+// 3/9/2023 18:22:25
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -10,6 +10,8 @@ public abstract class Ident_expr_list implements SyntaxNode {
     private SyntaxNode parent;
 
     private int line;
+
+    public rs.etf.pp1.symboltable.concepts.Obj obj = null;
 
     public SyntaxNode getParent() {
         return parent;
