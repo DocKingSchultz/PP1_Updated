@@ -1,31 +1,49 @@
-program MJProgram
-int a1;
-const int as=7;
-const bool a2 = true, a3= false;
-int intarr[];
-char c;
-int a4[];
-{
-	void main() char m; int a5, s1, s2, s3;  bool k[], k3; char charr[];
-	{
-	   intarr = new int[10];
-	   s2=5+2;
-	   s1=s2;
-	   s1++;
-	   s2--;
-	   k=new bool[6];
-	   charr = new char[10];
-	   charr[4] = 's';
-	   k[4]=true;
-	   k[3]=k[2]*k[1]/s1+s2;
-	   m = 'c';
-	   a5=s2+s2/s3+s3*s3%s1;
-	   print(3);
-	   print(s1);
-	   print(s1+s2*intarr[0]);
-	   read(s1);
-	   read(intarr[1]);
-	   return;
-	}
+program test301
 
+	const int nula = 0;
+	const int jedan = 1;
+	const int pet = 5;
+
+	int niz[], niz2[], a, b;
+	char nizch[];
+	
+{
+	void main()	
+		int bodovi;
+		bool br;
+	{
+		bodovi = 0;
+		bodovi++;
+		bodovi = bodovi + jedan;
+		bodovi = bodovi * pet;
+		bodovi--;
+		print(bodovi);
+			
+		
+		niz = new int[3];
+		niz[nula] = jedan;  
+		niz[1] = 2;			
+		niz[niz[jedan]] = niz[niz[0]] * 3; 
+		bodovi = niz[2]/niz[0];
+		print(bodovi);
+		print(niz[2]);
+	
+		print(br);
+
+		
+		nizch = new char[3];
+		nizch[0] = 'a';
+		nizch[jedan] = 'b';
+		nizch[pet - 3] = 'c';
+		print(nizch[1]);
+		print(nizch[jedan * 2]);
+			
+		
+		read(bodovi);
+		bodovi = -bodovi + (pet * a / 2 - jedan) * bodovi - (3 % 2 + 3 * 2 - 3); 
+		print(bodovi);
+			
+	}
 }
+
+

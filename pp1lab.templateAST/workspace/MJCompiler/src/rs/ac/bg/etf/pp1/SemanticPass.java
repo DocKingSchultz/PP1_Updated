@@ -254,7 +254,7 @@ public class SemanticPass extends VisitorAdaptor {
 		{
 			report_error("Statement does not have assignable left value", null);
 		}
-		else if(rightExpr.assignableTo(leftDes.getType()))
+		else if(rightExpr.compatibleWith(leftDes.getType()))
 		{
 			report_info("Assignemnt succesful", null);
 		}
@@ -379,6 +379,20 @@ public class SemanticPass extends VisitorAdaptor {
 		te.struct=te.getTerm().struct;
 	}
 	
+	public void visit (NegExpr nexpr)
+	{
+		// can only negate int values
+		//
+		if(nexpr.getTerm().struct!=Tab.intType)
+		{
+			report_error("You cant negate value that is not int type", null);
+			nexpr.struct=Tab.noType;
+			return;
+		}
+		nexpr.struct=nexpr.getTerm().struct;
+		
+	}
+	
 	public void visit(Term t)
 	{
 		t.struct=t.getFactor_list().struct;
@@ -391,7 +405,7 @@ public class SemanticPass extends VisitorAdaptor {
 	{
 		// Check if factor on the right side is type of INT
 		//
-		if(mf.struct!=Tab.intType || mf.getFactor_list().struct!=Tab.intType)
+		if(mf.getFactor().struct!=Tab.intType || mf.getFactor_list().struct!=Tab.intType)
 		{
 			mf.struct=Tab.noType;
 			report_error("Expression that is included in mul operations is not of type int", mf);
@@ -437,7 +451,7 @@ public class SemanticPass extends VisitorAdaptor {
 			report_error("Expression for accessing array element is not in valid format, must be int", on);
 			return;
 		}
-		on.struct = on.getType().struct;
+		on.struct = makeStruct(Struct.Array, lastType);
 	}
 	
 	

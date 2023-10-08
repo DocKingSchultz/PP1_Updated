@@ -181,6 +181,8 @@ expr ::= (Expr) term_list:t {: RESULT=new Expr(t); RESULT.setLine(tleft); :}
 term_list  ::=  (AddExpr) term_list:t1 add_sub_OP:a2 term:t3 {: RESULT=new AddExpr(t1, a2, t3); RESULT.setLine(t1left); :}
 	            |
 	            (TermExpr) term:t {: RESULT=new TermExpr(t); RESULT.setLine(tleft); :}
+	            |
+	            (NegExpr) MINUS term:t {: RESULT=new NegExpr(t); RESULT.setLine(tleft); :}
 ;
 term ::= (Term) factor_list:t {: RESULT=new Term(t); RESULT.setLine(tleft); :}
 ;

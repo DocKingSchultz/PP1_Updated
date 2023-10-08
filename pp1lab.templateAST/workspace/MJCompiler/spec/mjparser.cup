@@ -171,6 +171,8 @@ expr ::= (Expr) term_list:t
 term_list  ::=  (AddExpr) term_list add_sub_OP term
 	            |
 	            (TermExpr) term:t
+	            |
+	            (NegExpr) MINUS term:t
 ;
 term ::= (Term) factor_list:t
 ;

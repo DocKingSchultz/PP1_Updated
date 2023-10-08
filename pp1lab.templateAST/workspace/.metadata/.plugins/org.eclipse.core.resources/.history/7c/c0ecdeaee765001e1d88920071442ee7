@@ -1,0 +1,31 @@
+program MJProgram
+int a1;
+const int as=7;
+const bool a2 = true, a3= false;
+int intarr[];
+char c;
+int a4[];
+{
+	void main() char m; int a5, s1, s2, s3;  bool k[], k3; char charr[];
+	{
+	   intarr = new int[10];
+	   s2=5+2;
+	   s1=s2;
+	   s1++;
+	   s2--;
+	   k=new bool[6];
+	   charr = new char[10];
+	   charr[4] = 's';
+	   k[4]=true;
+	   intarr[3]=s2*s1/s1+s2;
+	   m = 'c';
+	   a5=s2+s2/s3+s3*s3%s1;
+	   print(3);
+	   print(s1);
+	   print(s1+s2*intarr[0]);
+	   read(s1);
+	   read(intarr[1]);
+	   return;
+	}
+
+}
