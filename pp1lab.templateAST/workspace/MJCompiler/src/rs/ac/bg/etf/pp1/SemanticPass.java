@@ -18,7 +18,7 @@ public class SemanticPass extends VisitorAdaptor {
 	String info = "[info] ";
 	Struct lastType;
 	Logger log = Logger.getLogger(getClass());
-	Struct boolType = new Struct(Struct.Int);
+	Struct boolType = new Struct(Struct.Bool);
 	Obj boolObj = new Obj(Obj.Type, "bool", boolType);
 	// Add "bool" as a symbol to the symbol table
 	// 
@@ -141,7 +141,7 @@ public class SemanticPass extends VisitorAdaptor {
 			// Type match check :
 			// [*] Bool type needs to be created somehow
 			//
-			if(lastType.getKind()==Struct.Int)
+			if(lastType.getKind()==Struct.Bool)
 			{
 				report_info(info + "Declared global constant."+ constGDecl.getId(), constGDecl);
 				Obj constNode = Tab.insert(Obj.Con, constGDecl.getId(), lastType);
@@ -243,18 +243,103 @@ public class SemanticPass extends VisitorAdaptor {
 		Tab.openScope();
 	}
 	
-	// --------------------------- Designator -----------------------------
+	
+	// --------------------------- Designators visits -----------------------------
 	//
+	public void visit(Assignment assign)
+	{
+		Obj leftDes = assign.getDesignator().obj;
+		Struct rightExpr = assign.getExpr().struct;
+		if(leftDes.getKind()!=Obj.Var && leftDes.getKind()!=Obj.Elem)
+		{
+			report_error("Statement does not have assignable left value", null);
+		}
+		else if(rightExpr.assignableTo(leftDes.getType()))
+		{
+			report_info("Assignemnt succesful", null);
+		}
+		else 
+		{
+			report_error("Statement does not have compatible values for assignment", null);
+		}
+}
+		
+	
+	public void visit(Decrement dec)
+	{
+		Obj obj = Tab.find(dec.getDesignator().obj.getName());
+		String desIdent = dec.getDesignator().obj.getName();
+		if (obj == Tab.noObj) { 
+			report_error(error+ "" +desIdent+" was not declared ", null);
+		}
+		// Check if variable is of int TYPE
+		//
+		else if(obj.getKind()!=Obj.Var)
+		{
+			report_error(error+ "" +desIdent+" is not a regular variable ", null);
+		}
+		else
+		{
+			report_info(desIdent+" decremented", dec);
+		}
+	}
+		
+	public void visit(Increment incr)
+	{
+		Obj obj = Tab.find(incr.getDesignator().obj.getName());
+		String desIdent = incr.getDesignator().obj.getName();
+		if (obj == Tab.noObj) { 
+			report_error(error+ "" +desIdent+" was not declared ", null);
+		}
+		// Check if variable is of int TYPE
+		//
+		else if(obj.getKind()!=Obj.Var)
+		{
+			report_error(error+ "" +desIdent+" is not a regular variable ", null);
+		}
+		else
+		{
+			report_info(desIdent+" incremented", incr);
+		}
+		
+	}
+	
+	public void visit(Designator designator)
+	{
+		designator.obj=designator.getIdent_expr_list().obj;
+	}
+	
+	public void visit(ArrayDesignator arrDes)
+	{
+		// Check if expression in paren is of valid type
+		//
+		Obj obj = arrDes.getIdent_expr_list().obj;
+		if(arrDes.getExpr().struct!=Tab.intType)
+		{
+			report_error("Expression that is included in sub/add operations is not of type int", null);
+			arrDes.obj=Tab.noObj;
+			return;
+		}
+		if(obj.getType().getKind()!=Struct.Array)
+		{
+			report_error("Variable is not of type Array", null);
+			arrDes.obj=Tab.noObj;
+			return;
+		}
+		arrDes.obj = new Obj(Obj.Elem, "", obj.getType().getElemType());
+	}
+	
 	public void visit(SimpleDesignator designator)
 	{
 		Obj obj = Tab.find(designator.getId());
 		if (obj == Tab.noObj) { 
 			report_error(error+ "" +designator.getId()+" was not declared ", null);
 		}
-		designator.obj = obj;
 		// Registered use of local variable
 		//
-		if(designator.obj.getLevel()==0)
+
+		designator.obj = obj;
+		if(designator.obj.getLevel()==1)
 		{
 			report_info(info+"Local use of variable "+designator.getId()+".", null);
 		}
@@ -266,16 +351,104 @@ public class SemanticPass extends VisitorAdaptor {
 		}
 	}
 	
+	
+	
+	// --------------------------------- Expressions --------------------------
+	//
+	public void visit(Expr expr)
+	{
+		expr.struct=expr.getTerm_list().struct;
+		
+	}
+	
+	public void visit(AddExpr aexpr)
+	{
+		// Check if types are INT to proceed
+		//
+		if(aexpr.getTerm_list().struct != Tab.intType || aexpr.getTerm().struct!=Tab.intType)
+		{
+			aexpr.struct=Tab.noType;
+			report_error("Expression that is included in sub/add operations is not of type int", aexpr);
+			return;
+		}
+		aexpr.struct=Tab.intType;
+	}
+	
+	public void visit(TermExpr te)
+	{
+		te.struct=te.getTerm().struct;
+	}
+	
+	public void visit(Term t)
+	{
+		t.struct=t.getFactor_list().struct;
+	}
+	
+	
+	// --------------------------------- FactorList ---------------------------
+	//
+	public void visit(MulopFactor mf)
+	{
+		// Check if factor on the right side is type of INT
+		//
+		if(mf.struct!=Tab.intType || mf.getFactor_list().struct!=Tab.intType)
+		{
+			mf.struct=Tab.noType;
+			report_error("Expression that is included in mul operations is not of type int", mf);
+			return;
+		}
+		mf.struct=Tab.intType;
+	}
+	public void visit(SimpleFactor sf)
+	{
+		sf.struct=sf.getFactor().struct;
+	}
+	
+	
+	// --------------------------------- Factor -------------------------------
+	//
+	public void visit(IntRef intr)
+	{
+		intr.struct=Tab.intType;
+	}
+	public void visit(BoolRef boolr)
+	{
+		boolr.struct = boolType;
+	}
+	public void visit(CharRef charr)
+	{
+		charr.struct=Tab.charType;
+	}
+	public void visit(VarRef varr)
+	{
+		varr.struct=varr.getDesignator().obj.getType();
+	}
+	public void visit(ParenthesisExpr pe)
+	{
+		pe.struct=pe.getExpr().struct;
+	}
+	public void visit(OperatorNew on)
+	{
+		// Check if expression is valid 
+		//
+		if(on.getExpr().struct!=Tab.intType)
+		{
+			on.struct=Tab.noType;
+			report_error("Expression for accessing array element is not in valid format, must be int", on);
+			return;
+		}
+		on.struct = on.getType().struct;
+	}
+	
+	
+	
 	public boolean passed() {
 		return !errorDetected;
 	}
 
 
 
-	public void visit(Assignment assignment) {
-		if (!assignment.getExpr().struct.assignableTo(assignment.getDesignator().obj.getType()))
-			report_error("Greska na liniji " + assignment.getLine() + " : " + " nekompatibilni tipovi u dodeli vrednosti ", null);
-	}
+
 
 //	public void visit(PrintStmt printStmt){
 //		printCallCount++;    	

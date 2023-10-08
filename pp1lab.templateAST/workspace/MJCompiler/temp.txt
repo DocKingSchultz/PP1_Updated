@@ -1,0 +1,30 @@
+//Factor---------------------------------------------------------------------------------------------------------------------
+	public void visit(DesignatorFactor designatorFactor) {
+		designatorFactor.struct = designatorFactor.getDesignator().obj.getType();
+	}
+	public void visit(IntFactor intFactor) {
+		intFactor.struct = Tab.intType;
+	}
+	public void visit(CharFactor charFactor) {
+		charFactor.struct = Tab.charType;
+	}
+	public void visit(BoolFactor boolFactor) {
+		boolFactor.struct = boolType;
+	}
+	public void visit(NewArrayFactor newArrayFactor) {
+		Struct e =newArrayFactor.getExpr().struct;
+		if( e == Tab.intType) {
+			newArrayFactor.struct=new Struct(Struct.Array, currentType);
+		} else {
+			report_error("Expr mora biti tipa int.", newArrayFactor);
+			newArrayFactor.struct = Tab.noType;
+		}
+		
+	}
+	public void visit(ExprFactor exprFactor) {
+		exprFactor.struct = exprFactor.getExpr().struct;
+	}
+
+	public boolean passed() {
+		return !errorDetected;
+	}

@@ -87,14 +87,10 @@ nonterminal Designator_statement designator_statement;
 nonterminal Add_sub_OP add_sub_OP;
 nonterminal Mull_div_mod_OP mull_div_mod_OP;
 nonterminal Assign assign;
-nonterminal Term_list term_list;
-nonterminal Term term;
-nonterminal Factor_list factor_list;
-nonterminal Factor factor;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj prog_id, program, main;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj designator, ident_expr_list;
-nonterminal rs.etf.pp1.symboltable.concepts.Struct type, expr;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct type, expr, term_list, term, factor_list, factor;
 
 
 
@@ -168,13 +164,11 @@ const_to_print ::= (ConstToPrint) COMMA INT:I1 {: RESULT=new ConstToPrint(I1); R
 				   |
 				   (NoConstToPrint) {: RESULT=new NoConstToPrint(); :} /* epsilon */
 ;
-designator_statement ::= (Assignment) designator:o assign:a1 expr:t {: RESULT=new Assignment(o, a1, t); RESULT.setLine(oleft); :}
+designator_statement ::= (Assignment) designator:o EQUAL expr:t {: RESULT=new Assignment(o, t); RESULT.setLine(oleft); :}
 						 |
 						 (Increment) designator:d PLUSINCR {: RESULT=new Increment(d); RESULT.setLine(dleft); :} 
 						 |
 						 (Decrement) designator:d MINUSDECR {: RESULT=new Decrement(d); RESULT.setLine(dleft); :}
-;
-assign ::= (AssignOp) EQUAL {: RESULT=new AssignOp(); :}
 ;
 designator ::= (Designator) ident_expr_list:o {: RESULT=new Designator(o); RESULT.setLine(oleft); :}
 ;
@@ -193,12 +187,8 @@ term ::= (Term) factor_list:t {: RESULT=new Term(t); RESULT.setLine(tleft); :}
 factor_list ::= (MulopFactor) factor_list:t mull_div_mod_OP:m1 factor:f2 {: RESULT=new MulopFactor(t, m1, f2); RESULT.setLine(tleft); :}
 	            |
 	            (SimpleFactor) factor:t {: RESULT=new SimpleFactor(t); RESULT.setLine(tleft); :} 
-                |
-                (MinusFactor) MINUS factor:f1 {: RESULT=new MinusFactor(f1); RESULT.setLine(f1left); :}
 ;
 factor ::= (VarRef) designator:o {: RESULT=new VarRef(o); RESULT.setLine(oleft); :} 
-           |
-           (ArrayRef) designator:o LPAREN RPAREN {: RESULT=new ArrayRef(o); RESULT.setLine(oleft); :}      /*navodno visak*/
            |
            (IntRef) INT:i {: RESULT=new IntRef(i); RESULT.setLine(ileft); :}           
            |

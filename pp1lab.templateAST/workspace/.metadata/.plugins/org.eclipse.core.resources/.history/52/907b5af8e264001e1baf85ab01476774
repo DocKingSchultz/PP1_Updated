@@ -1,0 +1,58 @@
+// generated with ast extension for cup
+// version 0.8
+// 3/9/2023 18:22:25
+
+
+package rs.ac.bg.etf.pp1.ast;
+
+public class SingleVarIdList extends Var_list {
+
+    private Var_part var_part;
+
+    public SingleVarIdList (Var_part var_part) {
+        this.var_part=var_part;
+        if(var_part!=null) var_part.setParent(this);
+    }
+
+    public Var_part getVar_part() {
+        return var_part;
+    }
+
+    public void setVar_part(Var_part var_part) {
+        this.var_part=var_part;
+    }
+
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
+
+    public void childrenAccept(Visitor visitor) {
+        if(var_part!=null) var_part.accept(visitor);
+    }
+
+    public void traverseTopDown(Visitor visitor) {
+        accept(visitor);
+        if(var_part!=null) var_part.traverseTopDown(visitor);
+    }
+
+    public void traverseBottomUp(Visitor visitor) {
+        if(var_part!=null) var_part.traverseBottomUp(visitor);
+        accept(visitor);
+    }
+
+    public String toString(String tab) {
+        StringBuffer buffer=new StringBuffer();
+        buffer.append(tab);
+        buffer.append("SingleVarIdList(\n");
+
+        if(var_part!=null)
+            buffer.append(var_part.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        buffer.append(tab);
+        buffer.append(") [SingleVarIdList]");
+        return buffer.toString();
+    }
+}
