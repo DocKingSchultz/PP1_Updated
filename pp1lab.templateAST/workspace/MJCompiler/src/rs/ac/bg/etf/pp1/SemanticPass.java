@@ -180,7 +180,8 @@ public class SemanticPass extends VisitorAdaptor {
 
 	}
 	
-	public void visit(VarOrArrayId regularArrayDecl) {
+	public void visit(VarOrArrayId regularArrayDecl) 
+	{
 		Obj res = Tab.currentScope.findSymbol(regularArrayDecl.getId());
 		// Check if var is already declared in the symbol table
 		//
@@ -194,7 +195,8 @@ public class SemanticPass extends VisitorAdaptor {
 		else
 		{
 			report_error(error + "Variable : " + regularArrayDecl.getId() + " already declared.", regularArrayDecl);
-		}}
+		}
+	WW}
 
 	// -------------------------------------- Type extraction --------------------------------------
 	//
@@ -227,6 +229,7 @@ public class SemanticPass extends VisitorAdaptor {
 		Tab.chainLocalSymbols(method_dec.getMain().obj);
 		Tab.closeScope();
 	}
+	
 	public void visit(MainIdent method_name) {
 		//Check if main already defined :
 		//
@@ -262,7 +265,7 @@ public class SemanticPass extends VisitorAdaptor {
 		{
 			report_error("Statement does not have compatible values for assignment", null);
 		}
-}
+	}
 		
 	
 	public void visit(Decrement dec)
@@ -351,8 +354,6 @@ public class SemanticPass extends VisitorAdaptor {
 		}
 	}
 	
-	
-	
 	// --------------------------------- Expressions --------------------------
 	//
 	public void visit(Expr expr)
@@ -398,7 +399,6 @@ public class SemanticPass extends VisitorAdaptor {
 		t.struct=t.getFactor_list().struct;
 	}
 	
-	
 	// --------------------------------- FactorList ---------------------------
 	//
 	public void visit(MulopFactor mf)
@@ -413,11 +413,11 @@ public class SemanticPass extends VisitorAdaptor {
 		}
 		mf.struct=Tab.intType;
 	}
+	
 	public void visit(SimpleFactor sf)
 	{
 		sf.struct=sf.getFactor().struct;
 	}
-	
 	
 	// --------------------------------- Factor -------------------------------
 	//
@@ -425,22 +425,27 @@ public class SemanticPass extends VisitorAdaptor {
 	{
 		intr.struct=Tab.intType;
 	}
+	
 	public void visit(BoolRef boolr)
 	{
 		boolr.struct = boolType;
 	}
+	
 	public void visit(CharRef charr)
 	{
 		charr.struct=Tab.charType;
 	}
+	
 	public void visit(VarRef varr)
 	{
 		varr.struct=varr.getDesignator().obj.getType();
 	}
+	
 	public void visit(ParenthesisExpr pe)
 	{
 		pe.struct=pe.getExpr().struct;
 	}
+	
 	public void visit(OperatorNew on)
 	{
 		// Check if expression is valid 
@@ -454,80 +459,8 @@ public class SemanticPass extends VisitorAdaptor {
 		on.struct = makeStruct(Struct.Array, lastType);
 	}
 	
-	
-	
 	public boolean passed() {
 		return !errorDetected;
 	}
-
-
-
-
-
-//	public void visit(PrintStmt printStmt){
-//		printCallCount++;    	
-//	}
-//
-//	public void visit(ReturnExpr returnExpr){
-//		returnFound = true;
-//		Struct currMethType = currentMethod.getType();
-//		if (!currMethType.compatibleWith(returnExpr.getExpr().struct)) {
-//			report_error("Greska na liniji " + returnExpr.getLine() + " : " + "tip izraza u return naredbi ne slaze se sa tipom povratne vrednosti funkcije " + currentMethod.getName(), null);
-//		}			  	     	
-//	}
-//
-//	public void visit(ProcCall procCall){
-//		Obj func = procCall.getDesignator().obj;
-//		if (Obj.Meth == func.getKind()) { 
-//			report_info("Pronadjen poziv funkcije " + func.getName() + " na liniji " + procCall.getLine(), null);
-//			//RESULT = func.getType();
-//		} 
-//		else {
-//			report_error("Greska na liniji " + procCall.getLine()+" : ime " + func.getName() + " nije funkcija!", null);
-//			//RESULT = Tab.noType;
-//		}     	
-//	}    
-
-//	public void visit(AddExpr addExpr) {
-//		Struct te = addExpr.getExpr().struct;
-//		Struct t = addExpr.getTerm().struct;
-//		if (te.equals(t) && te == Tab.intType)
-//			addExpr.struct = te;
-//		else {
-//			report_error("Greska na liniji "+ addExpr.getLine()+" : nekompatibilni tipovi u izrazu za sabiranje.", null);
-//			addExpr.struct = Tab.noType;
-//		} 
-//	}
-
-//	public void visit(TermExpr termExpr) {
-//		termExpr.struct = termExpr.getTerm().struct;
-//	}
-//
-//	public void visit(Term term) {
-//		term.struct = term.getFactor().struct;    	
-//	}
-//
-//	public void visit(Const cnst){
-//		cnst.struct = Tab.intType;    	
-//	}
-//	
-//	public void visit(Var var) {
-//		var.struct = var.getDesignator().obj.getType();
-//	}
-
-//	public void visit(FuncCall funcCall){
-//		Obj func = funcCall.getDesignator().obj;
-//		if (Obj.Meth == func.getKind()) { 
-//			report_info("Pronadjen poziv funkcije " + func.getName() + " na liniji " + funcCall.getLine(), null);
-//			funcCall.struct = func.getType();
-//		} 
-//		else {
-//			report_error("Greska na liniji " + funcCall.getLine()+" : ime " + func.getName() + " nije funkcija!", null);
-//			funcCall.struct = Tab.noType;
-//		}
-//
-//	}
-
-	
 }
 
