@@ -246,6 +246,30 @@ public class SemanticPass extends VisitorAdaptor {
 		Tab.openScope();
 	}
 	
+	// ---------------------------- Statement --------------------------------------
+	//
+	public void visit(Print pnode)
+	{
+		Struct temp = pnode.getExpr().struct;
+		if(temp!=Tab.charType && temp!=Tab.intType && temp!=boolType)
+		{
+			report_error(error+"Expression is not in valid format to be printed",null);
+			return;
+		}
+		report_info(info+"Print check succesful", null);
+		printCallCount++;
+	}
+	public void visit(Read rnode)
+	{
+		Struct temp = rnode.getDesignator().obj.getType();
+		if((temp.getKind()!=Obj.Var && temp.getKind()!=Obj.Elem) ||
+		   (temp!=Tab.charType && temp!=Tab.intType && temp!=boolType))
+		{
+			report_error(error+"Read statement is not properly called !",null);
+			return;
+		}
+		report_info(info+"Read check succesful", null);
+	}
 	
 	// --------------------------- Designators visits -----------------------------
 	//
@@ -259,7 +283,7 @@ public class SemanticPass extends VisitorAdaptor {
 		}
 		else if(rightExpr.compatibleWith(leftDes.getType()))
 		{
-			report_info("Assignemnt succesful", null);
+			report_info(info+"Assignemnt succesful", null);
 		}
 		else 
 		{
@@ -283,7 +307,7 @@ public class SemanticPass extends VisitorAdaptor {
 		}
 		else
 		{
-			report_info(desIdent+" decremented", dec);
+			report_info(info+desIdent+" decremented", dec);
 		}
 	}
 		
@@ -302,7 +326,7 @@ public class SemanticPass extends VisitorAdaptor {
 		}
 		else
 		{
-			report_info(desIdent+" incremented", incr);
+			report_info(info+desIdent+" incremented", incr);
 		}
 		
 	}
@@ -319,13 +343,13 @@ public class SemanticPass extends VisitorAdaptor {
 		Obj obj = arrDes.getIdent_expr_list().obj;
 		if(arrDes.getExpr().struct!=Tab.intType)
 		{
-			report_error("Expression that is included in sub/add operations is not of type int", null);
+			report_error(error+"Expression that is included in sub/add operations is not of type int", null);
 			arrDes.obj=Tab.noObj;
 			return;
 		}
 		if(obj.getType().getKind()!=Struct.Array)
 		{
-			report_error("Variable is not of type Array", null);
+			report_error(error+"Variable is not of type Array", null);
 			arrDes.obj=Tab.noObj;
 			return;
 		}
@@ -369,7 +393,7 @@ public class SemanticPass extends VisitorAdaptor {
 		if(aexpr.getTerm_list().struct != Tab.intType || aexpr.getTerm().struct!=Tab.intType)
 		{
 			aexpr.struct=Tab.noType;
-			report_error("Expression that is included in sub/add operations is not of type int", aexpr);
+			report_error(error+"Expression that is included in sub/add operations is not of type int", aexpr);
 			return;
 		}
 		aexpr.struct=Tab.intType;
@@ -386,7 +410,7 @@ public class SemanticPass extends VisitorAdaptor {
 		//
 		if(nexpr.getTerm().struct!=Tab.intType)
 		{
-			report_error("You cant negate value that is not int type", null);
+			report_error(error+"You cant negate value that is not int type", null);
 			nexpr.struct=Tab.noType;
 			return;
 		}
@@ -408,7 +432,7 @@ public class SemanticPass extends VisitorAdaptor {
 		if(mf.getFactor().struct!=Tab.intType || mf.getFactor_list().struct!=Tab.intType)
 		{
 			mf.struct=Tab.noType;
-			report_error("Expression that is included in mul operations is not of type int", mf);
+			report_error(error+"Expression that is included in mul operations is not of type int", mf);
 			return;
 		}
 		mf.struct=Tab.intType;

@@ -74,12 +74,12 @@ nonterminal declaration_list, declaration_part;
 nonterminal const_dec, const_decl_list, const_declaration_part, const_to_print;
 nonterminal var_dec, var_list, var_part;
 nonterminal method_dec, main_variables;
-nonterminal statements_list, statement; 
+nonterminal statements_list; 
 nonterminal designator_statement;
 nonterminal add_sub_OP, mull_div_mod_OP, assign;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj prog_id, program, main;
-nonterminal rs.etf.pp1.symboltable.concepts.Obj designator, ident_expr_list;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj statement, designator, ident_expr_list;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct type, expr, term_list, term, factor_list, factor;
 
 
