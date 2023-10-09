@@ -20,6 +20,7 @@
         </endorsedDirs>
     </libraryInfo>
     <libraryInfo home="C:\Users\filip.jankovic\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.5.v20221102-0933" version="17.0.5"/>
+    <libraryInfo home="C:\Users\jf160343d\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_18.0.1.v20220515-1614\jre" version="18.0.1"/>
     <libraryInfo home="C:\Users\filip.jankovic\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.5.v20221102-0933\jre" version="17.0.5"/>
     <libraryInfo home="C:\Program Files (x86)\Java\jre7" version="1.7.0_07">
         <bootpath>

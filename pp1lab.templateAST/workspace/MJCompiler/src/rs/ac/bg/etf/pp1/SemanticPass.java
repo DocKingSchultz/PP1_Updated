@@ -196,7 +196,7 @@ public class SemanticPass extends VisitorAdaptor {
 		{
 			report_error(error + "Variable : " + regularArrayDecl.getId() + " already declared.", regularArrayDecl);
 		}
-	WW}
+	}
 
 	// -------------------------------------- Type extraction --------------------------------------
 	//

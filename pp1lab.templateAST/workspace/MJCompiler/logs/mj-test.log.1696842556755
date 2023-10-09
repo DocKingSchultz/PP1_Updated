@@ -1,242 +1,242 @@
-INFO  11:09:16,758 - Compiling source file: C:\Users\jf160343d\Desktop\Faks\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
-INFO  11:09:16,777 - #2 program
-INFO  11:09:16,777 - #45 test301
-INFO  11:09:16,777 - #7 const
-INFO  11:09:16,779 - #45 int
-INFO  11:09:16,779 - #45 nula
-INFO  11:09:16,779 - #24 =
-INFO  11:09:16,779 - #42 0
-INFO  11:09:16,779 - #34 ;
-INFO  11:09:16,779 - #7 const
-INFO  11:09:16,780 - #45 int
-INFO  11:09:16,780 - #45 jedan
-INFO  11:09:16,780 - #24 =
-INFO  11:09:16,780 - #42 1
-INFO  11:09:16,780 - #34 ;
-INFO  11:09:16,780 - #7 const
-INFO  11:09:16,780 - #45 int
-INFO  11:09:16,781 - #45 pet
-INFO  11:09:16,781 - #24 =
-INFO  11:09:16,781 - #42 5
-INFO  11:09:16,781 - #34 ;
-INFO  11:09:16,838 - #45 int
-INFO  11:09:16,838 - #45 niz
-INFO  11:09:16,838 - #36 [
-INFO  11:09:16,838 - #37 ]
-INFO  11:09:16,838 - #35 ,
-INFO  11:09:16,838 - #45 niz2
-INFO  11:09:16,838 - #36 [
-INFO  11:09:16,838 - #37 ]
-INFO  11:09:16,838 - #35 ,
-INFO  11:09:16,838 - #45 a
-INFO  11:09:16,838 - #35 ,
-INFO  11:09:16,838 - #45 b
-INFO  11:09:16,838 - #34 ;
-INFO  11:09:16,838 - #45 char
-INFO  11:09:16,839 - #45 nizch
-INFO  11:09:16,839 - #36 [
-INFO  11:09:16,839 - #37 ]
-INFO  11:09:16,839 - #34 ;
-INFO  11:09:16,839 - #40 {
-INFO  11:09:16,839 - #6 void
-INFO  11:09:16,839 - #45 main
-INFO  11:09:16,839 - #38 (
-INFO  11:09:16,840 - #39 )
-INFO  11:09:16,840 - #45 int
-INFO  11:09:16,840 - #45 bodovi
-INFO  11:09:16,840 - #34 ;
-INFO  11:09:16,840 - #45 bool
-INFO  11:09:16,840 - #45 br
-INFO  11:09:16,840 - #34 ;
-INFO  11:09:16,840 - #40 {
-INFO  11:09:16,840 - #45 bodovi
-INFO  11:09:16,841 - #24 =
-INFO  11:09:16,841 - #42 0
-INFO  11:09:16,841 - #34 ;
-INFO  11:09:16,842 - #45 bodovi
-INFO  11:09:16,842 - #19 ++
-INFO  11:09:16,842 - #34 ;
-INFO  11:09:16,842 - #45 bodovi
-INFO  11:09:16,843 - #24 =
-INFO  11:09:16,843 - #45 bodovi
-INFO  11:09:16,843 - #17 +
-INFO  11:09:16,843 - #45 jedan
-INFO  11:09:16,843 - #34 ;
-INFO  11:09:16,844 - #45 bodovi
-INFO  11:09:16,844 - #24 =
-INFO  11:09:16,844 - #45 bodovi
-INFO  11:09:16,844 - #21 *
-INFO  11:09:16,844 - #45 pet
-INFO  11:09:16,844 - #34 ;
-INFO  11:09:16,845 - #45 bodovi
-INFO  11:09:16,845 - #20 --
-INFO  11:09:16,845 - #34 ;
-INFO  11:09:16,845 - #3 print
-INFO  11:09:16,845 - #38 (
-INFO  11:09:16,845 - #45 bodovi
-INFO  11:09:16,845 - #39 )
-INFO  11:09:16,845 - #34 ;
-INFO  11:09:16,845 - #45 niz
-INFO  11:09:16,846 - #24 =
-INFO  11:09:16,846 - #8 new
-INFO  11:09:16,846 - #45 int
-INFO  11:09:16,846 - #36 [
-INFO  11:09:16,846 - #42 3
-INFO  11:09:16,846 - #37 ]
-INFO  11:09:16,846 - #34 ;
-INFO  11:09:16,846 - #45 niz
-INFO  11:09:16,846 - #36 [
-INFO  11:09:16,846 - #45 nula
-INFO  11:09:16,846 - #37 ]
-INFO  11:09:16,846 - #24 =
-INFO  11:09:16,846 - #45 jedan
-INFO  11:09:16,846 - #34 ;
-INFO  11:09:16,846 - #45 niz
-INFO  11:09:16,846 - #36 [
-INFO  11:09:16,847 - #42 1
-INFO  11:09:16,847 - #37 ]
-INFO  11:09:16,847 - #24 =
-INFO  11:09:16,847 - #42 2
-INFO  11:09:16,847 - #34 ;
-INFO  11:09:16,847 - #45 niz
-INFO  11:09:16,847 - #36 [
-INFO  11:09:16,847 - #45 niz
-INFO  11:09:16,847 - #36 [
-INFO  11:09:16,847 - #45 jedan
-INFO  11:09:16,847 - #37 ]
-INFO  11:09:16,847 - #37 ]
-INFO  11:09:16,847 - #24 =
-INFO  11:09:16,847 - #45 niz
-INFO  11:09:16,847 - #36 [
-INFO  11:09:16,847 - #45 niz
-INFO  11:09:16,847 - #36 [
-INFO  11:09:16,847 - #42 0
-INFO  11:09:16,847 - #37 ]
-INFO  11:09:16,847 - #37 ]
-INFO  11:09:16,847 - #21 *
-INFO  11:09:16,848 - #42 3
-INFO  11:09:16,848 - #34 ;
-INFO  11:09:16,848 - #45 bodovi
-INFO  11:09:16,848 - #24 =
-INFO  11:09:16,848 - #45 niz
-INFO  11:09:16,848 - #36 [
-INFO  11:09:16,848 - #42 2
-INFO  11:09:16,848 - #37 ]
-INFO  11:09:16,848 - #22 /
-INFO  11:09:16,848 - #45 niz
-INFO  11:09:16,849 - #36 [
-INFO  11:09:16,849 - #42 0
-INFO  11:09:16,849 - #37 ]
-INFO  11:09:16,849 - #34 ;
-INFO  11:09:16,849 - #3 print
-INFO  11:09:16,849 - #38 (
-INFO  11:09:16,849 - #45 bodovi
-INFO  11:09:16,849 - #39 )
-INFO  11:09:16,849 - #34 ;
-INFO  11:09:16,849 - #3 print
-INFO  11:09:16,849 - #38 (
-INFO  11:09:16,849 - #45 niz
-INFO  11:09:16,849 - #36 [
-INFO  11:09:16,849 - #42 2
-INFO  11:09:16,849 - #37 ]
-INFO  11:09:16,849 - #39 )
-INFO  11:09:16,849 - #34 ;
-INFO  11:09:16,850 - #3 print
-INFO  11:09:16,850 - #38 (
-INFO  11:09:16,850 - #45 br
-INFO  11:09:16,850 - #39 )
-INFO  11:09:16,850 - #34 ;
-INFO  11:09:16,851 - #45 nizch
-INFO  11:09:16,851 - #24 =
-INFO  11:09:16,851 - #8 new
-INFO  11:09:16,851 - #45 char
-INFO  11:09:16,851 - #36 [
-INFO  11:09:16,851 - #42 3
-INFO  11:09:16,851 - #37 ]
-INFO  11:09:16,851 - #34 ;
-INFO  11:09:16,851 - #45 nizch
-INFO  11:09:16,851 - #36 [
-INFO  11:09:16,851 - #42 0
-INFO  11:09:16,851 - #37 ]
-INFO  11:09:16,851 - #24 =
-INFO  11:09:16,851 - #43 a
-INFO  11:09:16,851 - #34 ;
-INFO  11:09:16,851 - #45 nizch
-INFO  11:09:16,851 - #36 [
-INFO  11:09:16,852 - #45 jedan
-INFO  11:09:16,852 - #37 ]
-INFO  11:09:16,852 - #24 =
-INFO  11:09:16,852 - #43 b
-INFO  11:09:16,852 - #34 ;
-INFO  11:09:16,852 - #45 nizch
-INFO  11:09:16,852 - #36 [
-INFO  11:09:16,852 - #45 pet
-INFO  11:09:16,852 - #18 -
-INFO  11:09:16,852 - #42 3
-INFO  11:09:16,852 - #37 ]
-INFO  11:09:16,852 - #24 =
-INFO  11:09:16,853 - #43 c
-INFO  11:09:16,853 - #34 ;
-INFO  11:09:16,853 - #3 print
-INFO  11:09:16,853 - #38 (
-INFO  11:09:16,853 - #45 nizch
-INFO  11:09:16,853 - #36 [
-INFO  11:09:16,853 - #42 1
-INFO  11:09:16,853 - #37 ]
-INFO  11:09:16,853 - #39 )
-INFO  11:09:16,853 - #34 ;
-INFO  11:09:16,853 - #3 print
-INFO  11:09:16,853 - #38 (
-INFO  11:09:16,853 - #45 nizch
-INFO  11:09:16,853 - #36 [
-INFO  11:09:16,853 - #45 jedan
-INFO  11:09:16,853 - #21 *
-INFO  11:09:16,853 - #42 2
-INFO  11:09:16,853 - #37 ]
-INFO  11:09:16,853 - #39 )
-INFO  11:09:16,853 - #34 ;
-INFO  11:09:16,853 - #4 read
-INFO  11:09:16,853 - #38 (
-INFO  11:09:16,853 - #45 bodovi
-INFO  11:09:16,853 - #39 )
-INFO  11:09:16,853 - #34 ;
-INFO  11:09:16,853 - #45 bodovi
-INFO  11:09:16,854 - #24 =
-INFO  11:09:16,854 - #18 -
-INFO  11:09:16,854 - #45 bodovi
-INFO  11:09:16,854 - #17 +
-INFO  11:09:16,854 - #38 (
-INFO  11:09:16,854 - #45 pet
-INFO  11:09:16,854 - #21 *
-INFO  11:09:16,854 - #45 a
-INFO  11:09:16,854 - #22 /
-INFO  11:09:16,854 - #42 2
-INFO  11:09:16,854 - #18 -
-INFO  11:09:16,854 - #45 jedan
-INFO  11:09:16,854 - #39 )
-INFO  11:09:16,854 - #21 *
-INFO  11:09:16,854 - #45 bodovi
-INFO  11:09:16,854 - #18 -
-INFO  11:09:16,854 - #38 (
-INFO  11:09:16,854 - #42 3
-INFO  11:09:16,854 - #23 %
-INFO  11:09:16,854 - #42 2
-INFO  11:09:16,855 - #17 +
-INFO  11:09:16,855 - #42 3
-INFO  11:09:16,855 - #21 *
-INFO  11:09:16,855 - #42 2
-INFO  11:09:16,855 - #18 -
-INFO  11:09:16,855 - #42 3
-INFO  11:09:16,855 - #39 )
-INFO  11:09:16,855 - #34 ;
-INFO  11:09:16,855 - #3 print
-INFO  11:09:16,855 - #38 (
-INFO  11:09:16,855 - #45 bodovi
-INFO  11:09:16,855 - #39 )
-INFO  11:09:16,855 - #34 ;
-INFO  11:09:16,855 - #41 }
-INFO  11:09:16,855 - #41 }
-INFO  11:09:16,859 - Program(
+INFO  11:08:20,061 - Compiling source file: C:\Users\jf160343d\Desktop\Faks\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  11:08:20,078 - #2 program
+INFO  11:08:20,079 - #45 test301
+INFO  11:08:20,079 - #7 const
+INFO  11:08:20,080 - #45 int
+INFO  11:08:20,080 - #45 nula
+INFO  11:08:20,080 - #24 =
+INFO  11:08:20,080 - #42 0
+INFO  11:08:20,080 - #34 ;
+INFO  11:08:20,081 - #7 const
+INFO  11:08:20,081 - #45 int
+INFO  11:08:20,081 - #45 jedan
+INFO  11:08:20,081 - #24 =
+INFO  11:08:20,081 - #42 1
+INFO  11:08:20,081 - #34 ;
+INFO  11:08:20,081 - #7 const
+INFO  11:08:20,082 - #45 int
+INFO  11:08:20,082 - #45 pet
+INFO  11:08:20,082 - #24 =
+INFO  11:08:20,082 - #42 5
+INFO  11:08:20,082 - #34 ;
+INFO  11:08:20,082 - #45 int
+INFO  11:08:20,082 - #45 niz
+INFO  11:08:20,082 - #36 [
+INFO  11:08:20,082 - #37 ]
+INFO  11:08:20,082 - #35 ,
+INFO  11:08:20,082 - #45 niz2
+INFO  11:08:20,082 - #36 [
+INFO  11:08:20,082 - #37 ]
+INFO  11:08:20,083 - #35 ,
+INFO  11:08:20,083 - #45 a
+INFO  11:08:20,083 - #35 ,
+INFO  11:08:20,083 - #45 b
+INFO  11:08:20,083 - #34 ;
+INFO  11:08:20,083 - #45 char
+INFO  11:08:20,083 - #45 nizch
+INFO  11:08:20,083 - #36 [
+INFO  11:08:20,083 - #37 ]
+INFO  11:08:20,084 - #34 ;
+INFO  11:08:20,084 - #40 {
+INFO  11:08:20,084 - #6 void
+INFO  11:08:20,084 - #45 main
+INFO  11:08:20,084 - #38 (
+INFO  11:08:20,084 - #39 )
+INFO  11:08:20,084 - #45 int
+INFO  11:08:20,084 - #45 bodovi
+INFO  11:08:20,084 - #34 ;
+INFO  11:08:20,084 - #45 bool
+INFO  11:08:20,085 - #45 br
+INFO  11:08:20,085 - #34 ;
+INFO  11:08:20,085 - #40 {
+INFO  11:08:20,085 - #45 bodovi
+INFO  11:08:20,085 - #24 =
+INFO  11:08:20,086 - #42 0
+INFO  11:08:20,086 - #34 ;
+INFO  11:08:20,087 - #45 bodovi
+INFO  11:08:20,087 - #19 ++
+INFO  11:08:20,087 - #34 ;
+INFO  11:08:20,087 - #45 bodovi
+INFO  11:08:20,087 - #24 =
+INFO  11:08:20,087 - #45 bodovi
+INFO  11:08:20,087 - #17 +
+INFO  11:08:20,087 - #45 jedan
+INFO  11:08:20,088 - #34 ;
+INFO  11:08:20,088 - #45 bodovi
+INFO  11:08:20,088 - #24 =
+INFO  11:08:20,088 - #45 bodovi
+INFO  11:08:20,088 - #21 *
+INFO  11:08:20,088 - #45 pet
+INFO  11:08:20,089 - #34 ;
+INFO  11:08:20,089 - #45 bodovi
+INFO  11:08:20,089 - #20 --
+INFO  11:08:20,089 - #34 ;
+INFO  11:08:20,089 - #3 print
+INFO  11:08:20,089 - #38 (
+INFO  11:08:20,089 - #45 bodovi
+INFO  11:08:20,089 - #39 )
+INFO  11:08:20,090 - #34 ;
+INFO  11:08:20,090 - #45 niz
+INFO  11:08:20,090 - #24 =
+INFO  11:08:20,090 - #8 new
+INFO  11:08:20,090 - #45 int
+INFO  11:08:20,090 - #36 [
+INFO  11:08:20,090 - #42 3
+INFO  11:08:20,090 - #37 ]
+INFO  11:08:20,090 - #34 ;
+INFO  11:08:20,090 - #45 niz
+INFO  11:08:20,090 - #36 [
+INFO  11:08:20,090 - #45 nula
+INFO  11:08:20,090 - #37 ]
+INFO  11:08:20,090 - #24 =
+INFO  11:08:20,090 - #45 jedan
+INFO  11:08:20,090 - #34 ;
+INFO  11:08:20,091 - #45 niz
+INFO  11:08:20,091 - #36 [
+INFO  11:08:20,091 - #42 1
+INFO  11:08:20,091 - #37 ]
+INFO  11:08:20,091 - #24 =
+INFO  11:08:20,091 - #42 2
+INFO  11:08:20,091 - #34 ;
+INFO  11:08:20,091 - #45 niz
+INFO  11:08:20,091 - #36 [
+INFO  11:08:20,091 - #45 niz
+INFO  11:08:20,091 - #36 [
+INFO  11:08:20,091 - #45 jedan
+INFO  11:08:20,091 - #37 ]
+INFO  11:08:20,091 - #37 ]
+INFO  11:08:20,091 - #24 =
+INFO  11:08:20,091 - #45 niz
+INFO  11:08:20,091 - #36 [
+INFO  11:08:20,091 - #45 niz
+INFO  11:08:20,091 - #36 [
+INFO  11:08:20,091 - #42 0
+INFO  11:08:20,091 - #37 ]
+INFO  11:08:20,091 - #37 ]
+INFO  11:08:20,092 - #21 *
+INFO  11:08:20,092 - #42 3
+INFO  11:08:20,092 - #34 ;
+INFO  11:08:20,092 - #45 bodovi
+INFO  11:08:20,092 - #24 =
+INFO  11:08:20,092 - #45 niz
+INFO  11:08:20,092 - #36 [
+INFO  11:08:20,092 - #42 2
+INFO  11:08:20,092 - #37 ]
+INFO  11:08:20,092 - #22 /
+INFO  11:08:20,092 - #45 niz
+INFO  11:08:20,092 - #36 [
+INFO  11:08:20,093 - #42 0
+INFO  11:08:20,093 - #37 ]
+INFO  11:08:20,093 - #34 ;
+INFO  11:08:20,093 - #3 print
+INFO  11:08:20,093 - #38 (
+INFO  11:08:20,093 - #45 bodovi
+INFO  11:08:20,093 - #39 )
+INFO  11:08:20,093 - #34 ;
+INFO  11:08:20,093 - #3 print
+INFO  11:08:20,093 - #38 (
+INFO  11:08:20,093 - #45 niz
+INFO  11:08:20,093 - #36 [
+INFO  11:08:20,093 - #42 2
+INFO  11:08:20,093 - #37 ]
+INFO  11:08:20,093 - #39 )
+INFO  11:08:20,093 - #34 ;
+INFO  11:08:20,093 - #3 print
+INFO  11:08:20,093 - #38 (
+INFO  11:08:20,093 - #45 br
+INFO  11:08:20,093 - #39 )
+INFO  11:08:20,093 - #34 ;
+INFO  11:08:20,094 - #45 nizch
+INFO  11:08:20,094 - #24 =
+INFO  11:08:20,094 - #8 new
+INFO  11:08:20,094 - #45 char
+INFO  11:08:20,094 - #36 [
+INFO  11:08:20,094 - #42 3
+INFO  11:08:20,094 - #37 ]
+INFO  11:08:20,094 - #34 ;
+INFO  11:08:20,094 - #45 nizch
+INFO  11:08:20,094 - #36 [
+INFO  11:08:20,094 - #42 0
+INFO  11:08:20,094 - #37 ]
+INFO  11:08:20,094 - #24 =
+INFO  11:08:20,094 - #43 a
+INFO  11:08:20,094 - #34 ;
+INFO  11:08:20,094 - #45 nizch
+INFO  11:08:20,094 - #36 [
+INFO  11:08:20,094 - #45 jedan
+INFO  11:08:20,094 - #37 ]
+INFO  11:08:20,094 - #24 =
+INFO  11:08:20,095 - #43 b
+INFO  11:08:20,095 - #34 ;
+INFO  11:08:20,095 - #45 nizch
+INFO  11:08:20,095 - #36 [
+INFO  11:08:20,095 - #45 pet
+INFO  11:08:20,095 - #18 -
+INFO  11:08:20,095 - #42 3
+INFO  11:08:20,095 - #37 ]
+INFO  11:08:20,095 - #24 =
+INFO  11:08:20,095 - #43 c
+INFO  11:08:20,096 - #34 ;
+INFO  11:08:20,096 - #3 print
+INFO  11:08:20,096 - #38 (
+INFO  11:08:20,096 - #45 nizch
+INFO  11:08:20,096 - #36 [
+INFO  11:08:20,096 - #42 1
+INFO  11:08:20,096 - #37 ]
+INFO  11:08:20,096 - #39 )
+INFO  11:08:20,096 - #34 ;
+INFO  11:08:20,096 - #3 print
+INFO  11:08:20,096 - #38 (
+INFO  11:08:20,096 - #45 nizch
+INFO  11:08:20,096 - #36 [
+INFO  11:08:20,096 - #45 jedan
+INFO  11:08:20,096 - #21 *
+INFO  11:08:20,096 - #42 2
+INFO  11:08:20,096 - #37 ]
+INFO  11:08:20,096 - #39 )
+INFO  11:08:20,096 - #34 ;
+INFO  11:08:20,096 - #4 read
+INFO  11:08:20,096 - #38 (
+INFO  11:08:20,096 - #45 bodovi
+INFO  11:08:20,096 - #39 )
+INFO  11:08:20,096 - #34 ;
+INFO  11:08:20,096 - #45 bodovi
+INFO  11:08:20,097 - #24 =
+INFO  11:08:20,097 - #18 -
+INFO  11:08:20,097 - #45 bodovi
+INFO  11:08:20,097 - #17 +
+INFO  11:08:20,097 - #38 (
+INFO  11:08:20,097 - #45 pet
+INFO  11:08:20,097 - #21 *
+INFO  11:08:20,097 - #45 a
+INFO  11:08:20,097 - #22 /
+INFO  11:08:20,097 - #42 2
+INFO  11:08:20,097 - #18 -
+INFO  11:08:20,097 - #45 jedan
+INFO  11:08:20,097 - #39 )
+INFO  11:08:20,097 - #21 *
+INFO  11:08:20,097 - #45 bodovi
+INFO  11:08:20,097 - #18 -
+INFO  11:08:20,097 - #38 (
+INFO  11:08:20,097 - #42 3
+INFO  11:08:20,097 - #23 %
+INFO  11:08:20,097 - #42 2
+INFO  11:08:20,098 - #17 +
+INFO  11:08:20,098 - #42 3
+INFO  11:08:20,098 - #21 *
+INFO  11:08:20,098 - #42 2
+INFO  11:08:20,098 - #18 -
+INFO  11:08:20,098 - #42 3
+INFO  11:08:20,098 - #39 )
+INFO  11:08:20,098 - #34 ;
+INFO  11:08:20,098 - #3 print
+INFO  11:08:20,098 - #38 (
+INFO  11:08:20,098 - #45 bodovi
+INFO  11:08:20,098 - #39 )
+INFO  11:08:20,098 - #34 ;
+INFO  11:08:20,098 - #41 }
+INFO  11:08:20,098 - #41 }
+INFO  11:08:20,101 - Program(
   Prog_id(
    test301
   ) [Prog_id]
@@ -1276,74 +1276,6 @@ INFO  11:09:16,859 - Program(
     ) [Statements]
   ) [MainMethod]
 ) [Program]
-INFO  11:09:16,865 - [info] Declared global constant nula. at line : 3.
-INFO  11:09:16,865 - [info] Declared global constant jedan. at line : 4.
-INFO  11:09:16,865 - [info] Declared global constant pet. at line : 5.
-INFO  11:09:16,865 - [info] Variable niz has been declared. at line : 7.
-INFO  11:09:16,866 - [info] Variable niz2 has been declared. at line : 7.
-INFO  11:09:16,866 - [info] Variable a has been declared. at line : 7.
-INFO  11:09:16,866 - [info] Variable b has been declared. at line : 7.
-INFO  11:09:16,866 - [info] Variable nizch has been declared. at line : 8.
-INFO  11:09:16,866 - [info] Main :  at line : 11.
-INFO  11:09:16,866 - [info] Variable bodovi has been declared. at line : 12.
-INFO  11:09:16,866 - [info] Variable br has been declared. at line : 13.
-INFO  11:09:16,866 - [info] Local use of variable bodovi..
-INFO  11:09:16,866 - Assignemnt succesful.
-INFO  11:09:16,866 - [info] Local use of variable bodovi..
-INFO  11:09:16,866 - bodovi incremented at line : 16.
-INFO  11:09:16,866 - [info] Local use of variable bodovi..
-INFO  11:09:16,866 - [info] Local use of variable bodovi..
-INFO  11:09:16,866 - [info] Global use of variable jedan..
-INFO  11:09:16,866 - Assignemnt succesful.
-INFO  11:09:16,866 - [info] Local use of variable bodovi..
-INFO  11:09:16,866 - [info] Local use of variable bodovi..
-INFO  11:09:16,866 - [info] Global use of variable pet..
-INFO  11:09:16,866 - Assignemnt succesful.
-INFO  11:09:16,866 - [info] Local use of variable bodovi..
-INFO  11:09:16,866 - bodovi decremented at line : 19.
-INFO  11:09:16,866 - [info] Local use of variable bodovi..
-INFO  11:09:16,866 - [info] Global use of variable niz..
-INFO  11:09:16,867 - Assignemnt succesful.
-INFO  11:09:16,867 - [info] Global use of variable niz..
-INFO  11:09:16,867 - [info] Global use of variable nula..
-INFO  11:09:16,867 - [info] Global use of variable jedan..
-INFO  11:09:16,867 - Assignemnt succesful.
-INFO  11:09:16,867 - [info] Global use of variable niz..
-INFO  11:09:16,867 - Assignemnt succesful.
-INFO  11:09:16,867 - [info] Global use of variable niz..
-INFO  11:09:16,867 - [info] Global use of variable niz..
-INFO  11:09:16,867 - [info] Global use of variable jedan..
-INFO  11:09:16,867 - [info] Global use of variable niz..
-INFO  11:09:16,867 - [info] Global use of variable niz..
-INFO  11:09:16,867 - Assignemnt succesful.
-INFO  11:09:16,867 - [info] Local use of variable bodovi..
-INFO  11:09:16,867 - [info] Global use of variable niz..
-INFO  11:09:16,867 - [info] Global use of variable niz..
-INFO  11:09:16,867 - Assignemnt succesful.
-INFO  11:09:16,867 - [info] Local use of variable bodovi..
-INFO  11:09:16,867 - [info] Global use of variable niz..
-INFO  11:09:16,867 - [info] Local use of variable br..
-INFO  11:09:16,867 - [info] Global use of variable nizch..
-INFO  11:09:16,867 - Assignemnt succesful.
-INFO  11:09:16,867 - [info] Global use of variable nizch..
-INFO  11:09:16,867 - Assignemnt succesful.
-INFO  11:09:16,867 - [info] Global use of variable nizch..
-INFO  11:09:16,867 - [info] Global use of variable jedan..
-INFO  11:09:16,867 - Assignemnt succesful.
-INFO  11:09:16,867 - [info] Global use of variable nizch..
-INFO  11:09:16,867 - [info] Global use of variable pet..
-INFO  11:09:16,867 - Assignemnt succesful.
-INFO  11:09:16,868 - [info] Global use of variable nizch..
-INFO  11:09:16,868 - [info] Global use of variable nizch..
-INFO  11:09:16,868 - [info] Global use of variable jedan..
-INFO  11:09:16,868 - [info] Local use of variable bodovi..
-INFO  11:09:16,868 - [info] Local use of variable bodovi..
-INFO  11:09:16,868 - [info] Local use of variable bodovi..
-INFO  11:09:16,868 - [info] Global use of variable pet..
-INFO  11:09:16,868 - [info] Global use of variable a..
-INFO  11:09:16,868 - [info] Global use of variable jedan..
-INFO  11:09:16,868 - [info] Local use of variable bodovi..
-INFO  11:09:16,868 - Assignemnt succesful.
-INFO  11:09:16,868 - [info] Local use of variable bodovi..
-INFO  11:09:16,868 - Print calls = 0
-INFO  11:09:16,868 - Generating bytecode file: C:\Users\jf160343d\Desktop\Faks\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  11:08:20,107 - [info] Declared global constant nula. at line : 3.
+INFO  11:08:20,108 - [info] Declared global constant jedan. at line : 4.
+INFO  11:08:20,108 - [info] Declared global constant pet. at line : 5.
