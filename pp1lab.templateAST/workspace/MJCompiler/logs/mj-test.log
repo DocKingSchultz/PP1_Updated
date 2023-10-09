@@ -1,20 +1,20 @@
-INFO  16:09:49,088 - Compiling source file: C:\Users\filip.jankovic\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
-INFO  16:09:49,104 - #2 program
-INFO  16:09:49,104 - #45 test301
-INFO  16:09:49,104 - #40 {
-INFO  16:09:49,104 - #6 void
-INFO  16:09:49,104 - #45 main
-INFO  16:09:49,105 - #38 (
-INFO  16:09:49,105 - #39 )
-INFO  16:09:49,105 - #40 {
-INFO  16:09:49,105 - #3 print
-INFO  16:09:49,105 - #38 (
-INFO  16:09:49,105 - #42 5
-INFO  16:09:49,105 - #39 )
-INFO  16:09:49,108 - #34 ;
-INFO  16:09:49,108 - #41 }
-INFO  16:09:49,108 - #41 }
-INFO  16:09:49,110 - Program(
+INFO  16:19:58,617 - Compiling source file: C:\Users\filip.jankovic\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  16:19:58,631 - #2 program
+INFO  16:19:58,631 - #45 test301
+INFO  16:19:58,631 - #40 {
+INFO  16:19:58,632 - #6 void
+INFO  16:19:58,632 - #45 main
+INFO  16:19:58,632 - #38 (
+INFO  16:19:58,632 - #39 )
+INFO  16:19:58,632 - #40 {
+INFO  16:19:58,633 - #3 print
+INFO  16:19:58,633 - #38 (
+INFO  16:19:58,633 - #42 5
+INFO  16:19:58,633 - #39 )
+INFO  16:19:58,635 - #34 ;
+INFO  16:19:58,635 - #41 }
+INFO  16:19:58,635 - #41 }
+INFO  16:19:58,636 - Program(
   Prog_id(
    test301
   ) [Prog_id]
@@ -47,7 +47,8 @@ INFO  16:09:49,110 - Program(
     ) [Statements]
   ) [MainMethod]
 ) [Program]
-INFO  16:09:49,115 - [info] Main :  at line : 11.
-INFO  16:09:49,115 - [info] Print check succesful.
-INFO  16:09:49,115 - Print calls = 1
-INFO  16:09:49,115 - Generating bytecode file: C:\Users\filip.jankovic\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  16:19:58,640 - [info] Main :  at line : 11.
+INFO  16:19:58,640 - [info] Print check succesful.
+INFO  16:19:58,640 - Print calls = 1
+INFO  16:19:58,641 - Generating bytecode file: C:\Users\filip.jankovic\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  16:19:58,642 - Parsiranje uspesno zavrseno!

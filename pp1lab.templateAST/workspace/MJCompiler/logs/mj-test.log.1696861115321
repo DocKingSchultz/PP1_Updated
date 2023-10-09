@@ -1,0 +1,53 @@
+INFO  16:17:40,102 - Compiling source file: C:\Users\filip.jankovic\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  16:17:40,118 - #2 program
+INFO  16:17:40,118 - #45 test301
+INFO  16:17:40,118 - #40 {
+INFO  16:17:40,119 - #6 void
+INFO  16:17:40,119 - #45 main
+INFO  16:17:40,119 - #38 (
+INFO  16:17:40,119 - #39 )
+INFO  16:17:40,119 - #40 {
+INFO  16:17:40,119 - #3 print
+INFO  16:17:40,120 - #38 (
+INFO  16:17:40,120 - #42 5
+INFO  16:17:40,120 - #39 )
+INFO  16:17:40,121 - #34 ;
+INFO  16:17:40,121 - #41 }
+INFO  16:17:40,122 - #41 }
+INFO  16:17:40,124 - Program(
+  Prog_id(
+   test301
+  ) [Prog_id]
+  NoDeclarations(
+  ) [NoDeclarations]
+  MainMethod(
+    MainIdent(
+     main
+    ) [MainIdent]
+    NoMainVariables(
+    ) [NoMainVariables]
+    Statements(
+      NoStatements(
+      ) [NoStatements]
+      Print(
+        Expr(
+          TermExpr(
+            Term(
+              SimpleFactor(
+                IntRef(
+                 5
+                ) [IntRef]
+              ) [SimpleFactor]
+            ) [Term]
+          ) [TermExpr]
+        ) [Expr]
+        NoConstToPrint(
+        ) [NoConstToPrint]
+      ) [Print]
+    ) [Statements]
+  ) [MainMethod]
+) [Program]
+INFO  16:17:40,129 - [info] Main :  at line : 11.
+INFO  16:17:40,130 - [info] Print check succesful.
+INFO  16:17:40,130 - Print calls = 1
+INFO  16:17:40,131 - Generating bytecode file: C:\Users\filip.jankovic\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
