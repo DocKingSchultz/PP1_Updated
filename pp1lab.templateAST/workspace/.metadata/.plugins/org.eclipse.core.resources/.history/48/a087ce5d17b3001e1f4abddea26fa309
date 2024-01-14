@@ -1,0 +1,23 @@
+// Test301
+
+program test301
+
+namespace Konstante{
+	const int nula = 0;
+	int b = 10;
+	
+	{}
+}
+
+	int a;
+	
+{
+	void main()	
+		char nula;
+		int rez;
+	{
+		rez=Konstante::nula+6;
+	}
+}
+
+

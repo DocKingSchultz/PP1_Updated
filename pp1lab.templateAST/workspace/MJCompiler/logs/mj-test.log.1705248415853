@@ -1,0 +1,28 @@
+INFO  17:02:05,415 - Compiling source file: C:\Users\filip.jankovic\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  17:02:05,449 - #2 program
+INFO  17:02:05,449 - #43 test301
+INFO  17:02:05,449 - #5 namespace
+INFO  17:02:05,454 - #43 Konstante
+INFO  17:02:05,454 - #38 {
+INFO  17:02:05,454 - #8 const
+INFO  17:02:05,456 - #43 int
+INFO  17:02:05,456 - #43 nula
+INFO  17:02:05,457 - #22 =
+INFO  17:02:05,457 - #40 0
+INFO  17:02:05,457 - #32 ;
+INFO  17:02:05,457 - #8 const
+INFO  17:02:05,460 - #43 int
+INFO  17:02:05,461 - #43 jedan
+INFO  17:02:05,461 - #22 =
+INFO  17:02:05,462 - #40 1
+INFO  17:02:05,462 - #32 ;
+INFO  17:02:05,462 - #8 const
+INFO  17:02:05,462 - #43 int
+INFO  17:02:05,462 - #43 pet
+INFO  17:02:05,463 - #22 =
+INFO  17:02:05,463 - #40 5
+INFO  17:02:05,463 - #32 ;
+INFO  17:02:05,463 - #38 {
+ERROR 17:02:05,463 - 
+Sintaksna greska na liniji 10
+ERROR 17:02:05,464 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 10

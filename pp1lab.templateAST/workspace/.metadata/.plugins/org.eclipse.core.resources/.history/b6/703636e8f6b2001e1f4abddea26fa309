@@ -1,0 +1,58 @@
+// generated with ast extension for cup
+// version 0.8
+// 14/0/2024 17:6:35
+
+
+package rs.ac.bg.etf.pp1.ast;
+
+public class VarDeclarations extends Declaration_part {
+
+    private Var_dec var_dec;
+
+    public VarDeclarations (Var_dec var_dec) {
+        this.var_dec=var_dec;
+        if(var_dec!=null) var_dec.setParent(this);
+    }
+
+    public Var_dec getVar_dec() {
+        return var_dec;
+    }
+
+    public void setVar_dec(Var_dec var_dec) {
+        this.var_dec=var_dec;
+    }
+
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
+
+    public void childrenAccept(Visitor visitor) {
+        if(var_dec!=null) var_dec.accept(visitor);
+    }
+
+    public void traverseTopDown(Visitor visitor) {
+        accept(visitor);
+        if(var_dec!=null) var_dec.traverseTopDown(visitor);
+    }
+
+    public void traverseBottomUp(Visitor visitor) {
+        if(var_dec!=null) var_dec.traverseBottomUp(visitor);
+        accept(visitor);
+    }
+
+    public String toString(String tab) {
+        StringBuffer buffer=new StringBuffer();
+        buffer.append(tab);
+        buffer.append("VarDeclarations(\n");
+
+        if(var_dec!=null)
+            buffer.append(var_dec.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        buffer.append(tab);
+        buffer.append(") [VarDeclarations]");
+        return buffer.toString();
+    }
+}

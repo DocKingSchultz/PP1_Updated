@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 10/9/2023 13:15:9
+// 14/0/2024 17:6:47
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -12,12 +12,15 @@ public class Program implements SyntaxNode {
     public rs.etf.pp1.symboltable.concepts.Obj obj = null;
 
     private Prog_id prog_id;
+    private Namespace_list namespace_list;
     private Declaration_list declaration_list;
     private Method_dec method_dec;
 
-    public Program (Prog_id prog_id, Declaration_list declaration_list, Method_dec method_dec) {
+    public Program (Prog_id prog_id, Namespace_list namespace_list, Declaration_list declaration_list, Method_dec method_dec) {
         this.prog_id=prog_id;
         if(prog_id!=null) prog_id.setParent(this);
+        this.namespace_list=namespace_list;
+        if(namespace_list!=null) namespace_list.setParent(this);
         this.declaration_list=declaration_list;
         if(declaration_list!=null) declaration_list.setParent(this);
         this.method_dec=method_dec;
@@ -30,6 +33,14 @@ public class Program implements SyntaxNode {
 
     public void setProg_id(Prog_id prog_id) {
         this.prog_id=prog_id;
+    }
+
+    public Namespace_list getNamespace_list() {
+        return namespace_list;
+    }
+
+    public void setNamespace_list(Namespace_list namespace_list) {
+        this.namespace_list=namespace_list;
     }
 
     public Declaration_list getDeclaration_list() {
@@ -70,6 +81,7 @@ public class Program implements SyntaxNode {
 
     public void childrenAccept(Visitor visitor) {
         if(prog_id!=null) prog_id.accept(visitor);
+        if(namespace_list!=null) namespace_list.accept(visitor);
         if(declaration_list!=null) declaration_list.accept(visitor);
         if(method_dec!=null) method_dec.accept(visitor);
     }
@@ -77,12 +89,14 @@ public class Program implements SyntaxNode {
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
         if(prog_id!=null) prog_id.traverseTopDown(visitor);
+        if(namespace_list!=null) namespace_list.traverseTopDown(visitor);
         if(declaration_list!=null) declaration_list.traverseTopDown(visitor);
         if(method_dec!=null) method_dec.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(prog_id!=null) prog_id.traverseBottomUp(visitor);
+        if(namespace_list!=null) namespace_list.traverseBottomUp(visitor);
         if(declaration_list!=null) declaration_list.traverseBottomUp(visitor);
         if(method_dec!=null) method_dec.traverseBottomUp(visitor);
         accept(visitor);
@@ -95,6 +109,12 @@ public class Program implements SyntaxNode {
 
         if(prog_id!=null)
             buffer.append(prog_id.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        if(namespace_list!=null)
+            buffer.append(namespace_list.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

@@ -1,0 +1,43 @@
+INFO  16:56:29,250 - Compiling source file: C:\Users\filip.jankovic\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  16:56:29,284 - #2 program
+INFO  16:56:29,284 - #43 test301
+INFO  16:56:29,284 - #8 const
+INFO  16:56:29,285 - #43 int
+INFO  16:56:29,285 - #43 nula
+INFO  16:56:29,286 - #22 =
+INFO  16:56:29,286 - #40 0
+INFO  16:56:29,286 - #32 ;
+INFO  16:56:29,286 - #8 const
+INFO  16:56:29,289 - #43 int
+INFO  16:56:29,291 - #43 jedan
+INFO  16:56:29,291 - #22 =
+INFO  16:56:29,292 - #40 1
+INFO  16:56:29,292 - #32 ;
+INFO  16:56:29,292 - #8 const
+INFO  16:56:29,292 - #43 int
+INFO  16:56:29,292 - #43 pet
+INFO  16:56:29,292 - #22 =
+INFO  16:56:29,292 - #40 5
+INFO  16:56:29,292 - #32 ;
+INFO  16:56:29,294 - #43 int
+INFO  16:56:29,294 - #43 niz
+INFO  16:56:29,294 - #34 [
+INFO  16:56:29,296 - #35 ]
+INFO  16:56:29,296 - #33 ,
+INFO  16:56:29,296 - #43 niz2
+INFO  16:56:29,296 - #34 [
+INFO  16:56:29,296 - #35 ]
+INFO  16:56:29,296 - #33 ,
+INFO  16:56:29,296 - #43 a
+INFO  16:56:29,296 - #33 ,
+INFO  16:56:29,297 - #43 b
+INFO  16:56:29,297 - #32 ;
+INFO  16:56:29,297 - #43 char
+INFO  16:56:29,298 - #43 nizch
+INFO  16:56:29,299 - #34 [
+INFO  16:56:29,299 - #35 ]
+INFO  16:56:29,299 - #32 ;
+INFO  16:56:29,299 - #5 namespace
+ERROR 16:56:29,299 - 
+Sintaksna greska na liniji 11
+ERROR 16:56:29,299 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 11

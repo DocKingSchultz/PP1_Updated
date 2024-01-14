@@ -1,0 +1,171 @@
+INFO  20:41:02,300 - Compiling source file: C:\Users\filip.jankovic\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  20:41:02,318 - #2 program
+INFO  20:41:02,318 - #43 test301
+INFO  20:41:02,318 - #5 namespace
+INFO  20:41:02,319 - #43 Konstante
+INFO  20:41:02,319 - #38 {
+INFO  20:41:02,319 - #8 const
+INFO  20:41:02,319 - #43 int
+INFO  20:41:02,319 - #43 nula
+INFO  20:41:02,320 - #22 =
+INFO  20:41:02,320 - #40 0
+INFO  20:41:02,320 - #32 ;
+INFO  20:41:02,320 - #38 {
+INFO  20:41:02,321 - #39 }
+INFO  20:41:02,321 - #39 }
+INFO  20:41:02,321 - #43 int
+INFO  20:41:02,321 - #43 a
+INFO  20:41:02,321 - #32 ;
+INFO  20:41:02,322 - #38 {
+INFO  20:41:02,322 - #7 void
+INFO  20:41:02,322 - #43 main
+INFO  20:41:02,322 - #36 (
+INFO  20:41:02,322 - #37 )
+INFO  20:41:02,322 - #43 char
+INFO  20:41:02,323 - #43 nula
+INFO  20:41:02,323 - #32 ;
+INFO  20:41:02,323 - #43 int
+INFO  20:41:02,323 - #43 rez
+INFO  20:41:02,323 - #32 ;
+INFO  20:41:02,323 - #38 {
+INFO  20:41:02,323 - #43 rez
+INFO  20:41:02,323 - #22 =
+INFO  20:41:02,325 - #43 Konstante
+INFO  20:41:02,325 - #14 ::
+INFO  20:41:02,325 - #43 nula
+INFO  20:41:02,325 - #15 +
+INFO  20:41:02,325 - #40 6
+INFO  20:41:02,326 - #32 ;
+INFO  20:41:02,327 - #39 }
+INFO  20:41:02,327 - #39 }
+INFO  20:41:02,328 - Program(
+  Prog_id(
+   test301
+  ) [Prog_id]
+  Namespaces(
+    NoNamespace(
+    ) [NoNamespace]
+    Namespace(
+      NamespaceName(
+       Konstante
+      ) [NamespaceName]
+      NamespaceDeclarations(
+        Declarations(
+          NoDeclarations(
+          ) [NoDeclarations]
+          ConstDeclarations(
+            Const_dec(
+              Type(
+               int
+              ) [Type]
+              SingleConstDeclarationPart(
+                ConstIdInt(
+                 nula
+                 0
+                ) [ConstIdInt]
+              ) [SingleConstDeclarationPart]
+            ) [Const_dec]
+          ) [ConstDeclarations]
+        ) [Declarations]
+      ) [NamespaceDeclarations]
+    ) [Namespace]
+  ) [Namespaces]
+  Declarations(
+    NoDeclarations(
+    ) [NoDeclarations]
+    VarDeclarations(
+      Var_dec(
+        Type(
+         int
+        ) [Type]
+        SingleVarIdList(
+          VarId(
+           a
+          ) [VarId]
+        ) [SingleVarIdList]
+      ) [Var_dec]
+    ) [VarDeclarations]
+  ) [Declarations]
+  MainMethod(
+    MainIdent(
+     main
+    ) [MainIdent]
+    MainVariables(
+      MainVariables(
+        NoMainVariables(
+        ) [NoMainVariables]
+        Var_dec(
+          Type(
+           char
+          ) [Type]
+          SingleVarIdList(
+            VarId(
+             nula
+            ) [VarId]
+          ) [SingleVarIdList]
+        ) [Var_dec]
+      ) [MainVariables]
+      Var_dec(
+        Type(
+         int
+        ) [Type]
+        SingleVarIdList(
+          VarId(
+           rez
+          ) [VarId]
+        ) [SingleVarIdList]
+      ) [Var_dec]
+    ) [MainVariables]
+    Statements(
+      NoStatements(
+      ) [NoStatements]
+      DesignatorStatement(
+        Assignment(
+          Designator(
+            NoNamespaceDeisgnator(
+              SimpleDesignator(
+               rez
+              ) [SimpleDesignator]
+            ) [NoNamespaceDeisgnator]
+          ) [Designator]
+          Expr(
+            AddExpr(
+              TermExpr(
+                Term(
+                  SimpleFactor(
+                    VarRef(
+                      Designator(
+                        NamespaceDesignator(
+                         Konstante
+                          SimpleDesignator(
+                           nula
+                          ) [SimpleDesignator]
+                        ) [NamespaceDesignator]
+                      ) [Designator]
+                    ) [VarRef]
+                  ) [SimpleFactor]
+                ) [Term]
+              ) [TermExpr]
+              PlusOP(
+              ) [PlusOP]
+              Term(
+                SimpleFactor(
+                  IntRef(
+                   6
+                  ) [IntRef]
+                ) [SimpleFactor]
+              ) [Term]
+            ) [AddExpr]
+          ) [Expr]
+        ) [Assignment]
+      ) [DesignatorStatement]
+    ) [Statements]
+  ) [MainMethod]
+) [Program]
+INFO  20:41:02,333 - [info] Declared global constant nula. at line : 6.
+INFO  20:41:02,333 - [info] Variable a has been declared. at line : 12.
+INFO  20:41:02,333 - [info] Main :  at line : 15.
+INFO  20:41:02,333 - [info] Variable nula has been declared. at line : 16.
+INFO  20:41:02,333 - [info] Variable rez has been declared. at line : 17.
+INFO  20:41:02,333 - Ime dobro prosledjeno + rez at line : 19.
+INFO  20:41:02,333 - Ime dobro prosledjeno + Konstante::nula at line : 19.

@@ -19,8 +19,8 @@ public class CodeGenerator extends VisitorAdaptor {
 	
 	@Override
 	public void visit(MainMethod method_dec) {
-		mainPc = Code.pc;
-		method_dec.obj.setAdr(Code.pc);
+//		mainPc = Code.pc;
+//		method_dec.obj.setAdr(Code.pc);
 		
 //		// Collect arguments and local variables.
 //		SyntaxNode methodNode = MethodTypeName.getParent();

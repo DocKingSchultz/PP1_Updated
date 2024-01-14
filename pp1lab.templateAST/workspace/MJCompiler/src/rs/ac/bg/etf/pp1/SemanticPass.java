@@ -1,4 +1,6 @@
 package rs.ac.bg.etf.pp1;
+import javax.management.openmbean.OpenMBeanConstructorInfo;
+
 import org.apache.log4j.Logger;
 
 import rs.ac.bg.etf.pp1.ast.*;
@@ -10,6 +12,7 @@ public class SemanticPass extends VisitorAdaptor {
 
 	boolean errorDetected = false;
 	int printCallCount = 0;
+	String currNamespace = "";
 	Obj currentMethod = null;
 	boolean returnFound = false;
 	boolean main_defined = false;
@@ -75,23 +78,64 @@ public class SemanticPass extends VisitorAdaptor {
 			report_error(error+"Main not defined.", program);
 		}
 	}
-
+	// -------------------------------------- Namespace --------------------------------------
+	//
+	public void visit(Namespace n)
+	{
+		currNamespace="";
+		Tab.closeScope();
+	}
+	public void visit(NamespaceName n)
+	{
+		String name = n.getId();
+		Obj res = Tab.find(name);
+		if(res!=Tab.noObj)
+		{
+			report_error(error + "Namespace :" + name + " already existing ", n);
+		}
+		// We put for namespaces type Fld, as we are not gonna use
+		// field type, as we got no classed
+		//
+		Tab.insert(Obj.Fld, name, new Struct(Struct.None));
+		currNamespace=name;
+		Tab.openScope();
+		
+	}
+	public String checkIfVariableAlreadyDeclared(String varName)
+	{
+		Obj res;
+		String namespaceTag = currNamespace!=""?currNamespace+".":"";
+		res = Tab.find(namespaceTag + varName);	
+		// Check if var is already declared in the symbol table
+		//
+		if(res!=Tab.noObj)
+		{
+			// Type match check :
+			//
+			return namespaceTag+varName;	
+		}
+		else
+		{
+			return "not_existing";
+		}
+	}
+	
 	
 	// -------------------------------------- Constants --------------------------------------
 	//
 	public void visit(ConstIdInt constGDecl) 
 	{
-		Obj res = Tab.find(constGDecl.getId());
+		String res = checkIfVariableAlreadyDeclared(constGDecl.getId());
 		// Check if var is already declared in the symbol table
 		//
-		if(res==Tab.noObj)
+		if(res=="not_existing")
 		{
 			// Type match check :
 			//
 			if(lastType.getKind()==Struct.Int)
 			{
-				report_info(info + "Declared global constant "+ constGDecl.getId()+".", constGDecl);
-				Obj constNode = Tab.insert(Obj.Con, constGDecl.getId(), lastType);
+				report_info(info + "Declared global constant "+ res+".", constGDecl);
+				Obj constNode = Tab.insert(Obj.Con, res, lastType);
 				constNode.setAdr(constGDecl.getValue());
 			}
 			else
@@ -107,17 +151,17 @@ public class SemanticPass extends VisitorAdaptor {
 	}
 	public void visit(ConstIdChar constGDecl) 
 	{
-		Obj res = Tab.find(constGDecl.getId());
+		String res = checkIfVariableAlreadyDeclared(constGDecl.getId());
 		// Check if var is already declared in the symbol table
 		//
-		if(res==Tab.noObj)
+		if(res=="not_existing")
 		{
 			// Type match check :
 			//
 			if(lastType.getKind()==Struct.Char)
 			{
 				report_info(info + "Declared global constant "+ constGDecl.getId()+".", constGDecl);
-				Obj constNode = Tab.insert(Obj.Con, constGDecl.getId(), lastType);
+				Obj constNode = Tab.insert(Obj.Con, res, lastType);
 				constNode.setAdr(constGDecl.getValue());
 			}
 			else
@@ -133,10 +177,10 @@ public class SemanticPass extends VisitorAdaptor {
 	}
 	public void visit(ConstIdBool constGDecl) 
 	{
-		Obj res = Tab.find(constGDecl.getId());
+		String res = checkIfVariableAlreadyDeclared(constGDecl.getId());
 		// Check if var is already declared in the symbol table
 		//
-		if(res==Tab.noObj)
+		if(res=="not_existing")
 		{
 			// Type match check :
 			// [*] Bool type needs to be created somehow
@@ -144,7 +188,7 @@ public class SemanticPass extends VisitorAdaptor {
 			if(lastType.getKind()==Struct.Bool)
 			{
 				report_info(info + "Declared global constant."+ constGDecl.getId(), constGDecl);
-				Obj constNode = Tab.insert(Obj.Con, constGDecl.getId(), lastType);
+				Obj constNode = Tab.insert(Obj.Con, res, lastType);
 				//constNode.setAdr(constGDecl.getValue());
 			}
 			else
@@ -162,39 +206,39 @@ public class SemanticPass extends VisitorAdaptor {
 	// -------------------------------------- Regular variables --------------------------------------
 	//
 	public void visit(VarId regularVarDecl) {
-		Obj res = Tab.currentScope.findSymbol(regularVarDecl.getId());
+		String res = checkIfVariableAlreadyDeclared(regularVarDecl.getId());	
 		// Check if var is already declared in the symbol table
 		//
-		if(res==null)
+		if(res!="not_existing")
 		{
 			// Type match check :
 			//
-			report_info(info + "Variable "+ regularVarDecl.getId()+" has been declared.", regularVarDecl);
-			Obj varNode = Tab.insert(Obj.Var, regularVarDecl.getId(), lastType);
+			
+			report_info(info + "Variable "+ res+" has been declared.", regularVarDecl);
+			Obj varNode = Tab.insert(Obj.Var, res, lastType);
 			
 		}
 		else
 		{
-			report_error(error + "Variable : " + regularVarDecl.getId() + " already declared.", regularVarDecl);
+			report_error(error + "Variable : " + res + " already declared.", regularVarDecl);
 		}
 
 	}
 	
 	public void visit(VarOrArrayId regularArrayDecl) 
 	{
-		Obj res = Tab.currentScope.findSymbol(regularArrayDecl.getId());
-		// Check if var is already declared in the symbol table
+		String res = checkIfVariableAlreadyDeclared(regularArrayDecl.getId());	// Check if var is already declared in the symbol table
 		//
-		if(res==null)
+		if(res!="not_existing")
 		{
 			// Type match check :
 			//
-			report_info(info + "Variable "+ regularArrayDecl.getId()+" has been declared.", regularArrayDecl);
-			Obj varNode = Tab.insert(Obj.Var, regularArrayDecl.getId(), makeStruct(Struct.Array, lastType));
+			report_info(info + "Variable "+ res+" has been declared.", regularArrayDecl);
+			Obj varNode = Tab.insert(Obj.Var, res, makeStruct(Struct.Array, lastType));
 		}
 		else
 		{
-			report_error(error + "Variable : " + regularArrayDecl.getId() + " already declared.", regularArrayDecl);
+			report_error(error + "Variable : " +res + " already declared.", regularArrayDecl);
 		}
 	}
 
@@ -333,7 +377,29 @@ public class SemanticPass extends VisitorAdaptor {
 	
 	public void visit(Designator designator)
 	{
-		designator.obj=designator.getIdent_expr_list().obj;
+		designator.obj=designator.getIdent_namespace_expr_list().obj;
+	}
+	
+	public void visit(NamespaceDesignator nd)
+	{
+		String name = nd.getId() + "." + nd.getIdent_expr_list().obj.getName();
+		Obj res = Tab.find(name);
+		if(res==Tab.noObj)
+		{
+			report_error(name + " Not declared",nd);
+		}
+		nd.obj=res;
+	}
+	public void visit(NoNamespaceDeisgnator nnd)
+	{
+		String name = nnd.getIdent_expr_list().obj.getName();
+		Obj res = Tab.find(name);
+		if(res==Tab.noObj)
+		{
+			report_error(name + " Not declared",nnd);
+		}
+		nnd.obj=res;
+
 	}
 	
 	public void visit(ArrayDesignator arrDes)
@@ -358,24 +424,8 @@ public class SemanticPass extends VisitorAdaptor {
 	
 	public void visit(SimpleDesignator designator)
 	{
-		Obj obj = Tab.find(designator.getId());
-		if (obj == Tab.noObj) { 
-			report_error(error+ "" +designator.getId()+" was not declared ", null);
-		}
-		// Registered use of local variable
-		//
+		designator.obj = new Obj(Struct.None, designator.getId(), new Struct(Struct.None));
 
-		designator.obj = obj;
-		if(designator.obj.getLevel()==1)
-		{
-			report_info(info+"Local use of variable "+designator.getId()+".", null);
-		}
-		else
-		{
-		// Registered use of global variable
-		//	
-			report_info(info+"Global use of variable "+designator.getId()+".", null);
-		}
 	}
 	
 	// --------------------------------- Expressions --------------------------

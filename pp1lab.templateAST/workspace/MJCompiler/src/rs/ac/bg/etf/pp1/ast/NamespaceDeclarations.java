@@ -1,0 +1,58 @@
+// generated with ast extension for cup
+// version 0.8
+// 14/0/2024 17:6:47
+
+
+package rs.ac.bg.etf.pp1.ast;
+
+public class NamespaceDeclarations extends NamespaceContent {
+
+    private Declaration_list declaration_list;
+
+    public NamespaceDeclarations (Declaration_list declaration_list) {
+        this.declaration_list=declaration_list;
+        if(declaration_list!=null) declaration_list.setParent(this);
+    }
+
+    public Declaration_list getDeclaration_list() {
+        return declaration_list;
+    }
+
+    public void setDeclaration_list(Declaration_list declaration_list) {
+        this.declaration_list=declaration_list;
+    }
+
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
+
+    public void childrenAccept(Visitor visitor) {
+        if(declaration_list!=null) declaration_list.accept(visitor);
+    }
+
+    public void traverseTopDown(Visitor visitor) {
+        accept(visitor);
+        if(declaration_list!=null) declaration_list.traverseTopDown(visitor);
+    }
+
+    public void traverseBottomUp(Visitor visitor) {
+        if(declaration_list!=null) declaration_list.traverseBottomUp(visitor);
+        accept(visitor);
+    }
+
+    public String toString(String tab) {
+        StringBuffer buffer=new StringBuffer();
+        buffer.append(tab);
+        buffer.append("NamespaceDeclarations(\n");
+
+        if(declaration_list!=null)
+            buffer.append(declaration_list.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        buffer.append(tab);
+        buffer.append(") [NamespaceDeclarations]");
+        return buffer.toString();
+    }
+}

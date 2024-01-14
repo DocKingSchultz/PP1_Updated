@@ -1,0 +1,1549 @@
+INFO  17:06:55,857 - Compiling source file: C:\Users\filip.jankovic\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  17:06:55,891 - #2 program
+INFO  17:06:55,891 - #43 test301
+INFO  17:06:55,891 - #5 namespace
+INFO  17:06:55,893 - #43 Konstante
+INFO  17:06:55,893 - #38 {
+INFO  17:06:55,893 - #8 const
+INFO  17:06:55,893 - #43 int
+INFO  17:06:55,893 - #43 nula
+INFO  17:06:55,894 - #22 =
+INFO  17:06:55,894 - #40 0
+INFO  17:06:55,894 - #32 ;
+INFO  17:06:55,894 - #8 const
+INFO  17:06:55,895 - #43 int
+INFO  17:06:55,896 - #43 jedan
+INFO  17:06:55,896 - #22 =
+INFO  17:06:55,896 - #40 1
+INFO  17:06:55,896 - #32 ;
+INFO  17:06:55,896 - #8 const
+INFO  17:06:55,896 - #43 int
+INFO  17:06:55,896 - #43 pet
+INFO  17:06:55,897 - #22 =
+INFO  17:06:55,897 - #40 5
+INFO  17:06:55,897 - #32 ;
+INFO  17:06:55,897 - #38 {
+INFO  17:06:55,897 - #39 }
+INFO  17:06:55,897 - #39 }
+INFO  17:06:55,897 - #5 namespace
+INFO  17:06:55,898 - #43 Nizovi
+INFO  17:06:55,898 - #38 {
+INFO  17:06:55,898 - #43 int
+INFO  17:06:55,898 - #43 niz
+INFO  17:06:55,898 - #34 [
+INFO  17:06:55,898 - #35 ]
+INFO  17:06:55,898 - #32 ;
+INFO  17:06:55,899 - #43 char
+INFO  17:06:55,902 - #43 nizch
+INFO  17:06:55,903 - #34 [
+INFO  17:06:55,904 - #35 ]
+INFO  17:06:55,904 - #32 ;
+INFO  17:06:55,904 - #38 {
+INFO  17:06:55,904 - #39 }
+INFO  17:06:55,904 - #39 }
+INFO  17:06:55,905 - #43 int
+INFO  17:06:55,905 - #43 a
+INFO  17:06:55,905 - #32 ;
+INFO  17:06:55,905 - #38 {
+INFO  17:06:55,905 - #7 void
+INFO  17:06:55,905 - #43 main
+INFO  17:06:55,905 - #36 (
+INFO  17:06:55,905 - #37 )
+INFO  17:06:55,905 - #43 int
+INFO  17:06:55,907 - #43 bodovi
+INFO  17:06:55,907 - #32 ;
+INFO  17:06:55,907 - #43 bool
+INFO  17:06:55,907 - #43 bt
+INFO  17:06:55,907 - #32 ;
+INFO  17:06:55,907 - #38 {
+INFO  17:06:55,907 - #43 bodovi
+INFO  17:06:55,909 - #22 =
+INFO  17:06:55,909 - #40 0
+INFO  17:06:55,909 - #32 ;
+INFO  17:06:55,911 - #43 bodovi
+INFO  17:06:55,911 - #17 ++
+INFO  17:06:55,911 - #32 ;
+INFO  17:06:55,912 - #43 bodovi
+INFO  17:06:55,912 - #22 =
+INFO  17:06:55,912 - #43 bodovi
+INFO  17:06:55,912 - #15 +
+INFO  17:06:55,912 - #43 Konstante
+INFO  17:06:55,913 - #14 ::
+INFO  17:06:55,913 - #43 jedan
+INFO  17:06:55,913 - #32 ;
+INFO  17:06:55,913 - #43 bodovi
+INFO  17:06:55,914 - #22 =
+INFO  17:06:55,914 - #43 bodovi
+INFO  17:06:55,914 - #19 *
+INFO  17:06:55,914 - #43 Konstante
+INFO  17:06:55,915 - #14 ::
+INFO  17:06:55,915 - #43 pet
+INFO  17:06:55,915 - #32 ;
+INFO  17:06:55,915 - #43 bodovi
+INFO  17:06:55,916 - #18 --
+INFO  17:06:55,916 - #32 ;
+INFO  17:06:55,916 - #3 print
+INFO  17:06:55,917 - #36 (
+INFO  17:06:55,917 - #43 bodovi
+INFO  17:06:55,917 - #37 )
+INFO  17:06:55,920 - #32 ;
+INFO  17:06:55,921 - #43 Nizovi
+INFO  17:06:55,921 - #14 ::
+INFO  17:06:55,921 - #43 niz
+INFO  17:06:55,921 - #22 =
+INFO  17:06:55,921 - #9 new
+INFO  17:06:55,921 - #43 int
+INFO  17:06:55,921 - #34 [
+INFO  17:06:55,921 - #40 3
+INFO  17:06:55,921 - #35 ]
+INFO  17:06:55,921 - #32 ;
+INFO  17:06:55,922 - #43 Nizovi
+INFO  17:06:55,922 - #14 ::
+INFO  17:06:55,922 - #43 niz
+INFO  17:06:55,922 - #34 [
+INFO  17:06:55,922 - #43 Konstante
+INFO  17:06:55,922 - #14 ::
+INFO  17:06:55,922 - #43 nula
+INFO  17:06:55,922 - #35 ]
+INFO  17:06:55,922 - #22 =
+INFO  17:06:55,922 - #43 Konstante
+INFO  17:06:55,922 - #14 ::
+INFO  17:06:55,922 - #43 jedan
+INFO  17:06:55,922 - #32 ;
+INFO  17:06:55,922 - #43 Nizovi
+INFO  17:06:55,923 - #14 ::
+INFO  17:06:55,923 - #43 niz
+INFO  17:06:55,923 - #34 [
+INFO  17:06:55,923 - #40 1
+INFO  17:06:55,923 - #35 ]
+INFO  17:06:55,923 - #22 =
+INFO  17:06:55,923 - #40 2
+INFO  17:06:55,923 - #32 ;
+INFO  17:06:55,923 - #43 Nizovi
+INFO  17:06:55,923 - #14 ::
+INFO  17:06:55,923 - #43 niz
+INFO  17:06:55,923 - #34 [
+INFO  17:06:55,923 - #43 Nizovi
+INFO  17:06:55,923 - #14 ::
+INFO  17:06:55,923 - #43 niz
+INFO  17:06:55,923 - #34 [
+INFO  17:06:55,923 - #43 Konstante
+INFO  17:06:55,923 - #14 ::
+INFO  17:06:55,923 - #43 jedan
+INFO  17:06:55,923 - #35 ]
+INFO  17:06:55,923 - #35 ]
+INFO  17:06:55,923 - #22 =
+INFO  17:06:55,923 - #43 Nizovi
+INFO  17:06:55,923 - #14 ::
+INFO  17:06:55,923 - #43 niz
+INFO  17:06:55,923 - #34 [
+INFO  17:06:55,923 - #43 Nizovi
+INFO  17:06:55,923 - #14 ::
+INFO  17:06:55,923 - #43 niz
+INFO  17:06:55,923 - #34 [
+INFO  17:06:55,923 - #40 0
+INFO  17:06:55,923 - #35 ]
+INFO  17:06:55,923 - #35 ]
+INFO  17:06:55,925 - #19 *
+INFO  17:06:55,925 - #40 3
+INFO  17:06:55,925 - #32 ;
+INFO  17:06:55,925 - #43 bodovi
+INFO  17:06:55,925 - #22 =
+INFO  17:06:55,925 - #43 Nizovi
+INFO  17:06:55,925 - #14 ::
+INFO  17:06:55,925 - #43 niz
+INFO  17:06:55,925 - #34 [
+INFO  17:06:55,925 - #40 2
+INFO  17:06:55,925 - #35 ]
+INFO  17:06:55,925 - #20 /
+INFO  17:06:55,925 - #43 Nizovi
+INFO  17:06:55,926 - #14 ::
+INFO  17:06:55,926 - #43 niz
+INFO  17:06:55,926 - #34 [
+INFO  17:06:55,926 - #40 0
+INFO  17:06:55,926 - #35 ]
+INFO  17:06:55,926 - #32 ;
+INFO  17:06:55,927 - #3 print
+INFO  17:06:55,927 - #36 (
+INFO  17:06:55,927 - #43 bodovi
+INFO  17:06:55,927 - #37 )
+INFO  17:06:55,927 - #32 ;
+INFO  17:06:55,927 - #3 print
+INFO  17:06:55,927 - #36 (
+INFO  17:06:55,927 - #43 Nizovi
+INFO  17:06:55,927 - #14 ::
+INFO  17:06:55,927 - #43 niz
+INFO  17:06:55,928 - #34 [
+INFO  17:06:55,928 - #40 2
+INFO  17:06:55,928 - #35 ]
+INFO  17:06:55,928 - #37 )
+INFO  17:06:55,928 - #32 ;
+INFO  17:06:55,928 - #43 Nizovi
+INFO  17:06:55,928 - #14 ::
+INFO  17:06:55,928 - #43 nizch
+INFO  17:06:55,928 - #22 =
+INFO  17:06:55,928 - #9 new
+INFO  17:06:55,928 - #43 char
+INFO  17:06:55,928 - #34 [
+INFO  17:06:55,928 - #40 3
+INFO  17:06:55,928 - #35 ]
+INFO  17:06:55,928 - #32 ;
+INFO  17:06:55,929 - #43 Nizovi
+INFO  17:06:55,929 - #14 ::
+INFO  17:06:55,929 - #43 nizch
+INFO  17:06:55,929 - #34 [
+INFO  17:06:55,929 - #40 0
+INFO  17:06:55,929 - #35 ]
+INFO  17:06:55,929 - #22 =
+INFO  17:06:55,929 - #41 a
+INFO  17:06:55,929 - #32 ;
+INFO  17:06:55,930 - #43 Nizovi
+INFO  17:06:55,930 - #14 ::
+INFO  17:06:55,930 - #43 nizch
+INFO  17:06:55,930 - #34 [
+INFO  17:06:55,930 - #43 Konstante
+INFO  17:06:55,930 - #14 ::
+INFO  17:06:55,930 - #43 jedan
+INFO  17:06:55,930 - #35 ]
+INFO  17:06:55,930 - #22 =
+INFO  17:06:55,930 - #41 b
+INFO  17:06:55,930 - #32 ;
+INFO  17:06:55,930 - #43 Nizovi
+INFO  17:06:55,931 - #14 ::
+INFO  17:06:55,931 - #43 nizch
+INFO  17:06:55,931 - #34 [
+INFO  17:06:55,931 - #43 Konstante
+INFO  17:06:55,931 - #14 ::
+INFO  17:06:55,931 - #43 pet
+INFO  17:06:55,931 - #16 -
+INFO  17:06:55,931 - #40 3
+INFO  17:06:55,932 - #35 ]
+INFO  17:06:55,932 - #22 =
+INFO  17:06:55,932 - #41 c
+INFO  17:06:55,932 - #32 ;
+INFO  17:06:55,932 - #3 print
+INFO  17:06:55,932 - #36 (
+INFO  17:06:55,932 - #43 Nizovi
+INFO  17:06:55,932 - #14 ::
+INFO  17:06:55,932 - #43 nizch
+INFO  17:06:55,932 - #34 [
+INFO  17:06:55,933 - #40 1
+INFO  17:06:55,933 - #35 ]
+INFO  17:06:55,933 - #37 )
+INFO  17:06:55,933 - #32 ;
+INFO  17:06:55,933 - #3 print
+INFO  17:06:55,933 - #36 (
+INFO  17:06:55,933 - #43 Nizovi
+INFO  17:06:55,933 - #14 ::
+INFO  17:06:55,933 - #43 nizch
+INFO  17:06:55,933 - #34 [
+INFO  17:06:55,935 - #43 Konstante
+INFO  17:06:55,935 - #14 ::
+INFO  17:06:55,935 - #43 jedan
+INFO  17:06:55,935 - #19 *
+INFO  17:06:55,935 - #40 2
+INFO  17:06:55,935 - #35 ]
+INFO  17:06:55,935 - #37 )
+INFO  17:06:55,935 - #32 ;
+INFO  17:06:55,936 - #43 a
+INFO  17:06:55,936 - #22 =
+INFO  17:06:55,936 - #40 1
+INFO  17:06:55,936 - #32 ;
+INFO  17:06:55,936 - #4 read
+INFO  17:06:55,936 - #36 (
+INFO  17:06:55,936 - #43 bodovi
+INFO  17:06:55,937 - #37 )
+INFO  17:06:55,937 - #32 ;
+INFO  17:06:55,937 - #43 bodovi
+INFO  17:06:55,938 - #22 =
+INFO  17:06:55,938 - #16 -
+INFO  17:06:55,938 - #43 bodovi
+INFO  17:06:55,938 - #15 +
+INFO  17:06:55,938 - #36 (
+INFO  17:06:55,939 - #43 Konstante
+INFO  17:06:55,939 - #14 ::
+INFO  17:06:55,939 - #43 pet
+INFO  17:06:55,939 - #19 *
+INFO  17:06:55,939 - #43 a
+INFO  17:06:55,939 - #20 /
+INFO  17:06:55,939 - #40 2
+INFO  17:06:55,939 - #16 -
+INFO  17:06:55,939 - #43 Konstante
+INFO  17:06:55,939 - #14 ::
+INFO  17:06:55,939 - #43 jedan
+INFO  17:06:55,940 - #37 )
+INFO  17:06:55,940 - #19 *
+INFO  17:06:55,941 - #43 bodovi
+INFO  17:06:55,941 - #16 -
+INFO  17:06:55,941 - #36 (
+INFO  17:06:55,941 - #40 3
+INFO  17:06:55,941 - #21 %
+INFO  17:06:55,941 - #40 2
+INFO  17:06:55,941 - #15 +
+INFO  17:06:55,941 - #40 3
+INFO  17:06:55,941 - #19 *
+INFO  17:06:55,941 - #40 2
+INFO  17:06:55,941 - #16 -
+INFO  17:06:55,941 - #40 3
+INFO  17:06:55,941 - #37 )
+INFO  17:06:55,941 - #32 ;
+INFO  17:06:55,941 - #3 print
+INFO  17:06:55,941 - #36 (
+INFO  17:06:55,941 - #43 bodovi
+INFO  17:06:55,941 - #37 )
+INFO  17:06:55,941 - #32 ;
+INFO  17:06:55,941 - #39 }
+INFO  17:06:55,941 - #39 }
+INFO  17:06:55,947 - Program(
+  Prog_id(
+   test301
+  ) [Prog_id]
+  Namespaces(
+    Namespaces(
+      NoNamespace(
+      ) [NoNamespace]
+      Namespace(
+        NamespaceName(
+         Konstante
+        ) [NamespaceName]
+        NamespaceDeclarations(
+          Declarations(
+            Declarations(
+              Declarations(
+                NoDeclarations(
+                ) [NoDeclarations]
+                ConstDeclarations(
+                  Const_dec(
+                    Type(
+                     int
+                    ) [Type]
+                    SingleConstDeclarationPart(
+                      ConstIdInt(
+                       nula
+                       0
+                      ) [ConstIdInt]
+                    ) [SingleConstDeclarationPart]
+                  ) [Const_dec]
+                ) [ConstDeclarations]
+              ) [Declarations]
+              ConstDeclarations(
+                Const_dec(
+                  Type(
+                   int
+                  ) [Type]
+                  SingleConstDeclarationPart(
+                    ConstIdInt(
+                     jedan
+                     1
+                    ) [ConstIdInt]
+                  ) [SingleConstDeclarationPart]
+                ) [Const_dec]
+              ) [ConstDeclarations]
+            ) [Declarations]
+            ConstDeclarations(
+              Const_dec(
+                Type(
+                 int
+                ) [Type]
+                SingleConstDeclarationPart(
+                  ConstIdInt(
+                   pet
+                   5
+                  ) [ConstIdInt]
+                ) [SingleConstDeclarationPart]
+              ) [Const_dec]
+            ) [ConstDeclarations]
+          ) [Declarations]
+        ) [NamespaceDeclarations]
+      ) [Namespace]
+    ) [Namespaces]
+    Namespace(
+      NamespaceName(
+       Nizovi
+      ) [NamespaceName]
+      NamespaceDeclarations(
+        Declarations(
+          Declarations(
+            NoDeclarations(
+            ) [NoDeclarations]
+            VarDeclarations(
+              Var_dec(
+                Type(
+                 int
+                ) [Type]
+                SingleVarIdList(
+                  VarOrArrayId(
+                   niz
+                  ) [VarOrArrayId]
+                ) [SingleVarIdList]
+              ) [Var_dec]
+            ) [VarDeclarations]
+          ) [Declarations]
+          VarDeclarations(
+            Var_dec(
+              Type(
+               char
+              ) [Type]
+              SingleVarIdList(
+                VarOrArrayId(
+                 nizch
+                ) [VarOrArrayId]
+              ) [SingleVarIdList]
+            ) [Var_dec]
+          ) [VarDeclarations]
+        ) [Declarations]
+      ) [NamespaceDeclarations]
+    ) [Namespace]
+  ) [Namespaces]
+  Declarations(
+    NoDeclarations(
+    ) [NoDeclarations]
+    VarDeclarations(
+      Var_dec(
+        Type(
+         int
+        ) [Type]
+        SingleVarIdList(
+          VarId(
+           a
+          ) [VarId]
+        ) [SingleVarIdList]
+      ) [Var_dec]
+    ) [VarDeclarations]
+  ) [Declarations]
+  MainMethod(
+    MainIdent(
+     main
+    ) [MainIdent]
+    MainVariables(
+      MainVariables(
+        NoMainVariables(
+        ) [NoMainVariables]
+        Var_dec(
+          Type(
+           int
+          ) [Type]
+          SingleVarIdList(
+            VarId(
+             bodovi
+            ) [VarId]
+          ) [SingleVarIdList]
+        ) [Var_dec]
+      ) [MainVariables]
+      Var_dec(
+        Type(
+         bool
+        ) [Type]
+        SingleVarIdList(
+          VarId(
+           bt
+          ) [VarId]
+        ) [SingleVarIdList]
+      ) [Var_dec]
+    ) [MainVariables]
+    Statements(
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              Statements(
+                Statements(
+                  Statements(
+                    Statements(
+                      Statements(
+                        Statements(
+                          Statements(
+                            Statements(
+                              Statements(
+                                Statements(
+                                  Statements(
+                                    Statements(
+                                      Statements(
+                                        Statements(
+                                          Statements(
+                                            Statements(
+                                              Statements(
+                                                Statements(
+                                                  NoStatements(
+                                                  ) [NoStatements]
+                                                  DesignatorStatement(
+                                                    Assignment(
+                                                      Designator(
+                                                        NoNamespaceDeisgnator(
+                                                          SimpleDesignator(
+                                                           bodovi
+                                                          ) [SimpleDesignator]
+                                                        ) [NoNamespaceDeisgnator]
+                                                      ) [Designator]
+                                                      Expr(
+                                                        TermExpr(
+                                                          Term(
+                                                            SimpleFactor(
+                                                              IntRef(
+                                                               0
+                                                              ) [IntRef]
+                                                            ) [SimpleFactor]
+                                                          ) [Term]
+                                                        ) [TermExpr]
+                                                      ) [Expr]
+                                                    ) [Assignment]
+                                                  ) [DesignatorStatement]
+                                                ) [Statements]
+                                                DesignatorStatement(
+                                                  Increment(
+                                                    Designator(
+                                                      NoNamespaceDeisgnator(
+                                                        SimpleDesignator(
+                                                         bodovi
+                                                        ) [SimpleDesignator]
+                                                      ) [NoNamespaceDeisgnator]
+                                                    ) [Designator]
+                                                  ) [Increment]
+                                                ) [DesignatorStatement]
+                                              ) [Statements]
+                                              DesignatorStatement(
+                                                Assignment(
+                                                  Designator(
+                                                    NoNamespaceDeisgnator(
+                                                      SimpleDesignator(
+                                                       bodovi
+                                                      ) [SimpleDesignator]
+                                                    ) [NoNamespaceDeisgnator]
+                                                  ) [Designator]
+                                                  Expr(
+                                                    AddExpr(
+                                                      TermExpr(
+                                                        Term(
+                                                          SimpleFactor(
+                                                            VarRef(
+                                                              Designator(
+                                                                NoNamespaceDeisgnator(
+                                                                  SimpleDesignator(
+                                                                   bodovi
+                                                                  ) [SimpleDesignator]
+                                                                ) [NoNamespaceDeisgnator]
+                                                              ) [Designator]
+                                                            ) [VarRef]
+                                                          ) [SimpleFactor]
+                                                        ) [Term]
+                                                      ) [TermExpr]
+                                                      PlusOP(
+                                                      ) [PlusOP]
+                                                      Term(
+                                                        SimpleFactor(
+                                                          VarRef(
+                                                            Designator(
+                                                              NamespaceDesignator(
+                                                               Konstante
+                                                                SimpleDesignator(
+                                                                 jedan
+                                                                ) [SimpleDesignator]
+                                                              ) [NamespaceDesignator]
+                                                            ) [Designator]
+                                                          ) [VarRef]
+                                                        ) [SimpleFactor]
+                                                      ) [Term]
+                                                    ) [AddExpr]
+                                                  ) [Expr]
+                                                ) [Assignment]
+                                              ) [DesignatorStatement]
+                                            ) [Statements]
+                                            DesignatorStatement(
+                                              Assignment(
+                                                Designator(
+                                                  NoNamespaceDeisgnator(
+                                                    SimpleDesignator(
+                                                     bodovi
+                                                    ) [SimpleDesignator]
+                                                  ) [NoNamespaceDeisgnator]
+                                                ) [Designator]
+                                                Expr(
+                                                  TermExpr(
+                                                    Term(
+                                                      MulopFactor(
+                                                        SimpleFactor(
+                                                          VarRef(
+                                                            Designator(
+                                                              NoNamespaceDeisgnator(
+                                                                SimpleDesignator(
+                                                                 bodovi
+                                                                ) [SimpleDesignator]
+                                                              ) [NoNamespaceDeisgnator]
+                                                            ) [Designator]
+                                                          ) [VarRef]
+                                                        ) [SimpleFactor]
+                                                        MullOP(
+                                                        ) [MullOP]
+                                                        VarRef(
+                                                          Designator(
+                                                            NamespaceDesignator(
+                                                             Konstante
+                                                              SimpleDesignator(
+                                                               pet
+                                                              ) [SimpleDesignator]
+                                                            ) [NamespaceDesignator]
+                                                          ) [Designator]
+                                                        ) [VarRef]
+                                                      ) [MulopFactor]
+                                                    ) [Term]
+                                                  ) [TermExpr]
+                                                ) [Expr]
+                                              ) [Assignment]
+                                            ) [DesignatorStatement]
+                                          ) [Statements]
+                                          DesignatorStatement(
+                                            Decrement(
+                                              Designator(
+                                                NoNamespaceDeisgnator(
+                                                  SimpleDesignator(
+                                                   bodovi
+                                                  ) [SimpleDesignator]
+                                                ) [NoNamespaceDeisgnator]
+                                              ) [Designator]
+                                            ) [Decrement]
+                                          ) [DesignatorStatement]
+                                        ) [Statements]
+                                        Print(
+                                          Expr(
+                                            TermExpr(
+                                              Term(
+                                                SimpleFactor(
+                                                  VarRef(
+                                                    Designator(
+                                                      NoNamespaceDeisgnator(
+                                                        SimpleDesignator(
+                                                         bodovi
+                                                        ) [SimpleDesignator]
+                                                      ) [NoNamespaceDeisgnator]
+                                                    ) [Designator]
+                                                  ) [VarRef]
+                                                ) [SimpleFactor]
+                                              ) [Term]
+                                            ) [TermExpr]
+                                          ) [Expr]
+                                          NoConstToPrint(
+                                          ) [NoConstToPrint]
+                                        ) [Print]
+                                      ) [Statements]
+                                      DesignatorStatement(
+                                        Assignment(
+                                          Designator(
+                                            NamespaceDesignator(
+                                             Nizovi
+                                              SimpleDesignator(
+                                               niz
+                                              ) [SimpleDesignator]
+                                            ) [NamespaceDesignator]
+                                          ) [Designator]
+                                          Expr(
+                                            TermExpr(
+                                              Term(
+                                                SimpleFactor(
+                                                  OperatorNew(
+                                                    Type(
+                                                     int
+                                                    ) [Type]
+                                                    Expr(
+                                                      TermExpr(
+                                                        Term(
+                                                          SimpleFactor(
+                                                            IntRef(
+                                                             3
+                                                            ) [IntRef]
+                                                          ) [SimpleFactor]
+                                                        ) [Term]
+                                                      ) [TermExpr]
+                                                    ) [Expr]
+                                                  ) [OperatorNew]
+                                                ) [SimpleFactor]
+                                              ) [Term]
+                                            ) [TermExpr]
+                                          ) [Expr]
+                                        ) [Assignment]
+                                      ) [DesignatorStatement]
+                                    ) [Statements]
+                                    DesignatorStatement(
+                                      Assignment(
+                                        Designator(
+                                          NamespaceDesignator(
+                                           Nizovi
+                                            ArrayDesignator(
+                                              SimpleDesignator(
+                                               niz
+                                              ) [SimpleDesignator]
+                                              Expr(
+                                                TermExpr(
+                                                  Term(
+                                                    SimpleFactor(
+                                                      VarRef(
+                                                        Designator(
+                                                          NamespaceDesignator(
+                                                           Konstante
+                                                            SimpleDesignator(
+                                                             nula
+                                                            ) [SimpleDesignator]
+                                                          ) [NamespaceDesignator]
+                                                        ) [Designator]
+                                                      ) [VarRef]
+                                                    ) [SimpleFactor]
+                                                  ) [Term]
+                                                ) [TermExpr]
+                                              ) [Expr]
+                                            ) [ArrayDesignator]
+                                          ) [NamespaceDesignator]
+                                        ) [Designator]
+                                        Expr(
+                                          TermExpr(
+                                            Term(
+                                              SimpleFactor(
+                                                VarRef(
+                                                  Designator(
+                                                    NamespaceDesignator(
+                                                     Konstante
+                                                      SimpleDesignator(
+                                                       jedan
+                                                      ) [SimpleDesignator]
+                                                    ) [NamespaceDesignator]
+                                                  ) [Designator]
+                                                ) [VarRef]
+                                              ) [SimpleFactor]
+                                            ) [Term]
+                                          ) [TermExpr]
+                                        ) [Expr]
+                                      ) [Assignment]
+                                    ) [DesignatorStatement]
+                                  ) [Statements]
+                                  DesignatorStatement(
+                                    Assignment(
+                                      Designator(
+                                        NamespaceDesignator(
+                                         Nizovi
+                                          ArrayDesignator(
+                                            SimpleDesignator(
+                                             niz
+                                            ) [SimpleDesignator]
+                                            Expr(
+                                              TermExpr(
+                                                Term(
+                                                  SimpleFactor(
+                                                    IntRef(
+                                                     1
+                                                    ) [IntRef]
+                                                  ) [SimpleFactor]
+                                                ) [Term]
+                                              ) [TermExpr]
+                                            ) [Expr]
+                                          ) [ArrayDesignator]
+                                        ) [NamespaceDesignator]
+                                      ) [Designator]
+                                      Expr(
+                                        TermExpr(
+                                          Term(
+                                            SimpleFactor(
+                                              IntRef(
+                                               2
+                                              ) [IntRef]
+                                            ) [SimpleFactor]
+                                          ) [Term]
+                                        ) [TermExpr]
+                                      ) [Expr]
+                                    ) [Assignment]
+                                  ) [DesignatorStatement]
+                                ) [Statements]
+                                DesignatorStatement(
+                                  Assignment(
+                                    Designator(
+                                      NamespaceDesignator(
+                                       Nizovi
+                                        ArrayDesignator(
+                                          SimpleDesignator(
+                                           niz
+                                          ) [SimpleDesignator]
+                                          Expr(
+                                            TermExpr(
+                                              Term(
+                                                SimpleFactor(
+                                                  VarRef(
+                                                    Designator(
+                                                      NamespaceDesignator(
+                                                       Nizovi
+                                                        ArrayDesignator(
+                                                          SimpleDesignator(
+                                                           niz
+                                                          ) [SimpleDesignator]
+                                                          Expr(
+                                                            TermExpr(
+                                                              Term(
+                                                                SimpleFactor(
+                                                                  VarRef(
+                                                                    Designator(
+                                                                      NamespaceDesignator(
+                                                                       Konstante
+                                                                        SimpleDesignator(
+                                                                         jedan
+                                                                        ) [SimpleDesignator]
+                                                                      ) [NamespaceDesignator]
+                                                                    ) [Designator]
+                                                                  ) [VarRef]
+                                                                ) [SimpleFactor]
+                                                              ) [Term]
+                                                            ) [TermExpr]
+                                                          ) [Expr]
+                                                        ) [ArrayDesignator]
+                                                      ) [NamespaceDesignator]
+                                                    ) [Designator]
+                                                  ) [VarRef]
+                                                ) [SimpleFactor]
+                                              ) [Term]
+                                            ) [TermExpr]
+                                          ) [Expr]
+                                        ) [ArrayDesignator]
+                                      ) [NamespaceDesignator]
+                                    ) [Designator]
+                                    Expr(
+                                      TermExpr(
+                                        Term(
+                                          MulopFactor(
+                                            SimpleFactor(
+                                              VarRef(
+                                                Designator(
+                                                  NamespaceDesignator(
+                                                   Nizovi
+                                                    ArrayDesignator(
+                                                      SimpleDesignator(
+                                                       niz
+                                                      ) [SimpleDesignator]
+                                                      Expr(
+                                                        TermExpr(
+                                                          Term(
+                                                            SimpleFactor(
+                                                              VarRef(
+                                                                Designator(
+                                                                  NamespaceDesignator(
+                                                                   Nizovi
+                                                                    ArrayDesignator(
+                                                                      SimpleDesignator(
+                                                                       niz
+                                                                      ) [SimpleDesignator]
+                                                                      Expr(
+                                                                        TermExpr(
+                                                                          Term(
+                                                                            SimpleFactor(
+                                                                              IntRef(
+                                                                               0
+                                                                              ) [IntRef]
+                                                                            ) [SimpleFactor]
+                                                                          ) [Term]
+                                                                        ) [TermExpr]
+                                                                      ) [Expr]
+                                                                    ) [ArrayDesignator]
+                                                                  ) [NamespaceDesignator]
+                                                                ) [Designator]
+                                                              ) [VarRef]
+                                                            ) [SimpleFactor]
+                                                          ) [Term]
+                                                        ) [TermExpr]
+                                                      ) [Expr]
+                                                    ) [ArrayDesignator]
+                                                  ) [NamespaceDesignator]
+                                                ) [Designator]
+                                              ) [VarRef]
+                                            ) [SimpleFactor]
+                                            MullOP(
+                                            ) [MullOP]
+                                            IntRef(
+                                             3
+                                            ) [IntRef]
+                                          ) [MulopFactor]
+                                        ) [Term]
+                                      ) [TermExpr]
+                                    ) [Expr]
+                                  ) [Assignment]
+                                ) [DesignatorStatement]
+                              ) [Statements]
+                              DesignatorStatement(
+                                Assignment(
+                                  Designator(
+                                    NoNamespaceDeisgnator(
+                                      SimpleDesignator(
+                                       bodovi
+                                      ) [SimpleDesignator]
+                                    ) [NoNamespaceDeisgnator]
+                                  ) [Designator]
+                                  Expr(
+                                    TermExpr(
+                                      Term(
+                                        MulopFactor(
+                                          SimpleFactor(
+                                            VarRef(
+                                              Designator(
+                                                NamespaceDesignator(
+                                                 Nizovi
+                                                  ArrayDesignator(
+                                                    SimpleDesignator(
+                                                     niz
+                                                    ) [SimpleDesignator]
+                                                    Expr(
+                                                      TermExpr(
+                                                        Term(
+                                                          SimpleFactor(
+                                                            IntRef(
+                                                             2
+                                                            ) [IntRef]
+                                                          ) [SimpleFactor]
+                                                        ) [Term]
+                                                      ) [TermExpr]
+                                                    ) [Expr]
+                                                  ) [ArrayDesignator]
+                                                ) [NamespaceDesignator]
+                                              ) [Designator]
+                                            ) [VarRef]
+                                          ) [SimpleFactor]
+                                          DivOP(
+                                          ) [DivOP]
+                                          VarRef(
+                                            Designator(
+                                              NamespaceDesignator(
+                                               Nizovi
+                                                ArrayDesignator(
+                                                  SimpleDesignator(
+                                                   niz
+                                                  ) [SimpleDesignator]
+                                                  Expr(
+                                                    TermExpr(
+                                                      Term(
+                                                        SimpleFactor(
+                                                          IntRef(
+                                                           0
+                                                          ) [IntRef]
+                                                        ) [SimpleFactor]
+                                                      ) [Term]
+                                                    ) [TermExpr]
+                                                  ) [Expr]
+                                                ) [ArrayDesignator]
+                                              ) [NamespaceDesignator]
+                                            ) [Designator]
+                                          ) [VarRef]
+                                        ) [MulopFactor]
+                                      ) [Term]
+                                    ) [TermExpr]
+                                  ) [Expr]
+                                ) [Assignment]
+                              ) [DesignatorStatement]
+                            ) [Statements]
+                            Print(
+                              Expr(
+                                TermExpr(
+                                  Term(
+                                    SimpleFactor(
+                                      VarRef(
+                                        Designator(
+                                          NoNamespaceDeisgnator(
+                                            SimpleDesignator(
+                                             bodovi
+                                            ) [SimpleDesignator]
+                                          ) [NoNamespaceDeisgnator]
+                                        ) [Designator]
+                                      ) [VarRef]
+                                    ) [SimpleFactor]
+                                  ) [Term]
+                                ) [TermExpr]
+                              ) [Expr]
+                              NoConstToPrint(
+                              ) [NoConstToPrint]
+                            ) [Print]
+                          ) [Statements]
+                          Print(
+                            Expr(
+                              TermExpr(
+                                Term(
+                                  SimpleFactor(
+                                    VarRef(
+                                      Designator(
+                                        NamespaceDesignator(
+                                         Nizovi
+                                          ArrayDesignator(
+                                            SimpleDesignator(
+                                             niz
+                                            ) [SimpleDesignator]
+                                            Expr(
+                                              TermExpr(
+                                                Term(
+                                                  SimpleFactor(
+                                                    IntRef(
+                                                     2
+                                                    ) [IntRef]
+                                                  ) [SimpleFactor]
+                                                ) [Term]
+                                              ) [TermExpr]
+                                            ) [Expr]
+                                          ) [ArrayDesignator]
+                                        ) [NamespaceDesignator]
+                                      ) [Designator]
+                                    ) [VarRef]
+                                  ) [SimpleFactor]
+                                ) [Term]
+                              ) [TermExpr]
+                            ) [Expr]
+                            NoConstToPrint(
+                            ) [NoConstToPrint]
+                          ) [Print]
+                        ) [Statements]
+                        DesignatorStatement(
+                          Assignment(
+                            Designator(
+                              NamespaceDesignator(
+                               Nizovi
+                                SimpleDesignator(
+                                 nizch
+                                ) [SimpleDesignator]
+                              ) [NamespaceDesignator]
+                            ) [Designator]
+                            Expr(
+                              TermExpr(
+                                Term(
+                                  SimpleFactor(
+                                    OperatorNew(
+                                      Type(
+                                       char
+                                      ) [Type]
+                                      Expr(
+                                        TermExpr(
+                                          Term(
+                                            SimpleFactor(
+                                              IntRef(
+                                               3
+                                              ) [IntRef]
+                                            ) [SimpleFactor]
+                                          ) [Term]
+                                        ) [TermExpr]
+                                      ) [Expr]
+                                    ) [OperatorNew]
+                                  ) [SimpleFactor]
+                                ) [Term]
+                              ) [TermExpr]
+                            ) [Expr]
+                          ) [Assignment]
+                        ) [DesignatorStatement]
+                      ) [Statements]
+                      DesignatorStatement(
+                        Assignment(
+                          Designator(
+                            NamespaceDesignator(
+                             Nizovi
+                              ArrayDesignator(
+                                SimpleDesignator(
+                                 nizch
+                                ) [SimpleDesignator]
+                                Expr(
+                                  TermExpr(
+                                    Term(
+                                      SimpleFactor(
+                                        IntRef(
+                                         0
+                                        ) [IntRef]
+                                      ) [SimpleFactor]
+                                    ) [Term]
+                                  ) [TermExpr]
+                                ) [Expr]
+                              ) [ArrayDesignator]
+                            ) [NamespaceDesignator]
+                          ) [Designator]
+                          Expr(
+                            TermExpr(
+                              Term(
+                                SimpleFactor(
+                                  CharRef(
+                                   a
+                                  ) [CharRef]
+                                ) [SimpleFactor]
+                              ) [Term]
+                            ) [TermExpr]
+                          ) [Expr]
+                        ) [Assignment]
+                      ) [DesignatorStatement]
+                    ) [Statements]
+                    DesignatorStatement(
+                      Assignment(
+                        Designator(
+                          NamespaceDesignator(
+                           Nizovi
+                            ArrayDesignator(
+                              SimpleDesignator(
+                               nizch
+                              ) [SimpleDesignator]
+                              Expr(
+                                TermExpr(
+                                  Term(
+                                    SimpleFactor(
+                                      VarRef(
+                                        Designator(
+                                          NamespaceDesignator(
+                                           Konstante
+                                            SimpleDesignator(
+                                             jedan
+                                            ) [SimpleDesignator]
+                                          ) [NamespaceDesignator]
+                                        ) [Designator]
+                                      ) [VarRef]
+                                    ) [SimpleFactor]
+                                  ) [Term]
+                                ) [TermExpr]
+                              ) [Expr]
+                            ) [ArrayDesignator]
+                          ) [NamespaceDesignator]
+                        ) [Designator]
+                        Expr(
+                          TermExpr(
+                            Term(
+                              SimpleFactor(
+                                CharRef(
+                                 b
+                                ) [CharRef]
+                              ) [SimpleFactor]
+                            ) [Term]
+                          ) [TermExpr]
+                        ) [Expr]
+                      ) [Assignment]
+                    ) [DesignatorStatement]
+                  ) [Statements]
+                  DesignatorStatement(
+                    Assignment(
+                      Designator(
+                        NamespaceDesignator(
+                         Nizovi
+                          ArrayDesignator(
+                            SimpleDesignator(
+                             nizch
+                            ) [SimpleDesignator]
+                            Expr(
+                              AddExpr(
+                                TermExpr(
+                                  Term(
+                                    SimpleFactor(
+                                      VarRef(
+                                        Designator(
+                                          NamespaceDesignator(
+                                           Konstante
+                                            SimpleDesignator(
+                                             pet
+                                            ) [SimpleDesignator]
+                                          ) [NamespaceDesignator]
+                                        ) [Designator]
+                                      ) [VarRef]
+                                    ) [SimpleFactor]
+                                  ) [Term]
+                                ) [TermExpr]
+                                MinusOP(
+                                ) [MinusOP]
+                                Term(
+                                  SimpleFactor(
+                                    IntRef(
+                                     3
+                                    ) [IntRef]
+                                  ) [SimpleFactor]
+                                ) [Term]
+                              ) [AddExpr]
+                            ) [Expr]
+                          ) [ArrayDesignator]
+                        ) [NamespaceDesignator]
+                      ) [Designator]
+                      Expr(
+                        TermExpr(
+                          Term(
+                            SimpleFactor(
+                              CharRef(
+                               c
+                              ) [CharRef]
+                            ) [SimpleFactor]
+                          ) [Term]
+                        ) [TermExpr]
+                      ) [Expr]
+                    ) [Assignment]
+                  ) [DesignatorStatement]
+                ) [Statements]
+                Print(
+                  Expr(
+                    TermExpr(
+                      Term(
+                        SimpleFactor(
+                          VarRef(
+                            Designator(
+                              NamespaceDesignator(
+                               Nizovi
+                                ArrayDesignator(
+                                  SimpleDesignator(
+                                   nizch
+                                  ) [SimpleDesignator]
+                                  Expr(
+                                    TermExpr(
+                                      Term(
+                                        SimpleFactor(
+                                          IntRef(
+                                           1
+                                          ) [IntRef]
+                                        ) [SimpleFactor]
+                                      ) [Term]
+                                    ) [TermExpr]
+                                  ) [Expr]
+                                ) [ArrayDesignator]
+                              ) [NamespaceDesignator]
+                            ) [Designator]
+                          ) [VarRef]
+                        ) [SimpleFactor]
+                      ) [Term]
+                    ) [TermExpr]
+                  ) [Expr]
+                  NoConstToPrint(
+                  ) [NoConstToPrint]
+                ) [Print]
+              ) [Statements]
+              Print(
+                Expr(
+                  TermExpr(
+                    Term(
+                      SimpleFactor(
+                        VarRef(
+                          Designator(
+                            NamespaceDesignator(
+                             Nizovi
+                              ArrayDesignator(
+                                SimpleDesignator(
+                                 nizch
+                                ) [SimpleDesignator]
+                                Expr(
+                                  TermExpr(
+                                    Term(
+                                      MulopFactor(
+                                        SimpleFactor(
+                                          VarRef(
+                                            Designator(
+                                              NamespaceDesignator(
+                                               Konstante
+                                                SimpleDesignator(
+                                                 jedan
+                                                ) [SimpleDesignator]
+                                              ) [NamespaceDesignator]
+                                            ) [Designator]
+                                          ) [VarRef]
+                                        ) [SimpleFactor]
+                                        MullOP(
+                                        ) [MullOP]
+                                        IntRef(
+                                         2
+                                        ) [IntRef]
+                                      ) [MulopFactor]
+                                    ) [Term]
+                                  ) [TermExpr]
+                                ) [Expr]
+                              ) [ArrayDesignator]
+                            ) [NamespaceDesignator]
+                          ) [Designator]
+                        ) [VarRef]
+                      ) [SimpleFactor]
+                    ) [Term]
+                  ) [TermExpr]
+                ) [Expr]
+                NoConstToPrint(
+                ) [NoConstToPrint]
+              ) [Print]
+            ) [Statements]
+            DesignatorStatement(
+              Assignment(
+                Designator(
+                  NoNamespaceDeisgnator(
+                    SimpleDesignator(
+                     a
+                    ) [SimpleDesignator]
+                  ) [NoNamespaceDeisgnator]
+                ) [Designator]
+                Expr(
+                  TermExpr(
+                    Term(
+                      SimpleFactor(
+                        IntRef(
+                         1
+                        ) [IntRef]
+                      ) [SimpleFactor]
+                    ) [Term]
+                  ) [TermExpr]
+                ) [Expr]
+              ) [Assignment]
+            ) [DesignatorStatement]
+          ) [Statements]
+          Read(
+            Designator(
+              NoNamespaceDeisgnator(
+                SimpleDesignator(
+                 bodovi
+                ) [SimpleDesignator]
+              ) [NoNamespaceDeisgnator]
+            ) [Designator]
+          ) [Read]
+        ) [Statements]
+        DesignatorStatement(
+          Assignment(
+            Designator(
+              NoNamespaceDeisgnator(
+                SimpleDesignator(
+                 bodovi
+                ) [SimpleDesignator]
+              ) [NoNamespaceDeisgnator]
+            ) [Designator]
+            Expr(
+              AddExpr(
+                AddExpr(
+                  NegExpr(
+                    Term(
+                      SimpleFactor(
+                        VarRef(
+                          Designator(
+                            NoNamespaceDeisgnator(
+                              SimpleDesignator(
+                               bodovi
+                              ) [SimpleDesignator]
+                            ) [NoNamespaceDeisgnator]
+                          ) [Designator]
+                        ) [VarRef]
+                      ) [SimpleFactor]
+                    ) [Term]
+                  ) [NegExpr]
+                  PlusOP(
+                  ) [PlusOP]
+                  Term(
+                    MulopFactor(
+                      SimpleFactor(
+                        ParenthesisExpr(
+                          Expr(
+                            AddExpr(
+                              TermExpr(
+                                Term(
+                                  MulopFactor(
+                                    MulopFactor(
+                                      SimpleFactor(
+                                        VarRef(
+                                          Designator(
+                                            NamespaceDesignator(
+                                             Konstante
+                                              SimpleDesignator(
+                                               pet
+                                              ) [SimpleDesignator]
+                                            ) [NamespaceDesignator]
+                                          ) [Designator]
+                                        ) [VarRef]
+                                      ) [SimpleFactor]
+                                      MullOP(
+                                      ) [MullOP]
+                                      VarRef(
+                                        Designator(
+                                          NoNamespaceDeisgnator(
+                                            SimpleDesignator(
+                                             a
+                                            ) [SimpleDesignator]
+                                          ) [NoNamespaceDeisgnator]
+                                        ) [Designator]
+                                      ) [VarRef]
+                                    ) [MulopFactor]
+                                    DivOP(
+                                    ) [DivOP]
+                                    IntRef(
+                                     2
+                                    ) [IntRef]
+                                  ) [MulopFactor]
+                                ) [Term]
+                              ) [TermExpr]
+                              MinusOP(
+                              ) [MinusOP]
+                              Term(
+                                SimpleFactor(
+                                  VarRef(
+                                    Designator(
+                                      NamespaceDesignator(
+                                       Konstante
+                                        SimpleDesignator(
+                                         jedan
+                                        ) [SimpleDesignator]
+                                      ) [NamespaceDesignator]
+                                    ) [Designator]
+                                  ) [VarRef]
+                                ) [SimpleFactor]
+                              ) [Term]
+                            ) [AddExpr]
+                          ) [Expr]
+                        ) [ParenthesisExpr]
+                      ) [SimpleFactor]
+                      MullOP(
+                      ) [MullOP]
+                      VarRef(
+                        Designator(
+                          NoNamespaceDeisgnator(
+                            SimpleDesignator(
+                             bodovi
+                            ) [SimpleDesignator]
+                          ) [NoNamespaceDeisgnator]
+                        ) [Designator]
+                      ) [VarRef]
+                    ) [MulopFactor]
+                  ) [Term]
+                ) [AddExpr]
+                MinusOP(
+                ) [MinusOP]
+                Term(
+                  SimpleFactor(
+                    ParenthesisExpr(
+                      Expr(
+                        AddExpr(
+                          AddExpr(
+                            TermExpr(
+                              Term(
+                                MulopFactor(
+                                  SimpleFactor(
+                                    IntRef(
+                                     3
+                                    ) [IntRef]
+                                  ) [SimpleFactor]
+                                  ModOP(
+                                  ) [ModOP]
+                                  IntRef(
+                                   2
+                                  ) [IntRef]
+                                ) [MulopFactor]
+                              ) [Term]
+                            ) [TermExpr]
+                            PlusOP(
+                            ) [PlusOP]
+                            Term(
+                              MulopFactor(
+                                SimpleFactor(
+                                  IntRef(
+                                   3
+                                  ) [IntRef]
+                                ) [SimpleFactor]
+                                MullOP(
+                                ) [MullOP]
+                                IntRef(
+                                 2
+                                ) [IntRef]
+                              ) [MulopFactor]
+                            ) [Term]
+                          ) [AddExpr]
+                          MinusOP(
+                          ) [MinusOP]
+                          Term(
+                            SimpleFactor(
+                              IntRef(
+                               3
+                              ) [IntRef]
+                            ) [SimpleFactor]
+                          ) [Term]
+                        ) [AddExpr]
+                      ) [Expr]
+                    ) [ParenthesisExpr]
+                  ) [SimpleFactor]
+                ) [Term]
+              ) [AddExpr]
+            ) [Expr]
+          ) [Assignment]
+        ) [DesignatorStatement]
+      ) [Statements]
+      Print(
+        Expr(
+          TermExpr(
+            Term(
+              SimpleFactor(
+                VarRef(
+                  Designator(
+                    NoNamespaceDeisgnator(
+                      SimpleDesignator(
+                       bodovi
+                      ) [SimpleDesignator]
+                    ) [NoNamespaceDeisgnator]
+                  ) [Designator]
+                ) [VarRef]
+              ) [SimpleFactor]
+            ) [Term]
+          ) [TermExpr]
+        ) [Expr]
+        NoConstToPrint(
+        ) [NoConstToPrint]
+      ) [Print]
+    ) [Statements]
+  ) [MainMethod]
+) [Program]
+INFO  17:06:55,961 - [info] Declared global constant nula. at line : 6.
+INFO  17:06:55,961 - [info] Declared global constant jedan. at line : 7.
+INFO  17:06:55,961 - [info] Declared global constant pet. at line : 8.
+INFO  17:06:55,961 - [info] Variable niz has been declared. at line : 14.
+INFO  17:06:55,961 - [info] Variable nizch has been declared. at line : 15.
+INFO  17:06:55,961 - [info] Variable a has been declared. at line : 20.
+INFO  17:06:55,961 - [info] Main :  at line : 23.
+INFO  17:06:55,961 - [info] Variable bodovi has been declared. at line : 24.
+INFO  17:06:55,961 - [info] Variable bt has been declared. at line : 25.
+INFO  17:06:55,961 - [info] Local use of variable bodovi..
+INFO  17:06:55,961 - [info] Assignemnt succesful.
+INFO  17:06:55,962 - [info] Local use of variable bodovi..
+INFO  17:06:55,962 - [info] bodovi incremented at line : 28.
+INFO  17:06:55,962 - [info] Local use of variable bodovi..
+INFO  17:06:55,962 - [info] Local use of variable bodovi..
+INFO  17:06:55,962 - [info] Global use of variable jedan..
+INFO  17:06:55,962 - [info] Assignemnt succesful.
+INFO  17:06:55,962 - [info] Local use of variable bodovi..
+INFO  17:06:55,962 - [info] Local use of variable bodovi..
+INFO  17:06:55,962 - [info] Global use of variable pet..
+INFO  17:06:55,962 - [info] Assignemnt succesful.
+INFO  17:06:55,962 - [info] Local use of variable bodovi..
+INFO  17:06:55,962 - [info] bodovi decremented at line : 31.
+INFO  17:06:55,962 - [info] Local use of variable bodovi..
+INFO  17:06:55,962 - [info] Print check succesful.
+INFO  17:06:55,963 - [info] Global use of variable niz..
+INFO  17:06:55,963 - [info] Assignemnt succesful.
+INFO  17:06:55,963 - [info] Global use of variable niz..
+INFO  17:06:55,963 - [info] Global use of variable nula..
+INFO  17:06:55,963 - [info] Global use of variable jedan..
+INFO  17:06:55,963 - [info] Assignemnt succesful.
+INFO  17:06:55,963 - [info] Global use of variable niz..
+INFO  17:06:55,963 - [info] Assignemnt succesful.
+INFO  17:06:55,963 - [info] Global use of variable niz..
+INFO  17:06:55,963 - [info] Global use of variable niz..
+INFO  17:06:55,963 - [info] Global use of variable jedan..
+INFO  17:06:55,963 - [info] Global use of variable niz..
+INFO  17:06:55,963 - [info] Global use of variable niz..
+INFO  17:06:55,963 - [info] Assignemnt succesful.
+INFO  17:06:55,963 - [info] Local use of variable bodovi..
+INFO  17:06:55,963 - [info] Global use of variable niz..
+INFO  17:06:55,963 - [info] Global use of variable niz..
+INFO  17:06:55,963 - [info] Assignemnt succesful.
+INFO  17:06:55,963 - [info] Local use of variable bodovi..
+INFO  17:06:55,963 - [info] Print check succesful.
+INFO  17:06:55,963 - [info] Global use of variable niz..
+INFO  17:06:55,963 - [info] Print check succesful.
+INFO  17:06:55,963 - [info] Global use of variable nizch..
+INFO  17:06:55,963 - [info] Assignemnt succesful.
+INFO  17:06:55,963 - [info] Global use of variable nizch..
+INFO  17:06:55,963 - [info] Assignemnt succesful.
+INFO  17:06:55,963 - [info] Global use of variable nizch..
+INFO  17:06:55,963 - [info] Global use of variable jedan..
+INFO  17:06:55,965 - [info] Assignemnt succesful.
+INFO  17:06:55,965 - [info] Global use of variable nizch..
+INFO  17:06:55,965 - [info] Global use of variable pet..
+INFO  17:06:55,965 - [info] Assignemnt succesful.
+INFO  17:06:55,965 - [info] Global use of variable nizch..
+INFO  17:06:55,965 - [info] Print check succesful.
+INFO  17:06:55,965 - [info] Global use of variable nizch..
+INFO  17:06:55,965 - [info] Global use of variable jedan..
+INFO  17:06:55,965 - [info] Print check succesful.
+INFO  17:06:55,965 - [info] Global use of variable a..
+INFO  17:06:55,966 - [info] Assignemnt succesful.
+INFO  17:06:55,966 - [info] Local use of variable bodovi..
+INFO  17:06:55,966 - [info] Read check succesful.
+INFO  17:06:55,967 - [info] Local use of variable bodovi..
+INFO  17:06:55,967 - [info] Local use of variable bodovi..
+INFO  17:06:55,967 - [info] Global use of variable pet..
+INFO  17:06:55,967 - [info] Global use of variable a..
+INFO  17:06:55,967 - [info] Global use of variable jedan..
+INFO  17:06:55,967 - [info] Local use of variable bodovi..
+INFO  17:06:55,967 - [info] Assignemnt succesful.
+INFO  17:06:55,967 - [info] Local use of variable bodovi..
+INFO  17:06:55,968 - [info] Print check succesful.
+INFO  17:06:55,968 - Print calls = 6
+INFO  17:06:55,970 - Generating bytecode file: C:\Users\filip.jankovic\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
