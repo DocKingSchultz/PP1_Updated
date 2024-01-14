@@ -54,11 +54,11 @@ scan with {:
 :}
 
 terminal PROG, PRINT, READ;
+terminal NAMESPACE;
 terminal RETURN, VOID, CONST, NEW;
-terminal CLASS, EXTENDS;
-terminal WHILE, FOREACH, CONTINUE, BREAK;
+terminal CONTINUE, BREAK;
 terminal IF, ELSE;
-terminal PLUS, MINUS, PLUSINCR, MINUSDECR;
+terminal DOUBLEDOTS, PLUS, MINUS, PLUSINCR, MINUSDECR;
 terminal MULTIPLE,DIVIDE, MOD;
 terminal EQUAL, EQUALEQUAL, DIFF;
 terminal MORE, LESS, MOREEQUAL, LESEQUAL;
@@ -74,19 +74,34 @@ nonterminal declaration_list, declaration_part;
 nonterminal const_dec, const_decl_list, const_declaration_part, const_to_print;
 nonterminal var_dec, var_list, var_part;
 nonterminal main_variables;
+nonterminal namespace, namespace_list, namespaceContent, namespace_name;
 nonterminal statements_list; 
 nonterminal designator_statement;
 nonterminal add_sub_OP, mull_div_mod_OP, assign;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj prog_id, program, main;
-nonterminal rs.etf.pp1.symboltable.concepts.Obj statement, designator, ident_expr_list, method_dec;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj statement, designator, ident_namespace_expr_list, ident_expr_list, method_dec;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct type, expr, term_list, term, factor_list, factor;
 
 
 
-program ::= (Program) PROG prog_id:o declaration_list LBRACE method_dec RBRACE;
+program ::= (Program) PROG prog_id:o namespace_list declaration_list LBRACE method_dec RBRACE;
 
 prog_id ::= (Prog_id) IDENT: id;
+
+namespace_list ::= (Namespaces) namespace_list namespace
+			  	   |
+			  	   (NoNamespace)/* epsilon */
+;
+
+namespace ::= (Namespace) NAMESPACE namespace_name LBRACE namespaceContent RBRACE
+;
+
+namespace_name ::= (NamespaceName) IDENT:id
+;
+
+namespaceContent ::= (NamespaceDeclarations) declaration_list LBRACE RBRACE
+;
 
 declaration_list ::= (Declarations) declaration_list declaration_part
 			   		 |
@@ -160,8 +175,14 @@ designator_statement ::= (Assignment) designator:o EQUAL expr:t
 						 |
 						 (Decrement) designator:d MINUSDECR
 ;
-designator ::= (Designator) ident_expr_list:o
+designator ::= (Designator) ident_namespace_expr_list:o
 ;
+
+ident_namespace_expr_list ::= (NamespaceDesignator) IDENT:id DOUBLEDOTS ident_expr_list
+							  |
+							  (NoNamespaceDeisgnator) ident_expr_list
+;
+
 ident_expr_list ::= (ArrayDesignator) ident_expr_list:o LEFTSQPAR expr RIGHTSQPAR
 					|
 					(SimpleDesignator) IDENT:id
