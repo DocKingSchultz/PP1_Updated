@@ -16,10 +16,14 @@ public class SemanticPass extends VisitorAdaptor {
 	Obj currentMethod = null;
 	boolean returnFound = false;
 	boolean main_defined = false;
+	int namespaceVariableDeclarations = 0;
+	int namespaceVariableUses = 0;
+	int constVariablesDeclared = 0;
 	int nVars;
 	String error = "[error] ";
 	String info = "[info] ";
 	Struct lastType;
+
 	Logger log = Logger.getLogger(getClass());
 	Struct boolType = new Struct(Struct.Bool);
 	Obj boolObj = new Obj(Obj.Type, "bool", boolType);
@@ -39,6 +43,8 @@ public class SemanticPass extends VisitorAdaptor {
 	{
 		return new Struct(typeId_struct, type);
 	}
+	
+
 	
 	// ----------------------------------- Log methods -----------------------
 	//
@@ -83,7 +89,6 @@ public class SemanticPass extends VisitorAdaptor {
 	public void visit(Namespace n)
 	{
 		currNamespace="";
-		Tab.closeScope();
 	}
 	public void visit(NamespaceName n)
 	{
@@ -92,32 +97,13 @@ public class SemanticPass extends VisitorAdaptor {
 		if(res!=Tab.noObj)
 		{
 			report_error(error + "Namespace :" + name + " already existing ", n);
+			return;
 		}
 		// We put for namespaces type Fld, as we are not gonna use
 		// field type, as we got no classed
 		//
 		Tab.insert(Obj.Fld, name, new Struct(Struct.None));
 		currNamespace=name;
-		Tab.openScope();
-		
-	}
-	public String checkIfVariableAlreadyDeclared(String varName)
-	{
-		Obj res;
-		String namespaceTag = currNamespace!=""?currNamespace+".":"";
-		res = Tab.find(namespaceTag + varName);	
-		// Check if var is already declared in the symbol table
-		//
-		if(res!=Tab.noObj)
-		{
-			// Type match check :
-			//
-			return namespaceTag+varName;	
-		}
-		else
-		{
-			return "not_existing";
-		}
 	}
 	
 	
@@ -125,80 +111,105 @@ public class SemanticPass extends VisitorAdaptor {
 	//
 	public void visit(ConstIdInt constGDecl) 
 	{
-		String res = checkIfVariableAlreadyDeclared(constGDecl.getId());
+		Obj res;
+		String varName = constGDecl.getId();
+		String namespaceTag = currNamespace!=""?currNamespace+".":"";
 		// Check if var is already declared in the symbol table
 		//
-		if(res=="not_existing")
+		res = Tab.find(namespaceTag + varName);	
+		if(res==Tab.noObj)
 		{
 			// Type match check :
 			//
 			if(lastType.getKind()==Struct.Int)
 			{
-				report_info(info + "Declared global constant "+ res+".", constGDecl);
-				Obj constNode = Tab.insert(Obj.Con, res, lastType);
+				if(currNamespace=="")report_info(info + "Declared global constant "+ namespaceTag + varName+".", constGDecl);
+				else {
+					report_info(info + "Declared namespace constant "+ namespaceTag + varName+".", constGDecl);
+					namespaceVariableDeclarations++;
+				}
+				constVariablesDeclared++;
+				Obj constNode = Tab.insert(Obj.Con, namespaceTag + varName, lastType);
 				constNode.setAdr(constGDecl.getValue());
 			}
 			else
 			{
-				report_error(error + "Type for : " + constGDecl.getId() + " doesn't match the declaration.", constGDecl);
+				report_error(error + "Type for : " + namespaceTag + varName + " doesn't match the declaration.", constGDecl);
 			}
 		}
 		else
 		{
-			report_error(error + "Global constant : " + constGDecl.getId() + " already declared.", constGDecl);
+			report_error(error + "Global constant : " + namespaceTag + varName + " already declared.", constGDecl);
 		}
 
 	}
 	public void visit(ConstIdChar constGDecl) 
 	{
-		String res = checkIfVariableAlreadyDeclared(constGDecl.getId());
+		Obj res;
+		String varName = constGDecl.getId();
+		String namespaceTag = currNamespace!=""?currNamespace+".":"";
 		// Check if var is already declared in the symbol table
 		//
-		if(res=="not_existing")
+		res = Tab.find(namespaceTag + varName);	
+		if(res==Tab.noObj)
 		{
 			// Type match check :
 			//
 			if(lastType.getKind()==Struct.Char)
 			{
-				report_info(info + "Declared global constant "+ constGDecl.getId()+".", constGDecl);
-				Obj constNode = Tab.insert(Obj.Con, res, lastType);
+				if(currNamespace=="")report_info(info + "Declared global constant "+ namespaceTag + varName+".", constGDecl);
+				else {
+					report_info(info + "Declared namespace constant "+ namespaceTag + varName+".", constGDecl);
+					namespaceVariableDeclarations++;
+				}
+				Obj constNode = Tab.insert(Obj.Con, namespaceTag + varName, lastType);
+				constVariablesDeclared++;
 				constNode.setAdr(constGDecl.getValue());
 			}
 			else
 			{
-				report_error(error + "Type for : " + constGDecl.getId() + " doesn't match the declaration.", constGDecl);
+				report_error(error + "Type for : " + namespaceTag + varName+  " doesn't match the declaration.", constGDecl);
 			}
 		}
 		else
 		{
-			report_error(error + "Global constant : " + constGDecl.getId() + " already declared.", constGDecl);
+			report_error(error + "Global constant : " + namespaceTag + varName+  " already declared.", constGDecl);
 		}
 
 	}
 	public void visit(ConstIdBool constGDecl) 
 	{
-		String res = checkIfVariableAlreadyDeclared(constGDecl.getId());
+		Obj res;
+		String varName = constGDecl.getId();
+		String namespaceTag = currNamespace!=""?currNamespace+".":"";
 		// Check if var is already declared in the symbol table
 		//
-		if(res=="not_existing")
+		res = Tab.find(namespaceTag + varName);	
+		if(res==Tab.noObj)
 		{
 			// Type match check :
 			// [*] Bool type needs to be created somehow
 			//
 			if(lastType.getKind()==Struct.Bool)
 			{
-				report_info(info + "Declared global constant."+ constGDecl.getId(), constGDecl);
-				Obj constNode = Tab.insert(Obj.Con, res, lastType);
+				if(currNamespace=="")report_info(info + "Declared global constant."+ namespaceTag + varName, constGDecl);
+				else 
+				{
+					report_info(info + "Declared namespace constant."+ namespaceTag + varName, constGDecl);
+					namespaceVariableDeclarations++;
+				}
+				constVariablesDeclared++;
+				Obj constNode = Tab.insert(Obj.Con,  namespaceTag + varName, lastType);
 				//constNode.setAdr(constGDecl.getValue());
 			}
 			else
 			{
-				report_error(error + "Type for : " + constGDecl.getId() + " doesn't match the declaration.", constGDecl);
+				report_error(error + "Type for : "+ namespaceTag + varName+ " doesn't match the declaration.", constGDecl);
 			}
 		}
 		else
 		{
-			report_error(error + "Global constant : " + constGDecl.getId() + " already declared.", constGDecl);
+			report_error(error + "Global constant : "+ namespaceTag + varName+" already declared.", constGDecl);
 		}
 
 	}
@@ -206,39 +217,58 @@ public class SemanticPass extends VisitorAdaptor {
 	// -------------------------------------- Regular variables --------------------------------------
 	//
 	public void visit(VarId regularVarDecl) {
-		String res = checkIfVariableAlreadyDeclared(regularVarDecl.getId());	
+		Obj res;
+		String varName = regularVarDecl.getId();
+		String namespaceTag = currNamespace!=""?currNamespace+".":"";
 		// Check if var is already declared in the symbol table
 		//
-		if(res!="not_existing")
+		res = Tab.find(namespaceTag + varName);	
+		if(res==Tab.noObj)
 		{
 			// Type match check :
 			//
 			
-			report_info(info + "Variable "+ res+" has been declared.", regularVarDecl);
-			Obj varNode = Tab.insert(Obj.Var, res, lastType);
+			
+			if(currNamespace=="")report_info(info + "Variable "+namespaceTag + varName+" has been declared.", regularVarDecl);
+			else 
+			{
+				namespaceVariableDeclarations++;
+				report_info(info + "Namespace variable "+namespaceTag + varName+" has been declared.", regularVarDecl);
+
+			}
+			Obj varNode = Tab.insert(Obj.Var, namespaceTag + varName, lastType);
 			
 		}
 		else
 		{
-			report_error(error + "Variable : " + res + " already declared.", regularVarDecl);
+			report_error(error + "Variable : " + namespaceTag + varName + " already declared.", regularVarDecl);
 		}
 
 	}
 	
 	public void visit(VarOrArrayId regularArrayDecl) 
 	{
-		String res = checkIfVariableAlreadyDeclared(regularArrayDecl.getId());	// Check if var is already declared in the symbol table
+		Obj res;
+		String varName = regularArrayDecl.getId();
+		String namespaceTag = currNamespace!=""?currNamespace+".":"";
+		// Check if var array is already declared in the symbol table
 		//
-		if(res!="not_existing")
+		res = Tab.find(namespaceTag + varName);	
+		if(res==Tab.noObj)
 		{
 			// Type match check :
 			//
-			report_info(info + "Variable "+ res+" has been declared.", regularArrayDecl);
-			Obj varNode = Tab.insert(Obj.Var, res, makeStruct(Struct.Array, lastType));
+			if(currNamespace=="")report_info(info + "Variable "+ namespaceTag + varName+" has been declared.", regularArrayDecl);
+			else
+			{
+				namespaceVariableDeclarations++;
+				report_info(info + "Namespace Variable "+ namespaceTag + varName+" has been declared.", regularArrayDecl);
+			}
+			Obj varNode = Tab.insert(Obj.Var, namespaceTag + varName, makeStruct(Struct.Array, lastType));
 		}
 		else
 		{
-			report_error(error + "Variable : " +res + " already declared.", regularArrayDecl);
+			report_error(error + "Variable : " +namespaceTag + varName + " already declared.", regularArrayDecl);
 		}
 	}
 
@@ -248,7 +278,7 @@ public class SemanticPass extends VisitorAdaptor {
 		Obj typeNode = Tab.find(type.getId());
 		
 		if (typeNode == Tab.noObj) {
-			report_error("Nije pronadjen tip " + type.getId() + " u tabeli simbola.", null);
+			report_error("Nije pronadjen tip " + type.getId() + " u tabeli simbola.", type);
 			type.struct = Tab.noType;
 			lastType = Tab.noType;
 		} 
@@ -272,6 +302,7 @@ public class SemanticPass extends VisitorAdaptor {
 		//
 		Tab.chainLocalSymbols(method_dec.getMain().obj);
 		Tab.closeScope();
+		System.out.print("Number of namespace variables declared :" + namespaceVariableDeclarations + "\n" + "Number of namespace variables used : " + namespaceVariableUses +"\n"+ "Total number of contant variables declared : "+constVariablesDeclared+"\n");
 	}
 	
 	public void visit(MainIdent method_name) {
@@ -323,7 +354,7 @@ public class SemanticPass extends VisitorAdaptor {
 		Struct rightExpr = assign.getExpr().struct;
 		if(leftDes.getKind()!=Obj.Var && leftDes.getKind()!=Obj.Elem)
 		{
-			report_error("Statement does not have assignable left value", null);
+			report_error(error + "Statement does not have assignable left value, at line :", assign);
 		}
 		else if(rightExpr.compatibleWith(leftDes.getType()))
 		{
@@ -331,7 +362,7 @@ public class SemanticPass extends VisitorAdaptor {
 		}
 		else 
 		{
-			report_error("Statement does not have compatible values for assignment", null);
+			report_error(error + "Statement does not have compatible values for assignment, at line", assign);
 		}
 	}
 		
@@ -377,29 +408,7 @@ public class SemanticPass extends VisitorAdaptor {
 	
 	public void visit(Designator designator)
 	{
-		designator.obj=designator.getIdent_namespace_expr_list().obj;
-	}
-	
-	public void visit(NamespaceDesignator nd)
-	{
-		String name = nd.getId() + "." + nd.getIdent_expr_list().obj.getName();
-		Obj res = Tab.find(name);
-		if(res==Tab.noObj)
-		{
-			report_error(name + " Not declared",nd);
-		}
-		nd.obj=res;
-	}
-	public void visit(NoNamespaceDeisgnator nnd)
-	{
-		String name = nnd.getIdent_expr_list().obj.getName();
-		Obj res = Tab.find(name);
-		if(res==Tab.noObj)
-		{
-			report_error(name + " Not declared",nnd);
-		}
-		nnd.obj=res;
-
+		designator.obj=designator.getIdent_expr_list().obj;
 	}
 	
 	public void visit(ArrayDesignator arrDes)
@@ -409,22 +418,56 @@ public class SemanticPass extends VisitorAdaptor {
 		Obj obj = arrDes.getIdent_expr_list().obj;
 		if(arrDes.getExpr().struct!=Tab.intType)
 		{
-			report_error(error+"Expression that is included in sub/add operations is not of type int", null);
+			report_error(error+"Expression that is included in sub/add operations is not of type int", arrDes);
 			arrDes.obj=Tab.noObj;
 			return;
 		}
 		if(obj.getType().getKind()!=Struct.Array)
 		{
-			report_error(error+"Variable is not of type Array", null);
+			report_error(error+"Variable is not of type Array", arrDes);
 			arrDes.obj=Tab.noObj;
 			return;
 		}
 		arrDes.obj = new Obj(Obj.Elem, "", obj.getType().getElemType());
 	}
 	
-	public void visit(SimpleDesignator designator)
+	public void visit(SimpleDesignatorWithNamespace designator)
 	{
+		String varName = designator.getNamespaceName() + "." + designator.getId();
+		Obj obj = Tab.find(varName);
+		if(obj==Tab.noObj)
+		{
+			report_error(error+"Variable " + varName + " is not declared", designator);
+			return;
+		}
 		designator.obj = new Obj(Struct.None, designator.getId(), new Struct(Struct.None));
+		designator.obj = obj;
+		report_info(info+"Local use of variable "+varName+".", null);
+		namespaceVariableUses++;
+
+	}
+	
+	
+	public void visit(SimpleDesignatorWithoutNamespace designator)
+	{
+		Obj obj = Tab.find(designator.getId());
+		if(obj==Tab.noObj)
+		{
+			report_error(error+"Variable " + designator.getId() + " is not declared", designator);
+			return;
+		}
+		designator.obj = new Obj(Struct.None, designator.getId(), new Struct(Struct.None));
+		designator.obj = obj;
+		if(designator.obj.getLevel()==1)
+		{
+			report_info(info+"Local use of variable "+designator.getId()+".", null);
+		}
+		else
+		{
+		// Registered use of global variable
+		//	
+			report_info(info+"Global use of variable "+designator.getId()+".", null);
+		}
 
 	}
 	
@@ -460,7 +503,7 @@ public class SemanticPass extends VisitorAdaptor {
 		//
 		if(nexpr.getTerm().struct!=Tab.intType)
 		{
-			report_error(error+"You cant negate value that is not int type", null);
+			report_error(error+"You cant negate value that is not int type", nexpr);
 			nexpr.struct=Tab.noType;
 			return;
 		}

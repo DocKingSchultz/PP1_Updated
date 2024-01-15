@@ -1,0 +1,161 @@
+INFO  22:38:11,493 - Compiling source file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  22:38:11,513 - #2 program
+INFO  22:38:11,513 - #43 test301
+INFO  22:38:11,513 - #5 namespace
+INFO  22:38:11,514 - #43 Konstante
+INFO  22:38:11,514 - #38 {
+INFO  22:38:11,514 - #8 const
+INFO  22:38:11,514 - #43 int
+INFO  22:38:11,515 - #43 nula
+INFO  22:38:11,515 - #22 =
+INFO  22:38:11,515 - #40 0
+INFO  22:38:11,515 - #32 ;
+INFO  22:38:11,515 - #38 {
+INFO  22:38:11,516 - #39 }
+INFO  22:38:11,516 - #39 }
+INFO  22:38:11,516 - #8 const
+INFO  22:38:11,517 - #43 int
+INFO  22:38:11,517 - #43 a
+INFO  22:38:11,517 - #22 =
+INFO  22:38:11,517 - #40 3
+INFO  22:38:11,517 - #32 ;
+INFO  22:38:11,520 - #38 {
+INFO  22:38:11,520 - #7 void
+INFO  22:38:11,520 - #43 main
+INFO  22:38:11,520 - #36 (
+INFO  22:38:11,520 - #37 )
+INFO  22:38:11,520 - #43 int
+INFO  22:38:11,520 - #43 rez
+INFO  22:38:11,520 - #32 ;
+INFO  22:38:11,521 - #38 {
+INFO  22:38:11,521 - #43 rez
+INFO  22:38:11,522 - #22 =
+INFO  22:38:11,522 - #43 Konstante
+INFO  22:38:11,522 - #14 ::
+INFO  22:38:11,522 - #43 nula
+INFO  22:38:11,522 - #15 +
+INFO  22:38:11,523 - #40 6
+INFO  22:38:11,523 - #32 ;
+INFO  22:38:11,524 - #39 }
+INFO  22:38:11,524 - #39 }
+INFO  22:38:11,525 - Program(
+  Prog_id(
+   test301
+  ) [Prog_id]
+  Namespaces(
+    NoNamespace(
+    ) [NoNamespace]
+    Namespace(
+      NamespaceName(
+       Konstante
+      ) [NamespaceName]
+      NamespaceDeclarations(
+        Declarations(
+          NoDeclarations(
+          ) [NoDeclarations]
+          ConstDeclarations(
+            Const_dec(
+              Type(
+               int
+              ) [Type]
+              SingleConstDeclarationPart(
+                ConstIdInt(
+                 nula
+                 0
+                ) [ConstIdInt]
+              ) [SingleConstDeclarationPart]
+            ) [Const_dec]
+          ) [ConstDeclarations]
+        ) [Declarations]
+      ) [NamespaceDeclarations]
+    ) [Namespace]
+  ) [Namespaces]
+  Declarations(
+    NoDeclarations(
+    ) [NoDeclarations]
+    ConstDeclarations(
+      Const_dec(
+        Type(
+         int
+        ) [Type]
+        SingleConstDeclarationPart(
+          ConstIdInt(
+           a
+           3
+          ) [ConstIdInt]
+        ) [SingleConstDeclarationPart]
+      ) [Const_dec]
+    ) [ConstDeclarations]
+  ) [Declarations]
+  MainMethod(
+    MainIdent(
+     main
+    ) [MainIdent]
+    MainVariables(
+      NoMainVariables(
+      ) [NoMainVariables]
+      Var_dec(
+        Type(
+         int
+        ) [Type]
+        SingleVarIdList(
+          VarId(
+           rez
+          ) [VarId]
+        ) [SingleVarIdList]
+      ) [Var_dec]
+    ) [MainVariables]
+    Statements(
+      NoStatements(
+      ) [NoStatements]
+      DesignatorStatement(
+        Assignment(
+          Designator(
+            NoNamespaceDeisgnator(
+              SimpleDesignator(
+               rez
+              ) [SimpleDesignator]
+            ) [NoNamespaceDeisgnator]
+          ) [Designator]
+          Expr(
+            AddExpr(
+              TermExpr(
+                Term(
+                  SimpleFactor(
+                    VarRef(
+                      Designator(
+                        NamespaceDesignator(
+                         Konstante
+                          SimpleDesignator(
+                           nula
+                          ) [SimpleDesignator]
+                        ) [NamespaceDesignator]
+                      ) [Designator]
+                    ) [VarRef]
+                  ) [SimpleFactor]
+                ) [Term]
+              ) [TermExpr]
+              PlusOP(
+              ) [PlusOP]
+              Term(
+                SimpleFactor(
+                  IntRef(
+                   6
+                  ) [IntRef]
+                ) [SimpleFactor]
+              ) [Term]
+            ) [AddExpr]
+          ) [Expr]
+        ) [Assignment]
+      ) [DesignatorStatement]
+    ) [Statements]
+  ) [MainMethod]
+) [Program]
+INFO  22:38:11,530 - [info] Declared global constant Konstante.nula. at line : 6.
+INFO  22:38:11,530 - [info] Declared global constant a. at line : 12.
+INFO  22:38:11,530 - [info] Main :  at line : 15.
+INFO  22:38:11,531 - [info] Variable rez has been declared. at line : 17.
+INFO  22:38:11,531 - [info] Assignemnt succesful.
+INFO  22:38:11,531 - Print calls = 0
+INFO  22:38:11,531 - Generating bytecode file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  22:38:11,533 - Parsiranje uspesno zavrseno!

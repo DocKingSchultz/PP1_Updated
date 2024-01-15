@@ -56,8 +56,6 @@ scan with {:
 terminal PROG, PRINT, READ;
 terminal NAMESPACE;
 terminal RETURN, VOID, CONST, NEW;
-terminal CONTINUE, BREAK;
-terminal IF, ELSE;
 terminal DOUBLEDOTS, PLUS, MINUS, PLUSINCR, MINUSDECR;
 terminal MULTIPLE,DIVIDE, MOD;
 terminal EQUAL, EQUALEQUAL, DIFF;
@@ -175,17 +173,13 @@ designator_statement ::= (Assignment) designator:o EQUAL expr:t
 						 |
 						 (Decrement) designator:d MINUSDECR
 ;
-designator ::= (Designator) ident_namespace_expr_list:o
+designator ::= (Designator) ident_expr_list:o
 ;
-
-ident_namespace_expr_list ::= (NamespaceDesignator) IDENT:id DOUBLEDOTS ident_expr_list
-							  |
-							  (NoNamespaceDeisgnator) ident_expr_list
-;
-
-ident_expr_list ::= (ArrayDesignator) ident_expr_list:o LEFTSQPAR expr RIGHTSQPAR
-					|
-					(SimpleDesignator) IDENT:id
+ident_expr_list ::=(ArrayDesignator) ident_expr_list LEFTSQPAR expr RIGHTSQPAR
+				   |
+				   (SimpleDesignatorWithNamespace) IDENT:namespaceName DOUBLEDOTS IDENT:id
+				   |
+				   (SimpleDesignatorWithoutNamespace) IDENT:id
 ;
 expr ::= (Expr) term_list:t
 ;

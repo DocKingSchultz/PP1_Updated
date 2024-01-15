@@ -56,8 +56,6 @@ scan with {:
 terminal PROG, PRINT, READ;
 terminal NAMESPACE;
 terminal RETURN, VOID, CONST, NEW;
-terminal CONTINUE, BREAK;
-terminal IF, ELSE;
 terminal DOUBLEDOTS, PLUS, MINUS, PLUSINCR, MINUSDECR;
 terminal MULTIPLE,DIVIDE, MOD;
 terminal EQUAL, EQUALEQUAL, DIFF;
@@ -186,17 +184,13 @@ designator_statement ::= (Assignment) designator:o EQUAL expr:t {: RESULT=new As
 						 |
 						 (Decrement) designator:d MINUSDECR {: RESULT=new Decrement(d); RESULT.setLine(dleft); :}
 ;
-designator ::= (Designator) ident_namespace_expr_list:o {: RESULT=new Designator(o); RESULT.setLine(oleft); :}
+designator ::= (Designator) ident_expr_list:o {: RESULT=new Designator(o); RESULT.setLine(oleft); :}
 ;
-
-ident_namespace_expr_list ::= (NamespaceDesignator) IDENT:id DOUBLEDOTS ident_expr_list:i1 {: RESULT=new NamespaceDesignator(id, i1); RESULT.setLine(idleft); :}
-							  |
-							  (NoNamespaceDeisgnator) ident_expr_list:i1 {: RESULT=new NoNamespaceDeisgnator(i1); RESULT.setLine(i1left); :}
-;
-
-ident_expr_list ::= (ArrayDesignator) ident_expr_list:o LEFTSQPAR expr:e1 RIGHTSQPAR {: RESULT=new ArrayDesignator(o, e1); RESULT.setLine(oleft); :}
-					|
-					(SimpleDesignator) IDENT:id {: RESULT=new SimpleDesignator(id); RESULT.setLine(idleft); :}
+ident_expr_list ::=(ArrayDesignator) ident_expr_list:i1 LEFTSQPAR expr:e2 RIGHTSQPAR {: RESULT=new ArrayDesignator(i1, e2); RESULT.setLine(i1left); :}
+				   |
+				   (SimpleDesignatorWithNamespace) IDENT:namespaceName DOUBLEDOTS IDENT:id {: RESULT=new SimpleDesignatorWithNamespace(namespaceName, id); RESULT.setLine(namespaceNameleft); :}
+				   |
+				   (SimpleDesignatorWithoutNamespace) IDENT:id {: RESULT=new SimpleDesignatorWithoutNamespace(id); RESULT.setLine(idleft); :}
 ;
 expr ::= (Expr) term_list:t {: RESULT=new Expr(t); RESULT.setLine(tleft); :}
 ;

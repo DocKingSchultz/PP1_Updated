@@ -1,0 +1,94 @@
+INFO  22:33:19,176 - Compiling source file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  22:33:19,196 - #2 program
+INFO  22:33:19,197 - #43 test301
+INFO  22:33:19,197 - #5 namespace
+INFO  22:33:19,198 - #43 Konstante
+INFO  22:33:19,198 - #38 {
+INFO  22:33:19,198 - #8 const
+INFO  22:33:19,198 - #43 int
+INFO  22:33:19,198 - #43 nula
+INFO  22:33:19,199 - #22 =
+INFO  22:33:19,199 - #40 0
+INFO  22:33:19,199 - #32 ;
+INFO  22:33:19,199 - #38 {
+INFO  22:33:19,200 - #39 }
+INFO  22:33:19,200 - #39 }
+INFO  22:33:19,200 - #8 const
+INFO  22:33:19,201 - #43 int
+INFO  22:33:19,201 - #43 a
+INFO  22:33:19,201 - #22 =
+INFO  22:33:19,201 - #40 3
+INFO  22:33:19,201 - #32 ;
+INFO  22:33:19,223 - #38 {
+INFO  22:33:19,223 - #7 void
+INFO  22:33:19,223 - #43 main
+INFO  22:33:19,223 - #36 (
+INFO  22:33:19,223 - #37 )
+INFO  22:33:19,223 - #38 {
+INFO  22:33:19,224 - #39 }
+INFO  22:33:19,224 - #39 }
+INFO  22:33:19,225 - Program(
+  Prog_id(
+   test301
+  ) [Prog_id]
+  Namespaces(
+    NoNamespace(
+    ) [NoNamespace]
+    Namespace(
+      NamespaceName(
+       Konstante
+      ) [NamespaceName]
+      NamespaceDeclarations(
+        Declarations(
+          NoDeclarations(
+          ) [NoDeclarations]
+          ConstDeclarations(
+            Const_dec(
+              Type(
+               int
+              ) [Type]
+              SingleConstDeclarationPart(
+                ConstIdInt(
+                 nula
+                 0
+                ) [ConstIdInt]
+              ) [SingleConstDeclarationPart]
+            ) [Const_dec]
+          ) [ConstDeclarations]
+        ) [Declarations]
+      ) [NamespaceDeclarations]
+    ) [Namespace]
+  ) [Namespaces]
+  Declarations(
+    NoDeclarations(
+    ) [NoDeclarations]
+    ConstDeclarations(
+      Const_dec(
+        Type(
+         int
+        ) [Type]
+        SingleConstDeclarationPart(
+          ConstIdInt(
+           a
+           3
+          ) [ConstIdInt]
+        ) [SingleConstDeclarationPart]
+      ) [Const_dec]
+    ) [ConstDeclarations]
+  ) [Declarations]
+  MainMethod(
+    MainIdent(
+     main
+    ) [MainIdent]
+    NoMainVariables(
+    ) [NoMainVariables]
+    NoStatements(
+    ) [NoStatements]
+  ) [MainMethod]
+) [Program]
+INFO  22:33:19,230 - [info] Declared global constant Konstante.nula. at line : 6.
+INFO  22:33:19,230 - [info] Declared global constant a. at line : 12.
+INFO  22:33:19,230 - [info] Main :  at line : 15.
+INFO  22:33:19,230 - Print calls = 0
+INFO  22:33:19,231 - Generating bytecode file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  22:33:19,232 - Parsiranje uspesno zavrseno!

@@ -1,0 +1,9 @@
+INFO  15:59:29,743 - Compiling source file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  15:59:29,762 - #2 program
+INFO  15:59:29,762 - #39 test301
+INFO  15:59:29,762 - #39 namespace
+INFO  15:59:29,764 - #39 Prazno
+INFO  15:59:29,764 - #34 {
+ERROR 15:59:29,764 - 
+Sintaksna greska na liniji 6
+ERROR 15:59:29,764 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 6

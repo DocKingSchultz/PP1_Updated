@@ -54,11 +54,9 @@ scan with {:
 :}
 
 terminal PROG, PRINT, READ;
+terminal NAMESPACE;
 terminal RETURN, VOID, CONST, NEW;
-terminal CLASS, EXTENDS;
-terminal WHILE, FOREACH, CONTINUE, BREAK;
-terminal IF, ELSE;
-terminal PLUS, MINUS, PLUSINCR, MINUSDECR;
+terminal DOUBLEDOTS, PLUS, MINUS, PLUSINCR, MINUSDECR;
 terminal MULTIPLE,DIVIDE, MOD;
 terminal EQUAL, EQUALEQUAL, DIFF;
 terminal MORE, LESS, MOREEQUAL, LESEQUAL;
@@ -80,6 +78,10 @@ nonterminal Var_dec var_dec;
 nonterminal Var_list var_list;
 nonterminal Var_part var_part;
 nonterminal Main_variables main_variables;
+nonterminal Namespace namespace;
+nonterminal Namespace_list namespace_list;
+nonterminal NamespaceContent namespaceContent;
+nonterminal Namespace_name namespace_name;
 nonterminal Statements_list statements_list; 
 nonterminal Designator_statement designator_statement;
 nonterminal Add_sub_OP add_sub_OP;
@@ -87,14 +89,28 @@ nonterminal Mull_div_mod_OP mull_div_mod_OP;
 nonterminal Assign assign;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj prog_id, program, main;
-nonterminal rs.etf.pp1.symboltable.concepts.Obj statement, designator, ident_expr_list, method_dec;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj statement, designator, ident_namespace_expr_list, ident_expr_list, method_dec;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct type, expr, term_list, term, factor_list, factor;
 
 
 
-program ::= (Program) PROG prog_id:o declaration_list:d1 LBRACE method_dec:m2 RBRACE {: RESULT=new Program(o, d1, m2); RESULT.setLine(oleft); :};
+program ::= (Program) PROG prog_id:o namespace_list:n1 declaration_list:d2 LBRACE method_dec:m3 RBRACE {: RESULT=new Program(o, n1, d2, m3); RESULT.setLine(oleft); :};
 
 prog_id ::= (Prog_id) IDENT: id {: RESULT=new Prog_id(id); RESULT.setLine(idleft); :};
+
+namespace_list ::= (Namespaces) namespace_list:n1 namespace:n2 {: RESULT=new Namespaces(n1, n2); RESULT.setLine(n1left); :}
+			  	   |
+			  	   (NoNamespace) {: RESULT=new NoNamespace(); :}/* epsilon */
+;
+
+namespace ::= (Namespace) NAMESPACE namespace_name:n1 LBRACE namespaceContent:n2 RBRACE {: RESULT=new Namespace(n1, n2); RESULT.setLine(n1left); :}
+;
+
+namespace_name ::= (NamespaceName) IDENT:id {: RESULT=new NamespaceName(id); RESULT.setLine(idleft); :}
+;
+
+namespaceContent ::= (NamespaceDeclarations) declaration_list:d1 LBRACE RBRACE {: RESULT=new NamespaceDeclarations(d1); RESULT.setLine(d1left); :}
+;
 
 declaration_list ::= (Declarations) declaration_list:d1 declaration_part:d2 {: RESULT=new Declarations(d1, d2); RESULT.setLine(d1left); :}
 			   		 |
@@ -170,9 +186,11 @@ designator_statement ::= (Assignment) designator:o EQUAL expr:t {: RESULT=new As
 ;
 designator ::= (Designator) ident_expr_list:o {: RESULT=new Designator(o); RESULT.setLine(oleft); :}
 ;
-ident_expr_list ::= (ArrayDesignator) ident_expr_list:o LEFTSQPAR expr:e1 RIGHTSQPAR {: RESULT=new ArrayDesignator(o, e1); RESULT.setLine(oleft); :}
-					|
-					(SimpleDesignator) IDENT:id {: RESULT=new SimpleDesignator(id); RESULT.setLine(idleft); :}
+ident_expr_list ::=(ArrayDesignator) ident_expr_list:i1 LEFTSQPAR expr:e2 RIGHTSQPAR {: RESULT=new ArrayDesignator(i1, e2); RESULT.setLine(i1left); :}
+				   |
+				   (SimpleDesignatorWithNamespace) IDENT:namespaceName DOUBLEDOTS IDENT:id {: RESULT=new SimpleDesignatorWithNamespace(namespaceName, id); RESULT.setLine(namespaceNameleft); :}
+				   |
+				   (SimpleDesignatorWithoutNamespace) IDENT:id {: RESULT=new SimpleDesignatorWithoutNamespace(id); RESULT.setLine(idleft); :}
 ;
 expr ::= (Expr) term_list:t {: RESULT=new Expr(t); RESULT.setLine(tleft); :}
 ;
