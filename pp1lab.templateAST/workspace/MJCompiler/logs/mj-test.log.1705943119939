@@ -1,0 +1,56 @@
+INFO  18:04:55,689 - Compiling source file: C:\Users\filip.jankovic\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  18:04:55,714 - #2 program
+INFO  18:04:55,714 - #39 test301
+INFO  18:04:55,714 - #34 {
+INFO  18:04:55,716 - #7 void
+INFO  18:04:55,716 - #39 main
+INFO  18:04:55,716 - #32 (
+INFO  18:04:55,716 - #33 )
+INFO  18:04:55,716 - #34 {
+INFO  18:04:55,716 - #3 print
+INFO  18:04:55,718 - #32 (
+INFO  18:04:55,718 - #36 20
+INFO  18:04:55,718 - #33 )
+INFO  18:04:55,720 - #28 ;
+INFO  18:04:55,720 - #35 }
+INFO  18:04:55,720 - #35 }
+INFO  18:04:55,723 - Program(
+  Prog_id(
+   test301
+  ) [Prog_id]
+  NoNamespace(
+  ) [NoNamespace]
+  NoDeclarations(
+  ) [NoDeclarations]
+  MainMethod(
+    MainIdent(
+     main
+    ) [MainIdent]
+    NoMainVariables(
+    ) [NoMainVariables]
+    Statements(
+      NoStatements(
+      ) [NoStatements]
+      Print(
+        Expr(
+          TermExpr(
+            Term(
+              SimpleFactor(
+                IntRef(
+                 20
+                ) [IntRef]
+              ) [SimpleFactor]
+            ) [Term]
+          ) [TermExpr]
+        ) [Expr]
+        NoConstToPrint(
+        ) [NoConstToPrint]
+      ) [Print]
+    ) [Statements]
+  ) [MainMethod]
+) [Program]
+INFO  18:04:55,734 - [info] Main :  at line : 5.
+INFO  18:04:55,734 - [info] Print check succesful.
+INFO  18:04:55,734 - Print calls = 1
+INFO  18:04:55,735 - Generating bytecode file: C:\Users\filip.jankovic\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  18:04:55,739 - Parsiranje uspesno zavrseno!

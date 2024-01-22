@@ -20,6 +20,7 @@ public class SemanticPass extends VisitorAdaptor {
 	int namespaceVariableUses = 0;
 	int constVariablesDeclared = 0;
 	int nVars;
+	
 	String error = "[error] ";
 	String info = "[info] ";
 	Struct lastType;
@@ -222,8 +223,8 @@ public class SemanticPass extends VisitorAdaptor {
 		String namespaceTag = currNamespace!=""?currNamespace+".":"";
 		// Check if var is already declared in the symbol table
 		//
-		res = Tab.find(namespaceTag + varName);	
-		if(res==Tab.noObj)
+		res = Tab.currentScope.findSymbol(namespaceTag + varName);	
+		if(res==null)
 		{
 			// Type match check :
 			//
@@ -253,8 +254,8 @@ public class SemanticPass extends VisitorAdaptor {
 		String namespaceTag = currNamespace!=""?currNamespace+".":"";
 		// Check if var array is already declared in the symbol table
 		//
-		res = Tab.find(namespaceTag + varName);	
-		if(res==Tab.noObj)
+		res = Tab.currentScope.findSymbol(namespaceTag + varName);	
+		if(res==null)
 		{
 			// Type match check :
 			//
@@ -451,6 +452,7 @@ public class SemanticPass extends VisitorAdaptor {
 	public void visit(SimpleDesignatorWithoutNamespace designator)
 	{
 		Obj obj = Tab.find(designator.getId());
+		
 		if(obj==Tab.noObj)
 		{
 			report_error(error+"Variable " + designator.getId() + " is not declared", designator);

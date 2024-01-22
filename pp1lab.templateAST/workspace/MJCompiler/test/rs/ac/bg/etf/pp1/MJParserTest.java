@@ -59,10 +59,11 @@ public class MJParserTest {
 	        		objFile.delete();
 	        	
 	        	// Code generation...
-//	        	CodeGenerator codeGenerator = new CodeGenerator();
-//	        	prog.traverseBottomUp(codeGenerator);
-//	        	Code.dataSize = semanticCheck.nVars;
-//	        	Code.mainPc = codeGenerator.getMainPc();
+	        	CodeGenerator codeGenerator = new CodeGenerator();
+	        	prog.traverseBottomUp(codeGenerator);
+	        	Code.dataSize = semanticCheck.nVars;
+	        	Code.mainPc = codeGenerator.getMainPc();
+	        	System.out.println("Adresa maina je : " + Code.mainPc);
 	        	Code.write(new FileOutputStream(objFile));
 	        	log.info("Parsiranje uspesno zavrseno!");
 	        }

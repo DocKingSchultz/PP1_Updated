@@ -18,22 +18,33 @@ public class CodeGenerator extends VisitorAdaptor {
 	}
 	
 	@Override
-	public void visit(MainMethod method_dec) {
-//		mainPc = Code.pc;
-//		method_dec.obj.setAdr(Code.pc);
+	public void visit(MainIdent method_name) {
+		mainPc = Code.pc;
+		System.out.print(mainPc);
+		method_name.obj.setAdr(Code.pc);
 		
 //		// Collect arguments and local variables.
-//		SyntaxNode methodNode = MethodTypeName.getParent();
+		//SyntaxNode methodNode = method_dec.getParent();
 //		VarCounter varCnt = new VarCounter();
-//		methodNode.traverseTopDown(varCnt);
+		//methodNode.traverseTopDown(varCnt);
 //		FormParamCounter fpCnt = new FormParamCounter();
-//		methodNode.traverseTopDown(fpCnt);
+		//methodNode.traverseTopDown(fpCnt);
 //		
 //		// Generate the entry.
-//		Code.put(Code.enter);
+		//
+		Code.put(Code.enter);
+		// Number of formal parameters is 0 for main
+		//
+		Code.put(0);
 //		Code.put(fpCnt.getCount());
 //		Code.put(varCnt.getCount() + fpCnt.getCount());
+		Code.put(method_name.obj.getLocalSymbols().size());
 	}
+	public void visit(MainMethod mm) {
+		Code.put(Code.exit);
+		Code.put(Code.return_);
+	}
+//	
 //	
 //	@Override
 //	public void visit(VarDecl VarDecl) {
@@ -125,11 +136,11 @@ public class CodeGenerator extends VisitorAdaptor {
 				break;
 		}
 	}
-//	
-//	@Override
-//	public void visit(AddExpr AddExpr) {
-//		Code.put(Code.add);
-//	}
+	
+	@Override
+	public void visit(AddExpr AddExpr) {
+		Code.put(Code.add);
+	}
 }
 
 

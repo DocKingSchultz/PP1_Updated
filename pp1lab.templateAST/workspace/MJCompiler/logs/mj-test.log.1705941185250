@@ -1,0 +1,16 @@
+INFO  17:28:10,261 - Compiling source file: C:\Users\filip.jankovic\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  17:28:10,267 - #2 program
+INFO  17:28:10,267 - #39 test301
+INFO  17:28:10,267 - #34 {
+INFO  17:28:10,267 - #7 void
+INFO  17:28:10,267 - #39 main
+INFO  17:28:10,267 - #32 (
+INFO  17:28:10,267 - #33 )
+INFO  17:28:10,267 - #34 {
+INFO  17:28:10,267 - #3 print
+INFO  17:28:10,267 - #32 (
+INFO  17:28:10,267 - #36 15
+INFO  17:28:10,267 - #33 )
+INFO  17:28:10,267 - #28 ;
+INFO  17:28:10,267 - #35 }
+INFO  17:28:10,268 - #35 }
