@@ -22,4 +22,5 @@
     <fullyQualifiedTypeName name="rs.etf.pp1.symboltable.Tab"/>
     <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.VarDecl"/>
     <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.OperatorNew"/>
 </qualifiedTypeNameHistroy>

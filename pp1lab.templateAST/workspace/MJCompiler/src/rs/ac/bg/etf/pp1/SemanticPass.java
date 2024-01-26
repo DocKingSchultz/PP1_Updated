@@ -416,7 +416,7 @@ public class SemanticPass extends VisitorAdaptor {
 	{
 		// Check if expression in paren is of valid type
 		//
-		Obj obj = arrDes.getIdent_expr_list().obj;
+		Obj obj = ((ArrayDelegator)arrDes.getArray_delegator()).getIdent_expr_list().obj;
 		if(arrDes.getExpr().struct!=Tab.intType)
 		{
 			report_error(error+"Expression that is included in sub/add operations is not of type int", arrDes);

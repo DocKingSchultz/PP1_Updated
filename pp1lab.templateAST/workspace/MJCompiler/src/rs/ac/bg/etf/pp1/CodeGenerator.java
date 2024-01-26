@@ -23,21 +23,10 @@ public class CodeGenerator extends VisitorAdaptor {
 		System.out.print(mainPc);
 		method_name.obj.setAdr(Code.pc);
 		
-//		// Collect arguments and local variables.
-		//SyntaxNode methodNode = method_dec.getParent();
-//		VarCounter varCnt = new VarCounter();
-		//methodNode.traverseTopDown(varCnt);
-//		FormParamCounter fpCnt = new FormParamCounter();
-		//methodNode.traverseTopDown(fpCnt);
-//		
-//		// Generate the entry.
+		// Generate the entry.
 		//
 		Code.put(Code.enter);
-		// Number of formal parameters is 0 for main
-		//
 		Code.put(0);
-//		Code.put(fpCnt.getCount());
-//		Code.put(varCnt.getCount() + fpCnt.getCount());
 		Code.put(method_name.obj.getLocalSymbols().size());
 	}
 	public void visit(MainMethod mm) {
@@ -62,11 +51,11 @@ public class CodeGenerator extends VisitorAdaptor {
 //		Code.put(Code.return_);
 //	}
 //	
-//	@Override
-//	public void visit(ReturnExpr ReturnExpr) {
-//		Code.put(Code.exit);
-//		Code.put(Code.return_);
-//	}
+	@Override
+	public void visit(ReturnNull rn) {
+		Code.put(Code.exit);
+		Code.put(Code.return_);
+	}
 //	
 //	@Override
 //	public void visit(ReturnNoExpr ReturnNoExpr) {
@@ -74,10 +63,30 @@ public class CodeGenerator extends VisitorAdaptor {
 //		Code.put(Code.return_);
 //	}
 //	
-//	@Override
-//	public void visit(Assignment Assignment) {
-//		Code.store(Assignment.getDesignator().obj);
-//	}
+	@Override
+	public void visit(Assignment Assignment) {
+		Code.store(Assignment.getDesignator().obj);
+	}
+
+	@Override
+	public void visit(VarRef vf) {
+		Code.load(vf.getDesignator().obj);
+	}
+	
+	@Override
+	public void visit(ArrayDelegator ad) {
+		Code.load(ad.getIdent_expr_list().obj);
+	}
+	@Override
+	public void visit(OperatorNew onew) {
+		Code.put(Code.newarray);
+		if(onew.getType().struct == Tab.charType) {
+			Code.put(0);
+		}
+		else {
+			Code.put(1);
+		}
+	}
 //	
 //	
 //	@Override
