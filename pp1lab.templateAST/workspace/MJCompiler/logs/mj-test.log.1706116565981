@@ -1,0 +1,24 @@
+INFO  18:15:57,197 - Compiling source file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  18:15:57,219 - #2 program
+INFO  18:15:57,219 - #39 test301
+INFO  18:15:57,219 - #8 const
+INFO  18:15:57,220 - #39 int
+INFO  18:15:57,220 - #39 deset
+INFO  18:15:57,221 - #18 =
+INFO  18:15:57,221 - #36 10
+INFO  18:15:57,221 - #28 ;
+INFO  18:15:57,221 - #39 int
+INFO  18:15:57,222 - #39 devet
+INFO  18:15:57,222 - #28 ;
+INFO  18:15:57,222 - #8 const
+INFO  18:15:57,223 - #39 bool
+INFO  18:15:57,223 - #39 tr
+INFO  18:15:57,223 - #18 =
+INFO  18:15:57,223 - #38 1
+INFO  18:15:57,223 - #28 ;
+INFO  18:15:57,223 - #8 const
+INFO  18:15:57,223 - #39 ch
+INFO  18:15:57,223 - #18 =
+ERROR 18:15:57,242 - 
+Sintaksna greska na liniji 7
+ERROR 18:15:57,242 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 7

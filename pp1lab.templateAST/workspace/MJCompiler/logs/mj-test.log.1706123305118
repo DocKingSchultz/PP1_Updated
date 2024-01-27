@@ -1,0 +1,96 @@
+INFO  20:07:43,688 - Compiling source file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  20:07:43,709 - #2 program
+INFO  20:07:43,709 - #39 test301
+INFO  20:07:43,709 - #34 {
+INFO  20:07:43,710 - #7 void
+INFO  20:07:43,710 - #39 main
+INFO  20:07:43,710 - #32 (
+INFO  20:07:43,710 - #33 )
+INFO  20:07:43,710 - #39 int
+INFO  20:07:43,711 - #39 niz
+INFO  20:07:43,711 - #30 [
+INFO  20:07:43,711 - #31 ]
+INFO  20:07:43,711 - #28 ;
+INFO  20:07:43,712 - #34 {
+INFO  20:07:43,712 - #39 niz
+INFO  20:07:43,713 - #18 =
+INFO  20:07:43,713 - #9 new
+INFO  20:07:43,713 - #39 int
+INFO  20:07:43,713 - #30 [
+INFO  20:07:43,713 - #36 5
+INFO  20:07:43,713 - #31 ]
+INFO  20:07:43,714 - #28 ;
+INFO  20:07:43,727 - #35 }
+INFO  20:07:43,728 - #35 }
+INFO  20:07:43,730 - Program(
+  Prog_id(
+   test301
+  ) [Prog_id]
+  NoNamespace(
+  ) [NoNamespace]
+  NoDeclarations(
+  ) [NoDeclarations]
+  MainMethod(
+    MainIdent(
+     main
+    ) [MainIdent]
+    MainVariables(
+      NoMainVariables(
+      ) [NoMainVariables]
+      Var_dec(
+        Type(
+         int
+        ) [Type]
+        SingleVarIdList(
+          VarOrArrayId(
+           niz
+          ) [VarOrArrayId]
+        ) [SingleVarIdList]
+      ) [Var_dec]
+    ) [MainVariables]
+    Statements(
+      NoStatements(
+      ) [NoStatements]
+      DesignatorStatement(
+        Assignment(
+          Designator(
+            SimpleDesignatorWithoutNamespace(
+             niz
+            ) [SimpleDesignatorWithoutNamespace]
+          ) [Designator]
+          Expr(
+            TermExpr(
+              Term(
+                SimpleFactor(
+                  OperatorNew(
+                    Type(
+                     int
+                    ) [Type]
+                    Expr(
+                      TermExpr(
+                        Term(
+                          SimpleFactor(
+                            IntRef(
+                             5
+                            ) [IntRef]
+                          ) [SimpleFactor]
+                        ) [Term]
+                      ) [TermExpr]
+                    ) [Expr]
+                  ) [OperatorNew]
+                ) [SimpleFactor]
+              ) [Term]
+            ) [TermExpr]
+          ) [Expr]
+        ) [Assignment]
+      ) [DesignatorStatement]
+    ) [Statements]
+  ) [MainMethod]
+) [Program]
+INFO  20:07:43,741 - [info] Main :  at line : 5.
+INFO  20:07:43,741 - [info] Variable niz has been declared. at line : 5.
+INFO  20:07:43,741 - [info] Local use of variable niz..
+INFO  20:07:43,742 - [info] Assignemnt succesful.
+INFO  20:07:43,742 - Print calls = 0
+INFO  20:07:43,743 - Generating bytecode file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  20:07:43,746 - Parsiranje uspesno zavrseno!

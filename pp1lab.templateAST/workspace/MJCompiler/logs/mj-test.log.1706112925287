@@ -1,0 +1,783 @@
+INFO  17:14:24,489 - Compiling source file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  17:14:24,511 - #2 program
+INFO  17:14:24,511 - #39 test301
+INFO  17:14:24,511 - #34 {
+INFO  17:14:24,512 - #7 void
+INFO  17:14:24,512 - #39 main
+INFO  17:14:24,512 - #32 (
+INFO  17:14:24,513 - #33 )
+INFO  17:14:24,513 - #39 int
+INFO  17:14:24,513 - #39 jedan
+INFO  17:14:24,514 - #28 ;
+INFO  17:14:24,514 - #39 int
+INFO  17:14:24,514 - #39 dva
+INFO  17:14:24,514 - #28 ;
+INFO  17:14:24,514 - #39 int
+INFO  17:14:24,515 - #39 tri
+INFO  17:14:24,515 - #28 ;
+INFO  17:14:24,515 - #39 int
+INFO  17:14:24,515 - #39 cetiri
+INFO  17:14:24,515 - #28 ;
+INFO  17:14:24,515 - #39 int
+INFO  17:14:24,517 - #39 rez
+INFO  17:14:24,517 - #28 ;
+INFO  17:14:24,517 - #34 {
+INFO  17:14:24,517 - #39 jedan
+INFO  17:14:24,518 - #18 =
+INFO  17:14:24,518 - #36 1
+INFO  17:14:24,518 - #28 ;
+INFO  17:14:24,519 - #39 dva
+INFO  17:14:24,519 - #18 =
+INFO  17:14:24,519 - #36 2
+INFO  17:14:24,520 - #28 ;
+INFO  17:14:24,520 - #39 tri
+INFO  17:14:24,520 - #18 =
+INFO  17:14:24,520 - #36 3
+INFO  17:14:24,520 - #28 ;
+INFO  17:14:24,520 - #39 cetiri
+INFO  17:14:24,520 - #18 =
+INFO  17:14:24,520 - #36 4
+INFO  17:14:24,520 - #28 ;
+INFO  17:14:24,520 - #39 rez
+INFO  17:14:24,520 - #18 =
+INFO  17:14:24,520 - #39 dva
+INFO  17:14:24,520 - #15 *
+INFO  17:14:24,520 - #39 cetiri
+INFO  17:14:24,521 - #28 ;
+INFO  17:14:24,521 - #3 print
+INFO  17:14:24,521 - #32 (
+INFO  17:14:24,521 - #39 rez
+INFO  17:14:24,521 - #33 )
+INFO  17:14:24,522 - #28 ;
+INFO  17:14:24,522 - #39 rez
+INFO  17:14:24,522 - #18 =
+INFO  17:14:24,522 - #39 cetiri
+INFO  17:14:24,522 - #16 /
+INFO  17:14:24,522 - #39 dva
+INFO  17:14:24,522 - #28 ;
+INFO  17:14:24,523 - #3 print
+INFO  17:14:24,523 - #32 (
+INFO  17:14:24,523 - #39 rez
+INFO  17:14:24,523 - #33 )
+INFO  17:14:24,523 - #28 ;
+INFO  17:14:24,523 - #39 rez
+INFO  17:14:24,523 - #18 =
+INFO  17:14:24,523 - #39 cetiri
+INFO  17:14:24,523 - #17 %
+INFO  17:14:24,523 - #39 dva
+INFO  17:14:24,523 - #28 ;
+INFO  17:14:24,524 - #3 print
+INFO  17:14:24,524 - #32 (
+INFO  17:14:24,524 - #39 rez
+INFO  17:14:24,524 - #33 )
+INFO  17:14:24,524 - #28 ;
+INFO  17:14:24,524 - #39 rez
+INFO  17:14:24,524 - #18 =
+INFO  17:14:24,524 - #32 (
+INFO  17:14:24,524 - #39 jedan
+INFO  17:14:24,524 - #11 +
+INFO  17:14:24,524 - #39 dva
+INFO  17:14:24,525 - #11 +
+INFO  17:14:24,525 - #39 tri
+INFO  17:14:24,525 - #15 *
+INFO  17:14:24,525 - #39 cetiri
+INFO  17:14:24,525 - #11 +
+INFO  17:14:24,525 - #39 dva
+INFO  17:14:24,525 - #16 /
+INFO  17:14:24,526 - #39 dva
+INFO  17:14:24,526 - #33 )
+INFO  17:14:24,526 - #16 /
+INFO  17:14:24,526 - #39 dva
+INFO  17:14:24,526 - #28 ;
+INFO  17:14:24,526 - #39 rez
+INFO  17:14:24,526 - #18 =
+INFO  17:14:24,526 - #32 (
+INFO  17:14:24,526 - #39 jedan
+INFO  17:14:24,526 - #11 +
+INFO  17:14:24,526 - #39 dva
+INFO  17:14:24,526 - #11 +
+INFO  17:14:24,526 - #39 tri
+INFO  17:14:24,526 - #15 *
+INFO  17:14:24,526 - #39 cetiri
+INFO  17:14:24,527 - #11 +
+INFO  17:14:24,527 - #39 dva
+INFO  17:14:24,527 - #16 /
+INFO  17:14:24,527 - #39 dva
+INFO  17:14:24,527 - #33 )
+INFO  17:14:24,527 - #16 /
+INFO  17:14:24,527 - #39 dva
+INFO  17:14:24,527 - #11 +
+INFO  17:14:24,527 - #39 jedan
+INFO  17:14:24,527 - #17 %
+INFO  17:14:24,527 - #39 jedan
+INFO  17:14:24,527 - #15 *
+INFO  17:14:24,527 - #39 dva
+INFO  17:14:24,527 - #28 ;
+INFO  17:14:24,527 - #6 return
+INFO  17:14:24,527 - #28 ;
+INFO  17:14:24,527 - #35 }
+INFO  17:14:24,528 - #35 }
+INFO  17:14:24,530 - Program(
+  Prog_id(
+   test301
+  ) [Prog_id]
+  NoNamespace(
+  ) [NoNamespace]
+  NoDeclarations(
+  ) [NoDeclarations]
+  MainMethod(
+    MainIdent(
+     main
+    ) [MainIdent]
+    MainVariables(
+      MainVariables(
+        MainVariables(
+          MainVariables(
+            MainVariables(
+              NoMainVariables(
+              ) [NoMainVariables]
+              Var_dec(
+                Type(
+                 int
+                ) [Type]
+                SingleVarIdList(
+                  VarId(
+                   jedan
+                  ) [VarId]
+                ) [SingleVarIdList]
+              ) [Var_dec]
+            ) [MainVariables]
+            Var_dec(
+              Type(
+               int
+              ) [Type]
+              SingleVarIdList(
+                VarId(
+                 dva
+                ) [VarId]
+              ) [SingleVarIdList]
+            ) [Var_dec]
+          ) [MainVariables]
+          Var_dec(
+            Type(
+             int
+            ) [Type]
+            SingleVarIdList(
+              VarId(
+               tri
+              ) [VarId]
+            ) [SingleVarIdList]
+          ) [Var_dec]
+        ) [MainVariables]
+        Var_dec(
+          Type(
+           int
+          ) [Type]
+          SingleVarIdList(
+            VarId(
+             cetiri
+            ) [VarId]
+          ) [SingleVarIdList]
+        ) [Var_dec]
+      ) [MainVariables]
+      Var_dec(
+        Type(
+         int
+        ) [Type]
+        SingleVarIdList(
+          VarId(
+           rez
+          ) [VarId]
+        ) [SingleVarIdList]
+      ) [Var_dec]
+    ) [MainVariables]
+    Statements(
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              Statements(
+                Statements(
+                  Statements(
+                    Statements(
+                      Statements(
+                        Statements(
+                          Statements(
+                            Statements(
+                              NoStatements(
+                              ) [NoStatements]
+                              DesignatorStatement(
+                                Assignment(
+                                  Designator(
+                                    SimpleDesignatorWithoutNamespace(
+                                     jedan
+                                    ) [SimpleDesignatorWithoutNamespace]
+                                  ) [Designator]
+                                  Expr(
+                                    TermExpr(
+                                      Term(
+                                        SimpleFactor(
+                                          IntRef(
+                                           1
+                                          ) [IntRef]
+                                        ) [SimpleFactor]
+                                      ) [Term]
+                                    ) [TermExpr]
+                                  ) [Expr]
+                                ) [Assignment]
+                              ) [DesignatorStatement]
+                            ) [Statements]
+                            DesignatorStatement(
+                              Assignment(
+                                Designator(
+                                  SimpleDesignatorWithoutNamespace(
+                                   dva
+                                  ) [SimpleDesignatorWithoutNamespace]
+                                ) [Designator]
+                                Expr(
+                                  TermExpr(
+                                    Term(
+                                      SimpleFactor(
+                                        IntRef(
+                                         2
+                                        ) [IntRef]
+                                      ) [SimpleFactor]
+                                    ) [Term]
+                                  ) [TermExpr]
+                                ) [Expr]
+                              ) [Assignment]
+                            ) [DesignatorStatement]
+                          ) [Statements]
+                          DesignatorStatement(
+                            Assignment(
+                              Designator(
+                                SimpleDesignatorWithoutNamespace(
+                                 tri
+                                ) [SimpleDesignatorWithoutNamespace]
+                              ) [Designator]
+                              Expr(
+                                TermExpr(
+                                  Term(
+                                    SimpleFactor(
+                                      IntRef(
+                                       3
+                                      ) [IntRef]
+                                    ) [SimpleFactor]
+                                  ) [Term]
+                                ) [TermExpr]
+                              ) [Expr]
+                            ) [Assignment]
+                          ) [DesignatorStatement]
+                        ) [Statements]
+                        DesignatorStatement(
+                          Assignment(
+                            Designator(
+                              SimpleDesignatorWithoutNamespace(
+                               cetiri
+                              ) [SimpleDesignatorWithoutNamespace]
+                            ) [Designator]
+                            Expr(
+                              TermExpr(
+                                Term(
+                                  SimpleFactor(
+                                    IntRef(
+                                     4
+                                    ) [IntRef]
+                                  ) [SimpleFactor]
+                                ) [Term]
+                              ) [TermExpr]
+                            ) [Expr]
+                          ) [Assignment]
+                        ) [DesignatorStatement]
+                      ) [Statements]
+                      DesignatorStatement(
+                        Assignment(
+                          Designator(
+                            SimpleDesignatorWithoutNamespace(
+                             rez
+                            ) [SimpleDesignatorWithoutNamespace]
+                          ) [Designator]
+                          Expr(
+                            TermExpr(
+                              Term(
+                                MulopFactor(
+                                  SimpleFactor(
+                                    VarRef(
+                                      Designator(
+                                        SimpleDesignatorWithoutNamespace(
+                                         dva
+                                        ) [SimpleDesignatorWithoutNamespace]
+                                      ) [Designator]
+                                    ) [VarRef]
+                                  ) [SimpleFactor]
+                                  MullOP(
+                                  ) [MullOP]
+                                  VarRef(
+                                    Designator(
+                                      SimpleDesignatorWithoutNamespace(
+                                       cetiri
+                                      ) [SimpleDesignatorWithoutNamespace]
+                                    ) [Designator]
+                                  ) [VarRef]
+                                ) [MulopFactor]
+                              ) [Term]
+                            ) [TermExpr]
+                          ) [Expr]
+                        ) [Assignment]
+                      ) [DesignatorStatement]
+                    ) [Statements]
+                    Print(
+                      Expr(
+                        TermExpr(
+                          Term(
+                            SimpleFactor(
+                              VarRef(
+                                Designator(
+                                  SimpleDesignatorWithoutNamespace(
+                                   rez
+                                  ) [SimpleDesignatorWithoutNamespace]
+                                ) [Designator]
+                              ) [VarRef]
+                            ) [SimpleFactor]
+                          ) [Term]
+                        ) [TermExpr]
+                      ) [Expr]
+                      NoConstToPrint(
+                      ) [NoConstToPrint]
+                    ) [Print]
+                  ) [Statements]
+                  DesignatorStatement(
+                    Assignment(
+                      Designator(
+                        SimpleDesignatorWithoutNamespace(
+                         rez
+                        ) [SimpleDesignatorWithoutNamespace]
+                      ) [Designator]
+                      Expr(
+                        TermExpr(
+                          Term(
+                            MulopFactor(
+                              SimpleFactor(
+                                VarRef(
+                                  Designator(
+                                    SimpleDesignatorWithoutNamespace(
+                                     cetiri
+                                    ) [SimpleDesignatorWithoutNamespace]
+                                  ) [Designator]
+                                ) [VarRef]
+                              ) [SimpleFactor]
+                              DivOP(
+                              ) [DivOP]
+                              VarRef(
+                                Designator(
+                                  SimpleDesignatorWithoutNamespace(
+                                   dva
+                                  ) [SimpleDesignatorWithoutNamespace]
+                                ) [Designator]
+                              ) [VarRef]
+                            ) [MulopFactor]
+                          ) [Term]
+                        ) [TermExpr]
+                      ) [Expr]
+                    ) [Assignment]
+                  ) [DesignatorStatement]
+                ) [Statements]
+                Print(
+                  Expr(
+                    TermExpr(
+                      Term(
+                        SimpleFactor(
+                          VarRef(
+                            Designator(
+                              SimpleDesignatorWithoutNamespace(
+                               rez
+                              ) [SimpleDesignatorWithoutNamespace]
+                            ) [Designator]
+                          ) [VarRef]
+                        ) [SimpleFactor]
+                      ) [Term]
+                    ) [TermExpr]
+                  ) [Expr]
+                  NoConstToPrint(
+                  ) [NoConstToPrint]
+                ) [Print]
+              ) [Statements]
+              DesignatorStatement(
+                Assignment(
+                  Designator(
+                    SimpleDesignatorWithoutNamespace(
+                     rez
+                    ) [SimpleDesignatorWithoutNamespace]
+                  ) [Designator]
+                  Expr(
+                    TermExpr(
+                      Term(
+                        MulopFactor(
+                          SimpleFactor(
+                            VarRef(
+                              Designator(
+                                SimpleDesignatorWithoutNamespace(
+                                 cetiri
+                                ) [SimpleDesignatorWithoutNamespace]
+                              ) [Designator]
+                            ) [VarRef]
+                          ) [SimpleFactor]
+                          ModOP(
+                          ) [ModOP]
+                          VarRef(
+                            Designator(
+                              SimpleDesignatorWithoutNamespace(
+                               dva
+                              ) [SimpleDesignatorWithoutNamespace]
+                            ) [Designator]
+                          ) [VarRef]
+                        ) [MulopFactor]
+                      ) [Term]
+                    ) [TermExpr]
+                  ) [Expr]
+                ) [Assignment]
+              ) [DesignatorStatement]
+            ) [Statements]
+            Print(
+              Expr(
+                TermExpr(
+                  Term(
+                    SimpleFactor(
+                      VarRef(
+                        Designator(
+                          SimpleDesignatorWithoutNamespace(
+                           rez
+                          ) [SimpleDesignatorWithoutNamespace]
+                        ) [Designator]
+                      ) [VarRef]
+                    ) [SimpleFactor]
+                  ) [Term]
+                ) [TermExpr]
+              ) [Expr]
+              NoConstToPrint(
+              ) [NoConstToPrint]
+            ) [Print]
+          ) [Statements]
+          DesignatorStatement(
+            Assignment(
+              Designator(
+                SimpleDesignatorWithoutNamespace(
+                 rez
+                ) [SimpleDesignatorWithoutNamespace]
+              ) [Designator]
+              Expr(
+                TermExpr(
+                  Term(
+                    MulopFactor(
+                      SimpleFactor(
+                        ParenthesisExpr(
+                          Expr(
+                            AddExpr(
+                              AddExpr(
+                                AddExpr(
+                                  TermExpr(
+                                    Term(
+                                      SimpleFactor(
+                                        VarRef(
+                                          Designator(
+                                            SimpleDesignatorWithoutNamespace(
+                                             jedan
+                                            ) [SimpleDesignatorWithoutNamespace]
+                                          ) [Designator]
+                                        ) [VarRef]
+                                      ) [SimpleFactor]
+                                    ) [Term]
+                                  ) [TermExpr]
+                                  PlusOP(
+                                  ) [PlusOP]
+                                  Term(
+                                    SimpleFactor(
+                                      VarRef(
+                                        Designator(
+                                          SimpleDesignatorWithoutNamespace(
+                                           dva
+                                          ) [SimpleDesignatorWithoutNamespace]
+                                        ) [Designator]
+                                      ) [VarRef]
+                                    ) [SimpleFactor]
+                                  ) [Term]
+                                ) [AddExpr]
+                                PlusOP(
+                                ) [PlusOP]
+                                Term(
+                                  MulopFactor(
+                                    SimpleFactor(
+                                      VarRef(
+                                        Designator(
+                                          SimpleDesignatorWithoutNamespace(
+                                           tri
+                                          ) [SimpleDesignatorWithoutNamespace]
+                                        ) [Designator]
+                                      ) [VarRef]
+                                    ) [SimpleFactor]
+                                    MullOP(
+                                    ) [MullOP]
+                                    VarRef(
+                                      Designator(
+                                        SimpleDesignatorWithoutNamespace(
+                                         cetiri
+                                        ) [SimpleDesignatorWithoutNamespace]
+                                      ) [Designator]
+                                    ) [VarRef]
+                                  ) [MulopFactor]
+                                ) [Term]
+                              ) [AddExpr]
+                              PlusOP(
+                              ) [PlusOP]
+                              Term(
+                                MulopFactor(
+                                  SimpleFactor(
+                                    VarRef(
+                                      Designator(
+                                        SimpleDesignatorWithoutNamespace(
+                                         dva
+                                        ) [SimpleDesignatorWithoutNamespace]
+                                      ) [Designator]
+                                    ) [VarRef]
+                                  ) [SimpleFactor]
+                                  DivOP(
+                                  ) [DivOP]
+                                  VarRef(
+                                    Designator(
+                                      SimpleDesignatorWithoutNamespace(
+                                       dva
+                                      ) [SimpleDesignatorWithoutNamespace]
+                                    ) [Designator]
+                                  ) [VarRef]
+                                ) [MulopFactor]
+                              ) [Term]
+                            ) [AddExpr]
+                          ) [Expr]
+                        ) [ParenthesisExpr]
+                      ) [SimpleFactor]
+                      DivOP(
+                      ) [DivOP]
+                      VarRef(
+                        Designator(
+                          SimpleDesignatorWithoutNamespace(
+                           dva
+                          ) [SimpleDesignatorWithoutNamespace]
+                        ) [Designator]
+                      ) [VarRef]
+                    ) [MulopFactor]
+                  ) [Term]
+                ) [TermExpr]
+              ) [Expr]
+            ) [Assignment]
+          ) [DesignatorStatement]
+        ) [Statements]
+        DesignatorStatement(
+          Assignment(
+            Designator(
+              SimpleDesignatorWithoutNamespace(
+               rez
+              ) [SimpleDesignatorWithoutNamespace]
+            ) [Designator]
+            Expr(
+              AddExpr(
+                TermExpr(
+                  Term(
+                    MulopFactor(
+                      SimpleFactor(
+                        ParenthesisExpr(
+                          Expr(
+                            AddExpr(
+                              AddExpr(
+                                AddExpr(
+                                  TermExpr(
+                                    Term(
+                                      SimpleFactor(
+                                        VarRef(
+                                          Designator(
+                                            SimpleDesignatorWithoutNamespace(
+                                             jedan
+                                            ) [SimpleDesignatorWithoutNamespace]
+                                          ) [Designator]
+                                        ) [VarRef]
+                                      ) [SimpleFactor]
+                                    ) [Term]
+                                  ) [TermExpr]
+                                  PlusOP(
+                                  ) [PlusOP]
+                                  Term(
+                                    SimpleFactor(
+                                      VarRef(
+                                        Designator(
+                                          SimpleDesignatorWithoutNamespace(
+                                           dva
+                                          ) [SimpleDesignatorWithoutNamespace]
+                                        ) [Designator]
+                                      ) [VarRef]
+                                    ) [SimpleFactor]
+                                  ) [Term]
+                                ) [AddExpr]
+                                PlusOP(
+                                ) [PlusOP]
+                                Term(
+                                  MulopFactor(
+                                    SimpleFactor(
+                                      VarRef(
+                                        Designator(
+                                          SimpleDesignatorWithoutNamespace(
+                                           tri
+                                          ) [SimpleDesignatorWithoutNamespace]
+                                        ) [Designator]
+                                      ) [VarRef]
+                                    ) [SimpleFactor]
+                                    MullOP(
+                                    ) [MullOP]
+                                    VarRef(
+                                      Designator(
+                                        SimpleDesignatorWithoutNamespace(
+                                         cetiri
+                                        ) [SimpleDesignatorWithoutNamespace]
+                                      ) [Designator]
+                                    ) [VarRef]
+                                  ) [MulopFactor]
+                                ) [Term]
+                              ) [AddExpr]
+                              PlusOP(
+                              ) [PlusOP]
+                              Term(
+                                MulopFactor(
+                                  SimpleFactor(
+                                    VarRef(
+                                      Designator(
+                                        SimpleDesignatorWithoutNamespace(
+                                         dva
+                                        ) [SimpleDesignatorWithoutNamespace]
+                                      ) [Designator]
+                                    ) [VarRef]
+                                  ) [SimpleFactor]
+                                  DivOP(
+                                  ) [DivOP]
+                                  VarRef(
+                                    Designator(
+                                      SimpleDesignatorWithoutNamespace(
+                                       dva
+                                      ) [SimpleDesignatorWithoutNamespace]
+                                    ) [Designator]
+                                  ) [VarRef]
+                                ) [MulopFactor]
+                              ) [Term]
+                            ) [AddExpr]
+                          ) [Expr]
+                        ) [ParenthesisExpr]
+                      ) [SimpleFactor]
+                      DivOP(
+                      ) [DivOP]
+                      VarRef(
+                        Designator(
+                          SimpleDesignatorWithoutNamespace(
+                           dva
+                          ) [SimpleDesignatorWithoutNamespace]
+                        ) [Designator]
+                      ) [VarRef]
+                    ) [MulopFactor]
+                  ) [Term]
+                ) [TermExpr]
+                PlusOP(
+                ) [PlusOP]
+                Term(
+                  MulopFactor(
+                    MulopFactor(
+                      SimpleFactor(
+                        VarRef(
+                          Designator(
+                            SimpleDesignatorWithoutNamespace(
+                             jedan
+                            ) [SimpleDesignatorWithoutNamespace]
+                          ) [Designator]
+                        ) [VarRef]
+                      ) [SimpleFactor]
+                      ModOP(
+                      ) [ModOP]
+                      VarRef(
+                        Designator(
+                          SimpleDesignatorWithoutNamespace(
+                           jedan
+                          ) [SimpleDesignatorWithoutNamespace]
+                        ) [Designator]
+                      ) [VarRef]
+                    ) [MulopFactor]
+                    MullOP(
+                    ) [MullOP]
+                    VarRef(
+                      Designator(
+                        SimpleDesignatorWithoutNamespace(
+                         dva
+                        ) [SimpleDesignatorWithoutNamespace]
+                      ) [Designator]
+                    ) [VarRef]
+                  ) [MulopFactor]
+                ) [Term]
+              ) [AddExpr]
+            ) [Expr]
+          ) [Assignment]
+        ) [DesignatorStatement]
+      ) [Statements]
+      ReturnNull(
+      ) [ReturnNull]
+    ) [Statements]
+  ) [MainMethod]
+) [Program]
+INFO  17:14:24,536 - [info] Main :  at line : 5.
+INFO  17:14:24,536 - [info] Variable jedan has been declared. at line : 5.
+INFO  17:14:24,536 - [info] Variable dva has been declared. at line : 5.
+INFO  17:14:24,536 - [info] Variable tri has been declared. at line : 5.
+INFO  17:14:24,536 - [info] Variable cetiri has been declared. at line : 5.
+INFO  17:14:24,537 - [info] Variable rez has been declared. at line : 5.
+INFO  17:14:24,537 - [info] Local use of variable jedan..
+INFO  17:14:24,537 - [info] Assignemnt succesful.
+INFO  17:14:24,537 - [info] Local use of variable dva..
+INFO  17:14:24,537 - [info] Assignemnt succesful.
+INFO  17:14:24,537 - [info] Local use of variable tri..
+INFO  17:14:24,537 - [info] Assignemnt succesful.
+INFO  17:14:24,537 - [info] Local use of variable cetiri..
+INFO  17:14:24,537 - [info] Assignemnt succesful.
+INFO  17:14:24,537 - [info] Local use of variable rez..
+INFO  17:14:24,537 - [info] Local use of variable dva..
+INFO  17:14:24,537 - [info] Local use of variable cetiri..
+INFO  17:14:24,537 - [info] Assignemnt succesful.
+INFO  17:14:24,537 - [info] Local use of variable rez..
+INFO  17:14:24,537 - [info] Print check succesful.
+INFO  17:14:24,537 - [info] Local use of variable rez..
+INFO  17:14:24,537 - [info] Local use of variable cetiri..
+INFO  17:14:24,537 - [info] Local use of variable dva..
+INFO  17:14:24,537 - [info] Assignemnt succesful.
+INFO  17:14:24,537 - [info] Local use of variable rez..
+INFO  17:14:24,537 - [info] Print check succesful.
+INFO  17:14:24,537 - [info] Local use of variable rez..
+INFO  17:14:24,537 - [info] Local use of variable cetiri..
+INFO  17:14:24,537 - [info] Local use of variable dva..
+INFO  17:14:24,537 - [info] Assignemnt succesful.
+INFO  17:14:24,538 - [info] Local use of variable rez..
+INFO  17:14:24,538 - [info] Print check succesful.
+INFO  17:14:24,538 - [info] Local use of variable rez..
+INFO  17:14:24,538 - [info] Local use of variable jedan..
+INFO  17:14:24,538 - [info] Local use of variable dva..
+INFO  17:14:24,538 - [info] Local use of variable tri..
+INFO  17:14:24,538 - [info] Local use of variable cetiri..
+INFO  17:14:24,538 - [info] Local use of variable dva..
+INFO  17:14:24,538 - [info] Local use of variable dva..
+INFO  17:14:24,538 - [info] Local use of variable dva..
+INFO  17:14:24,538 - [info] Assignemnt succesful.
+INFO  17:14:24,538 - [info] Local use of variable rez..
+INFO  17:14:24,538 - [info] Local use of variable jedan..
+INFO  17:14:24,538 - [info] Local use of variable dva..
+INFO  17:14:24,538 - [info] Local use of variable tri..
+INFO  17:14:24,538 - [info] Local use of variable cetiri..
+INFO  17:14:24,538 - [info] Local use of variable dva..
+INFO  17:14:24,538 - [info] Local use of variable dva..
+INFO  17:14:24,538 - [info] Local use of variable dva..
+INFO  17:14:24,538 - [info] Local use of variable jedan..
+INFO  17:14:24,538 - [info] Local use of variable jedan..
+INFO  17:14:24,538 - [info] Local use of variable dva..
+INFO  17:14:24,538 - [info] Assignemnt succesful.
+INFO  17:14:24,538 - Print calls = 3
+INFO  17:14:24,539 - Generating bytecode file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.obj

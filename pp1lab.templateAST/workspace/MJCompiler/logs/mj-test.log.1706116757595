@@ -1,0 +1,273 @@
+INFO  18:18:22,497 - Compiling source file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  18:18:22,519 - #2 program
+INFO  18:18:22,519 - #39 test301
+INFO  18:18:22,519 - #8 const
+INFO  18:18:22,520 - #39 int
+INFO  18:18:22,520 - #39 deset
+INFO  18:18:22,521 - #18 =
+INFO  18:18:22,521 - #36 10
+INFO  18:18:22,521 - #28 ;
+INFO  18:18:22,521 - #39 int
+INFO  18:18:22,521 - #39 devet
+INFO  18:18:22,521 - #28 ;
+INFO  18:18:22,522 - #8 const
+INFO  18:18:22,522 - #39 bool
+INFO  18:18:22,523 - #39 tr
+INFO  18:18:22,523 - #18 =
+INFO  18:18:22,523 - #38 1
+INFO  18:18:22,523 - #28 ;
+INFO  18:18:22,523 - #8 const
+INFO  18:18:22,523 - #39 char
+INFO  18:18:22,523 - #39 ch
+INFO  18:18:22,532 - #18 =
+INFO  18:18:22,532 - #37 a
+INFO  18:18:22,532 - #28 ;
+INFO  18:18:22,532 - #8 const
+INFO  18:18:22,532 - #39 char
+INFO  18:18:22,532 - #39 ch2
+INFO  18:18:22,532 - #18 =
+INFO  18:18:22,532 - #37 a
+INFO  18:18:22,532 - #28 ;
+INFO  18:18:22,532 - #34 {
+INFO  18:18:22,532 - #7 void
+INFO  18:18:22,533 - #39 main
+INFO  18:18:22,533 - #32 (
+INFO  18:18:22,533 - #33 )
+INFO  18:18:22,533 - #39 int
+INFO  18:18:22,533 - #39 jedan
+INFO  18:18:22,533 - #28 ;
+INFO  18:18:22,533 - #39 int
+INFO  18:18:22,534 - #39 dva
+INFO  18:18:22,534 - #28 ;
+INFO  18:18:22,534 - #39 int
+INFO  18:18:22,534 - #39 tri
+INFO  18:18:22,534 - #28 ;
+INFO  18:18:22,534 - #39 int
+INFO  18:18:22,534 - #39 cetiri
+INFO  18:18:22,534 - #28 ;
+INFO  18:18:22,534 - #39 int
+INFO  18:18:22,534 - #39 rez
+INFO  18:18:22,534 - #28 ;
+INFO  18:18:22,534 - #39 int
+INFO  18:18:22,534 - #39 osam
+INFO  18:18:22,534 - #28 ;
+INFO  18:18:22,534 - #34 {
+INFO  18:18:22,534 - #39 jedan
+INFO  18:18:22,535 - #18 =
+INFO  18:18:22,535 - #39 tr
+INFO  18:18:22,535 - #28 ;
+INFO  18:18:22,536 - #6 return
+INFO  18:18:22,536 - #28 ;
+INFO  18:18:22,536 - #35 }
+INFO  18:18:22,537 - #35 }
+INFO  18:18:22,538 - Program(
+  Prog_id(
+   test301
+  ) [Prog_id]
+  NoNamespace(
+  ) [NoNamespace]
+  Declarations(
+    Declarations(
+      Declarations(
+        Declarations(
+          Declarations(
+            NoDeclarations(
+            ) [NoDeclarations]
+            ConstDeclarations(
+              Const_dec(
+                Type(
+                 int
+                ) [Type]
+                SingleConstDeclarationPart(
+                  ConstIdInt(
+                   deset
+                   10
+                  ) [ConstIdInt]
+                ) [SingleConstDeclarationPart]
+              ) [Const_dec]
+            ) [ConstDeclarations]
+          ) [Declarations]
+          VarDeclarations(
+            Var_dec(
+              Type(
+               int
+              ) [Type]
+              SingleVarIdList(
+                VarId(
+                 devet
+                ) [VarId]
+              ) [SingleVarIdList]
+            ) [Var_dec]
+          ) [VarDeclarations]
+        ) [Declarations]
+        ConstDeclarations(
+          Const_dec(
+            Type(
+             bool
+            ) [Type]
+            SingleConstDeclarationPart(
+              ConstIdBool(
+               tr
+               1
+              ) [ConstIdBool]
+            ) [SingleConstDeclarationPart]
+          ) [Const_dec]
+        ) [ConstDeclarations]
+      ) [Declarations]
+      ConstDeclarations(
+        Const_dec(
+          Type(
+           char
+          ) [Type]
+          SingleConstDeclarationPart(
+            ConstIdChar(
+             ch
+             a
+            ) [ConstIdChar]
+          ) [SingleConstDeclarationPart]
+        ) [Const_dec]
+      ) [ConstDeclarations]
+    ) [Declarations]
+    ConstDeclarations(
+      Const_dec(
+        Type(
+         char
+        ) [Type]
+        SingleConstDeclarationPart(
+          ConstIdChar(
+           ch2
+           a
+          ) [ConstIdChar]
+        ) [SingleConstDeclarationPart]
+      ) [Const_dec]
+    ) [ConstDeclarations]
+  ) [Declarations]
+  MainMethod(
+    MainIdent(
+     main
+    ) [MainIdent]
+    MainVariables(
+      MainVariables(
+        MainVariables(
+          MainVariables(
+            MainVariables(
+              MainVariables(
+                NoMainVariables(
+                ) [NoMainVariables]
+                Var_dec(
+                  Type(
+                   int
+                  ) [Type]
+                  SingleVarIdList(
+                    VarId(
+                     jedan
+                    ) [VarId]
+                  ) [SingleVarIdList]
+                ) [Var_dec]
+              ) [MainVariables]
+              Var_dec(
+                Type(
+                 int
+                ) [Type]
+                SingleVarIdList(
+                  VarId(
+                   dva
+                  ) [VarId]
+                ) [SingleVarIdList]
+              ) [Var_dec]
+            ) [MainVariables]
+            Var_dec(
+              Type(
+               int
+              ) [Type]
+              SingleVarIdList(
+                VarId(
+                 tri
+                ) [VarId]
+              ) [SingleVarIdList]
+            ) [Var_dec]
+          ) [MainVariables]
+          Var_dec(
+            Type(
+             int
+            ) [Type]
+            SingleVarIdList(
+              VarId(
+               cetiri
+              ) [VarId]
+            ) [SingleVarIdList]
+          ) [Var_dec]
+        ) [MainVariables]
+        Var_dec(
+          Type(
+           int
+          ) [Type]
+          SingleVarIdList(
+            VarId(
+             rez
+            ) [VarId]
+          ) [SingleVarIdList]
+        ) [Var_dec]
+      ) [MainVariables]
+      Var_dec(
+        Type(
+         int
+        ) [Type]
+        SingleVarIdList(
+          VarId(
+           osam
+          ) [VarId]
+        ) [SingleVarIdList]
+      ) [Var_dec]
+    ) [MainVariables]
+    Statements(
+      Statements(
+        NoStatements(
+        ) [NoStatements]
+        DesignatorStatement(
+          Assignment(
+            Designator(
+              SimpleDesignatorWithoutNamespace(
+               jedan
+              ) [SimpleDesignatorWithoutNamespace]
+            ) [Designator]
+            Expr(
+              TermExpr(
+                Term(
+                  SimpleFactor(
+                    VarRef(
+                      Designator(
+                        SimpleDesignatorWithoutNamespace(
+                         tr
+                        ) [SimpleDesignatorWithoutNamespace]
+                      ) [Designator]
+                    ) [VarRef]
+                  ) [SimpleFactor]
+                ) [Term]
+              ) [TermExpr]
+            ) [Expr]
+          ) [Assignment]
+        ) [DesignatorStatement]
+      ) [Statements]
+      ReturnNull(
+      ) [ReturnNull]
+    ) [Statements]
+  ) [MainMethod]
+) [Program]
+INFO  18:18:22,544 - [info] Declared global constant deset. at line : 4.
+INFO  18:18:22,544 - [info] Variable devet has been declared. at line : 5.
+INFO  18:18:22,544 - [info] Declared global constant.tr at line : 6.
+INFO  18:18:22,544 - [info] Declared global constant ch. at line : 7.
+INFO  18:18:22,544 - [info] Declared global constant ch2. at line : 8.
+INFO  18:18:22,544 - [info] Main :  at line : 10.
+INFO  18:18:22,545 - [info] Variable jedan has been declared. at line : 10.
+INFO  18:18:22,545 - [info] Variable dva has been declared. at line : 10.
+INFO  18:18:22,545 - [info] Variable tri has been declared. at line : 10.
+INFO  18:18:22,545 - [info] Variable cetiri has been declared. at line : 10.
+INFO  18:18:22,545 - [info] Variable rez has been declared. at line : 10.
+INFO  18:18:22,545 - [info] Variable osam has been declared. at line : 10.
+INFO  18:18:22,545 - [info] Local use of variable jedan..
+INFO  18:18:22,545 - [info] Global use of variable tr..
+ERROR 18:18:22,545 - [error] Statement does not have compatible values for assignment, at line at line : 12.
+INFO  18:18:22,545 - Print calls = 0
+ERROR 18:18:22,545 - Parsiranje NIJE uspesno zavrseno!

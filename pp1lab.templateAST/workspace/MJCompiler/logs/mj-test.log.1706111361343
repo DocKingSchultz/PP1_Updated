@@ -1,0 +1,176 @@
+INFO  16:49:07,847 - Compiling source file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  16:49:07,867 - #2 program
+INFO  16:49:07,868 - #39 test301
+INFO  16:49:07,868 - #34 {
+INFO  16:49:07,869 - #7 void
+INFO  16:49:07,869 - #39 main
+INFO  16:49:07,869 - #32 (
+INFO  16:49:07,869 - #33 )
+INFO  16:49:07,870 - #39 int
+INFO  16:49:07,870 - #39 x
+INFO  16:49:07,870 - #28 ;
+INFO  16:49:07,871 - #39 int
+INFO  16:49:07,871 - #39 y
+INFO  16:49:07,871 - #28 ;
+INFO  16:49:07,871 - #34 {
+INFO  16:49:07,871 - #39 x
+INFO  16:49:07,872 - #18 =
+INFO  16:49:07,873 - #36 3
+INFO  16:49:07,873 - #28 ;
+INFO  16:49:07,875 - #39 y
+INFO  16:49:07,875 - #18 =
+INFO  16:49:07,875 - #39 x
+INFO  16:49:07,876 - #11 +
+INFO  16:49:07,876 - #36 1
+INFO  16:49:07,876 - #28 ;
+INFO  16:49:07,877 - #3 print
+INFO  16:49:07,877 - #32 (
+INFO  16:49:07,877 - #39 y
+INFO  16:49:07,877 - #29 ,
+INFO  16:49:07,877 - #36 1
+INFO  16:49:07,877 - #33 )
+INFO  16:49:07,877 - #28 ;
+INFO  16:49:07,877 - #6 return
+INFO  16:49:07,877 - #28 ;
+INFO  16:49:07,877 - #35 }
+INFO  16:49:07,878 - #35 }
+INFO  16:49:07,879 - Program(
+  Prog_id(
+   test301
+  ) [Prog_id]
+  NoNamespace(
+  ) [NoNamespace]
+  NoDeclarations(
+  ) [NoDeclarations]
+  MainMethod(
+    MainIdent(
+     main
+    ) [MainIdent]
+    MainVariables(
+      MainVariables(
+        NoMainVariables(
+        ) [NoMainVariables]
+        Var_dec(
+          Type(
+           int
+          ) [Type]
+          SingleVarIdList(
+            VarId(
+             x
+            ) [VarId]
+          ) [SingleVarIdList]
+        ) [Var_dec]
+      ) [MainVariables]
+      Var_dec(
+        Type(
+         int
+        ) [Type]
+        SingleVarIdList(
+          VarId(
+           y
+          ) [VarId]
+        ) [SingleVarIdList]
+      ) [Var_dec]
+    ) [MainVariables]
+    Statements(
+      Statements(
+        Statements(
+          Statements(
+            NoStatements(
+            ) [NoStatements]
+            DesignatorStatement(
+              Assignment(
+                Designator(
+                  SimpleDesignatorWithoutNamespace(
+                   x
+                  ) [SimpleDesignatorWithoutNamespace]
+                ) [Designator]
+                Expr(
+                  TermExpr(
+                    Term(
+                      SimpleFactor(
+                        IntRef(
+                         3
+                        ) [IntRef]
+                      ) [SimpleFactor]
+                    ) [Term]
+                  ) [TermExpr]
+                ) [Expr]
+              ) [Assignment]
+            ) [DesignatorStatement]
+          ) [Statements]
+          DesignatorStatement(
+            Assignment(
+              Designator(
+                SimpleDesignatorWithoutNamespace(
+                 y
+                ) [SimpleDesignatorWithoutNamespace]
+              ) [Designator]
+              Expr(
+                AddExpr(
+                  TermExpr(
+                    Term(
+                      SimpleFactor(
+                        VarRef(
+                          Designator(
+                            SimpleDesignatorWithoutNamespace(
+                             x
+                            ) [SimpleDesignatorWithoutNamespace]
+                          ) [Designator]
+                        ) [VarRef]
+                      ) [SimpleFactor]
+                    ) [Term]
+                  ) [TermExpr]
+                  PlusOP(
+                  ) [PlusOP]
+                  Term(
+                    SimpleFactor(
+                      IntRef(
+                       1
+                      ) [IntRef]
+                    ) [SimpleFactor]
+                  ) [Term]
+                ) [AddExpr]
+              ) [Expr]
+            ) [Assignment]
+          ) [DesignatorStatement]
+        ) [Statements]
+        Print(
+          Expr(
+            TermExpr(
+              Term(
+                SimpleFactor(
+                  VarRef(
+                    Designator(
+                      SimpleDesignatorWithoutNamespace(
+                       y
+                      ) [SimpleDesignatorWithoutNamespace]
+                    ) [Designator]
+                  ) [VarRef]
+                ) [SimpleFactor]
+              ) [Term]
+            ) [TermExpr]
+          ) [Expr]
+          ConstToPrint(
+           1
+          ) [ConstToPrint]
+        ) [Print]
+      ) [Statements]
+      ReturnNull(
+      ) [ReturnNull]
+    ) [Statements]
+  ) [MainMethod]
+) [Program]
+INFO  16:49:07,884 - [info] Main :  at line : 5.
+INFO  16:49:07,884 - [info] Variable x has been declared. at line : 5.
+INFO  16:49:07,884 - [info] Variable y has been declared. at line : 5.
+INFO  16:49:07,884 - [info] Local use of variable x..
+INFO  16:49:07,884 - [info] Assignemnt succesful.
+INFO  16:49:07,884 - [info] Local use of variable y..
+INFO  16:49:07,884 - [info] Local use of variable x..
+INFO  16:49:07,885 - [info] Assignemnt succesful.
+INFO  16:49:07,885 - [info] Local use of variable y..
+INFO  16:49:07,885 - [info] Print check succesful.
+INFO  16:49:07,885 - Print calls = 1
+INFO  16:49:07,885 - Generating bytecode file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  16:49:07,888 - Parsiranje uspesno zavrseno!

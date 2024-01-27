@@ -1,0 +1,8 @@
+INFO  18:12:35,323 - Compiling source file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  18:12:35,343 - #2 program
+INFO  18:12:35,343 - #39 test301
+INFO  18:12:35,344 - #34 {
+INFO  18:12:35,345 - #8 const
+ERROR 18:12:35,345 - 
+Sintaksna greska na liniji 5
+ERROR 18:12:35,345 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 5

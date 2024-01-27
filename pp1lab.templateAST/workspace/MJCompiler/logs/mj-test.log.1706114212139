@@ -1,0 +1,490 @@
+INFO  17:33:59,407 - Compiling source file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  17:33:59,427 - #2 program
+INFO  17:33:59,427 - #39 test301
+INFO  17:33:59,427 - #34 {
+INFO  17:33:59,430 - #7 void
+INFO  17:33:59,430 - #39 main
+INFO  17:33:59,430 - #32 (
+INFO  17:33:59,430 - #33 )
+INFO  17:33:59,430 - #39 int
+INFO  17:33:59,430 - #39 jedan
+INFO  17:33:59,431 - #28 ;
+INFO  17:33:59,431 - #39 int
+INFO  17:33:59,432 - #39 dva
+INFO  17:33:59,432 - #28 ;
+INFO  17:33:59,432 - #39 int
+INFO  17:33:59,432 - #39 tri
+INFO  17:33:59,432 - #28 ;
+INFO  17:33:59,432 - #39 int
+INFO  17:33:59,432 - #39 cetiri
+INFO  17:33:59,432 - #28 ;
+INFO  17:33:59,433 - #39 int
+INFO  17:33:59,449 - #39 rez
+INFO  17:33:59,449 - #28 ;
+INFO  17:33:59,449 - #39 int
+INFO  17:33:59,449 - #39 osam
+INFO  17:33:59,449 - #28 ;
+INFO  17:33:59,449 - #34 {
+INFO  17:33:59,449 - #39 jedan
+INFO  17:33:59,450 - #18 =
+INFO  17:33:59,450 - #36 1
+INFO  17:33:59,450 - #28 ;
+INFO  17:33:59,451 - #39 dva
+INFO  17:33:59,452 - #18 =
+INFO  17:33:59,452 - #36 2
+INFO  17:33:59,452 - #28 ;
+INFO  17:33:59,452 - #39 tri
+INFO  17:33:59,452 - #18 =
+INFO  17:33:59,452 - #36 3
+INFO  17:33:59,452 - #28 ;
+INFO  17:33:59,452 - #39 cetiri
+INFO  17:33:59,452 - #18 =
+INFO  17:33:59,452 - #36 4
+INFO  17:33:59,452 - #28 ;
+INFO  17:33:59,452 - #39 rez
+INFO  17:33:59,452 - #18 =
+INFO  17:33:59,452 - #39 dva
+INFO  17:33:59,452 - #15 *
+INFO  17:33:59,452 - #39 cetiri
+INFO  17:33:59,453 - #28 ;
+INFO  17:33:59,453 - #3 print
+INFO  17:33:59,453 - #32 (
+INFO  17:33:59,453 - #39 rez
+INFO  17:33:59,453 - #33 )
+INFO  17:33:59,454 - #28 ;
+INFO  17:33:59,454 - #39 osam
+INFO  17:33:59,454 - #18 =
+INFO  17:33:59,454 - #39 cetiri
+INFO  17:33:59,454 - #16 /
+INFO  17:33:59,454 - #39 dva
+INFO  17:33:59,455 - #28 ;
+INFO  17:33:59,455 - #3 print
+INFO  17:33:59,455 - #32 (
+INFO  17:33:59,455 - #39 osam
+INFO  17:33:59,455 - #33 )
+INFO  17:33:59,455 - #28 ;
+INFO  17:33:59,455 - #39 rez
+INFO  17:33:59,455 - #18 =
+INFO  17:33:59,455 - #39 cetiri
+INFO  17:33:59,455 - #17 %
+INFO  17:33:59,455 - #39 dva
+INFO  17:33:59,456 - #11 +
+INFO  17:33:59,456 - #39 osam
+INFO  17:33:59,456 - #28 ;
+INFO  17:33:59,456 - #3 print
+INFO  17:33:59,456 - #32 (
+INFO  17:33:59,456 - #39 rez
+INFO  17:33:59,456 - #33 )
+INFO  17:33:59,457 - #28 ;
+INFO  17:33:59,457 - #6 return
+INFO  17:33:59,457 - #28 ;
+INFO  17:33:59,457 - #35 }
+INFO  17:33:59,457 - #35 }
+INFO  17:33:59,458 - Program(
+  Prog_id(
+   test301
+  ) [Prog_id]
+  NoNamespace(
+  ) [NoNamespace]
+  NoDeclarations(
+  ) [NoDeclarations]
+  MainMethod(
+    MainIdent(
+     main
+    ) [MainIdent]
+    MainVariables(
+      MainVariables(
+        MainVariables(
+          MainVariables(
+            MainVariables(
+              MainVariables(
+                NoMainVariables(
+                ) [NoMainVariables]
+                Var_dec(
+                  Type(
+                   int
+                  ) [Type]
+                  SingleVarIdList(
+                    VarId(
+                     jedan
+                    ) [VarId]
+                  ) [SingleVarIdList]
+                ) [Var_dec]
+              ) [MainVariables]
+              Var_dec(
+                Type(
+                 int
+                ) [Type]
+                SingleVarIdList(
+                  VarId(
+                   dva
+                  ) [VarId]
+                ) [SingleVarIdList]
+              ) [Var_dec]
+            ) [MainVariables]
+            Var_dec(
+              Type(
+               int
+              ) [Type]
+              SingleVarIdList(
+                VarId(
+                 tri
+                ) [VarId]
+              ) [SingleVarIdList]
+            ) [Var_dec]
+          ) [MainVariables]
+          Var_dec(
+            Type(
+             int
+            ) [Type]
+            SingleVarIdList(
+              VarId(
+               cetiri
+              ) [VarId]
+            ) [SingleVarIdList]
+          ) [Var_dec]
+        ) [MainVariables]
+        Var_dec(
+          Type(
+           int
+          ) [Type]
+          SingleVarIdList(
+            VarId(
+             rez
+            ) [VarId]
+          ) [SingleVarIdList]
+        ) [Var_dec]
+      ) [MainVariables]
+      Var_dec(
+        Type(
+         int
+        ) [Type]
+        SingleVarIdList(
+          VarId(
+           osam
+          ) [VarId]
+        ) [SingleVarIdList]
+      ) [Var_dec]
+    ) [MainVariables]
+    Statements(
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              Statements(
+                Statements(
+                  Statements(
+                    Statements(
+                      Statements(
+                        Statements(
+                          NoStatements(
+                          ) [NoStatements]
+                          DesignatorStatement(
+                            Assignment(
+                              Designator(
+                                SimpleDesignatorWithoutNamespace(
+                                 jedan
+                                ) [SimpleDesignatorWithoutNamespace]
+                              ) [Designator]
+                              Expr(
+                                TermExpr(
+                                  Term(
+                                    SimpleFactor(
+                                      IntRef(
+                                       1
+                                      ) [IntRef]
+                                    ) [SimpleFactor]
+                                  ) [Term]
+                                ) [TermExpr]
+                              ) [Expr]
+                            ) [Assignment]
+                          ) [DesignatorStatement]
+                        ) [Statements]
+                        DesignatorStatement(
+                          Assignment(
+                            Designator(
+                              SimpleDesignatorWithoutNamespace(
+                               dva
+                              ) [SimpleDesignatorWithoutNamespace]
+                            ) [Designator]
+                            Expr(
+                              TermExpr(
+                                Term(
+                                  SimpleFactor(
+                                    IntRef(
+                                     2
+                                    ) [IntRef]
+                                  ) [SimpleFactor]
+                                ) [Term]
+                              ) [TermExpr]
+                            ) [Expr]
+                          ) [Assignment]
+                        ) [DesignatorStatement]
+                      ) [Statements]
+                      DesignatorStatement(
+                        Assignment(
+                          Designator(
+                            SimpleDesignatorWithoutNamespace(
+                             tri
+                            ) [SimpleDesignatorWithoutNamespace]
+                          ) [Designator]
+                          Expr(
+                            TermExpr(
+                              Term(
+                                SimpleFactor(
+                                  IntRef(
+                                   3
+                                  ) [IntRef]
+                                ) [SimpleFactor]
+                              ) [Term]
+                            ) [TermExpr]
+                          ) [Expr]
+                        ) [Assignment]
+                      ) [DesignatorStatement]
+                    ) [Statements]
+                    DesignatorStatement(
+                      Assignment(
+                        Designator(
+                          SimpleDesignatorWithoutNamespace(
+                           cetiri
+                          ) [SimpleDesignatorWithoutNamespace]
+                        ) [Designator]
+                        Expr(
+                          TermExpr(
+                            Term(
+                              SimpleFactor(
+                                IntRef(
+                                 4
+                                ) [IntRef]
+                              ) [SimpleFactor]
+                            ) [Term]
+                          ) [TermExpr]
+                        ) [Expr]
+                      ) [Assignment]
+                    ) [DesignatorStatement]
+                  ) [Statements]
+                  DesignatorStatement(
+                    Assignment(
+                      Designator(
+                        SimpleDesignatorWithoutNamespace(
+                         rez
+                        ) [SimpleDesignatorWithoutNamespace]
+                      ) [Designator]
+                      Expr(
+                        TermExpr(
+                          Term(
+                            MulopFactor(
+                              SimpleFactor(
+                                VarRef(
+                                  Designator(
+                                    SimpleDesignatorWithoutNamespace(
+                                     dva
+                                    ) [SimpleDesignatorWithoutNamespace]
+                                  ) [Designator]
+                                ) [VarRef]
+                              ) [SimpleFactor]
+                              MullOP(
+                              ) [MullOP]
+                              VarRef(
+                                Designator(
+                                  SimpleDesignatorWithoutNamespace(
+                                   cetiri
+                                  ) [SimpleDesignatorWithoutNamespace]
+                                ) [Designator]
+                              ) [VarRef]
+                            ) [MulopFactor]
+                          ) [Term]
+                        ) [TermExpr]
+                      ) [Expr]
+                    ) [Assignment]
+                  ) [DesignatorStatement]
+                ) [Statements]
+                Print(
+                  Expr(
+                    TermExpr(
+                      Term(
+                        SimpleFactor(
+                          VarRef(
+                            Designator(
+                              SimpleDesignatorWithoutNamespace(
+                               rez
+                              ) [SimpleDesignatorWithoutNamespace]
+                            ) [Designator]
+                          ) [VarRef]
+                        ) [SimpleFactor]
+                      ) [Term]
+                    ) [TermExpr]
+                  ) [Expr]
+                  NoConstToPrint(
+                  ) [NoConstToPrint]
+                ) [Print]
+              ) [Statements]
+              DesignatorStatement(
+                Assignment(
+                  Designator(
+                    SimpleDesignatorWithoutNamespace(
+                     osam
+                    ) [SimpleDesignatorWithoutNamespace]
+                  ) [Designator]
+                  Expr(
+                    TermExpr(
+                      Term(
+                        MulopFactor(
+                          SimpleFactor(
+                            VarRef(
+                              Designator(
+                                SimpleDesignatorWithoutNamespace(
+                                 cetiri
+                                ) [SimpleDesignatorWithoutNamespace]
+                              ) [Designator]
+                            ) [VarRef]
+                          ) [SimpleFactor]
+                          DivOP(
+                          ) [DivOP]
+                          VarRef(
+                            Designator(
+                              SimpleDesignatorWithoutNamespace(
+                               dva
+                              ) [SimpleDesignatorWithoutNamespace]
+                            ) [Designator]
+                          ) [VarRef]
+                        ) [MulopFactor]
+                      ) [Term]
+                    ) [TermExpr]
+                  ) [Expr]
+                ) [Assignment]
+              ) [DesignatorStatement]
+            ) [Statements]
+            Print(
+              Expr(
+                TermExpr(
+                  Term(
+                    SimpleFactor(
+                      VarRef(
+                        Designator(
+                          SimpleDesignatorWithoutNamespace(
+                           osam
+                          ) [SimpleDesignatorWithoutNamespace]
+                        ) [Designator]
+                      ) [VarRef]
+                    ) [SimpleFactor]
+                  ) [Term]
+                ) [TermExpr]
+              ) [Expr]
+              NoConstToPrint(
+              ) [NoConstToPrint]
+            ) [Print]
+          ) [Statements]
+          DesignatorStatement(
+            Assignment(
+              Designator(
+                SimpleDesignatorWithoutNamespace(
+                 rez
+                ) [SimpleDesignatorWithoutNamespace]
+              ) [Designator]
+              Expr(
+                AddExpr(
+                  TermExpr(
+                    Term(
+                      MulopFactor(
+                        SimpleFactor(
+                          VarRef(
+                            Designator(
+                              SimpleDesignatorWithoutNamespace(
+                               cetiri
+                              ) [SimpleDesignatorWithoutNamespace]
+                            ) [Designator]
+                          ) [VarRef]
+                        ) [SimpleFactor]
+                        ModOP(
+                        ) [ModOP]
+                        VarRef(
+                          Designator(
+                            SimpleDesignatorWithoutNamespace(
+                             dva
+                            ) [SimpleDesignatorWithoutNamespace]
+                          ) [Designator]
+                        ) [VarRef]
+                      ) [MulopFactor]
+                    ) [Term]
+                  ) [TermExpr]
+                  PlusOP(
+                  ) [PlusOP]
+                  Term(
+                    SimpleFactor(
+                      VarRef(
+                        Designator(
+                          SimpleDesignatorWithoutNamespace(
+                           osam
+                          ) [SimpleDesignatorWithoutNamespace]
+                        ) [Designator]
+                      ) [VarRef]
+                    ) [SimpleFactor]
+                  ) [Term]
+                ) [AddExpr]
+              ) [Expr]
+            ) [Assignment]
+          ) [DesignatorStatement]
+        ) [Statements]
+        Print(
+          Expr(
+            TermExpr(
+              Term(
+                SimpleFactor(
+                  VarRef(
+                    Designator(
+                      SimpleDesignatorWithoutNamespace(
+                       rez
+                      ) [SimpleDesignatorWithoutNamespace]
+                    ) [Designator]
+                  ) [VarRef]
+                ) [SimpleFactor]
+              ) [Term]
+            ) [TermExpr]
+          ) [Expr]
+          NoConstToPrint(
+          ) [NoConstToPrint]
+        ) [Print]
+      ) [Statements]
+      ReturnNull(
+      ) [ReturnNull]
+    ) [Statements]
+  ) [MainMethod]
+) [Program]
+INFO  17:33:59,465 - [info] Main :  at line : 5.
+INFO  17:33:59,466 - [info] Variable jedan has been declared. at line : 5.
+INFO  17:33:59,466 - [info] Variable dva has been declared. at line : 5.
+INFO  17:33:59,466 - [info] Variable tri has been declared. at line : 5.
+INFO  17:33:59,466 - [info] Variable cetiri has been declared. at line : 5.
+INFO  17:33:59,466 - [info] Variable rez has been declared. at line : 5.
+INFO  17:33:59,466 - [info] Variable osam has been declared. at line : 5.
+INFO  17:33:59,466 - [info] Local use of variable jedan..
+INFO  17:33:59,466 - [info] Assignemnt succesful.
+INFO  17:33:59,466 - [info] Local use of variable dva..
+INFO  17:33:59,466 - [info] Assignemnt succesful.
+INFO  17:33:59,466 - [info] Local use of variable tri..
+INFO  17:33:59,466 - [info] Assignemnt succesful.
+INFO  17:33:59,466 - [info] Local use of variable cetiri..
+INFO  17:33:59,466 - [info] Assignemnt succesful.
+INFO  17:33:59,466 - [info] Local use of variable rez..
+INFO  17:33:59,466 - [info] Local use of variable dva..
+INFO  17:33:59,466 - [info] Local use of variable cetiri..
+INFO  17:33:59,466 - [info] Assignemnt succesful.
+INFO  17:33:59,466 - [info] Local use of variable rez..
+INFO  17:33:59,467 - [info] Print check succesful.
+INFO  17:33:59,467 - [info] Local use of variable osam..
+INFO  17:33:59,467 - [info] Local use of variable cetiri..
+INFO  17:33:59,467 - [info] Local use of variable dva..
+INFO  17:33:59,467 - [info] Assignemnt succesful.
+INFO  17:33:59,467 - [info] Local use of variable osam..
+INFO  17:33:59,467 - [info] Print check succesful.
+INFO  17:33:59,467 - [info] Local use of variable rez..
+INFO  17:33:59,467 - [info] Local use of variable cetiri..
+INFO  17:33:59,467 - [info] Local use of variable dva..
+INFO  17:33:59,467 - [info] Local use of variable osam..
+INFO  17:33:59,467 - [info] Assignemnt succesful.
+INFO  17:33:59,467 - [info] Local use of variable rez..
+INFO  17:33:59,467 - [info] Print check succesful.
+INFO  17:33:59,467 - Print calls = 3
+INFO  17:33:59,468 - Generating bytecode file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  17:33:59,470 - Parsiranje uspesno zavrseno!

@@ -2,9 +2,10 @@
 
 program test301
 {
-	void main()	
+	void main() int niz[]; int b; int m;	
 	{
-		print(20+50+70,30);
+		b = 10;
+		print(m);
 	}
 }
 

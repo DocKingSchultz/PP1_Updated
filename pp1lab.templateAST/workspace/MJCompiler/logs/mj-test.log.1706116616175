@@ -1,0 +1,247 @@
+INFO  18:16:29,578 - Compiling source file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  18:16:29,599 - #2 program
+INFO  18:16:29,599 - #39 test301
+INFO  18:16:29,599 - #8 const
+INFO  18:16:29,600 - #39 int
+INFO  18:16:29,601 - #39 deset
+INFO  18:16:29,601 - #18 =
+INFO  18:16:29,601 - #36 10
+INFO  18:16:29,601 - #28 ;
+INFO  18:16:29,602 - #39 int
+INFO  18:16:29,602 - #39 devet
+INFO  18:16:29,602 - #28 ;
+INFO  18:16:29,603 - #8 const
+INFO  18:16:29,603 - #39 bool
+INFO  18:16:29,603 - #39 tr
+INFO  18:16:29,603 - #18 =
+INFO  18:16:29,603 - #38 1
+INFO  18:16:29,603 - #28 ;
+INFO  18:16:29,603 - #8 const
+INFO  18:16:29,604 - #39 char
+INFO  18:16:29,604 - #39 ch
+INFO  18:16:29,622 - #18 =
+INFO  18:16:29,623 - #37 a
+INFO  18:16:29,624 - #28 ;
+INFO  18:16:29,624 - #34 {
+INFO  18:16:29,624 - #7 void
+INFO  18:16:29,625 - #39 main
+INFO  18:16:29,625 - #32 (
+INFO  18:16:29,625 - #33 )
+INFO  18:16:29,626 - #39 int
+INFO  18:16:29,628 - #39 jedan
+INFO  18:16:29,629 - #28 ;
+INFO  18:16:29,630 - #39 int
+INFO  18:16:29,630 - #39 dva
+INFO  18:16:29,630 - #28 ;
+INFO  18:16:29,631 - #39 int
+INFO  18:16:29,631 - #39 tri
+INFO  18:16:29,631 - #28 ;
+INFO  18:16:29,631 - #39 int
+INFO  18:16:29,632 - #39 cetiri
+INFO  18:16:29,633 - #28 ;
+INFO  18:16:29,633 - #39 int
+INFO  18:16:29,634 - #39 rez
+INFO  18:16:29,634 - #28 ;
+INFO  18:16:29,634 - #39 int
+INFO  18:16:29,635 - #39 osam
+INFO  18:16:29,635 - #28 ;
+INFO  18:16:29,635 - #34 {
+INFO  18:16:29,635 - #3 print
+INFO  18:16:29,638 - #32 (
+INFO  18:16:29,638 - #39 ch
+INFO  18:16:29,638 - #33 )
+INFO  18:16:29,647 - #28 ;
+INFO  18:16:29,647 - #6 return
+INFO  18:16:29,647 - #28 ;
+INFO  18:16:29,647 - #35 }
+INFO  18:16:29,648 - #35 }
+INFO  18:16:29,651 - Program(
+  Prog_id(
+   test301
+  ) [Prog_id]
+  NoNamespace(
+  ) [NoNamespace]
+  Declarations(
+    Declarations(
+      Declarations(
+        Declarations(
+          NoDeclarations(
+          ) [NoDeclarations]
+          ConstDeclarations(
+            Const_dec(
+              Type(
+               int
+              ) [Type]
+              SingleConstDeclarationPart(
+                ConstIdInt(
+                 deset
+                 10
+                ) [ConstIdInt]
+              ) [SingleConstDeclarationPart]
+            ) [Const_dec]
+          ) [ConstDeclarations]
+        ) [Declarations]
+        VarDeclarations(
+          Var_dec(
+            Type(
+             int
+            ) [Type]
+            SingleVarIdList(
+              VarId(
+               devet
+              ) [VarId]
+            ) [SingleVarIdList]
+          ) [Var_dec]
+        ) [VarDeclarations]
+      ) [Declarations]
+      ConstDeclarations(
+        Const_dec(
+          Type(
+           bool
+          ) [Type]
+          SingleConstDeclarationPart(
+            ConstIdBool(
+             tr
+             1
+            ) [ConstIdBool]
+          ) [SingleConstDeclarationPart]
+        ) [Const_dec]
+      ) [ConstDeclarations]
+    ) [Declarations]
+    ConstDeclarations(
+      Const_dec(
+        Type(
+         char
+        ) [Type]
+        SingleConstDeclarationPart(
+          ConstIdChar(
+           ch
+           a
+          ) [ConstIdChar]
+        ) [SingleConstDeclarationPart]
+      ) [Const_dec]
+    ) [ConstDeclarations]
+  ) [Declarations]
+  MainMethod(
+    MainIdent(
+     main
+    ) [MainIdent]
+    MainVariables(
+      MainVariables(
+        MainVariables(
+          MainVariables(
+            MainVariables(
+              MainVariables(
+                NoMainVariables(
+                ) [NoMainVariables]
+                Var_dec(
+                  Type(
+                   int
+                  ) [Type]
+                  SingleVarIdList(
+                    VarId(
+                     jedan
+                    ) [VarId]
+                  ) [SingleVarIdList]
+                ) [Var_dec]
+              ) [MainVariables]
+              Var_dec(
+                Type(
+                 int
+                ) [Type]
+                SingleVarIdList(
+                  VarId(
+                   dva
+                  ) [VarId]
+                ) [SingleVarIdList]
+              ) [Var_dec]
+            ) [MainVariables]
+            Var_dec(
+              Type(
+               int
+              ) [Type]
+              SingleVarIdList(
+                VarId(
+                 tri
+                ) [VarId]
+              ) [SingleVarIdList]
+            ) [Var_dec]
+          ) [MainVariables]
+          Var_dec(
+            Type(
+             int
+            ) [Type]
+            SingleVarIdList(
+              VarId(
+               cetiri
+              ) [VarId]
+            ) [SingleVarIdList]
+          ) [Var_dec]
+        ) [MainVariables]
+        Var_dec(
+          Type(
+           int
+          ) [Type]
+          SingleVarIdList(
+            VarId(
+             rez
+            ) [VarId]
+          ) [SingleVarIdList]
+        ) [Var_dec]
+      ) [MainVariables]
+      Var_dec(
+        Type(
+         int
+        ) [Type]
+        SingleVarIdList(
+          VarId(
+           osam
+          ) [VarId]
+        ) [SingleVarIdList]
+      ) [Var_dec]
+    ) [MainVariables]
+    Statements(
+      Statements(
+        NoStatements(
+        ) [NoStatements]
+        Print(
+          Expr(
+            TermExpr(
+              Term(
+                SimpleFactor(
+                  VarRef(
+                    Designator(
+                      SimpleDesignatorWithoutNamespace(
+                       ch
+                      ) [SimpleDesignatorWithoutNamespace]
+                    ) [Designator]
+                  ) [VarRef]
+                ) [SimpleFactor]
+              ) [Term]
+            ) [TermExpr]
+          ) [Expr]
+          NoConstToPrint(
+          ) [NoConstToPrint]
+        ) [Print]
+      ) [Statements]
+      ReturnNull(
+      ) [ReturnNull]
+    ) [Statements]
+  ) [MainMethod]
+) [Program]
+INFO  18:16:29,660 - [info] Declared global constant deset. at line : 4.
+INFO  18:16:29,661 - [info] Variable devet has been declared. at line : 5.
+INFO  18:16:29,661 - [info] Declared global constant.tr at line : 6.
+INFO  18:16:29,661 - [info] Declared global constant ch. at line : 7.
+INFO  18:16:29,661 - [info] Main :  at line : 9.
+INFO  18:16:29,661 - [info] Variable jedan has been declared. at line : 9.
+INFO  18:16:29,661 - [info] Variable dva has been declared. at line : 9.
+INFO  18:16:29,661 - [info] Variable tri has been declared. at line : 9.
+INFO  18:16:29,661 - [info] Variable cetiri has been declared. at line : 9.
+INFO  18:16:29,661 - [info] Variable rez has been declared. at line : 9.
+INFO  18:16:29,662 - [info] Variable osam has been declared. at line : 9.
+INFO  18:16:29,662 - [info] Global use of variable ch..
+INFO  18:16:29,662 - [info] Print check succesful.
+INFO  18:16:29,662 - Print calls = 1
+INFO  18:16:29,662 - Generating bytecode file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  18:16:29,666 - Parsiranje uspesno zavrseno!

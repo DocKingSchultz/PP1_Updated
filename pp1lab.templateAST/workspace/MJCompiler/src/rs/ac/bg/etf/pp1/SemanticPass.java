@@ -201,7 +201,7 @@ public class SemanticPass extends VisitorAdaptor {
 				}
 				constVariablesDeclared++;
 				Obj constNode = Tab.insert(Obj.Con,  namespaceTag + varName, lastType);
-				//constNode.setAdr(constGDecl.getValue());
+				constNode.setAdr(constGDecl.getValue());
 			}
 			else
 			{
@@ -441,7 +441,6 @@ public class SemanticPass extends VisitorAdaptor {
 			report_error(error+"Variable " + varName + " is not declared", designator);
 			return;
 		}
-		designator.obj = new Obj(Struct.None, designator.getId(), new Struct(Struct.None));
 		designator.obj = obj;
 		report_info(info+"Local use of variable "+varName+".", null);
 		namespaceVariableUses++;
@@ -458,7 +457,6 @@ public class SemanticPass extends VisitorAdaptor {
 			report_error(error+"Variable " + designator.getId() + " is not declared", designator);
 			return;
 		}
-		designator.obj = new Obj(Struct.None, designator.getId(), new Struct(Struct.None));
 		designator.obj = obj;
 		if(designator.obj.getLevel()==1)
 		{

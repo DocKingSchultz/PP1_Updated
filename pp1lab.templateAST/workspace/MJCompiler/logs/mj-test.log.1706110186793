@@ -1,0 +1,91 @@
+INFO  16:28:20,446 - Compiling source file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  16:28:20,466 - #2 program
+INFO  16:28:20,466 - #39 test301
+INFO  16:28:20,466 - #34 {
+INFO  16:28:20,467 - #7 void
+INFO  16:28:20,467 - #39 main
+INFO  16:28:20,467 - #32 (
+INFO  16:28:20,467 - #33 )
+INFO  16:28:20,467 - #34 {
+INFO  16:28:20,468 - #3 print
+INFO  16:28:20,468 - #32 (
+INFO  16:28:20,468 - #36 20
+INFO  16:28:20,468 - #11 +
+INFO  16:28:20,469 - #36 50
+INFO  16:28:20,470 - #11 +
+INFO  16:28:20,470 - #36 70
+INFO  16:28:20,470 - #29 ,
+INFO  16:28:20,471 - #36 3
+INFO  16:28:20,471 - #33 )
+INFO  16:28:20,471 - #28 ;
+INFO  16:28:20,471 - #6 return
+INFO  16:28:20,471 - #28 ;
+INFO  16:28:20,483 - #35 }
+INFO  16:28:20,483 - #35 }
+INFO  16:28:20,484 - Program(
+  Prog_id(
+   test301
+  ) [Prog_id]
+  NoNamespace(
+  ) [NoNamespace]
+  NoDeclarations(
+  ) [NoDeclarations]
+  MainMethod(
+    MainIdent(
+     main
+    ) [MainIdent]
+    NoMainVariables(
+    ) [NoMainVariables]
+    Statements(
+      Statements(
+        NoStatements(
+        ) [NoStatements]
+        Print(
+          Expr(
+            AddExpr(
+              AddExpr(
+                TermExpr(
+                  Term(
+                    SimpleFactor(
+                      IntRef(
+                       20
+                      ) [IntRef]
+                    ) [SimpleFactor]
+                  ) [Term]
+                ) [TermExpr]
+                PlusOP(
+                ) [PlusOP]
+                Term(
+                  SimpleFactor(
+                    IntRef(
+                     50
+                    ) [IntRef]
+                  ) [SimpleFactor]
+                ) [Term]
+              ) [AddExpr]
+              PlusOP(
+              ) [PlusOP]
+              Term(
+                SimpleFactor(
+                  IntRef(
+                   70
+                  ) [IntRef]
+                ) [SimpleFactor]
+              ) [Term]
+            ) [AddExpr]
+          ) [Expr]
+          ConstToPrint(
+           3
+          ) [ConstToPrint]
+        ) [Print]
+      ) [Statements]
+      ReturnNull(
+      ) [ReturnNull]
+    ) [Statements]
+  ) [MainMethod]
+) [Program]
+INFO  16:28:20,490 - [info] Main :  at line : 5.
+INFO  16:28:20,490 - [info] Print check succesful.
+INFO  16:28:20,490 - Print calls = 1
+INFO  16:28:20,490 - Generating bytecode file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  16:28:20,493 - Parsiranje uspesno zavrseno!
