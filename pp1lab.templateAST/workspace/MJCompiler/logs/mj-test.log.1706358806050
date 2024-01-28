@@ -1,0 +1,227 @@
+INFO  13:32:51,815 - Compiling source file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  13:32:51,835 - #2 program
+INFO  13:32:51,835 - #39 test301
+INFO  13:32:51,835 - #34 {
+INFO  13:32:51,837 - #7 void
+INFO  13:32:51,837 - #39 main
+INFO  13:32:51,837 - #32 (
+INFO  13:32:51,837 - #33 )
+INFO  13:32:51,837 - #39 int
+INFO  13:32:51,838 - #39 niz
+INFO  13:32:51,838 - #30 [
+INFO  13:32:51,838 - #31 ]
+INFO  13:32:51,838 - #28 ;
+INFO  13:32:51,838 - #39 int
+INFO  13:32:51,839 - #39 b
+INFO  13:32:51,839 - #28 ;
+INFO  13:32:51,839 - #39 int
+INFO  13:32:51,839 - #39 m
+INFO  13:32:51,839 - #28 ;
+INFO  13:32:51,839 - #34 {
+INFO  13:32:51,839 - #39 b
+INFO  13:32:51,840 - #18 =
+INFO  13:32:51,872 - #36 0
+INFO  13:32:51,872 - #28 ;
+INFO  13:32:51,875 - #39 b
+INFO  13:32:51,876 - #13 ++
+INFO  13:32:51,876 - #28 ;
+INFO  13:32:51,876 - #39 m
+INFO  13:32:51,876 - #18 =
+INFO  13:32:51,877 - #36 2
+INFO  13:32:51,877 - #28 ;
+INFO  13:32:51,877 - #39 m
+INFO  13:32:51,878 - #13 ++
+INFO  13:32:51,878 - #28 ;
+INFO  13:32:51,878 - #3 print
+INFO  13:32:51,878 - #32 (
+INFO  13:32:51,879 - #39 b
+INFO  13:32:51,879 - #33 )
+INFO  13:32:51,881 - #28 ;
+INFO  13:32:51,881 - #3 print
+INFO  13:32:51,882 - #32 (
+INFO  13:32:51,882 - #39 m
+INFO  13:32:51,882 - #33 )
+INFO  13:32:51,882 - #28 ;
+INFO  13:32:51,882 - #35 }
+INFO  13:32:51,882 - #35 }
+INFO  13:32:51,886 - Program(
+  Prog_id(
+   test301
+  ) [Prog_id]
+  NoNamespace(
+  ) [NoNamespace]
+  NoDeclarations(
+  ) [NoDeclarations]
+  MainMethod(
+    MainIdent(
+     main
+    ) [MainIdent]
+    MainVariables(
+      MainVariables(
+        MainVariables(
+          NoMainVariables(
+          ) [NoMainVariables]
+          Var_dec(
+            Type(
+             int
+            ) [Type]
+            SingleVarIdList(
+              VarOrArrayId(
+               niz
+              ) [VarOrArrayId]
+            ) [SingleVarIdList]
+          ) [Var_dec]
+        ) [MainVariables]
+        Var_dec(
+          Type(
+           int
+          ) [Type]
+          SingleVarIdList(
+            VarId(
+             b
+            ) [VarId]
+          ) [SingleVarIdList]
+        ) [Var_dec]
+      ) [MainVariables]
+      Var_dec(
+        Type(
+         int
+        ) [Type]
+        SingleVarIdList(
+          VarId(
+           m
+          ) [VarId]
+        ) [SingleVarIdList]
+      ) [Var_dec]
+    ) [MainVariables]
+    Statements(
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              Statements(
+                NoStatements(
+                ) [NoStatements]
+                DesignatorStatement(
+                  Assignment(
+                    Designator(
+                      SimpleDesignatorWithoutNamespace(
+                       b
+                      ) [SimpleDesignatorWithoutNamespace]
+                    ) [Designator]
+                    Expr(
+                      TermExpr(
+                        Term(
+                          SimpleFactor(
+                            IntRef(
+                             0
+                            ) [IntRef]
+                          ) [SimpleFactor]
+                        ) [Term]
+                      ) [TermExpr]
+                    ) [Expr]
+                  ) [Assignment]
+                ) [DesignatorStatement]
+              ) [Statements]
+              DesignatorStatement(
+                Increment(
+                  Designator(
+                    SimpleDesignatorWithoutNamespace(
+                     b
+                    ) [SimpleDesignatorWithoutNamespace]
+                  ) [Designator]
+                ) [Increment]
+              ) [DesignatorStatement]
+            ) [Statements]
+            DesignatorStatement(
+              Assignment(
+                Designator(
+                  SimpleDesignatorWithoutNamespace(
+                   m
+                  ) [SimpleDesignatorWithoutNamespace]
+                ) [Designator]
+                Expr(
+                  TermExpr(
+                    Term(
+                      SimpleFactor(
+                        IntRef(
+                         2
+                        ) [IntRef]
+                      ) [SimpleFactor]
+                    ) [Term]
+                  ) [TermExpr]
+                ) [Expr]
+              ) [Assignment]
+            ) [DesignatorStatement]
+          ) [Statements]
+          DesignatorStatement(
+            Increment(
+              Designator(
+                SimpleDesignatorWithoutNamespace(
+                 m
+                ) [SimpleDesignatorWithoutNamespace]
+              ) [Designator]
+            ) [Increment]
+          ) [DesignatorStatement]
+        ) [Statements]
+        Print(
+          Expr(
+            TermExpr(
+              Term(
+                SimpleFactor(
+                  VarRef(
+                    Designator(
+                      SimpleDesignatorWithoutNamespace(
+                       b
+                      ) [SimpleDesignatorWithoutNamespace]
+                    ) [Designator]
+                  ) [VarRef]
+                ) [SimpleFactor]
+              ) [Term]
+            ) [TermExpr]
+          ) [Expr]
+          NoConstToPrint(
+          ) [NoConstToPrint]
+        ) [Print]
+      ) [Statements]
+      Print(
+        Expr(
+          TermExpr(
+            Term(
+              SimpleFactor(
+                VarRef(
+                  Designator(
+                    SimpleDesignatorWithoutNamespace(
+                     m
+                    ) [SimpleDesignatorWithoutNamespace]
+                  ) [Designator]
+                ) [VarRef]
+              ) [SimpleFactor]
+            ) [Term]
+          ) [TermExpr]
+        ) [Expr]
+        NoConstToPrint(
+        ) [NoConstToPrint]
+      ) [Print]
+    ) [Statements]
+  ) [MainMethod]
+) [Program]
+INFO  13:32:51,895 - [info] Main :  at line : 5.
+INFO  13:32:51,895 - [info] Variable niz has been declared. at line : 5.
+INFO  13:32:51,896 - [info] Variable b has been declared. at line : 5.
+INFO  13:32:51,896 - [info] Variable m has been declared. at line : 5.
+INFO  13:32:51,896 - [info] Local use of variable b..
+INFO  13:32:51,896 - [info] Assignemnt succesful.
+INFO  13:32:51,896 - [info] Local use of variable b..
+INFO  13:32:51,896 - [info] b incremented at line : 8.
+INFO  13:32:51,896 - [info] Local use of variable m..
+INFO  13:32:51,896 - [info] Assignemnt succesful.
+INFO  13:32:51,896 - [info] Local use of variable m..
+INFO  13:32:51,896 - [info] m incremented at line : 10.
+INFO  13:32:51,896 - [info] Local use of variable b..
+INFO  13:32:51,897 - [info] Print check succesful.
+INFO  13:32:51,897 - [info] Local use of variable m..
+INFO  13:32:51,897 - [info] Print check succesful.
+INFO  13:32:51,897 - Print calls = 2
+INFO  13:32:51,898 - Generating bytecode file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  13:32:51,901 - Parsiranje uspesno zavrseno!

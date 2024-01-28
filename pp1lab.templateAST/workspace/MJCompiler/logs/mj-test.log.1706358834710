@@ -1,0 +1,152 @@
+INFO  13:33:26,053 - Compiling source file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  13:33:26,072 - #2 program
+INFO  13:33:26,073 - #39 test301
+INFO  13:33:26,073 - #34 {
+INFO  13:33:26,074 - #7 void
+INFO  13:33:26,074 - #39 main
+INFO  13:33:26,074 - #32 (
+INFO  13:33:26,075 - #33 )
+INFO  13:33:26,075 - #39 int
+INFO  13:33:26,075 - #39 niz
+INFO  13:33:26,076 - #30 [
+INFO  13:33:26,076 - #31 ]
+INFO  13:33:26,076 - #28 ;
+INFO  13:33:26,076 - #39 int
+INFO  13:33:26,077 - #39 b
+INFO  13:33:26,077 - #28 ;
+INFO  13:33:26,077 - #39 int
+INFO  13:33:26,077 - #39 m
+INFO  13:33:26,077 - #28 ;
+INFO  13:33:26,077 - #34 {
+INFO  13:33:26,077 - #39 b
+INFO  13:33:26,078 - #18 =
+INFO  13:33:26,078 - #36 0
+INFO  13:33:26,078 - #28 ;
+INFO  13:33:26,079 - #39 m
+INFO  13:33:26,079 - #18 =
+INFO  13:33:26,079 - #39 b
+INFO  13:33:26,079 - #13 ++
+ERROR 13:33:26,080 - 
+Sintaksna greska na liniji 8
+INFO  13:33:26,080 - #11 +
+INFO  13:33:26,080 - #36 3
+INFO  13:33:26,080 - #28 ;
+INFO  13:33:26,080 - #3 print
+INFO  13:33:26,080 - #32 (
+INFO  13:33:26,080 - #39 m
+ERROR 13:33:26,080 - Izvrsen oporavak do ; u liniji 8
+INFO  13:33:26,081 - #33 )
+INFO  13:33:26,081 - #28 ;
+INFO  13:33:26,081 - #35 }
+INFO  13:33:26,081 - #35 }
+INFO  13:33:26,082 - Program(
+  Prog_id(
+   test301
+  ) [Prog_id]
+  NoNamespace(
+  ) [NoNamespace]
+  NoDeclarations(
+  ) [NoDeclarations]
+  MainMethod(
+    MainIdent(
+     main
+    ) [MainIdent]
+    MainVariables(
+      MainVariables(
+        MainVariables(
+          NoMainVariables(
+          ) [NoMainVariables]
+          Var_dec(
+            Type(
+             int
+            ) [Type]
+            SingleVarIdList(
+              VarOrArrayId(
+               niz
+              ) [VarOrArrayId]
+            ) [SingleVarIdList]
+          ) [Var_dec]
+        ) [MainVariables]
+        Var_dec(
+          Type(
+           int
+          ) [Type]
+          SingleVarIdList(
+            VarId(
+             b
+            ) [VarId]
+          ) [SingleVarIdList]
+        ) [Var_dec]
+      ) [MainVariables]
+      Var_dec(
+        Type(
+         int
+        ) [Type]
+        SingleVarIdList(
+          VarId(
+           m
+          ) [VarId]
+        ) [SingleVarIdList]
+      ) [Var_dec]
+    ) [MainVariables]
+    Statements(
+      Statements(
+        Statements(
+          NoStatements(
+          ) [NoStatements]
+          DesignatorStatement(
+            Assignment(
+              Designator(
+                SimpleDesignatorWithoutNamespace(
+                 b
+                ) [SimpleDesignatorWithoutNamespace]
+              ) [Designator]
+              Expr(
+                TermExpr(
+                  Term(
+                    SimpleFactor(
+                      IntRef(
+                       0
+                      ) [IntRef]
+                    ) [SimpleFactor]
+                  ) [Term]
+                ) [TermExpr]
+              ) [Expr]
+            ) [Assignment]
+          ) [DesignatorStatement]
+        ) [Statements]
+        StatementDerived1(
+        ) [StatementDerived1]
+      ) [Statements]
+      Print(
+        Expr(
+          TermExpr(
+            Term(
+              SimpleFactor(
+                VarRef(
+                  Designator(
+                    SimpleDesignatorWithoutNamespace(
+                     m
+                    ) [SimpleDesignatorWithoutNamespace]
+                  ) [Designator]
+                ) [VarRef]
+              ) [SimpleFactor]
+            ) [Term]
+          ) [TermExpr]
+        ) [Expr]
+        NoConstToPrint(
+        ) [NoConstToPrint]
+      ) [Print]
+    ) [Statements]
+  ) [MainMethod]
+) [Program]
+INFO  13:33:26,087 - [info] Main :  at line : 5.
+INFO  13:33:26,087 - [info] Variable niz has been declared. at line : 5.
+INFO  13:33:26,087 - [info] Variable b has been declared. at line : 5.
+INFO  13:33:26,087 - [info] Variable m has been declared. at line : 5.
+INFO  13:33:26,087 - [info] Local use of variable b..
+INFO  13:33:26,087 - [info] Assignemnt succesful.
+INFO  13:33:26,088 - [info] Local use of variable m..
+INFO  13:33:26,088 - [info] Print check succesful.
+INFO  13:33:26,088 - Print calls = 1
+ERROR 13:33:26,088 - Parsiranje NIJE uspesno zavrseno!

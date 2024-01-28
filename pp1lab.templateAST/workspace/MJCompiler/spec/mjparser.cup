@@ -74,7 +74,7 @@ nonterminal var_dec, var_list, var_part;
 nonterminal main_variables;
 nonterminal namespace, namespace_list, namespaceContent, namespace_name;
 nonterminal statements_list; 
-nonterminal designator_statement;
+nonterminal designator_statement, array_delegator;
 nonterminal add_sub_OP, mull_div_mod_OP, assign;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj prog_id, program, main;
@@ -175,11 +175,13 @@ designator_statement ::= (Assignment) designator:o EQUAL expr:t
 ;
 designator ::= (Designator) ident_expr_list:o
 ;
-ident_expr_list ::=(ArrayDesignator) ident_expr_list LEFTSQPAR expr RIGHTSQPAR
+ident_expr_list ::=(ArrayDesignator) array_delegator LEFTSQPAR expr RIGHTSQPAR
 				   |
 				   (SimpleDesignatorWithNamespace) IDENT:namespaceName DOUBLEDOTS IDENT:id
 				   |
 				   (SimpleDesignatorWithoutNamespace) IDENT:id
+;
+array_delegator ::= (ArrayDelegator) ident_expr_list:idexprl
 ;
 expr ::= (Expr) term_list:t
 ;
@@ -217,4 +219,3 @@ mull_div_mod_OP ::= (MullOP) MULTIPLE
 				    |
 				    (ModOP) MOD
 ;
-

@@ -1,12 +1,13 @@
 // Test301
-
 program test301
 {
-	void main() int niz[]; int b; int m;	
-	{
-		b = 10;
-		print(m);
-	}
+    void main() int niz[]; int jedan;
+    {
+        niz = new int[10];
+
+        niz[1] = 2;
+        niz[3] = 4;
+
+        print(niz[1]);
+    }
 }
-
-

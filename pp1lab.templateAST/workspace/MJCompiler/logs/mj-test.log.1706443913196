@@ -1,0 +1,250 @@
+INFO  13:06:19,792 - Compiling source file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  13:06:19,813 - #2 program
+INFO  13:06:19,813 - #39 test301
+INFO  13:06:19,813 - #34 {
+INFO  13:06:19,814 - #7 void
+INFO  13:06:19,814 - #39 main
+INFO  13:06:19,814 - #32 (
+INFO  13:06:19,814 - #33 )
+INFO  13:06:19,814 - #39 int
+INFO  13:06:19,815 - #39 bodovi
+INFO  13:06:19,815 - #28 ;
+INFO  13:06:19,815 - #39 int
+INFO  13:06:19,816 - #39 niz
+INFO  13:06:19,816 - #30 [
+INFO  13:06:19,816 - #31 ]
+INFO  13:06:19,816 - #28 ;
+INFO  13:06:19,816 - #34 {
+INFO  13:06:19,817 - #39 bodovi
+INFO  13:06:19,817 - #18 =
+INFO  13:06:19,818 - #36 3
+INFO  13:06:19,818 - #28 ;
+INFO  13:06:19,829 - #39 niz
+INFO  13:06:19,829 - #18 =
+INFO  13:06:19,829 - #9 new
+INFO  13:06:19,829 - #39 int
+INFO  13:06:19,829 - #30 [
+INFO  13:06:19,830 - #36 5
+INFO  13:06:19,830 - #31 ]
+INFO  13:06:19,830 - #28 ;
+INFO  13:06:19,830 - #39 niz
+INFO  13:06:19,830 - #30 [
+INFO  13:06:19,830 - #36 5
+INFO  13:06:19,830 - #12 -
+INFO  13:06:19,830 - #39 bodovi
+INFO  13:06:19,836 - #31 ]
+INFO  13:06:19,836 - #18 =
+INFO  13:06:19,837 - #36 7
+INFO  13:06:19,837 - #28 ;
+INFO  13:06:19,837 - #3 print
+INFO  13:06:19,837 - #32 (
+INFO  13:06:19,837 - #39 niz
+INFO  13:06:19,837 - #30 [
+INFO  13:06:19,837 - #36 2
+INFO  13:06:19,837 - #31 ]
+INFO  13:06:19,837 - #33 )
+INFO  13:06:19,837 - #28 ;
+INFO  13:06:19,838 - #35 }
+INFO  13:06:19,838 - #35 }
+INFO  13:06:19,839 - Program(
+  Prog_id(
+   test301
+  ) [Prog_id]
+  NoNamespace(
+  ) [NoNamespace]
+  NoDeclarations(
+  ) [NoDeclarations]
+  MainMethod(
+    MainIdent(
+     main
+    ) [MainIdent]
+    MainVariables(
+      MainVariables(
+        NoMainVariables(
+        ) [NoMainVariables]
+        Var_dec(
+          Type(
+           int
+          ) [Type]
+          SingleVarIdList(
+            VarId(
+             bodovi
+            ) [VarId]
+          ) [SingleVarIdList]
+        ) [Var_dec]
+      ) [MainVariables]
+      Var_dec(
+        Type(
+         int
+        ) [Type]
+        SingleVarIdList(
+          VarOrArrayId(
+           niz
+          ) [VarOrArrayId]
+        ) [SingleVarIdList]
+      ) [Var_dec]
+    ) [MainVariables]
+    Statements(
+      Statements(
+        Statements(
+          Statements(
+            NoStatements(
+            ) [NoStatements]
+            DesignatorStatement(
+              Assignment(
+                Designator(
+                  SimpleDesignatorWithoutNamespace(
+                   bodovi
+                  ) [SimpleDesignatorWithoutNamespace]
+                ) [Designator]
+                Expr(
+                  TermExpr(
+                    Term(
+                      SimpleFactor(
+                        IntRef(
+                         3
+                        ) [IntRef]
+                      ) [SimpleFactor]
+                    ) [Term]
+                  ) [TermExpr]
+                ) [Expr]
+              ) [Assignment]
+            ) [DesignatorStatement]
+          ) [Statements]
+          DesignatorStatement(
+            Assignment(
+              Designator(
+                SimpleDesignatorWithoutNamespace(
+                 niz
+                ) [SimpleDesignatorWithoutNamespace]
+              ) [Designator]
+              Expr(
+                TermExpr(
+                  Term(
+                    SimpleFactor(
+                      OperatorNew(
+                        Type(
+                         int
+                        ) [Type]
+                        Expr(
+                          TermExpr(
+                            Term(
+                              SimpleFactor(
+                                IntRef(
+                                 5
+                                ) [IntRef]
+                              ) [SimpleFactor]
+                            ) [Term]
+                          ) [TermExpr]
+                        ) [Expr]
+                      ) [OperatorNew]
+                    ) [SimpleFactor]
+                  ) [Term]
+                ) [TermExpr]
+              ) [Expr]
+            ) [Assignment]
+          ) [DesignatorStatement]
+        ) [Statements]
+        DesignatorStatement(
+          Assignment(
+            Designator(
+              ArrayDesignator(
+                ArrayDelegator(
+                  SimpleDesignatorWithoutNamespace(
+                   niz
+                  ) [SimpleDesignatorWithoutNamespace]
+                ) [ArrayDelegator]
+                Expr(
+                  AddExpr(
+                    TermExpr(
+                      Term(
+                        SimpleFactor(
+                          IntRef(
+                           5
+                          ) [IntRef]
+                        ) [SimpleFactor]
+                      ) [Term]
+                    ) [TermExpr]
+                    MinusOP(
+                    ) [MinusOP]
+                    Term(
+                      SimpleFactor(
+                        VarRef(
+                          Designator(
+                            SimpleDesignatorWithoutNamespace(
+                             bodovi
+                            ) [SimpleDesignatorWithoutNamespace]
+                          ) [Designator]
+                        ) [VarRef]
+                      ) [SimpleFactor]
+                    ) [Term]
+                  ) [AddExpr]
+                ) [Expr]
+              ) [ArrayDesignator]
+            ) [Designator]
+            Expr(
+              TermExpr(
+                Term(
+                  SimpleFactor(
+                    IntRef(
+                     7
+                    ) [IntRef]
+                  ) [SimpleFactor]
+                ) [Term]
+              ) [TermExpr]
+            ) [Expr]
+          ) [Assignment]
+        ) [DesignatorStatement]
+      ) [Statements]
+      Print(
+        Expr(
+          TermExpr(
+            Term(
+              SimpleFactor(
+                VarRef(
+                  Designator(
+                    ArrayDesignator(
+                      ArrayDelegator(
+                        SimpleDesignatorWithoutNamespace(
+                         niz
+                        ) [SimpleDesignatorWithoutNamespace]
+                      ) [ArrayDelegator]
+                      Expr(
+                        TermExpr(
+                          Term(
+                            SimpleFactor(
+                              IntRef(
+                               2
+                              ) [IntRef]
+                            ) [SimpleFactor]
+                          ) [Term]
+                        ) [TermExpr]
+                      ) [Expr]
+                    ) [ArrayDesignator]
+                  ) [Designator]
+                ) [VarRef]
+              ) [SimpleFactor]
+            ) [Term]
+          ) [TermExpr]
+        ) [Expr]
+        NoConstToPrint(
+        ) [NoConstToPrint]
+      ) [Print]
+    ) [Statements]
+  ) [MainMethod]
+) [Program]
+INFO  13:06:19,845 - [info] Main :  at line : 5.
+INFO  13:06:19,845 - [info] Variable bodovi has been declared. at line : 6.
+INFO  13:06:19,845 - [info] Variable niz has been declared. at line : 7.
+INFO  13:06:19,845 - [info] Local use of variable bodovi..
+INFO  13:06:19,845 - [info] Assignemnt succesful.
+INFO  13:06:19,845 - [info] Local use of variable niz..
+INFO  13:06:19,845 - [info] Assignemnt succesful.
+INFO  13:06:19,845 - [info] Local use of variable niz..
+INFO  13:06:19,845 - [info] Local use of variable bodovi..
+INFO  13:06:19,845 - [info] Assignemnt succesful.
+INFO  13:06:19,845 - [info] Local use of variable niz..
+INFO  13:06:19,845 - [info] Print check succesful.
+INFO  13:06:19,845 - Print calls = 1
+INFO  13:06:19,846 - Generating bytecode file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  13:06:19,848 - Parsiranje uspesno zavrseno!

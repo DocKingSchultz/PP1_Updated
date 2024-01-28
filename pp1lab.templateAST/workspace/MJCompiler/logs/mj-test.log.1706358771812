@@ -1,0 +1,155 @@
+INFO  13:32:04,065 - Compiling source file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  13:32:04,085 - #2 program
+INFO  13:32:04,085 - #39 test301
+INFO  13:32:04,085 - #34 {
+INFO  13:32:04,087 - #7 void
+INFO  13:32:04,087 - #39 main
+INFO  13:32:04,087 - #32 (
+INFO  13:32:04,087 - #33 )
+INFO  13:32:04,087 - #39 int
+INFO  13:32:04,087 - #39 niz
+INFO  13:32:04,088 - #30 [
+INFO  13:32:04,088 - #31 ]
+INFO  13:32:04,088 - #28 ;
+INFO  13:32:04,088 - #39 int
+INFO  13:32:04,089 - #39 b
+INFO  13:32:04,089 - #28 ;
+INFO  13:32:04,089 - #39 int
+INFO  13:32:04,089 - #39 m
+INFO  13:32:04,089 - #28 ;
+INFO  13:32:04,089 - #34 {
+INFO  13:32:04,089 - #39 b
+INFO  13:32:04,090 - #18 =
+INFO  13:32:04,119 - #36 0
+INFO  13:32:04,119 - #28 ;
+INFO  13:32:04,120 - #39 b
+INFO  13:32:04,120 - #13 ++
+INFO  13:32:04,120 - #28 ;
+INFO  13:32:04,120 - #3 print
+INFO  13:32:04,120 - #32 (
+INFO  13:32:04,120 - #39 b
+INFO  13:32:04,120 - #33 )
+INFO  13:32:04,121 - #28 ;
+INFO  13:32:04,121 - #35 }
+INFO  13:32:04,121 - #35 }
+INFO  13:32:04,122 - Program(
+  Prog_id(
+   test301
+  ) [Prog_id]
+  NoNamespace(
+  ) [NoNamespace]
+  NoDeclarations(
+  ) [NoDeclarations]
+  MainMethod(
+    MainIdent(
+     main
+    ) [MainIdent]
+    MainVariables(
+      MainVariables(
+        MainVariables(
+          NoMainVariables(
+          ) [NoMainVariables]
+          Var_dec(
+            Type(
+             int
+            ) [Type]
+            SingleVarIdList(
+              VarOrArrayId(
+               niz
+              ) [VarOrArrayId]
+            ) [SingleVarIdList]
+          ) [Var_dec]
+        ) [MainVariables]
+        Var_dec(
+          Type(
+           int
+          ) [Type]
+          SingleVarIdList(
+            VarId(
+             b
+            ) [VarId]
+          ) [SingleVarIdList]
+        ) [Var_dec]
+      ) [MainVariables]
+      Var_dec(
+        Type(
+         int
+        ) [Type]
+        SingleVarIdList(
+          VarId(
+           m
+          ) [VarId]
+        ) [SingleVarIdList]
+      ) [Var_dec]
+    ) [MainVariables]
+    Statements(
+      Statements(
+        Statements(
+          NoStatements(
+          ) [NoStatements]
+          DesignatorStatement(
+            Assignment(
+              Designator(
+                SimpleDesignatorWithoutNamespace(
+                 b
+                ) [SimpleDesignatorWithoutNamespace]
+              ) [Designator]
+              Expr(
+                TermExpr(
+                  Term(
+                    SimpleFactor(
+                      IntRef(
+                       0
+                      ) [IntRef]
+                    ) [SimpleFactor]
+                  ) [Term]
+                ) [TermExpr]
+              ) [Expr]
+            ) [Assignment]
+          ) [DesignatorStatement]
+        ) [Statements]
+        DesignatorStatement(
+          Increment(
+            Designator(
+              SimpleDesignatorWithoutNamespace(
+               b
+              ) [SimpleDesignatorWithoutNamespace]
+            ) [Designator]
+          ) [Increment]
+        ) [DesignatorStatement]
+      ) [Statements]
+      Print(
+        Expr(
+          TermExpr(
+            Term(
+              SimpleFactor(
+                VarRef(
+                  Designator(
+                    SimpleDesignatorWithoutNamespace(
+                     b
+                    ) [SimpleDesignatorWithoutNamespace]
+                  ) [Designator]
+                ) [VarRef]
+              ) [SimpleFactor]
+            ) [Term]
+          ) [TermExpr]
+        ) [Expr]
+        NoConstToPrint(
+        ) [NoConstToPrint]
+      ) [Print]
+    ) [Statements]
+  ) [MainMethod]
+) [Program]
+INFO  13:32:04,128 - [info] Main :  at line : 5.
+INFO  13:32:04,128 - [info] Variable niz has been declared. at line : 5.
+INFO  13:32:04,128 - [info] Variable b has been declared. at line : 5.
+INFO  13:32:04,128 - [info] Variable m has been declared. at line : 5.
+INFO  13:32:04,128 - [info] Local use of variable b..
+INFO  13:32:04,128 - [info] Assignemnt succesful.
+INFO  13:32:04,128 - [info] Local use of variable b..
+INFO  13:32:04,128 - [info] b incremented at line : 8.
+INFO  13:32:04,128 - [info] Local use of variable b..
+INFO  13:32:04,128 - [info] Print check succesful.
+INFO  13:32:04,128 - Print calls = 1
+INFO  13:32:04,129 - Generating bytecode file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  13:32:04,131 - Parsiranje uspesno zavrseno!

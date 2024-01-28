@@ -84,6 +84,7 @@ nonterminal NamespaceContent namespaceContent;
 nonterminal Namespace_name namespace_name;
 nonterminal Statements_list statements_list; 
 nonterminal Designator_statement designator_statement;
+nonterminal Array_delegator array_delegator;
 nonterminal Add_sub_OP add_sub_OP;
 nonterminal Mull_div_mod_OP mull_div_mod_OP;
 nonterminal Assign assign;
@@ -186,11 +187,13 @@ designator_statement ::= (Assignment) designator:o EQUAL expr:t {: RESULT=new As
 ;
 designator ::= (Designator) ident_expr_list:o {: RESULT=new Designator(o); RESULT.setLine(oleft); :}
 ;
-ident_expr_list ::=(ArrayDesignator) ident_expr_list:i1 LEFTSQPAR expr:e2 RIGHTSQPAR {: RESULT=new ArrayDesignator(i1, e2); RESULT.setLine(i1left); :}
+ident_expr_list ::=(ArrayDesignator) array_delegator:a1 LEFTSQPAR expr:e2 RIGHTSQPAR {: RESULT=new ArrayDesignator(a1, e2); RESULT.setLine(a1left); :}
 				   |
 				   (SimpleDesignatorWithNamespace) IDENT:namespaceName DOUBLEDOTS IDENT:id {: RESULT=new SimpleDesignatorWithNamespace(namespaceName, id); RESULT.setLine(namespaceNameleft); :}
 				   |
 				   (SimpleDesignatorWithoutNamespace) IDENT:id {: RESULT=new SimpleDesignatorWithoutNamespace(id); RESULT.setLine(idleft); :}
+;
+array_delegator ::= (ArrayDelegator) ident_expr_list:idexprl {: RESULT=new ArrayDelegator(idexprl); RESULT.setLine(idexprlleft); :}
 ;
 expr ::= (Expr) term_list:t {: RESULT=new Expr(t); RESULT.setLine(tleft); :}
 ;
@@ -228,4 +231,3 @@ mull_div_mod_OP ::= (MullOP) MULTIPLE {: RESULT=new MullOP(); :}
 				    |
 				    (ModOP) MOD {: RESULT=new ModOP(); :}
 ;
-

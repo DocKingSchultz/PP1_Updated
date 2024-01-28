@@ -1,0 +1,205 @@
+INFO  16:16:53,435 - Compiling source file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  16:16:53,455 - #2 program
+INFO  16:16:53,455 - #39 test301
+INFO  16:16:53,455 - #34 {
+INFO  16:16:53,456 - #7 void
+INFO  16:16:53,456 - #39 main
+INFO  16:16:53,456 - #32 (
+INFO  16:16:53,457 - #33 )
+INFO  16:16:53,457 - #39 int
+INFO  16:16:53,457 - #39 s
+INFO  16:16:53,458 - #28 ;
+INFO  16:16:53,458 - #39 int
+INFO  16:16:53,458 - #39 k
+INFO  16:16:53,458 - #28 ;
+INFO  16:16:53,458 - #39 int
+INFO  16:16:53,459 - #39 niz
+INFO  16:16:53,459 - #30 [
+INFO  16:16:53,459 - #31 ]
+INFO  16:16:53,459 - #28 ;
+INFO  16:16:53,459 - #39 int
+INFO  16:16:53,459 - #39 niz2
+INFO  16:16:53,460 - #30 [
+INFO  16:16:53,460 - #31 ]
+INFO  16:16:53,460 - #28 ;
+INFO  16:16:53,460 - #39 int
+INFO  16:16:53,460 - #39 b
+INFO  16:16:53,460 - #28 ;
+INFO  16:16:53,460 - #39 int
+INFO  16:16:53,460 - #39 m
+INFO  16:16:53,460 - #28 ;
+INFO  16:16:53,460 - #34 {
+INFO  16:16:53,461 - #39 b
+INFO  16:16:53,461 - #18 =
+INFO  16:16:53,462 - #36 0
+INFO  16:16:53,462 - #28 ;
+INFO  16:16:53,463 - #39 b
+INFO  16:16:53,463 - #13 ++
+INFO  16:16:53,463 - #28 ;
+INFO  16:16:53,463 - #3 print
+INFO  16:16:53,463 - #32 (
+INFO  16:16:53,463 - #39 b
+INFO  16:16:53,463 - #33 )
+INFO  16:16:53,464 - #28 ;
+INFO  16:16:53,464 - #35 }
+INFO  16:16:53,464 - #35 }
+INFO  16:16:53,465 - Program(
+  Prog_id(
+   test301
+  ) [Prog_id]
+  NoNamespace(
+  ) [NoNamespace]
+  NoDeclarations(
+  ) [NoDeclarations]
+  MainMethod(
+    MainIdent(
+     main
+    ) [MainIdent]
+    MainVariables(
+      MainVariables(
+        MainVariables(
+          MainVariables(
+            MainVariables(
+              MainVariables(
+                NoMainVariables(
+                ) [NoMainVariables]
+                Var_dec(
+                  Type(
+                   int
+                  ) [Type]
+                  SingleVarIdList(
+                    VarId(
+                     s
+                    ) [VarId]
+                  ) [SingleVarIdList]
+                ) [Var_dec]
+              ) [MainVariables]
+              Var_dec(
+                Type(
+                 int
+                ) [Type]
+                SingleVarIdList(
+                  VarId(
+                   k
+                  ) [VarId]
+                ) [SingleVarIdList]
+              ) [Var_dec]
+            ) [MainVariables]
+            Var_dec(
+              Type(
+               int
+              ) [Type]
+              SingleVarIdList(
+                VarOrArrayId(
+                 niz
+                ) [VarOrArrayId]
+              ) [SingleVarIdList]
+            ) [Var_dec]
+          ) [MainVariables]
+          Var_dec(
+            Type(
+             int
+            ) [Type]
+            SingleVarIdList(
+              VarOrArrayId(
+               niz2
+              ) [VarOrArrayId]
+            ) [SingleVarIdList]
+          ) [Var_dec]
+        ) [MainVariables]
+        Var_dec(
+          Type(
+           int
+          ) [Type]
+          SingleVarIdList(
+            VarId(
+             b
+            ) [VarId]
+          ) [SingleVarIdList]
+        ) [Var_dec]
+      ) [MainVariables]
+      Var_dec(
+        Type(
+         int
+        ) [Type]
+        SingleVarIdList(
+          VarId(
+           m
+          ) [VarId]
+        ) [SingleVarIdList]
+      ) [Var_dec]
+    ) [MainVariables]
+    Statements(
+      Statements(
+        Statements(
+          NoStatements(
+          ) [NoStatements]
+          DesignatorStatement(
+            Assignment(
+              Designator(
+                SimpleDesignatorWithoutNamespace(
+                 b
+                ) [SimpleDesignatorWithoutNamespace]
+              ) [Designator]
+              Expr(
+                TermExpr(
+                  Term(
+                    SimpleFactor(
+                      IntRef(
+                       0
+                      ) [IntRef]
+                    ) [SimpleFactor]
+                  ) [Term]
+                ) [TermExpr]
+              ) [Expr]
+            ) [Assignment]
+          ) [DesignatorStatement]
+        ) [Statements]
+        DesignatorStatement(
+          Increment(
+            Designator(
+              SimpleDesignatorWithoutNamespace(
+               b
+              ) [SimpleDesignatorWithoutNamespace]
+            ) [Designator]
+          ) [Increment]
+        ) [DesignatorStatement]
+      ) [Statements]
+      Print(
+        Expr(
+          TermExpr(
+            Term(
+              SimpleFactor(
+                VarRef(
+                  Designator(
+                    SimpleDesignatorWithoutNamespace(
+                     b
+                    ) [SimpleDesignatorWithoutNamespace]
+                  ) [Designator]
+                ) [VarRef]
+              ) [SimpleFactor]
+            ) [Term]
+          ) [TermExpr]
+        ) [Expr]
+        NoConstToPrint(
+        ) [NoConstToPrint]
+      ) [Print]
+    ) [Statements]
+  ) [MainMethod]
+) [Program]
+INFO  16:16:53,470 - [info] Main :  at line : 5.
+INFO  16:16:53,470 - [info] Variable s has been declared. at line : 5.
+INFO  16:16:53,470 - [info] Variable k has been declared. at line : 5.
+INFO  16:16:53,470 - [info] Variable niz has been declared. at line : 5.
+INFO  16:16:53,470 - [info] Variable niz2 has been declared. at line : 5.
+INFO  16:16:53,470 - [info] Variable b has been declared. at line : 5.
+INFO  16:16:53,470 - [info] Variable m has been declared. at line : 5.
+INFO  16:16:53,471 - [info] Local use of variable b..
+INFO  16:16:53,471 - [info] Assignemnt succesful.
+INFO  16:16:53,471 - [info] Local use of variable b..
+INFO  16:16:53,471 - [info] b incremented at line : 8.
+INFO  16:16:53,471 - [info] Local use of variable b..
+INFO  16:16:53,471 - [info] Print check succesful.
+INFO  16:16:53,471 - Print calls = 1
+INFO  16:16:53,471 - Generating bytecode file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  16:16:53,474 - Parsiranje uspesno zavrseno!

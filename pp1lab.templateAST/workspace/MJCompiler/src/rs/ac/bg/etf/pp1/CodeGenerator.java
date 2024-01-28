@@ -20,6 +20,11 @@ public class CodeGenerator extends VisitorAdaptor {
 		ConstToPrint,
 		NoConstToPrint
 	}
+	enum ADD_SUB_op
+	{
+		PlusOP,
+		MinusOP
+	}
 	
 	private int varCount;
 	
@@ -31,20 +36,35 @@ public class CodeGenerator extends VisitorAdaptor {
 		return mainPc;
 	}
 	
+	// Helper methods :
+	//
+	// Add a variable with const
+	//
+	private void addConstToVariable(Obj obj, int num)
+	{
+		Code.put(Code.inc);
+		Code.put(obj.getAdr());
+		Code.put(num);
+	}
+	private void prepareNewEntry(int numOfTakenElemFromStack, int numOfVariables)
+	{
+		Code.put(Code.enter);
+		Code.put(numOfTakenElemFromStack);
+		Code.put(numOfVariables);
+	}
+	
+//--------------------------------------------------------------------
+	// Main logic :
+	//
 	@Override
 	public void visit(MainIdent method_name) {
 		mainPc = Code.pc;
 		System.out.print(mainPc);
 		method_name.obj.setAdr(Code.pc);
-//		// Generate the entry.
+		// Number of formal parameters is 0 for main, put additional number of local var
+		// put additional number of local var
 		//
-		Code.put(Code.enter);
-		// Number of formal parameters is 0 for main
-		//
-		Code.put(0);
-		// Put local variables on stack
-		//
-		Code.put(method_name.obj.getLocalSymbols().size());
+		prepareNewEntry(0, method_name.obj.getLocalSymbols().size());
 	}
 	public void visit(MainMethod mm) {
 		if(!endOfMethod) {
@@ -52,18 +72,22 @@ public class CodeGenerator extends VisitorAdaptor {
 			Code.put(Code.return_);
 		}
 	}
-	
-	
-	@Override
-	public void visit(Var_dec vdec) {
-		varCount++;
-	}
 
 	@Override
 	public void visit(ReturnNull ret) {
 		endOfMethod = true;
 		Code.put(Code.exit);
 		Code.put(Code.return_);
+	}
+
+//-----------------------------------------------------------------------------------------------------
+
+	// Var/Designator expression logic
+	@Override
+	public void visit(VarRef varRightExpression) {
+		// Push right value variable
+		//
+		Code.load(varRightExpression.getDesignator().obj);
 	}
 	
 	@Override
@@ -73,35 +97,120 @@ public class CodeGenerator extends VisitorAdaptor {
 		Code.store(ass.getDesignator().obj);
 	}
 	
-//	@Override
-//	public void visit(Designator Designator) {
-//		SyntaxNode parent = Designator.getParent();
-//		if (Assignment.class != parent.getClass() && FuncCall.class != parent.getClass()) {
-//			Code.load(Designator.obj);
-//		}
-//	}
-//	
-//	@Override
-//	public void visit(FuncCall FuncCall) {
-//		Obj functionObj = FuncCall.getDesignator().obj;
-//		int offset = functionObj.getAdr() - Code.pc; 
-//		Code.put(Code.call);
-//		Code.put2(offset);
-//	}
-//	
+	@Override
+	public void visit(Var_dec vdec) {
+		varCount++;
+	}
+
+	
+	@Override
+	public void visit(Increment incVar) {
+		Obj temp = incVar.getDesignator().obj;
+		if(temp.getKind()==Obj.Var)addConstToVariable(incVar.getDesignator().obj, 1);
+		else
+		{
+			Code.put(Code.dup2);
+			Code.load(temp);
+			Code.loadConst(1);
+			Code.put(Code.add);
+			Code.store(temp);
+		}
+	}
+	
+	@Override
+	public void visit(Decrement decVar) {
+		Obj temp = decVar.getDesignator().obj;
+		if(temp.getKind()==Obj.Var)addConstToVariable(decVar.getDesignator().obj, -1);
+		else
+		{
+			Code.put(Code.dup2);
+			Code.load(temp);
+			Code.loadConst(-1);
+			Code.put(Code.add);
+			Code.store(temp);
+		}
+	}
+
+//-----------------------------------------------------------------------------------------------------	
+	
+	// Types 
+	//
 	@Override
 	public void visit(IntRef intValue) {
 		Code.loadConst(intValue.getI());
 	}
+	
 	@Override
 	public void visit(CharRef charValue) {
 		Code.loadConst(charValue.getC());
 	}
+	
 	@Override
 	public void visit(BoolRef boolValue) {
 		Code.loadConst(boolValue.getB());
 	}
+
+//-----------------------------------------------------------------------------------------------------
 	
+	// Array logic
+	//
+	@Override
+	public void visit(OperatorNew arrinit) {
+		Struct arrtype = arrinit.getType().struct;
+		int arrTypeParameter = arrtype!=Tab.charType?1:0;
+		Code.put(Code.newarray);
+		// put operand for array type
+		//
+		Code.put(arrTypeParameter);
+	}
+	@Override
+	public void visit(ArrayDelegator ad) {
+		Code.load(ad.getIdent_expr_list().obj);
+	}
+	
+//-----------------------------------------------------------------------------------------------------
+	// Operators and negative value
+	//
+	
+	@Override
+	public void visit(AddExpr add_sub) {
+		ADD_SUB_op op = ADD_SUB_op.valueOf(add_sub.getAdd_sub_OP().getClass().getSimpleName());
+		switch(op)
+		{
+			case PlusOP:
+				Code.put(Code.add);
+				break;
+			case MinusOP:
+				Code.put(Code.sub);
+				break;
+		}
+	}
+	
+	@Override
+	public void visit(MulopFactor mulop) {
+		// Investigate which kind of operator it is :
+		MULLOPS op = MULLOPS.valueOf(mulop.getMull_div_mod_OP().getClass().getSimpleName());
+		switch(op)
+		{
+			case MullOP:
+				Code.put(Code.mul);
+				break;
+			case DivOP:
+				Code.put(Code.div);
+				break;
+			case ModOP:
+				Code.put(Code.rem);
+		}
+	}
+	@Override
+	public void visit(NegExpr ne) {
+		Code.put(Code.neg);
+	}
+
+//-----------------------------------------------------------------------------------------------------
+	
+	//Read and print logic
+	//
     @Override
     public void visit(Read rs) {
     	Obj var = rs.getDesignator().obj;
@@ -139,50 +248,6 @@ public class CodeGenerator extends VisitorAdaptor {
 			default :
 				// Error
 				break;
-		}
-	}
-	
-	@Override
-	public void visit(VarRef varRightExpression) {
-		// Push right value variable
-		//
-		Code.load(varRightExpression.getDesignator().obj);
-	}
-	
-	@Override
-	public void visit(AddExpr AddExpr) {
-		Code.put(Code.add);
-	}
-	
-	@Override
-	public void visit(NegExpr ne) {
-		Code.put(Code.neg);
-	}
-	
-	@Override
-	public void visit(OperatorNew arrinit) {
-		Struct arrtype = arrinit.getType().struct;
-		int arrTypeParameter = arrtype!=Tab.charType?1:0;
-		Code.put(Code.newarray);
-		// put operand for array type
-		//
-		Code.put(arrTypeParameter);
-	}
-	
-	@Override
-	public void visit(MulopFactor mulop) {
-		// Investigate which kind of operator it is :
-		MULLOPS op = MULLOPS.valueOf(mulop.getMull_div_mod_OP().getClass().getSimpleName());
-		switch(op)
-		{
-			case MullOP:
-				Code.put(Code.mul);
-				break;
-			case DivOP:
-				Code.put(Code.div);
-				break;
-			case ModOP:
-				Code.put(Code.rem);
 		}
 	}
 }

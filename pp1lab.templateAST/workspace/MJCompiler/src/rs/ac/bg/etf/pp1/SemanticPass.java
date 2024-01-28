@@ -370,14 +370,14 @@ public class SemanticPass extends VisitorAdaptor {
 	
 	public void visit(Decrement dec)
 	{
-		Obj obj = Tab.find(dec.getDesignator().obj.getName());
+		Obj obj = dec.getDesignator().obj;
 		String desIdent = dec.getDesignator().obj.getName();
 		if (obj == Tab.noObj) { 
 			report_error(error+ "" +desIdent+" was not declared ", null);
 		}
 		// Check if variable is of int TYPE
 		//
-		else if(obj.getKind()!=Obj.Var)
+		else if(obj.getKind()!=Obj.Var && obj.getKind()!=Obj.Elem)
 		{
 			report_error(error+ "" +desIdent+" is not a regular variable ", null);
 		}
@@ -389,14 +389,14 @@ public class SemanticPass extends VisitorAdaptor {
 		
 	public void visit(Increment incr)
 	{
-		Obj obj = Tab.find(incr.getDesignator().obj.getName());
+		Obj obj = incr.getDesignator().obj;
 		String desIdent = incr.getDesignator().obj.getName();
 		if (obj == Tab.noObj) { 
 			report_error(error+ "" +desIdent+" was not declared ", null);
 		}
 		// Check if variable is of int TYPE
 		//
-		else if(obj.getKind()!=Obj.Var)
+		else if(obj.getKind()!=Obj.Var && obj.getKind()!=Obj.Elem)
 		{
 			report_error(error+ "" +desIdent+" is not a regular variable ", null);
 		}
@@ -416,7 +416,7 @@ public class SemanticPass extends VisitorAdaptor {
 	{
 		// Check if expression in paren is of valid type
 		//
-		Obj obj = arrDes.getIdent_expr_list().obj;
+		Obj obj = ((ArrayDelegator)arrDes.getArray_delegator()).getIdent_expr_list().obj;
 		if(arrDes.getExpr().struct!=Tab.intType)
 		{
 			report_error(error+"Expression that is included in sub/add operations is not of type int", arrDes);
@@ -429,6 +429,7 @@ public class SemanticPass extends VisitorAdaptor {
 			arrDes.obj=Tab.noObj;
 			return;
 		}
+		System.out.println("dasdasd" + obj.getType().getElemType().getKind());
 		arrDes.obj = new Obj(Obj.Elem, "", obj.getType().getElemType());
 	}
 	
@@ -444,7 +445,6 @@ public class SemanticPass extends VisitorAdaptor {
 		designator.obj = obj;
 		report_info(info+"Local use of variable "+varName+".", null);
 		namespaceVariableUses++;
-
 	}
 	
 	
