@@ -1,0 +1,174 @@
+INFO  13:23:40,542 - Compiling source file: C:\Users\filip.jankovic\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  13:23:40,558 - #2 program
+INFO  13:23:40,558 - #39 test301
+INFO  13:23:40,558 - #34 {
+INFO  13:23:40,559 - #7 void
+INFO  13:23:40,560 - #39 main
+INFO  13:23:40,560 - #32 (
+INFO  13:23:40,560 - #33 )
+INFO  13:23:40,560 - #39 bool
+INFO  13:23:40,560 - #39 b
+INFO  13:23:40,560 - #28 ;
+INFO  13:23:40,561 - #39 int
+INFO  13:23:40,561 - #39 niz
+INFO  13:23:40,561 - #30 [
+INFO  13:23:40,561 - #31 ]
+INFO  13:23:40,561 - #28 ;
+INFO  13:23:40,561 - #39 char
+INFO  13:23:40,561 - #39 c
+INFO  13:23:40,561 - #28 ;
+INFO  13:23:40,561 - #39 char
+INFO  13:23:40,561 - #39 nizch
+INFO  13:23:40,562 - #30 [
+INFO  13:23:40,562 - #31 ]
+INFO  13:23:40,562 - #28 ;
+INFO  13:23:40,562 - #39 int
+INFO  13:23:40,562 - #39 a
+INFO  13:23:40,562 - #28 ;
+INFO  13:23:40,562 - #34 {
+INFO  13:23:40,562 - #39 b
+INFO  13:23:40,562 - #18 =
+INFO  13:23:40,563 - #39 niz
+INFO  13:23:40,563 - #40 .
+INFO  13:23:40,563 - #41 findAny
+INFO  13:23:40,563 - #32 (
+INFO  13:23:40,563 - #36 5
+INFO  13:23:40,563 - #11 +
+INFO  13:23:40,563 - #36 3
+INFO  13:23:40,564 - #33 )
+INFO  13:23:40,564 - #28 ;
+INFO  13:23:40,565 - #6 return
+INFO  13:23:40,565 - #28 ;
+INFO  13:23:40,565 - #35 }
+INFO  13:23:40,565 - #35 }
+INFO  13:23:40,566 - Program(
+  Prog_id(
+   test301
+  ) [Prog_id]
+  NoNamespace(
+  ) [NoNamespace]
+  NoDeclarations(
+  ) [NoDeclarations]
+  MainMethod(
+    MainIdent(
+     main
+    ) [MainIdent]
+    MainVariables(
+      MainVariables(
+        MainVariables(
+          MainVariables(
+            MainVariables(
+              NoMainVariables(
+              ) [NoMainVariables]
+              Var_dec(
+                Type(
+                 bool
+                ) [Type]
+                SingleVarIdList(
+                  VarId(
+                   b
+                  ) [VarId]
+                ) [SingleVarIdList]
+              ) [Var_dec]
+            ) [MainVariables]
+            Var_dec(
+              Type(
+               int
+              ) [Type]
+              SingleVarIdList(
+                VarOrArrayId(
+                 niz
+                ) [VarOrArrayId]
+              ) [SingleVarIdList]
+            ) [Var_dec]
+          ) [MainVariables]
+          Var_dec(
+            Type(
+             char
+            ) [Type]
+            SingleVarIdList(
+              VarId(
+               c
+              ) [VarId]
+            ) [SingleVarIdList]
+          ) [Var_dec]
+        ) [MainVariables]
+        Var_dec(
+          Type(
+           char
+          ) [Type]
+          SingleVarIdList(
+            VarOrArrayId(
+             nizch
+            ) [VarOrArrayId]
+          ) [SingleVarIdList]
+        ) [Var_dec]
+      ) [MainVariables]
+      Var_dec(
+        Type(
+         int
+        ) [Type]
+        SingleVarIdList(
+          VarId(
+           a
+          ) [VarId]
+        ) [SingleVarIdList]
+      ) [Var_dec]
+    ) [MainVariables]
+    Statements(
+      Statements(
+        NoStatements(
+        ) [NoStatements]
+        DesignatorStatement(
+          FindAnyStatement(
+            Designator(
+              SimpleDesignatorWithoutNamespace(
+               b
+              ) [SimpleDesignatorWithoutNamespace]
+            ) [Designator]
+            Designator(
+              SimpleDesignatorWithoutNamespace(
+               niz
+              ) [SimpleDesignatorWithoutNamespace]
+            ) [Designator]
+            Expr(
+              AddExpr(
+                TermExpr(
+                  Term(
+                    SimpleFactor(
+                      IntRef(
+                       5
+                      ) [IntRef]
+                    ) [SimpleFactor]
+                  ) [Term]
+                ) [TermExpr]
+                PlusOP(
+                ) [PlusOP]
+                Term(
+                  SimpleFactor(
+                    IntRef(
+                     3
+                    ) [IntRef]
+                  ) [SimpleFactor]
+                ) [Term]
+              ) [AddExpr]
+            ) [Expr]
+          ) [FindAnyStatement]
+        ) [DesignatorStatement]
+      ) [Statements]
+      ReturnNull(
+      ) [ReturnNull]
+    ) [Statements]
+  ) [MainMethod]
+) [Program]
+INFO  13:23:40,570 - [info] Main :  at line : 5.
+INFO  13:23:40,570 - [info] Variable b has been declared. at line : 5.
+INFO  13:23:40,571 - [info] Variable niz has been declared. at line : 5.
+INFO  13:23:40,571 - [info] Variable c has been declared. at line : 5.
+INFO  13:23:40,571 - [info] Variable nizch has been declared. at line : 5.
+INFO  13:23:40,571 - [info] Variable a has been declared. at line : 5.
+INFO  13:23:40,571 - [info] Local use of variable b..
+INFO  13:23:40,571 - [info] Local use of variable niz..
+INFO  13:23:40,571 - Print calls = 0
+INFO  13:23:40,571 - Generating bytecode file: C:\Users\filip.jankovic\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  13:23:40,573 - Parsiranje uspesno zavrseno!

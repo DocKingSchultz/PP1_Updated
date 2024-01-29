@@ -144,6 +144,31 @@ public class SemanticPass extends VisitorAdaptor {
 		}
 
 	}
+	public void visit(FindAnyStatement fs)
+	{
+		if(fs.getDesignator().obj.getKind()!=Obj.Var)
+		{
+			report_error(error + " Find any statement needs left value", fs);
+			return;
+		}
+		if(fs.getDesignator().obj.getType().getKind()!=Struct.Bool)
+		{
+			report_error(error + " Find any statement needs left value to be boolean", fs);
+			return;
+		}
+		if(fs.getExpr().struct!=Tab.intType)
+		{
+			report_error(error + " Expression in find any statement needs to be int", fs);
+			return;
+		}
+		if(fs.getDesignator1().obj.getType().getKind()!=Struct.Array)
+		{
+			report_error(error + "Find any statement can only work with arrays", fs);
+			return;
+		}
+		
+		
+	}
 	public void visit(ConstIdChar constGDecl) 
 	{
 		Obj res;

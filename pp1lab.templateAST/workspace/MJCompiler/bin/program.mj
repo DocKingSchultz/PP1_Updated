@@ -2,18 +2,12 @@
 
 program test301
 {
-	void main()	bool b; int niz[]; char c; char nizch[]; int a;
+	void main()	int niz[]; char c; bool b;
 	{
 		niz = new int[5];
-		nizch = new char[2];
-		c = 'c';
-		niz[0] = 3;
-		niz[1] = 0;
-		niz[4] = 4;
-		nizch[0] = c;
-		a = niz[0]+niz[1]+niz[4];
-		print(nizch[niz[1]]);
-		print(a);
+		niz[3] = 10;
+		print(niz[3]);
+		b = niz.findAny(5+3);
 		return;
 	}
 }

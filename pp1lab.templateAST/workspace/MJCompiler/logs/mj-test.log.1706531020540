@@ -1,0 +1,140 @@
+INFO  13:21:58,497 - Compiling source file: C:\Users\filip.jankovic\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  13:21:58,515 - #2 program
+INFO  13:21:58,515 - #39 test301
+INFO  13:21:58,515 - #34 {
+INFO  13:21:58,518 - #7 void
+INFO  13:21:58,518 - #39 main
+INFO  13:21:58,518 - #32 (
+INFO  13:21:58,518 - #33 )
+INFO  13:21:58,518 - #39 bool
+INFO  13:21:58,519 - #39 b
+INFO  13:21:58,519 - #28 ;
+INFO  13:21:58,519 - #39 int
+INFO  13:21:58,520 - #39 niz
+INFO  13:21:58,520 - #30 [
+INFO  13:21:58,520 - #31 ]
+INFO  13:21:58,520 - #28 ;
+INFO  13:21:58,520 - #39 char
+INFO  13:21:58,520 - #39 c
+INFO  13:21:58,520 - #28 ;
+INFO  13:21:58,521 - #39 char
+INFO  13:21:58,521 - #39 nizch
+INFO  13:21:58,521 - #30 [
+INFO  13:21:58,521 - #31 ]
+INFO  13:21:58,521 - #28 ;
+INFO  13:21:58,521 - #39 int
+INFO  13:21:58,521 - #39 a
+INFO  13:21:58,521 - #28 ;
+INFO  13:21:58,521 - #34 {
+INFO  13:21:58,521 - #39 b
+INFO  13:21:58,522 - #18 =
+INFO  13:21:58,522 - #39 niz
+INFO  13:21:58,522 - #40 .
+ERROR 13:21:58,522 - 
+Sintaksna greska na liniji 8
+INFO  13:21:58,522 - #41 findAny
+INFO  13:21:58,522 - #32 (
+INFO  13:21:58,522 - #36 5
+INFO  13:21:58,523 - #11 +
+INFO  13:21:58,523 - #36 3
+INFO  13:21:58,523 - #33 )
+INFO  13:21:58,523 - #28 ;
+INFO  13:21:58,523 - #6 return
+INFO  13:21:58,523 - #28 ;
+INFO  13:21:58,523 - #35 }
+ERROR 13:21:58,523 - Izvrsen oporavak do ; u liniji 8
+INFO  13:21:58,524 - #35 }
+INFO  13:21:58,525 - Program(
+  Prog_id(
+   test301
+  ) [Prog_id]
+  NoNamespace(
+  ) [NoNamespace]
+  NoDeclarations(
+  ) [NoDeclarations]
+  MainMethod(
+    MainIdent(
+     main
+    ) [MainIdent]
+    MainVariables(
+      MainVariables(
+        MainVariables(
+          MainVariables(
+            MainVariables(
+              NoMainVariables(
+              ) [NoMainVariables]
+              Var_dec(
+                Type(
+                 bool
+                ) [Type]
+                SingleVarIdList(
+                  VarId(
+                   b
+                  ) [VarId]
+                ) [SingleVarIdList]
+              ) [Var_dec]
+            ) [MainVariables]
+            Var_dec(
+              Type(
+               int
+              ) [Type]
+              SingleVarIdList(
+                VarOrArrayId(
+                 niz
+                ) [VarOrArrayId]
+              ) [SingleVarIdList]
+            ) [Var_dec]
+          ) [MainVariables]
+          Var_dec(
+            Type(
+             char
+            ) [Type]
+            SingleVarIdList(
+              VarId(
+               c
+              ) [VarId]
+            ) [SingleVarIdList]
+          ) [Var_dec]
+        ) [MainVariables]
+        Var_dec(
+          Type(
+           char
+          ) [Type]
+          SingleVarIdList(
+            VarOrArrayId(
+             nizch
+            ) [VarOrArrayId]
+          ) [SingleVarIdList]
+        ) [Var_dec]
+      ) [MainVariables]
+      Var_dec(
+        Type(
+         int
+        ) [Type]
+        SingleVarIdList(
+          VarId(
+           a
+          ) [VarId]
+        ) [SingleVarIdList]
+      ) [Var_dec]
+    ) [MainVariables]
+    Statements(
+      Statements(
+        NoStatements(
+        ) [NoStatements]
+        StatementDerived1(
+        ) [StatementDerived1]
+      ) [Statements]
+      ReturnNull(
+      ) [ReturnNull]
+    ) [Statements]
+  ) [MainMethod]
+) [Program]
+INFO  13:21:58,529 - [info] Main :  at line : 5.
+INFO  13:21:58,529 - [info] Variable b has been declared. at line : 5.
+INFO  13:21:58,530 - [info] Variable niz has been declared. at line : 5.
+INFO  13:21:58,530 - [info] Variable c has been declared. at line : 5.
+INFO  13:21:58,530 - [info] Variable nizch has been declared. at line : 5.
+INFO  13:21:58,530 - [info] Variable a has been declared. at line : 5.
+INFO  13:21:58,530 - Print calls = 0
+ERROR 13:21:58,531 - Parsiranje NIJE uspesno zavrseno!

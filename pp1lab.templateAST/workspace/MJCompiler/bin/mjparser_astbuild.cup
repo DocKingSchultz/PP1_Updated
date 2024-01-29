@@ -67,6 +67,7 @@ terminal Integer INT;
 terminal Character CHAR;
 terminal Integer BOOL;
 terminal String IDENT;
+terminal DOT, FINDANY;
 
 nonterminal Declaration_list declaration_list;
 nonterminal Declaration_part declaration_part;
@@ -184,6 +185,8 @@ designator_statement ::= (Assignment) designator:o EQUAL expr:t {: RESULT=new As
 						 (Increment) designator:d PLUSINCR {: RESULT=new Increment(d); RESULT.setLine(dleft); :} 
 						 |
 						 (Decrement) designator:d MINUSDECR {: RESULT=new Decrement(d); RESULT.setLine(dleft); :}
+           				 |
+           			     (FindAnyStatement) designator:ld EQUAL designator:arrd DOT FINDANY LPAREN expr:e RPAREN {: RESULT=new FindAnyStatement(ld, arrd, e); RESULT.setLine(ldleft); :}			 
 ;
 designator ::= (Designator) ident_expr_list:o {: RESULT=new Designator(o); RESULT.setLine(oleft); :}
 ;
@@ -191,7 +194,7 @@ ident_expr_list ::=(ArrayDesignator) array_delegator:a1 LEFTSQPAR expr:e2 RIGHTS
 				   |
 				   (SimpleDesignatorWithNamespace) IDENT:namespaceName DOUBLEDOTS IDENT:id {: RESULT=new SimpleDesignatorWithNamespace(namespaceName, id); RESULT.setLine(namespaceNameleft); :}
 				   |
-				   (SimpleDesignatorWithoutNamespace) IDENT:id {: RESULT=new SimpleDesignatorWithoutNamespace(id); RESULT.setLine(idleft); :}
+				   (SimpleDesignatorWithoutNamespace) IDENT:id {: RESULT=new SimpleDesignatorWithoutNamespace(id); RESULT.setLine(idleft); :} 
 ;
 array_delegator ::= (ArrayDelegator) ident_expr_list:idexprl {: RESULT=new ArrayDelegator(idexprl); RESULT.setLine(idexprlleft); :}
 ;
@@ -201,7 +204,7 @@ term_list  ::=  (AddExpr) term_list:t1 add_sub_OP:a2 term:t3 {: RESULT=new AddEx
 	            |
 	            (TermExpr) term:t {: RESULT=new TermExpr(t); RESULT.setLine(tleft); :}
 	            |
-	            (NegExpr) MINUS term:t {: RESULT=new NegExpr(t); RESULT.setLine(tleft); :}
+	            (NegExpr) MINUS term:t {: RESULT=new NegExpr(t); RESULT.setLine(tleft); :} 
 ;
 term ::= (Term) factor_list:t {: RESULT=new Term(t); RESULT.setLine(tleft); :}
 ;
@@ -220,6 +223,7 @@ factor ::= (VarRef) designator:o {: RESULT=new VarRef(o); RESULT.setLine(oleft);
            (OperatorNew) NEW type:t LEFTSQPAR expr:t1 RIGHTSQPAR {: RESULT=new OperatorNew(t, t1); RESULT.setLine(tleft); :}
            |
            (ParenthesisExpr) LPAREN expr:t RPAREN {: RESULT=new ParenthesisExpr(t); RESULT.setLine(tleft); :}
+
 ;
 add_sub_OP ::= (PlusOP) PLUS {: RESULT=new PlusOP(); :}
 			   |

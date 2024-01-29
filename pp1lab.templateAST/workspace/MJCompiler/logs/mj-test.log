@@ -1,117 +1,62 @@
-INFO  14:15:03,382 - Compiling source file: C:\Users\filip.jankovic\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
-INFO  14:15:03,400 - #2 program
-INFO  14:15:03,400 - #39 test301
-INFO  14:15:03,400 - #34 {
-INFO  14:15:03,401 - #7 void
-INFO  14:15:03,401 - #39 main
-INFO  14:15:03,401 - #32 (
-INFO  14:15:03,401 - #33 )
-INFO  14:15:03,401 - #39 bool
-INFO  14:15:03,402 - #39 b
-INFO  14:15:03,402 - #28 ;
-INFO  14:15:03,403 - #39 int
-INFO  14:15:03,403 - #39 niz
-INFO  14:15:03,403 - #30 [
-INFO  14:15:03,403 - #31 ]
-INFO  14:15:03,403 - #28 ;
-INFO  14:15:03,403 - #39 char
-INFO  14:15:03,403 - #39 c
-INFO  14:15:03,403 - #28 ;
-INFO  14:15:03,404 - #39 char
-INFO  14:15:03,404 - #39 nizch
-INFO  14:15:03,404 - #30 [
-INFO  14:15:03,404 - #31 ]
-INFO  14:15:03,404 - #28 ;
-INFO  14:15:03,404 - #39 int
-INFO  14:15:03,404 - #39 a
-INFO  14:15:03,404 - #28 ;
-INFO  14:15:03,404 - #34 {
-INFO  14:15:03,404 - #39 niz
-INFO  14:15:03,405 - #18 =
-INFO  14:15:03,407 - #9 new
-INFO  14:15:03,407 - #39 int
-INFO  14:15:03,407 - #30 [
-INFO  14:15:03,407 - #36 5
-INFO  14:15:03,407 - #31 ]
-INFO  14:15:03,408 - #28 ;
-INFO  14:15:03,408 - #39 nizch
-INFO  14:15:03,409 - #18 =
-INFO  14:15:03,409 - #9 new
-INFO  14:15:03,409 - #39 char
-INFO  14:15:03,409 - #30 [
-INFO  14:15:03,409 - #36 2
-INFO  14:15:03,409 - #31 ]
-INFO  14:15:03,409 - #28 ;
-INFO  14:15:03,409 - #39 c
-INFO  14:15:03,409 - #18 =
-INFO  14:15:03,409 - #37 c
-INFO  14:15:03,409 - #28 ;
-INFO  14:15:03,409 - #39 niz
-INFO  14:15:03,409 - #30 [
-INFO  14:15:03,410 - #36 0
-INFO  14:15:03,410 - #31 ]
-INFO  14:15:03,410 - #18 =
-INFO  14:15:03,410 - #36 3
-INFO  14:15:03,410 - #28 ;
-INFO  14:15:03,410 - #39 niz
-INFO  14:15:03,410 - #30 [
-INFO  14:15:03,410 - #36 1
-INFO  14:15:03,410 - #31 ]
-INFO  14:15:03,410 - #18 =
-INFO  14:15:03,410 - #36 0
-INFO  14:15:03,410 - #28 ;
-INFO  14:15:03,410 - #39 niz
-INFO  14:15:03,411 - #30 [
-INFO  14:15:03,411 - #36 4
-INFO  14:15:03,411 - #31 ]
-INFO  14:15:03,411 - #18 =
-INFO  14:15:03,411 - #36 4
-INFO  14:15:03,411 - #28 ;
-INFO  14:15:03,411 - #39 nizch
-INFO  14:15:03,411 - #30 [
-INFO  14:15:03,411 - #36 0
-INFO  14:15:03,411 - #31 ]
-INFO  14:15:03,411 - #18 =
-INFO  14:15:03,411 - #39 c
-INFO  14:15:03,411 - #28 ;
-INFO  14:15:03,412 - #39 a
-INFO  14:15:03,412 - #18 =
-INFO  14:15:03,412 - #39 niz
-INFO  14:15:03,412 - #30 [
-INFO  14:15:03,412 - #36 0
-INFO  14:15:03,412 - #31 ]
-INFO  14:15:03,412 - #11 +
-INFO  14:15:03,412 - #39 niz
-INFO  14:15:03,413 - #30 [
-INFO  14:15:03,413 - #36 1
-INFO  14:15:03,413 - #31 ]
-INFO  14:15:03,413 - #11 +
-INFO  14:15:03,414 - #39 niz
-INFO  14:15:03,414 - #30 [
-INFO  14:15:03,414 - #36 4
-INFO  14:15:03,414 - #31 ]
-INFO  14:15:03,414 - #28 ;
-INFO  14:15:03,414 - #3 print
-INFO  14:15:03,414 - #32 (
-INFO  14:15:03,414 - #39 nizch
-INFO  14:15:03,414 - #30 [
-INFO  14:15:03,414 - #39 niz
-INFO  14:15:03,414 - #30 [
-INFO  14:15:03,414 - #36 1
-INFO  14:15:03,414 - #31 ]
-INFO  14:15:03,414 - #31 ]
-INFO  14:15:03,414 - #33 )
-INFO  14:15:03,415 - #28 ;
-INFO  14:15:03,415 - #3 print
-INFO  14:15:03,415 - #32 (
-INFO  14:15:03,415 - #39 a
-INFO  14:15:03,415 - #33 )
-INFO  14:15:03,415 - #28 ;
-INFO  14:15:03,416 - #6 return
-INFO  14:15:03,416 - #28 ;
-INFO  14:15:03,416 - #35 }
-INFO  14:15:03,416 - #35 }
-INFO  14:15:03,419 - Program(
+INFO  15:23:40,000 - Compiling source file: C:\Users\filip.jankovic\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  15:23:40,019 - #2 program
+INFO  15:23:40,019 - #39 test301
+INFO  15:23:40,019 - #34 {
+INFO  15:23:40,020 - #7 void
+INFO  15:23:40,020 - #39 main
+INFO  15:23:40,020 - #32 (
+INFO  15:23:40,020 - #33 )
+INFO  15:23:40,020 - #39 int
+INFO  15:23:40,020 - #39 niz
+INFO  15:23:40,021 - #30 [
+INFO  15:23:40,021 - #31 ]
+INFO  15:23:40,021 - #28 ;
+INFO  15:23:40,021 - #39 char
+INFO  15:23:40,021 - #39 c
+INFO  15:23:40,021 - #28 ;
+INFO  15:23:40,022 - #39 bool
+INFO  15:23:40,022 - #39 b
+INFO  15:23:40,022 - #28 ;
+INFO  15:23:40,022 - #34 {
+INFO  15:23:40,022 - #39 niz
+INFO  15:23:40,023 - #18 =
+INFO  15:23:40,023 - #9 new
+INFO  15:23:40,023 - #39 int
+INFO  15:23:40,023 - #30 [
+INFO  15:23:40,023 - #36 5
+INFO  15:23:40,023 - #31 ]
+INFO  15:23:40,024 - #28 ;
+INFO  15:23:40,024 - #39 niz
+INFO  15:23:40,025 - #30 [
+INFO  15:23:40,025 - #36 3
+INFO  15:23:40,025 - #31 ]
+INFO  15:23:40,025 - #18 =
+INFO  15:23:40,025 - #36 10
+INFO  15:23:40,025 - #28 ;
+INFO  15:23:40,025 - #3 print
+INFO  15:23:40,025 - #32 (
+INFO  15:23:40,025 - #39 niz
+INFO  15:23:40,025 - #30 [
+INFO  15:23:40,025 - #36 3
+INFO  15:23:40,026 - #31 ]
+INFO  15:23:40,026 - #33 )
+INFO  15:23:40,027 - #28 ;
+INFO  15:23:40,027 - #39 b
+INFO  15:23:40,027 - #18 =
+INFO  15:23:40,027 - #39 niz
+INFO  15:23:40,027 - #40 .
+INFO  15:23:40,027 - #41 findAny
+INFO  15:23:40,027 - #32 (
+INFO  15:23:40,027 - #36 5
+INFO  15:23:40,027 - #11 +
+INFO  15:23:40,027 - #36 3
+INFO  15:23:40,028 - #33 )
+INFO  15:23:40,028 - #28 ;
+INFO  15:23:40,028 - #6 return
+INFO  15:23:40,028 - #28 ;
+INFO  15:23:40,028 - #35 }
+INFO  15:23:40,028 - #35 }
+INFO  15:23:40,030 - Program(
   Prog_id(
    test301
   ) [Prog_id]
@@ -126,40 +71,16 @@ INFO  14:15:03,419 - Program(
     MainVariables(
       MainVariables(
         MainVariables(
-          MainVariables(
-            MainVariables(
-              NoMainVariables(
-              ) [NoMainVariables]
-              Var_dec(
-                Type(
-                 bool
-                ) [Type]
-                SingleVarIdList(
-                  VarId(
-                   b
-                  ) [VarId]
-                ) [SingleVarIdList]
-              ) [Var_dec]
-            ) [MainVariables]
-            Var_dec(
-              Type(
-               int
-              ) [Type]
-              SingleVarIdList(
-                VarOrArrayId(
-                 niz
-                ) [VarOrArrayId]
-              ) [SingleVarIdList]
-            ) [Var_dec]
-          ) [MainVariables]
+          NoMainVariables(
+          ) [NoMainVariables]
           Var_dec(
             Type(
-             char
+             int
             ) [Type]
             SingleVarIdList(
-              VarId(
-               c
-              ) [VarId]
+              VarOrArrayId(
+               niz
+              ) [VarOrArrayId]
             ) [SingleVarIdList]
           ) [Var_dec]
         ) [MainVariables]
@@ -168,19 +89,19 @@ INFO  14:15:03,419 - Program(
            char
           ) [Type]
           SingleVarIdList(
-            VarOrArrayId(
-             nizch
-            ) [VarOrArrayId]
+            VarId(
+             c
+            ) [VarId]
           ) [SingleVarIdList]
         ) [Var_dec]
       ) [MainVariables]
       Var_dec(
         Type(
-         int
+         bool
         ) [Type]
         SingleVarIdList(
           VarId(
-           a
+           b
           ) [VarId]
         ) [SingleVarIdList]
       ) [Var_dec]
@@ -190,244 +111,35 @@ INFO  14:15:03,419 - Program(
         Statements(
           Statements(
             Statements(
-              Statements(
-                Statements(
-                  Statements(
-                    Statements(
-                      Statements(
-                        Statements(
-                          NoStatements(
-                          ) [NoStatements]
-                          DesignatorStatement(
-                            Assignment(
-                              Designator(
-                                SimpleDesignatorWithoutNamespace(
-                                 niz
-                                ) [SimpleDesignatorWithoutNamespace]
-                              ) [Designator]
-                              Expr(
-                                TermExpr(
-                                  Term(
-                                    SimpleFactor(
-                                      OperatorNew(
-                                        Type(
-                                         int
-                                        ) [Type]
-                                        Expr(
-                                          TermExpr(
-                                            Term(
-                                              SimpleFactor(
-                                                IntRef(
-                                                 5
-                                                ) [IntRef]
-                                              ) [SimpleFactor]
-                                            ) [Term]
-                                          ) [TermExpr]
-                                        ) [Expr]
-                                      ) [OperatorNew]
-                                    ) [SimpleFactor]
-                                  ) [Term]
-                                ) [TermExpr]
-                              ) [Expr]
-                            ) [Assignment]
-                          ) [DesignatorStatement]
-                        ) [Statements]
-                        DesignatorStatement(
-                          Assignment(
-                            Designator(
-                              SimpleDesignatorWithoutNamespace(
-                               nizch
-                              ) [SimpleDesignatorWithoutNamespace]
-                            ) [Designator]
-                            Expr(
-                              TermExpr(
-                                Term(
-                                  SimpleFactor(
-                                    OperatorNew(
-                                      Type(
-                                       char
-                                      ) [Type]
-                                      Expr(
-                                        TermExpr(
-                                          Term(
-                                            SimpleFactor(
-                                              IntRef(
-                                               2
-                                              ) [IntRef]
-                                            ) [SimpleFactor]
-                                          ) [Term]
-                                        ) [TermExpr]
-                                      ) [Expr]
-                                    ) [OperatorNew]
-                                  ) [SimpleFactor]
-                                ) [Term]
-                              ) [TermExpr]
-                            ) [Expr]
-                          ) [Assignment]
-                        ) [DesignatorStatement]
-                      ) [Statements]
-                      DesignatorStatement(
-                        Assignment(
-                          Designator(
-                            SimpleDesignatorWithoutNamespace(
-                             c
-                            ) [SimpleDesignatorWithoutNamespace]
-                          ) [Designator]
-                          Expr(
-                            TermExpr(
-                              Term(
-                                SimpleFactor(
-                                  CharRef(
-                                   c
-                                  ) [CharRef]
-                                ) [SimpleFactor]
-                              ) [Term]
-                            ) [TermExpr]
-                          ) [Expr]
-                        ) [Assignment]
-                      ) [DesignatorStatement]
-                    ) [Statements]
-                    DesignatorStatement(
-                      Assignment(
-                        Designator(
-                          ArrayDesignator(
-                            ArrayDelegator(
-                              SimpleDesignatorWithoutNamespace(
-                               niz
-                              ) [SimpleDesignatorWithoutNamespace]
-                            ) [ArrayDelegator]
-                            Expr(
-                              TermExpr(
-                                Term(
-                                  SimpleFactor(
-                                    IntRef(
-                                     0
-                                    ) [IntRef]
-                                  ) [SimpleFactor]
-                                ) [Term]
-                              ) [TermExpr]
-                            ) [Expr]
-                          ) [ArrayDesignator]
-                        ) [Designator]
-                        Expr(
-                          TermExpr(
-                            Term(
-                              SimpleFactor(
-                                IntRef(
-                                 3
-                                ) [IntRef]
-                              ) [SimpleFactor]
-                            ) [Term]
-                          ) [TermExpr]
-                        ) [Expr]
-                      ) [Assignment]
-                    ) [DesignatorStatement]
-                  ) [Statements]
-                  DesignatorStatement(
-                    Assignment(
-                      Designator(
-                        ArrayDesignator(
-                          ArrayDelegator(
-                            SimpleDesignatorWithoutNamespace(
-                             niz
-                            ) [SimpleDesignatorWithoutNamespace]
-                          ) [ArrayDelegator]
-                          Expr(
-                            TermExpr(
-                              Term(
-                                SimpleFactor(
-                                  IntRef(
-                                   1
-                                  ) [IntRef]
-                                ) [SimpleFactor]
-                              ) [Term]
-                            ) [TermExpr]
-                          ) [Expr]
-                        ) [ArrayDesignator]
-                      ) [Designator]
-                      Expr(
-                        TermExpr(
-                          Term(
-                            SimpleFactor(
-                              IntRef(
-                               0
-                              ) [IntRef]
-                            ) [SimpleFactor]
-                          ) [Term]
-                        ) [TermExpr]
-                      ) [Expr]
-                    ) [Assignment]
-                  ) [DesignatorStatement]
-                ) [Statements]
-                DesignatorStatement(
-                  Assignment(
-                    Designator(
-                      ArrayDesignator(
-                        ArrayDelegator(
-                          SimpleDesignatorWithoutNamespace(
-                           niz
-                          ) [SimpleDesignatorWithoutNamespace]
-                        ) [ArrayDelegator]
-                        Expr(
-                          TermExpr(
-                            Term(
-                              SimpleFactor(
-                                IntRef(
-                                 4
-                                ) [IntRef]
-                              ) [SimpleFactor]
-                            ) [Term]
-                          ) [TermExpr]
-                        ) [Expr]
-                      ) [ArrayDesignator]
-                    ) [Designator]
-                    Expr(
-                      TermExpr(
-                        Term(
-                          SimpleFactor(
-                            IntRef(
-                             4
-                            ) [IntRef]
-                          ) [SimpleFactor]
-                        ) [Term]
-                      ) [TermExpr]
-                    ) [Expr]
-                  ) [Assignment]
-                ) [DesignatorStatement]
-              ) [Statements]
+              NoStatements(
+              ) [NoStatements]
               DesignatorStatement(
                 Assignment(
                   Designator(
-                    ArrayDesignator(
-                      ArrayDelegator(
-                        SimpleDesignatorWithoutNamespace(
-                         nizch
-                        ) [SimpleDesignatorWithoutNamespace]
-                      ) [ArrayDelegator]
-                      Expr(
-                        TermExpr(
-                          Term(
-                            SimpleFactor(
-                              IntRef(
-                               0
-                              ) [IntRef]
-                            ) [SimpleFactor]
-                          ) [Term]
-                        ) [TermExpr]
-                      ) [Expr]
-                    ) [ArrayDesignator]
+                    SimpleDesignatorWithoutNamespace(
+                     niz
+                    ) [SimpleDesignatorWithoutNamespace]
                   ) [Designator]
                   Expr(
                     TermExpr(
                       Term(
                         SimpleFactor(
-                          VarRef(
-                            Designator(
-                              SimpleDesignatorWithoutNamespace(
-                               c
-                              ) [SimpleDesignatorWithoutNamespace]
-                            ) [Designator]
-                          ) [VarRef]
+                          OperatorNew(
+                            Type(
+                             int
+                            ) [Type]
+                            Expr(
+                              TermExpr(
+                                Term(
+                                  SimpleFactor(
+                                    IntRef(
+                                     5
+                                    ) [IntRef]
+                                  ) [SimpleFactor]
+                                ) [Term]
+                              ) [TermExpr]
+                            ) [Expr]
+                          ) [OperatorNew]
                         ) [SimpleFactor]
                       ) [Term]
                     ) [TermExpr]
@@ -438,99 +150,35 @@ INFO  14:15:03,419 - Program(
             DesignatorStatement(
               Assignment(
                 Designator(
-                  SimpleDesignatorWithoutNamespace(
-                   a
-                  ) [SimpleDesignatorWithoutNamespace]
-                ) [Designator]
-                Expr(
-                  AddExpr(
-                    AddExpr(
+                  ArrayDesignator(
+                    ArrayDelegator(
+                      SimpleDesignatorWithoutNamespace(
+                       niz
+                      ) [SimpleDesignatorWithoutNamespace]
+                    ) [ArrayDelegator]
+                    Expr(
                       TermExpr(
                         Term(
                           SimpleFactor(
-                            VarRef(
-                              Designator(
-                                ArrayDesignator(
-                                  ArrayDelegator(
-                                    SimpleDesignatorWithoutNamespace(
-                                     niz
-                                    ) [SimpleDesignatorWithoutNamespace]
-                                  ) [ArrayDelegator]
-                                  Expr(
-                                    TermExpr(
-                                      Term(
-                                        SimpleFactor(
-                                          IntRef(
-                                           0
-                                          ) [IntRef]
-                                        ) [SimpleFactor]
-                                      ) [Term]
-                                    ) [TermExpr]
-                                  ) [Expr]
-                                ) [ArrayDesignator]
-                              ) [Designator]
-                            ) [VarRef]
+                            IntRef(
+                             3
+                            ) [IntRef]
                           ) [SimpleFactor]
                         ) [Term]
                       ) [TermExpr]
-                      PlusOP(
-                      ) [PlusOP]
-                      Term(
-                        SimpleFactor(
-                          VarRef(
-                            Designator(
-                              ArrayDesignator(
-                                ArrayDelegator(
-                                  SimpleDesignatorWithoutNamespace(
-                                   niz
-                                  ) [SimpleDesignatorWithoutNamespace]
-                                ) [ArrayDelegator]
-                                Expr(
-                                  TermExpr(
-                                    Term(
-                                      SimpleFactor(
-                                        IntRef(
-                                         1
-                                        ) [IntRef]
-                                      ) [SimpleFactor]
-                                    ) [Term]
-                                  ) [TermExpr]
-                                ) [Expr]
-                              ) [ArrayDesignator]
-                            ) [Designator]
-                          ) [VarRef]
-                        ) [SimpleFactor]
-                      ) [Term]
-                    ) [AddExpr]
-                    PlusOP(
-                    ) [PlusOP]
+                    ) [Expr]
+                  ) [ArrayDesignator]
+                ) [Designator]
+                Expr(
+                  TermExpr(
                     Term(
                       SimpleFactor(
-                        VarRef(
-                          Designator(
-                            ArrayDesignator(
-                              ArrayDelegator(
-                                SimpleDesignatorWithoutNamespace(
-                                 niz
-                                ) [SimpleDesignatorWithoutNamespace]
-                              ) [ArrayDelegator]
-                              Expr(
-                                TermExpr(
-                                  Term(
-                                    SimpleFactor(
-                                      IntRef(
-                                       4
-                                      ) [IntRef]
-                                    ) [SimpleFactor]
-                                  ) [Term]
-                                ) [TermExpr]
-                              ) [Expr]
-                            ) [ArrayDesignator]
-                          ) [Designator]
-                        ) [VarRef]
+                        IntRef(
+                         10
+                        ) [IntRef]
                       ) [SimpleFactor]
                     ) [Term]
-                  ) [AddExpr]
+                  ) [TermExpr]
                 ) [Expr]
               ) [Assignment]
             ) [DesignatorStatement]
@@ -545,35 +193,16 @@ INFO  14:15:03,419 - Program(
                         ArrayDesignator(
                           ArrayDelegator(
                             SimpleDesignatorWithoutNamespace(
-                             nizch
+                             niz
                             ) [SimpleDesignatorWithoutNamespace]
                           ) [ArrayDelegator]
                           Expr(
                             TermExpr(
                               Term(
                                 SimpleFactor(
-                                  VarRef(
-                                    Designator(
-                                      ArrayDesignator(
-                                        ArrayDelegator(
-                                          SimpleDesignatorWithoutNamespace(
-                                           niz
-                                          ) [SimpleDesignatorWithoutNamespace]
-                                        ) [ArrayDelegator]
-                                        Expr(
-                                          TermExpr(
-                                            Term(
-                                              SimpleFactor(
-                                                IntRef(
-                                                 1
-                                                ) [IntRef]
-                                              ) [SimpleFactor]
-                                            ) [Term]
-                                          ) [TermExpr]
-                                        ) [Expr]
-                                      ) [ArrayDesignator]
-                                    ) [Designator]
-                                  ) [VarRef]
+                                  IntRef(
+                                   3
+                                  ) [IntRef]
                                 ) [SimpleFactor]
                               ) [Term]
                             ) [TermExpr]
@@ -589,62 +218,60 @@ INFO  14:15:03,419 - Program(
             ) [NoConstToPrint]
           ) [Print]
         ) [Statements]
-        Print(
-          Expr(
-            TermExpr(
-              Term(
-                SimpleFactor(
-                  VarRef(
-                    Designator(
-                      SimpleDesignatorWithoutNamespace(
-                       a
-                      ) [SimpleDesignatorWithoutNamespace]
-                    ) [Designator]
-                  ) [VarRef]
-                ) [SimpleFactor]
-              ) [Term]
-            ) [TermExpr]
-          ) [Expr]
-          NoConstToPrint(
-          ) [NoConstToPrint]
-        ) [Print]
+        DesignatorStatement(
+          FindAnyStatement(
+            Designator(
+              SimpleDesignatorWithoutNamespace(
+               b
+              ) [SimpleDesignatorWithoutNamespace]
+            ) [Designator]
+            Designator(
+              SimpleDesignatorWithoutNamespace(
+               niz
+              ) [SimpleDesignatorWithoutNamespace]
+            ) [Designator]
+            Expr(
+              AddExpr(
+                TermExpr(
+                  Term(
+                    SimpleFactor(
+                      IntRef(
+                       5
+                      ) [IntRef]
+                    ) [SimpleFactor]
+                  ) [Term]
+                ) [TermExpr]
+                PlusOP(
+                ) [PlusOP]
+                Term(
+                  SimpleFactor(
+                    IntRef(
+                     3
+                    ) [IntRef]
+                  ) [SimpleFactor]
+                ) [Term]
+              ) [AddExpr]
+            ) [Expr]
+          ) [FindAnyStatement]
+        ) [DesignatorStatement]
       ) [Statements]
       ReturnNull(
       ) [ReturnNull]
     ) [Statements]
   ) [MainMethod]
 ) [Program]
-INFO  14:15:03,428 - [info] Main :  at line : 5.
-INFO  14:15:03,428 - [info] Variable b has been declared. at line : 5.
-INFO  14:15:03,428 - [info] Variable niz has been declared. at line : 5.
-INFO  14:15:03,428 - [info] Variable c has been declared. at line : 5.
-INFO  14:15:03,428 - [info] Variable nizch has been declared. at line : 5.
-INFO  14:15:03,428 - [info] Variable a has been declared. at line : 5.
-INFO  14:15:03,428 - [info] Local use of variable niz..
-INFO  14:15:03,428 - [info] Assignemnt succesful.
-INFO  14:15:03,428 - [info] Local use of variable nizch..
-INFO  14:15:03,428 - [info] Assignemnt succesful.
-INFO  14:15:03,428 - [info] Local use of variable c..
-INFO  14:15:03,428 - [info] Assignemnt succesful.
-INFO  14:15:03,428 - [info] Local use of variable niz..
-INFO  14:15:03,429 - [info] Assignemnt succesful.
-INFO  14:15:03,429 - [info] Local use of variable niz..
-INFO  14:15:03,429 - [info] Assignemnt succesful.
-INFO  14:15:03,429 - [info] Local use of variable niz..
-INFO  14:15:03,429 - [info] Assignemnt succesful.
-INFO  14:15:03,429 - [info] Local use of variable nizch..
-INFO  14:15:03,429 - [info] Local use of variable c..
-INFO  14:15:03,429 - [info] Assignemnt succesful.
-INFO  14:15:03,429 - [info] Local use of variable a..
-INFO  14:15:03,429 - [info] Local use of variable niz..
-INFO  14:15:03,429 - [info] Local use of variable niz..
-INFO  14:15:03,429 - [info] Local use of variable niz..
-INFO  14:15:03,429 - [info] Assignemnt succesful.
-INFO  14:15:03,429 - [info] Local use of variable nizch..
-INFO  14:15:03,429 - [info] Local use of variable niz..
-INFO  14:15:03,429 - [info] Print check succesful.
-INFO  14:15:03,429 - [info] Local use of variable a..
-INFO  14:15:03,429 - [info] Print check succesful.
-INFO  14:15:03,429 - Print calls = 2
-INFO  14:15:03,430 - Generating bytecode file: C:\Users\filip.jankovic\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
-INFO  14:15:03,432 - Parsiranje uspesno zavrseno!
+INFO  15:23:40,036 - [info] Main :  at line : 5.
+INFO  15:23:40,036 - [info] Variable niz has been declared. at line : 5.
+INFO  15:23:40,036 - [info] Variable c has been declared. at line : 5.
+INFO  15:23:40,036 - [info] Variable b has been declared. at line : 5.
+INFO  15:23:40,036 - [info] Local use of variable niz..
+INFO  15:23:40,036 - [info] Assignemnt succesful.
+INFO  15:23:40,036 - [info] Local use of variable niz..
+INFO  15:23:40,036 - [info] Assignemnt succesful.
+INFO  15:23:40,036 - [info] Local use of variable niz..
+INFO  15:23:40,036 - [info] Print check succesful.
+INFO  15:23:40,036 - [info] Local use of variable b..
+INFO  15:23:40,036 - [info] Local use of variable niz..
+INFO  15:23:40,036 - Print calls = 1
+INFO  15:23:40,037 - Generating bytecode file: C:\Users\filip.jankovic\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  15:23:40,038 - Parsiranje uspesno zavrseno!

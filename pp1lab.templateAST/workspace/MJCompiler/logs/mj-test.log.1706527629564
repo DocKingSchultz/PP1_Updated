@@ -1,0 +1,325 @@
+INFO  12:26:53,574 - Compiling source file: C:\Users\filip.jankovic\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  12:26:53,592 - #2 program
+INFO  12:26:53,593 - #39 test301
+INFO  12:26:53,593 - #34 {
+INFO  12:26:53,593 - #7 void
+INFO  12:26:53,594 - #39 main
+INFO  12:26:53,594 - #32 (
+INFO  12:26:53,594 - #33 )
+INFO  12:26:53,594 - #39 bool
+INFO  12:26:53,594 - #39 b
+INFO  12:26:53,595 - #28 ;
+INFO  12:26:53,595 - #39 int
+INFO  12:26:53,595 - #39 niz
+INFO  12:26:53,595 - #30 [
+INFO  12:26:53,595 - #31 ]
+INFO  12:26:53,595 - #28 ;
+INFO  12:26:53,596 - #39 char
+INFO  12:26:53,596 - #39 c
+INFO  12:26:53,596 - #28 ;
+INFO  12:26:53,596 - #39 char
+INFO  12:26:53,596 - #39 nizch
+INFO  12:26:53,597 - #30 [
+INFO  12:26:53,597 - #31 ]
+INFO  12:26:53,597 - #28 ;
+INFO  12:26:53,597 - #39 int
+INFO  12:26:53,597 - #39 a
+INFO  12:26:53,597 - #28 ;
+INFO  12:26:53,597 - #34 {
+INFO  12:26:53,597 - #39 niz
+INFO  12:26:53,599 - #18 =
+INFO  12:26:53,600 - #9 new
+INFO  12:26:53,600 - #39 int
+INFO  12:26:53,600 - #30 [
+INFO  12:26:53,600 - #36 5
+INFO  12:26:53,600 - #31 ]
+INFO  12:26:53,602 - #28 ;
+INFO  12:26:53,602 - #39 nizch
+INFO  12:26:53,602 - #18 =
+INFO  12:26:53,602 - #9 new
+INFO  12:26:53,602 - #39 char
+INFO  12:26:53,602 - #30 [
+INFO  12:26:53,602 - #36 2
+INFO  12:26:53,602 - #31 ]
+INFO  12:26:53,602 - #28 ;
+INFO  12:26:53,602 - #39 c
+INFO  12:26:53,602 - #18 =
+INFO  12:26:53,602 - #37 c
+INFO  12:26:53,603 - #28 ;
+INFO  12:26:53,603 - #39 a
+INFO  12:26:53,603 - #18 =
+INFO  12:26:53,603 - #39 niz
+INFO  12:26:53,603 - #40 .
+INFO  12:26:53,603 - #41 findAny
+INFO  12:26:53,603 - #32 (
+INFO  12:26:53,603 - #36 5
+INFO  12:26:53,603 - #11 +
+INFO  12:26:53,603 - #36 3
+INFO  12:26:53,604 - #33 )
+INFO  12:26:53,604 - #28 ;
+INFO  12:26:53,604 - #3 print
+INFO  12:26:53,604 - #32 (
+INFO  12:26:53,604 - #39 a
+INFO  12:26:53,604 - #33 )
+INFO  12:26:53,605 - #28 ;
+INFO  12:26:53,605 - #6 return
+INFO  12:26:53,605 - #28 ;
+INFO  12:26:53,605 - #35 }
+INFO  12:26:53,606 - #35 }
+INFO  12:26:53,607 - Program(
+  Prog_id(
+   test301
+  ) [Prog_id]
+  NoNamespace(
+  ) [NoNamespace]
+  NoDeclarations(
+  ) [NoDeclarations]
+  MainMethod(
+    MainIdent(
+     main
+    ) [MainIdent]
+    MainVariables(
+      MainVariables(
+        MainVariables(
+          MainVariables(
+            MainVariables(
+              NoMainVariables(
+              ) [NoMainVariables]
+              Var_dec(
+                Type(
+                 bool
+                ) [Type]
+                SingleVarIdList(
+                  VarId(
+                   b
+                  ) [VarId]
+                ) [SingleVarIdList]
+              ) [Var_dec]
+            ) [MainVariables]
+            Var_dec(
+              Type(
+               int
+              ) [Type]
+              SingleVarIdList(
+                VarOrArrayId(
+                 niz
+                ) [VarOrArrayId]
+              ) [SingleVarIdList]
+            ) [Var_dec]
+          ) [MainVariables]
+          Var_dec(
+            Type(
+             char
+            ) [Type]
+            SingleVarIdList(
+              VarId(
+               c
+              ) [VarId]
+            ) [SingleVarIdList]
+          ) [Var_dec]
+        ) [MainVariables]
+        Var_dec(
+          Type(
+           char
+          ) [Type]
+          SingleVarIdList(
+            VarOrArrayId(
+             nizch
+            ) [VarOrArrayId]
+          ) [SingleVarIdList]
+        ) [Var_dec]
+      ) [MainVariables]
+      Var_dec(
+        Type(
+         int
+        ) [Type]
+        SingleVarIdList(
+          VarId(
+           a
+          ) [VarId]
+        ) [SingleVarIdList]
+      ) [Var_dec]
+    ) [MainVariables]
+    Statements(
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              Statements(
+                NoStatements(
+                ) [NoStatements]
+                DesignatorStatement(
+                  Assignment(
+                    Designator(
+                      SimpleDesignatorWithoutNamespace(
+                       niz
+                      ) [SimpleDesignatorWithoutNamespace]
+                    ) [Designator]
+                    Expr(
+                      TermExpr(
+                        Term(
+                          SimpleFactor(
+                            OperatorNew(
+                              Type(
+                               int
+                              ) [Type]
+                              Expr(
+                                TermExpr(
+                                  Term(
+                                    SimpleFactor(
+                                      IntRef(
+                                       5
+                                      ) [IntRef]
+                                    ) [SimpleFactor]
+                                  ) [Term]
+                                ) [TermExpr]
+                              ) [Expr]
+                            ) [OperatorNew]
+                          ) [SimpleFactor]
+                        ) [Term]
+                      ) [TermExpr]
+                    ) [Expr]
+                  ) [Assignment]
+                ) [DesignatorStatement]
+              ) [Statements]
+              DesignatorStatement(
+                Assignment(
+                  Designator(
+                    SimpleDesignatorWithoutNamespace(
+                     nizch
+                    ) [SimpleDesignatorWithoutNamespace]
+                  ) [Designator]
+                  Expr(
+                    TermExpr(
+                      Term(
+                        SimpleFactor(
+                          OperatorNew(
+                            Type(
+                             char
+                            ) [Type]
+                            Expr(
+                              TermExpr(
+                                Term(
+                                  SimpleFactor(
+                                    IntRef(
+                                     2
+                                    ) [IntRef]
+                                  ) [SimpleFactor]
+                                ) [Term]
+                              ) [TermExpr]
+                            ) [Expr]
+                          ) [OperatorNew]
+                        ) [SimpleFactor]
+                      ) [Term]
+                    ) [TermExpr]
+                  ) [Expr]
+                ) [Assignment]
+              ) [DesignatorStatement]
+            ) [Statements]
+            DesignatorStatement(
+              Assignment(
+                Designator(
+                  SimpleDesignatorWithoutNamespace(
+                   c
+                  ) [SimpleDesignatorWithoutNamespace]
+                ) [Designator]
+                Expr(
+                  TermExpr(
+                    Term(
+                      SimpleFactor(
+                        CharRef(
+                         c
+                        ) [CharRef]
+                      ) [SimpleFactor]
+                    ) [Term]
+                  ) [TermExpr]
+                ) [Expr]
+              ) [Assignment]
+            ) [DesignatorStatement]
+          ) [Statements]
+          DesignatorStatement(
+            Assignment(
+              Designator(
+                SimpleDesignatorWithoutNamespace(
+                 a
+                ) [SimpleDesignatorWithoutNamespace]
+              ) [Designator]
+              Expr(
+                TermExpr(
+                  Term(
+                    SimpleFactor(
+                      FindAnyStatement(
+                        Designator(
+                          SimpleDesignatorWithoutNamespace(
+                           niz
+                          ) [SimpleDesignatorWithoutNamespace]
+                        ) [Designator]
+                        Expr(
+                          AddExpr(
+                            TermExpr(
+                              Term(
+                                SimpleFactor(
+                                  IntRef(
+                                   5
+                                  ) [IntRef]
+                                ) [SimpleFactor]
+                              ) [Term]
+                            ) [TermExpr]
+                            PlusOP(
+                            ) [PlusOP]
+                            Term(
+                              SimpleFactor(
+                                IntRef(
+                                 3
+                                ) [IntRef]
+                              ) [SimpleFactor]
+                            ) [Term]
+                          ) [AddExpr]
+                        ) [Expr]
+                      ) [FindAnyStatement]
+                    ) [SimpleFactor]
+                  ) [Term]
+                ) [TermExpr]
+              ) [Expr]
+            ) [Assignment]
+          ) [DesignatorStatement]
+        ) [Statements]
+        Print(
+          Expr(
+            TermExpr(
+              Term(
+                SimpleFactor(
+                  VarRef(
+                    Designator(
+                      SimpleDesignatorWithoutNamespace(
+                       a
+                      ) [SimpleDesignatorWithoutNamespace]
+                    ) [Designator]
+                  ) [VarRef]
+                ) [SimpleFactor]
+              ) [Term]
+            ) [TermExpr]
+          ) [Expr]
+          NoConstToPrint(
+          ) [NoConstToPrint]
+        ) [Print]
+      ) [Statements]
+      ReturnNull(
+      ) [ReturnNull]
+    ) [Statements]
+  ) [MainMethod]
+) [Program]
+INFO  12:26:53,613 - [info] Main :  at line : 5.
+INFO  12:26:53,613 - [info] Variable b has been declared. at line : 5.
+INFO  12:26:53,613 - [info] Variable niz has been declared. at line : 5.
+INFO  12:26:53,613 - [info] Variable c has been declared. at line : 5.
+INFO  12:26:53,614 - [info] Variable nizch has been declared. at line : 5.
+INFO  12:26:53,614 - [info] Variable a has been declared. at line : 5.
+INFO  12:26:53,614 - [info] Local use of variable niz..
+INFO  12:26:53,614 - [info] Assignemnt succesful.
+INFO  12:26:53,614 - [info] Local use of variable nizch..
+INFO  12:26:53,614 - [info] Assignemnt succesful.
+INFO  12:26:53,614 - [info] Local use of variable c..
+INFO  12:26:53,614 - [info] Assignemnt succesful.
+INFO  12:26:53,614 - [info] Local use of variable a..
+INFO  12:26:53,614 - [info] Local use of variable niz..

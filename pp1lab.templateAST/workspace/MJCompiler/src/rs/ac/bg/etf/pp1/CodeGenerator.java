@@ -67,6 +67,21 @@ public class CodeGenerator extends VisitorAdaptor {
 	public void visit(Assignment Assignment) {
 		Code.store(Assignment.getDesignator().obj);
 	}
+	@Override
+	public void visit(FindAnyStatement fa) {
+		Code.put(Code.enter);
+		Code.put(1);
+		Code.put(3);
+		int resultAddress = fa.getDesignator().obj.getAdr();
+		int arrayAddress = fa.getDesignator1().obj.getAdr();
+		//Code.put(Code.arraylength);
+		Code.loadConst(resultAddress);
+		//Code.put(Code.store);
+		
+		
+		Code.put(Code.exit);
+
+	}
 
 	@Override
 	public void visit(VarRef vf) {
@@ -87,6 +102,9 @@ public class CodeGenerator extends VisitorAdaptor {
 			Code.put(1);
 		}
 	}
+
+
+	
 //	
 //	
 //	@Override
