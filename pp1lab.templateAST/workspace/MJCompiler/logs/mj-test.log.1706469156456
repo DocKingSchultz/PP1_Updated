@@ -1,0 +1,104 @@
+INFO  20:12:23,634 - Compiling source file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  20:12:23,666 - #2 program
+INFO  20:12:23,667 - #39 test301
+INFO  20:12:23,667 - #8 const
+INFO  20:12:23,668 - #39 int
+INFO  20:12:23,668 - #39 jedan
+INFO  20:12:23,668 - #18 =
+INFO  20:12:23,668 - #36 1
+INFO  20:12:23,669 - #28 ;
+INFO  20:12:23,669 - #8 const
+INFO  20:12:23,670 - #39 int
+INFO  20:12:23,670 - #39 dva
+INFO  20:12:23,670 - #18 =
+INFO  20:12:23,670 - #36 2
+INFO  20:12:23,670 - #28 ;
+INFO  20:12:23,670 - #34 {
+INFO  20:12:23,670 - #7 void
+INFO  20:12:23,670 - #39 main
+INFO  20:12:23,670 - #32 (
+INFO  20:12:23,670 - #33 )
+INFO  20:12:23,670 - #39 int
+INFO  20:12:23,671 - #39 rez
+INFO  20:12:23,671 - #28 ;
+INFO  20:12:23,671 - #34 {
+INFO  20:12:23,672 - #39 rez
+INFO  20:12:23,672 - #18 =
+INFO  20:12:23,673 - #39 jedan
+INFO  20:12:23,673 - #39 dva
+ERROR 20:12:23,673 - 
+Sintaksna greska na liniji 10
+INFO  20:12:23,673 - #28 ;
+INFO  20:12:23,673 - #35 }
+INFO  20:12:23,673 - #35 }
+ERROR 20:12:23,674 - Izvrsen oporavak do ; u liniji 10
+INFO  20:12:23,675 - Program(
+  Prog_id(
+   test301
+  ) [Prog_id]
+  NoNamespace(
+  ) [NoNamespace]
+  Declarations(
+    Declarations(
+      NoDeclarations(
+      ) [NoDeclarations]
+      ConstDeclarations(
+        Const_dec(
+          Type(
+           int
+          ) [Type]
+          SingleConstDeclarationPart(
+            ConstIdInt(
+             jedan
+             1
+            ) [ConstIdInt]
+          ) [SingleConstDeclarationPart]
+        ) [Const_dec]
+      ) [ConstDeclarations]
+    ) [Declarations]
+    ConstDeclarations(
+      Const_dec(
+        Type(
+         int
+        ) [Type]
+        SingleConstDeclarationPart(
+          ConstIdInt(
+           dva
+           2
+          ) [ConstIdInt]
+        ) [SingleConstDeclarationPart]
+      ) [Const_dec]
+    ) [ConstDeclarations]
+  ) [Declarations]
+  MainMethod(
+    MainIdent(
+     main
+    ) [MainIdent]
+    MainVariables(
+      NoMainVariables(
+      ) [NoMainVariables]
+      Var_dec(
+        Type(
+         int
+        ) [Type]
+        SingleVarIdList(
+          VarId(
+           rez
+          ) [VarId]
+        ) [SingleVarIdList]
+      ) [Var_dec]
+    ) [MainVariables]
+    Statements(
+      NoStatements(
+      ) [NoStatements]
+      StatementDerived1(
+      ) [StatementDerived1]
+    ) [Statements]
+  ) [MainMethod]
+) [Program]
+INFO  20:12:23,680 - [info] Declared global constant jedan. at line : 5.
+INFO  20:12:23,680 - [info] Declared global constant dva. at line : 6.
+INFO  20:12:23,680 - [info] Main :  at line : 8.
+INFO  20:12:23,680 - [info] Variable rez has been declared. at line : 8.
+INFO  20:12:23,680 - Print calls = 0
+ERROR 20:12:23,681 - Parsiranje NIJE uspesno zavrseno!

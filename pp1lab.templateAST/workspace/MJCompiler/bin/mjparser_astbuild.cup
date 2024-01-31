@@ -67,6 +67,7 @@ terminal Integer INT;
 terminal Character CHAR;
 terminal Integer BOOL;
 terminal String IDENT;
+terminal USING, SQUAREBINOME;
 
 nonterminal Declaration_list declaration_list;
 nonterminal Declaration_part declaration_part;
@@ -174,6 +175,8 @@ statement ::= (DesignatorStatement) designator_statement:d1 SEMI {: RESULT=new D
 			  |
 			  error SEMI:l
 			  {: parser.report_error("Izvrsen oporavak do ; u liniji " + lleft, null); :} {: RESULT=new StatementDerived1(); :}
+			  |
+			  (UsingNamespace) USING IDENT:namespace SEMI {: RESULT=new UsingNamespace(namespace); RESULT.setLine(namespaceleft); :}
 ;
 const_to_print ::= (ConstToPrint) COMMA INT:I1 {: RESULT=new ConstToPrint(I1); RESULT.setLine(I1left); :} /* promeniti */
 				   |
@@ -230,4 +233,6 @@ mull_div_mod_OP ::= (MullOP) MULTIPLE {: RESULT=new MullOP(); :}
 				    (DivOP) DIVIDE {: RESULT=new DivOP(); :}
 				    |
 				    (ModOP) MOD {: RESULT=new ModOP(); :}
+				    |
+				    (SquareBinome) SQUAREBINOME {: RESULT=new SquareBinome(); :}
 ;

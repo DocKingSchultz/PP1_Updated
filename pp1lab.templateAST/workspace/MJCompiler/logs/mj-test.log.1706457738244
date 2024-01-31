@@ -1,0 +1,159 @@
+INFO  17:01:49,014 - Compiling source file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  17:01:49,034 - #2 program
+INFO  17:01:49,034 - #39 test301
+INFO  17:01:49,034 - #5 namespace
+INFO  17:01:49,035 - #39 Konstante
+INFO  17:01:49,035 - #34 {
+INFO  17:01:49,035 - #8 const
+INFO  17:01:49,036 - #39 int
+INFO  17:01:49,036 - #39 nula
+INFO  17:01:49,036 - #18 =
+INFO  17:01:49,037 - #36 0
+INFO  17:01:49,037 - #28 ;
+INFO  17:01:49,037 - #8 const
+INFO  17:01:49,037 - #39 int
+INFO  17:01:49,037 - #39 jedan
+INFO  17:01:49,038 - #18 =
+INFO  17:01:49,038 - #36 1
+INFO  17:01:49,038 - #28 ;
+INFO  17:01:49,038 - #8 const
+INFO  17:01:49,038 - #39 int
+INFO  17:01:49,038 - #39 pet
+INFO  17:01:49,056 - #18 =
+INFO  17:01:49,056 - #36 5
+INFO  17:01:49,056 - #28 ;
+INFO  17:01:49,056 - #34 {
+INFO  17:01:49,056 - #35 }
+INFO  17:01:49,056 - #35 }
+INFO  17:01:49,057 - #34 {
+INFO  17:01:49,058 - #7 void
+INFO  17:01:49,058 - #39 main
+INFO  17:01:49,058 - #32 (
+INFO  17:01:49,058 - #33 )
+INFO  17:01:49,058 - #39 int
+INFO  17:01:49,059 - #39 niz
+INFO  17:01:49,059 - #30 [
+INFO  17:01:49,059 - #31 ]
+INFO  17:01:49,060 - #28 ;
+INFO  17:01:49,060 - #39 int
+INFO  17:01:49,061 - #39 jedan
+INFO  17:01:49,061 - #28 ;
+INFO  17:01:49,061 - #34 {
+INFO  17:01:49,061 - #40 using
+INFO  17:01:49,062 - #39 Konstante
+INFO  17:01:49,062 - #28 ;
+ERROR 17:01:49,062 - 
+Sintaksna greska na liniji 16
+INFO  17:01:49,062 - #35 }
+INFO  17:01:49,062 - #35 }
+ERROR 17:01:49,063 - Izvrsen oporavak do ; u liniji 16
+INFO  17:01:49,065 - Program(
+  Prog_id(
+   test301
+  ) [Prog_id]
+  Namespaces(
+    NoNamespace(
+    ) [NoNamespace]
+    Namespace(
+      NamespaceName(
+       Konstante
+      ) [NamespaceName]
+      NamespaceDeclarations(
+        Declarations(
+          Declarations(
+            Declarations(
+              NoDeclarations(
+              ) [NoDeclarations]
+              ConstDeclarations(
+                Const_dec(
+                  Type(
+                   int
+                  ) [Type]
+                  SingleConstDeclarationPart(
+                    ConstIdInt(
+                     nula
+                     0
+                    ) [ConstIdInt]
+                  ) [SingleConstDeclarationPart]
+                ) [Const_dec]
+              ) [ConstDeclarations]
+            ) [Declarations]
+            ConstDeclarations(
+              Const_dec(
+                Type(
+                 int
+                ) [Type]
+                SingleConstDeclarationPart(
+                  ConstIdInt(
+                   jedan
+                   1
+                  ) [ConstIdInt]
+                ) [SingleConstDeclarationPart]
+              ) [Const_dec]
+            ) [ConstDeclarations]
+          ) [Declarations]
+          ConstDeclarations(
+            Const_dec(
+              Type(
+               int
+              ) [Type]
+              SingleConstDeclarationPart(
+                ConstIdInt(
+                 pet
+                 5
+                ) [ConstIdInt]
+              ) [SingleConstDeclarationPart]
+            ) [Const_dec]
+          ) [ConstDeclarations]
+        ) [Declarations]
+      ) [NamespaceDeclarations]
+    ) [Namespace]
+  ) [Namespaces]
+  NoDeclarations(
+  ) [NoDeclarations]
+  MainMethod(
+    MainIdent(
+     main
+    ) [MainIdent]
+    MainVariables(
+      MainVariables(
+        NoMainVariables(
+        ) [NoMainVariables]
+        Var_dec(
+          Type(
+           int
+          ) [Type]
+          SingleVarIdList(
+            VarOrArrayId(
+             niz
+            ) [VarOrArrayId]
+          ) [SingleVarIdList]
+        ) [Var_dec]
+      ) [MainVariables]
+      Var_dec(
+        Type(
+         int
+        ) [Type]
+        SingleVarIdList(
+          VarId(
+           jedan
+          ) [VarId]
+        ) [SingleVarIdList]
+      ) [Var_dec]
+    ) [MainVariables]
+    Statements(
+      NoStatements(
+      ) [NoStatements]
+      StatementDerived1(
+      ) [StatementDerived1]
+    ) [Statements]
+  ) [MainMethod]
+) [Program]
+INFO  17:01:49,072 - [info] Declared namespace constant Konstante.nula. at line : 7.
+INFO  17:01:49,072 - [info] Declared namespace constant Konstante.jedan. at line : 8.
+INFO  17:01:49,072 - [info] Declared namespace constant Konstante.pet. at line : 9.
+INFO  17:01:49,072 - [info] Main :  at line : 14.
+INFO  17:01:49,073 - [info] Variable niz has been declared. at line : 14.
+INFO  17:01:49,073 - [info] Variable jedan has been declared. at line : 14.
+INFO  17:01:49,073 - Print calls = 0
+ERROR 17:01:49,073 - Parsiranje NIJE uspesno zavrseno!

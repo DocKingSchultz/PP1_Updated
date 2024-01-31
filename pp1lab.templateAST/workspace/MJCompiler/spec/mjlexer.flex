@@ -45,6 +45,7 @@ import java_cup.runtime.Symbol;
 "read"	    { return new_symbol(sym.READ, yytext()); }
 "namespace" { return new_symbol(sym.NAMESPACE, yytext()); }
 "::"		{ return new_symbol(sym.DOUBLEDOTS, yytext()); }
+"using"		{ return new_symbol(sym.USING, yytext());}
 
 "++" 		{ return new_symbol(sym.PLUSINCR, yytext()); }
 "-" 		{ return new_symbol(sym.MINUS, yytext()); }
@@ -71,6 +72,7 @@ import java_cup.runtime.Symbol;
 ")" 		{ return new_symbol(sym.RPAREN, yytext()); }
 "{" 		{ return new_symbol(sym.LBRACE, yytext()); }
 "}"			{ return new_symbol(sym.RBRACE, yytext()); }
+"^"         { return new_symbol(sym.SQUAREBINOME, yytext()); }
 
 
 <YYINITIAL> "//" 		     	{ yybegin(COMMENT); }

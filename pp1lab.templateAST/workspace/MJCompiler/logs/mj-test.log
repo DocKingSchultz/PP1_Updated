@@ -1,196 +1,130 @@
-INFO  15:07:40,201 - Compiling source file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
-INFO  15:07:40,223 - #2 program
-INFO  15:07:40,223 - #39 test301
-INFO  15:07:40,223 - #34 {
-INFO  15:07:40,225 - #7 void
-INFO  15:07:40,225 - #39 main
-INFO  15:07:40,225 - #32 (
-INFO  15:07:40,225 - #33 )
-INFO  15:07:40,225 - #39 int
-INFO  15:07:40,226 - #39 niz
-INFO  15:07:40,227 - #30 [
-INFO  15:07:40,227 - #31 ]
-INFO  15:07:40,227 - #28 ;
-INFO  15:07:40,228 - #39 int
-INFO  15:07:40,228 - #39 jedan
-INFO  15:07:40,228 - #28 ;
-INFO  15:07:40,229 - #34 {
-INFO  15:07:40,229 - #39 niz
-INFO  15:07:40,229 - #18 =
-INFO  15:07:40,230 - #9 new
-INFO  15:07:40,230 - #39 int
-INFO  15:07:40,234 - #30 [
-INFO  15:07:40,234 - #36 10
-INFO  15:07:40,234 - #31 ]
-INFO  15:07:40,235 - #28 ;
-INFO  15:07:40,235 - #39 niz
-INFO  15:07:40,235 - #30 [
-INFO  15:07:40,235 - #36 1
-INFO  15:07:40,235 - #31 ]
-INFO  15:07:40,235 - #18 =
-INFO  15:07:40,235 - #36 2
-INFO  15:07:40,236 - #28 ;
-INFO  15:07:40,236 - #39 niz
-INFO  15:07:40,236 - #30 [
-INFO  15:07:40,236 - #36 3
-INFO  15:07:40,236 - #31 ]
-INFO  15:07:40,236 - #18 =
-INFO  15:07:40,236 - #36 4
-INFO  15:07:40,236 - #28 ;
-INFO  15:07:40,236 - #3 print
-INFO  15:07:40,236 - #32 (
-INFO  15:07:40,236 - #39 niz
-INFO  15:07:40,236 - #30 [
-INFO  15:07:40,236 - #36 1
-INFO  15:07:40,236 - #31 ]
-INFO  15:07:40,236 - #33 )
-INFO  15:07:40,237 - #28 ;
-INFO  15:07:40,237 - #35 }
-INFO  15:07:40,237 - #35 }
-INFO  15:07:40,238 - Program(
+INFO  20:14:04,811 - Compiling source file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  20:14:04,832 - #2 program
+INFO  20:14:04,832 - #39 test301
+INFO  20:14:04,832 - #8 const
+INFO  20:14:04,834 - #39 int
+INFO  20:14:04,834 - #39 jedan
+INFO  20:14:04,834 - #18 =
+INFO  20:14:04,834 - #36 2
+INFO  20:14:04,834 - #28 ;
+INFO  20:14:04,835 - #8 const
+INFO  20:14:04,835 - #39 int
+INFO  20:14:04,835 - #39 dva
+INFO  20:14:04,835 - #18 =
+INFO  20:14:04,835 - #36 4
+INFO  20:14:04,835 - #28 ;
+INFO  20:14:04,836 - #34 {
+INFO  20:14:04,836 - #7 void
+INFO  20:14:04,836 - #39 main
+INFO  20:14:04,836 - #32 (
+INFO  20:14:04,836 - #33 )
+INFO  20:14:04,836 - #39 int
+INFO  20:14:04,874 - #39 rez
+INFO  20:14:04,874 - #28 ;
+INFO  20:14:04,874 - #34 {
+INFO  20:14:04,874 - #39 rez
+INFO  20:14:04,875 - #18 =
+INFO  20:14:04,875 - #39 jedan
+INFO  20:14:04,875 - #41 ^
+INFO  20:14:04,876 - #39 dva
+INFO  20:14:04,876 - #28 ;
+INFO  20:14:04,877 - #3 print
+INFO  20:14:04,877 - #32 (
+INFO  20:14:04,877 - #39 rez
+INFO  20:14:04,877 - #33 )
+INFO  20:14:04,878 - #28 ;
+INFO  20:14:04,878 - #35 }
+INFO  20:14:04,878 - #35 }
+INFO  20:14:04,879 - Program(
   Prog_id(
    test301
   ) [Prog_id]
   NoNamespace(
   ) [NoNamespace]
-  NoDeclarations(
-  ) [NoDeclarations]
+  Declarations(
+    Declarations(
+      NoDeclarations(
+      ) [NoDeclarations]
+      ConstDeclarations(
+        Const_dec(
+          Type(
+           int
+          ) [Type]
+          SingleConstDeclarationPart(
+            ConstIdInt(
+             jedan
+             2
+            ) [ConstIdInt]
+          ) [SingleConstDeclarationPart]
+        ) [Const_dec]
+      ) [ConstDeclarations]
+    ) [Declarations]
+    ConstDeclarations(
+      Const_dec(
+        Type(
+         int
+        ) [Type]
+        SingleConstDeclarationPart(
+          ConstIdInt(
+           dva
+           4
+          ) [ConstIdInt]
+        ) [SingleConstDeclarationPart]
+      ) [Const_dec]
+    ) [ConstDeclarations]
+  ) [Declarations]
   MainMethod(
     MainIdent(
      main
     ) [MainIdent]
     MainVariables(
-      MainVariables(
-        NoMainVariables(
-        ) [NoMainVariables]
-        Var_dec(
-          Type(
-           int
-          ) [Type]
-          SingleVarIdList(
-            VarOrArrayId(
-             niz
-            ) [VarOrArrayId]
-          ) [SingleVarIdList]
-        ) [Var_dec]
-      ) [MainVariables]
+      NoMainVariables(
+      ) [NoMainVariables]
       Var_dec(
         Type(
          int
         ) [Type]
         SingleVarIdList(
           VarId(
-           jedan
+           rez
           ) [VarId]
         ) [SingleVarIdList]
       ) [Var_dec]
     ) [MainVariables]
     Statements(
       Statements(
-        Statements(
-          Statements(
-            NoStatements(
-            ) [NoStatements]
-            DesignatorStatement(
-              Assignment(
-                Designator(
-                  SimpleDesignatorWithoutNamespace(
-                   niz
-                  ) [SimpleDesignatorWithoutNamespace]
-                ) [Designator]
-                Expr(
-                  TermExpr(
-                    Term(
-                      SimpleFactor(
-                        OperatorNew(
-                          Type(
-                           int
-                          ) [Type]
-                          Expr(
-                            TermExpr(
-                              Term(
-                                SimpleFactor(
-                                  IntRef(
-                                   10
-                                  ) [IntRef]
-                                ) [SimpleFactor]
-                              ) [Term]
-                            ) [TermExpr]
-                          ) [Expr]
-                        ) [OperatorNew]
-                      ) [SimpleFactor]
-                    ) [Term]
-                  ) [TermExpr]
-                ) [Expr]
-              ) [Assignment]
-            ) [DesignatorStatement]
-          ) [Statements]
-          DesignatorStatement(
-            Assignment(
-              Designator(
-                ArrayDesignator(
-                  ArrayDelegator(
-                    SimpleDesignatorWithoutNamespace(
-                     niz
-                    ) [SimpleDesignatorWithoutNamespace]
-                  ) [ArrayDelegator]
-                  Expr(
-                    TermExpr(
-                      Term(
-                        SimpleFactor(
-                          IntRef(
-                           1
-                          ) [IntRef]
-                        ) [SimpleFactor]
-                      ) [Term]
-                    ) [TermExpr]
-                  ) [Expr]
-                ) [ArrayDesignator]
-              ) [Designator]
-              Expr(
-                TermExpr(
-                  Term(
-                    SimpleFactor(
-                      IntRef(
-                       2
-                      ) [IntRef]
-                    ) [SimpleFactor]
-                  ) [Term]
-                ) [TermExpr]
-              ) [Expr]
-            ) [Assignment]
-          ) [DesignatorStatement]
-        ) [Statements]
+        NoStatements(
+        ) [NoStatements]
         DesignatorStatement(
           Assignment(
             Designator(
-              ArrayDesignator(
-                ArrayDelegator(
-                  SimpleDesignatorWithoutNamespace(
-                   niz
-                  ) [SimpleDesignatorWithoutNamespace]
-                ) [ArrayDelegator]
-                Expr(
-                  TermExpr(
-                    Term(
-                      SimpleFactor(
-                        IntRef(
-                         3
-                        ) [IntRef]
-                      ) [SimpleFactor]
-                    ) [Term]
-                  ) [TermExpr]
-                ) [Expr]
-              ) [ArrayDesignator]
+              SimpleDesignatorWithoutNamespace(
+               rez
+              ) [SimpleDesignatorWithoutNamespace]
             ) [Designator]
             Expr(
               TermExpr(
                 Term(
-                  SimpleFactor(
-                    IntRef(
-                     4
-                    ) [IntRef]
-                  ) [SimpleFactor]
+                  MulopFactor(
+                    SimpleFactor(
+                      VarRef(
+                        Designator(
+                          SimpleDesignatorWithoutNamespace(
+                           jedan
+                          ) [SimpleDesignatorWithoutNamespace]
+                        ) [Designator]
+                      ) [VarRef]
+                    ) [SimpleFactor]
+                    SquareBinome(
+                    ) [SquareBinome]
+                    VarRef(
+                      Designator(
+                        SimpleDesignatorWithoutNamespace(
+                         dva
+                        ) [SimpleDesignatorWithoutNamespace]
+                      ) [Designator]
+                    ) [VarRef]
+                  ) [MulopFactor]
                 ) [Term]
               ) [TermExpr]
             ) [Expr]
@@ -204,24 +138,9 @@ INFO  15:07:40,238 - Program(
               SimpleFactor(
                 VarRef(
                   Designator(
-                    ArrayDesignator(
-                      ArrayDelegator(
-                        SimpleDesignatorWithoutNamespace(
-                         niz
-                        ) [SimpleDesignatorWithoutNamespace]
-                      ) [ArrayDelegator]
-                      Expr(
-                        TermExpr(
-                          Term(
-                            SimpleFactor(
-                              IntRef(
-                               1
-                              ) [IntRef]
-                            ) [SimpleFactor]
-                          ) [Term]
-                        ) [TermExpr]
-                      ) [Expr]
-                    ) [ArrayDesignator]
+                    SimpleDesignatorWithoutNamespace(
+                     rez
+                    ) [SimpleDesignatorWithoutNamespace]
                   ) [Designator]
                 ) [VarRef]
               ) [SimpleFactor]
@@ -234,17 +153,16 @@ INFO  15:07:40,238 - Program(
     ) [Statements]
   ) [MainMethod]
 ) [Program]
-INFO  15:07:40,246 - [info] Main :  at line : 4.
-INFO  15:07:40,246 - [info] Variable niz has been declared. at line : 4.
-INFO  15:07:40,246 - [info] Variable jedan has been declared. at line : 4.
-INFO  15:07:40,246 - [info] Local use of variable niz..
-INFO  15:07:40,246 - [info] Assignemnt succesful.
-INFO  15:07:40,246 - [info] Local use of variable niz..
-INFO  15:07:40,246 - [info] Assignemnt succesful.
-INFO  15:07:40,246 - [info] Local use of variable niz..
-INFO  15:07:40,246 - [info] Assignemnt succesful.
-INFO  15:07:40,246 - [info] Local use of variable niz..
-INFO  15:07:40,246 - [info] Print check succesful.
-INFO  15:07:40,246 - Print calls = 1
-INFO  15:07:40,246 - Generating bytecode file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
-INFO  15:07:40,248 - Parsiranje uspesno zavrseno!
+INFO  20:14:04,885 - [info] Declared global constant jedan. at line : 5.
+INFO  20:14:04,885 - [info] Declared global constant dva. at line : 6.
+INFO  20:14:04,885 - [info] Main :  at line : 8.
+INFO  20:14:04,885 - [info] Variable rez has been declared. at line : 8.
+INFO  20:14:04,886 - [info] Local use of variable rez..
+INFO  20:14:04,886 - [info] Global use of variable jedan..
+INFO  20:14:04,886 - [info] Global use of variable dva..
+INFO  20:14:04,886 - [info] Assignemnt succesful.
+INFO  20:14:04,886 - [info] Local use of variable rez..
+INFO  20:14:04,886 - [info] Print check succesful.
+INFO  20:14:04,886 - Print calls = 1
+INFO  20:14:04,886 - Generating bytecode file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  20:14:04,889 - Parsiranje uspesno zavrseno!

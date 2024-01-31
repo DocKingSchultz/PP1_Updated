@@ -1,0 +1,337 @@
+INFO  17:15:11,823 - Compiling source file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  17:15:11,844 - #2 program
+INFO  17:15:11,844 - #39 test301
+INFO  17:15:11,844 - #5 namespace
+INFO  17:15:11,845 - #39 Konstante
+INFO  17:15:11,846 - #34 {
+INFO  17:15:11,846 - #39 int
+INFO  17:15:11,846 - #39 nula
+INFO  17:15:11,847 - #28 ;
+INFO  17:15:11,848 - #8 const
+INFO  17:15:11,848 - #39 int
+INFO  17:15:11,848 - #39 jedan
+INFO  17:15:11,849 - #18 =
+INFO  17:15:11,849 - #36 1
+INFO  17:15:11,849 - #28 ;
+INFO  17:15:11,849 - #8 const
+INFO  17:15:11,849 - #39 int
+INFO  17:15:11,849 - #39 pet
+INFO  17:15:11,849 - #18 =
+INFO  17:15:11,849 - #36 5
+INFO  17:15:11,850 - #28 ;
+INFO  17:15:11,880 - #34 {
+INFO  17:15:11,880 - #35 }
+INFO  17:15:11,881 - #35 }
+INFO  17:15:11,881 - #5 namespace
+INFO  17:15:11,884 - #39 Namespace2
+INFO  17:15:11,885 - #34 {
+INFO  17:15:11,885 - #39 int
+INFO  17:15:11,886 - #39 nula
+INFO  17:15:11,886 - #28 ;
+INFO  17:15:11,886 - #8 const
+INFO  17:15:11,887 - #39 int
+INFO  17:15:11,887 - #39 jedan
+INFO  17:15:11,887 - #18 =
+INFO  17:15:11,887 - #36 1
+INFO  17:15:11,888 - #28 ;
+INFO  17:15:11,888 - #8 const
+INFO  17:15:11,888 - #39 int
+INFO  17:15:11,888 - #39 pet
+INFO  17:15:11,889 - #18 =
+INFO  17:15:11,889 - #36 5
+INFO  17:15:11,889 - #28 ;
+INFO  17:15:11,889 - #34 {
+INFO  17:15:11,890 - #35 }
+INFO  17:15:11,890 - #35 }
+INFO  17:15:11,890 - #34 {
+INFO  17:15:11,890 - #7 void
+INFO  17:15:11,890 - #39 main
+INFO  17:15:11,890 - #32 (
+INFO  17:15:11,890 - #33 )
+INFO  17:15:11,891 - #39 int
+INFO  17:15:11,892 - #39 nula
+INFO  17:15:11,892 - #28 ;
+INFO  17:15:11,892 - #39 int
+INFO  17:15:11,892 - #39 niz
+INFO  17:15:11,892 - #30 [
+INFO  17:15:11,892 - #31 ]
+INFO  17:15:11,893 - #28 ;
+INFO  17:15:11,893 - #39 int
+INFO  17:15:11,893 - #39 jedan
+INFO  17:15:11,893 - #28 ;
+INFO  17:15:11,893 - #34 {
+INFO  17:15:11,893 - #39 Konstante
+INFO  17:15:11,894 - #10 ::
+INFO  17:15:11,894 - #39 nula
+INFO  17:15:11,894 - #18 =
+INFO  17:15:11,896 - #36 0
+INFO  17:15:11,896 - #28 ;
+INFO  17:15:11,899 - #39 nula
+INFO  17:15:11,899 - #18 =
+INFO  17:15:11,899 - #36 1
+INFO  17:15:11,899 - #28 ;
+INFO  17:15:11,899 - #40 using
+INFO  17:15:11,899 - #39 Konstante
+INFO  17:15:11,900 - #28 ;
+INFO  17:15:11,900 - #3 print
+INFO  17:15:11,900 - #32 (
+INFO  17:15:11,900 - #39 nula
+INFO  17:15:11,900 - #33 )
+INFO  17:15:11,901 - #28 ;
+INFO  17:15:11,901 - #35 }
+INFO  17:15:11,901 - #35 }
+INFO  17:15:11,903 - Program(
+  Prog_id(
+   test301
+  ) [Prog_id]
+  Namespaces(
+    Namespaces(
+      NoNamespace(
+      ) [NoNamespace]
+      Namespace(
+        NamespaceName(
+         Konstante
+        ) [NamespaceName]
+        NamespaceDeclarations(
+          Declarations(
+            Declarations(
+              Declarations(
+                NoDeclarations(
+                ) [NoDeclarations]
+                VarDeclarations(
+                  Var_dec(
+                    Type(
+                     int
+                    ) [Type]
+                    SingleVarIdList(
+                      VarId(
+                       nula
+                      ) [VarId]
+                    ) [SingleVarIdList]
+                  ) [Var_dec]
+                ) [VarDeclarations]
+              ) [Declarations]
+              ConstDeclarations(
+                Const_dec(
+                  Type(
+                   int
+                  ) [Type]
+                  SingleConstDeclarationPart(
+                    ConstIdInt(
+                     jedan
+                     1
+                    ) [ConstIdInt]
+                  ) [SingleConstDeclarationPart]
+                ) [Const_dec]
+              ) [ConstDeclarations]
+            ) [Declarations]
+            ConstDeclarations(
+              Const_dec(
+                Type(
+                 int
+                ) [Type]
+                SingleConstDeclarationPart(
+                  ConstIdInt(
+                   pet
+                   5
+                  ) [ConstIdInt]
+                ) [SingleConstDeclarationPart]
+              ) [Const_dec]
+            ) [ConstDeclarations]
+          ) [Declarations]
+        ) [NamespaceDeclarations]
+      ) [Namespace]
+    ) [Namespaces]
+    Namespace(
+      NamespaceName(
+       Namespace2
+      ) [NamespaceName]
+      NamespaceDeclarations(
+        Declarations(
+          Declarations(
+            Declarations(
+              NoDeclarations(
+              ) [NoDeclarations]
+              VarDeclarations(
+                Var_dec(
+                  Type(
+                   int
+                  ) [Type]
+                  SingleVarIdList(
+                    VarId(
+                     nula
+                    ) [VarId]
+                  ) [SingleVarIdList]
+                ) [Var_dec]
+              ) [VarDeclarations]
+            ) [Declarations]
+            ConstDeclarations(
+              Const_dec(
+                Type(
+                 int
+                ) [Type]
+                SingleConstDeclarationPart(
+                  ConstIdInt(
+                   jedan
+                   1
+                  ) [ConstIdInt]
+                ) [SingleConstDeclarationPart]
+              ) [Const_dec]
+            ) [ConstDeclarations]
+          ) [Declarations]
+          ConstDeclarations(
+            Const_dec(
+              Type(
+               int
+              ) [Type]
+              SingleConstDeclarationPart(
+                ConstIdInt(
+                 pet
+                 5
+                ) [ConstIdInt]
+              ) [SingleConstDeclarationPart]
+            ) [Const_dec]
+          ) [ConstDeclarations]
+        ) [Declarations]
+      ) [NamespaceDeclarations]
+    ) [Namespace]
+  ) [Namespaces]
+  NoDeclarations(
+  ) [NoDeclarations]
+  MainMethod(
+    MainIdent(
+     main
+    ) [MainIdent]
+    MainVariables(
+      MainVariables(
+        MainVariables(
+          NoMainVariables(
+          ) [NoMainVariables]
+          Var_dec(
+            Type(
+             int
+            ) [Type]
+            SingleVarIdList(
+              VarId(
+               nula
+              ) [VarId]
+            ) [SingleVarIdList]
+          ) [Var_dec]
+        ) [MainVariables]
+        Var_dec(
+          Type(
+           int
+          ) [Type]
+          SingleVarIdList(
+            VarOrArrayId(
+             niz
+            ) [VarOrArrayId]
+          ) [SingleVarIdList]
+        ) [Var_dec]
+      ) [MainVariables]
+      Var_dec(
+        Type(
+         int
+        ) [Type]
+        SingleVarIdList(
+          VarId(
+           jedan
+          ) [VarId]
+        ) [SingleVarIdList]
+      ) [Var_dec]
+    ) [MainVariables]
+    Statements(
+      Statements(
+        Statements(
+          Statements(
+            NoStatements(
+            ) [NoStatements]
+            DesignatorStatement(
+              Assignment(
+                Designator(
+                  SimpleDesignatorWithNamespace(
+                   Konstante
+                   nula
+                  ) [SimpleDesignatorWithNamespace]
+                ) [Designator]
+                Expr(
+                  TermExpr(
+                    Term(
+                      SimpleFactor(
+                        IntRef(
+                         0
+                        ) [IntRef]
+                      ) [SimpleFactor]
+                    ) [Term]
+                  ) [TermExpr]
+                ) [Expr]
+              ) [Assignment]
+            ) [DesignatorStatement]
+          ) [Statements]
+          DesignatorStatement(
+            Assignment(
+              Designator(
+                SimpleDesignatorWithoutNamespace(
+                 nula
+                ) [SimpleDesignatorWithoutNamespace]
+              ) [Designator]
+              Expr(
+                TermExpr(
+                  Term(
+                    SimpleFactor(
+                      IntRef(
+                       1
+                      ) [IntRef]
+                    ) [SimpleFactor]
+                  ) [Term]
+                ) [TermExpr]
+              ) [Expr]
+            ) [Assignment]
+          ) [DesignatorStatement]
+        ) [Statements]
+        UsingNamespace(
+         Konstante
+        ) [UsingNamespace]
+      ) [Statements]
+      Print(
+        Expr(
+          TermExpr(
+            Term(
+              SimpleFactor(
+                VarRef(
+                  Designator(
+                    SimpleDesignatorWithoutNamespace(
+                     nula
+                    ) [SimpleDesignatorWithoutNamespace]
+                  ) [Designator]
+                ) [VarRef]
+              ) [SimpleFactor]
+            ) [Term]
+          ) [TermExpr]
+        ) [Expr]
+        NoConstToPrint(
+        ) [NoConstToPrint]
+      ) [Print]
+    ) [Statements]
+  ) [MainMethod]
+) [Program]
+INFO  17:15:11,911 - [info] Namespace variable Konstante.nula has been declared. at line : 7.
+INFO  17:15:11,911 - [info] Declared namespace constant Konstante.jedan. at line : 8.
+INFO  17:15:11,911 - [info] Declared namespace constant Konstante.pet. at line : 9.
+INFO  17:15:11,911 - [info] Namespace variable Namespace2.nula has been declared. at line : 14.
+INFO  17:15:11,911 - [info] Declared namespace constant Namespace2.jedan. at line : 15.
+INFO  17:15:11,911 - [info] Declared namespace constant Namespace2.pet. at line : 16.
+INFO  17:15:11,911 - [info] Main :  at line : 21.
+INFO  17:15:11,911 - [info] Variable nula has been declared. at line : 21.
+INFO  17:15:11,911 - [info] Variable niz has been declared. at line : 21.
+INFO  17:15:11,911 - [info] Variable jedan has been declared. at line : 21.
+INFO  17:15:11,911 - [info] Local use of variable Konstante.nula..
+INFO  17:15:11,911 - [info] Assignemnt succesful.
+INFO  17:15:11,912 - [info] Local use of variable nula..
+INFO  17:15:11,912 - [info] Assignemnt succesful.
+INFO  17:15:11,912 - Detected using for namespace Konstante at line : 25.
+INFO  17:15:11,912 - [info] Local use of variable nula..
+INFO  17:15:11,912 - [info] Print check succesful.
+INFO  17:15:11,912 - Print calls = 1
+INFO  17:15:11,913 - Generating bytecode file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  17:15:11,916 - Parsiranje uspesno zavrseno!

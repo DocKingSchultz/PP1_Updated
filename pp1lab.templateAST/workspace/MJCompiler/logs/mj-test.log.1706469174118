@@ -1,0 +1,140 @@
+INFO  20:12:36,459 - Compiling source file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  20:12:36,479 - #2 program
+INFO  20:12:36,479 - #39 test301
+INFO  20:12:36,479 - #8 const
+INFO  20:12:36,481 - #39 int
+INFO  20:12:36,481 - #39 jedan
+INFO  20:12:36,481 - #18 =
+INFO  20:12:36,481 - #36 1
+INFO  20:12:36,481 - #28 ;
+INFO  20:12:36,481 - #8 const
+INFO  20:12:36,482 - #39 int
+INFO  20:12:36,482 - #39 dva
+INFO  20:12:36,482 - #18 =
+INFO  20:12:36,482 - #36 2
+INFO  20:12:36,482 - #28 ;
+INFO  20:12:36,482 - #34 {
+INFO  20:12:36,482 - #7 void
+INFO  20:12:36,482 - #39 main
+INFO  20:12:36,483 - #32 (
+INFO  20:12:36,483 - #33 )
+INFO  20:12:36,483 - #39 int
+INFO  20:12:36,519 - #39 rez
+INFO  20:12:36,520 - #28 ;
+INFO  20:12:36,520 - #34 {
+INFO  20:12:36,521 - #39 rez
+INFO  20:12:36,522 - #18 =
+INFO  20:12:36,523 - #39 jedan
+INFO  20:12:36,523 - #15 *
+INFO  20:12:36,523 - #39 dva
+INFO  20:12:36,524 - #28 ;
+INFO  20:12:36,527 - #35 }
+INFO  20:12:36,527 - #35 }
+INFO  20:12:36,529 - Program(
+  Prog_id(
+   test301
+  ) [Prog_id]
+  NoNamespace(
+  ) [NoNamespace]
+  Declarations(
+    Declarations(
+      NoDeclarations(
+      ) [NoDeclarations]
+      ConstDeclarations(
+        Const_dec(
+          Type(
+           int
+          ) [Type]
+          SingleConstDeclarationPart(
+            ConstIdInt(
+             jedan
+             1
+            ) [ConstIdInt]
+          ) [SingleConstDeclarationPart]
+        ) [Const_dec]
+      ) [ConstDeclarations]
+    ) [Declarations]
+    ConstDeclarations(
+      Const_dec(
+        Type(
+         int
+        ) [Type]
+        SingleConstDeclarationPart(
+          ConstIdInt(
+           dva
+           2
+          ) [ConstIdInt]
+        ) [SingleConstDeclarationPart]
+      ) [Const_dec]
+    ) [ConstDeclarations]
+  ) [Declarations]
+  MainMethod(
+    MainIdent(
+     main
+    ) [MainIdent]
+    MainVariables(
+      NoMainVariables(
+      ) [NoMainVariables]
+      Var_dec(
+        Type(
+         int
+        ) [Type]
+        SingleVarIdList(
+          VarId(
+           rez
+          ) [VarId]
+        ) [SingleVarIdList]
+      ) [Var_dec]
+    ) [MainVariables]
+    Statements(
+      NoStatements(
+      ) [NoStatements]
+      DesignatorStatement(
+        Assignment(
+          Designator(
+            SimpleDesignatorWithoutNamespace(
+             rez
+            ) [SimpleDesignatorWithoutNamespace]
+          ) [Designator]
+          Expr(
+            TermExpr(
+              Term(
+                MulopFactor(
+                  SimpleFactor(
+                    VarRef(
+                      Designator(
+                        SimpleDesignatorWithoutNamespace(
+                         jedan
+                        ) [SimpleDesignatorWithoutNamespace]
+                      ) [Designator]
+                    ) [VarRef]
+                  ) [SimpleFactor]
+                  MullOP(
+                  ) [MullOP]
+                  VarRef(
+                    Designator(
+                      SimpleDesignatorWithoutNamespace(
+                       dva
+                      ) [SimpleDesignatorWithoutNamespace]
+                    ) [Designator]
+                  ) [VarRef]
+                ) [MulopFactor]
+              ) [Term]
+            ) [TermExpr]
+          ) [Expr]
+        ) [Assignment]
+      ) [DesignatorStatement]
+    ) [Statements]
+  ) [MainMethod]
+) [Program]
+INFO  20:12:36,537 - [info] Declared global constant jedan. at line : 5.
+INFO  20:12:36,537 - [info] Declared global constant dva. at line : 6.
+INFO  20:12:36,538 - [info] Main :  at line : 8.
+INFO  20:12:36,538 - [info] Variable rez has been declared. at line : 8.
+INFO  20:12:36,538 - [info] Local use of variable rez..
+INFO  20:12:36,538 - [info] Global use of variable jedan..
+INFO  20:12:36,538 - [info] Global use of variable dva..
+INFO  20:12:36,538 - [info] Assignemnt succesful.
+INFO  20:12:36,538 - Print calls = 0
+INFO  20:12:36,538 - Generating bytecode file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  20:12:36,541 - Parsiranje uspesno zavrseno!

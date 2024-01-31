@@ -2,4 +2,7 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.MullOP"/>
+    <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.CodeGenerator"/>
+    <fullyQualifiedTypeName name="rs.etf.pp1.mj.runtime.Code"/>
+    <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.CodeGenerator.ADD_SUB_op"/>
 </qualifiedTypeNameHistroy>

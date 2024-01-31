@@ -67,6 +67,7 @@ terminal Integer INT;
 terminal Character CHAR;
 terminal Integer BOOL;
 terminal String IDENT;
+terminal USING, SQUAREBINOME;
 
 nonterminal declaration_list, declaration_part;
 nonterminal const_dec, const_decl_list, const_declaration_part, const_to_print;
@@ -162,6 +163,8 @@ statement ::= (DesignatorStatement) designator_statement SEMI
 			  |
 			  error SEMI:l
 			  {: parser.report_error("Izvrsen oporavak do ; u liniji " + lleft, null); :}
+			  |
+			  (UsingNamespace) USING IDENT:namespace SEMI
 ;
 const_to_print ::= (ConstToPrint) COMMA INT /* promeniti */
 				   |
@@ -218,4 +221,6 @@ mull_div_mod_OP ::= (MullOP) MULTIPLE
 				    (DivOP) DIVIDE
 				    |
 				    (ModOP) MOD
+				    |
+				    (SquareBinome) SQUAREBINOME
 ;

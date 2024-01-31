@@ -1,5 +1,8 @@
 package rs.ac.bg.etf.pp1;
+
 import javax.management.openmbean.OpenMBeanConstructorInfo;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.apache.log4j.Logger;
 
@@ -20,7 +23,7 @@ public class SemanticPass extends VisitorAdaptor {
 	int namespaceVariableUses = 0;
 	int constVariablesDeclared = 0;
 	int nVars;
-	
+	ArrayList<String> activeNamespaces = new ArrayList<String>(); 
 	String error = "[error] ";
 	String info = "[info] ";
 	Struct lastType;
@@ -45,7 +48,9 @@ public class SemanticPass extends VisitorAdaptor {
 		return new Struct(typeId_struct, type);
 	}
 	
-
+	// Modifications
+	//
+	
 	
 	// ----------------------------------- Log methods -----------------------
 	//
@@ -106,6 +111,14 @@ public class SemanticPass extends VisitorAdaptor {
 		Tab.insert(Obj.Fld, name, new Struct(Struct.None));
 		currNamespace=name;
 	}
+	
+	
+	public void visit(UsingNamespace un) 
+	{
+		report_info("Detected using for namespace " + un.getNamespace(), un);
+		this.activeNamespaces.add(un.getNamespace());
+	}
+	
 	
 	
 	// -------------------------------------- Constants --------------------------------------
@@ -429,7 +442,6 @@ public class SemanticPass extends VisitorAdaptor {
 			arrDes.obj=Tab.noObj;
 			return;
 		}
-		System.out.println("dasdasd" + obj.getType().getElemType().getKind());
 		arrDes.obj = new Obj(Obj.Elem, "", obj.getType().getElemType());
 	}
 	
@@ -448,12 +460,35 @@ public class SemanticPass extends VisitorAdaptor {
 	}
 	
 	
+	private Obj checkIfExistsWithNamespace(String name)
+	{
+		boolean foundMatch = false;
+		Obj tempObj = Tab.noObj;
+		for(String namespace : activeNamespaces)
+		{
+			tempObj = Tab.find(namespace + "." + name);
+			if(tempObj!=Tab.noObj)
+				{
+					foundMatch = true;
+					break;
+				}
+		}
+		return tempObj;
+	}
+	
 	public void visit(SimpleDesignatorWithoutNamespace designator)
 	{
 		Obj obj = Tab.find(designator.getId());
-		
 		if(obj==Tab.noObj)
 		{
+			obj = checkIfExistsWithNamespace(designator.getId());
+		}
+		if(obj==Tab.noObj)
+		{
+			// try to find the variable inside the namespaces
+			//
+
+			
 			report_error(error+"Variable " + designator.getId() + " is not declared", designator);
 			return;
 		}

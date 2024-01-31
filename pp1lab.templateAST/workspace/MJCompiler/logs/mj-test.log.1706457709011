@@ -1,0 +1,12 @@
+INFO  17:01:17,874 - Compiling source file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  17:01:17,895 - #2 program
+INFO  17:01:17,896 - #39 test301
+INFO  17:01:17,896 - #5 namespace
+INFO  17:01:17,897 - #39 Konstante
+INFO  17:01:17,897 - #34 {
+INFO  17:01:17,897 - #39 cont
+INFO  17:01:17,897 - #39 int
+INFO  17:01:17,898 - #39 jedan
+ERROR 17:01:17,898 - 
+Sintaksna greska na liniji 8
+ERROR 17:01:17,898 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 8

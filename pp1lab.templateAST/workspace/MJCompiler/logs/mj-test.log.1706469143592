@@ -1,0 +1,93 @@
+INFO  20:11:08,577 - Compiling source file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  20:11:08,598 - #2 program
+INFO  20:11:08,598 - #39 test301
+INFO  20:11:08,598 - #8 const
+INFO  20:11:08,600 - #39 int
+INFO  20:11:08,600 - #39 jedan
+INFO  20:11:08,600 - #18 =
+INFO  20:11:08,600 - #36 1
+INFO  20:11:08,600 - #28 ;
+INFO  20:11:08,601 - #8 const
+INFO  20:11:08,601 - #39 int
+INFO  20:11:08,601 - #39 dva
+INFO  20:11:08,602 - #18 =
+INFO  20:11:08,602 - #36 2
+INFO  20:11:08,602 - #28 ;
+INFO  20:11:08,602 - #34 {
+INFO  20:11:08,602 - #7 void
+INFO  20:11:08,602 - #39 main
+INFO  20:11:08,602 - #32 (
+INFO  20:11:08,602 - #33 )
+INFO  20:11:08,602 - #39 int
+INFO  20:11:08,636 - #39 rez
+INFO  20:11:08,637 - #28 ;
+INFO  20:11:08,637 - #34 {
+INFO  20:11:08,639 - #35 }
+INFO  20:11:08,640 - #35 }
+INFO  20:11:08,644 - Program(
+  Prog_id(
+   test301
+  ) [Prog_id]
+  NoNamespace(
+  ) [NoNamespace]
+  Declarations(
+    Declarations(
+      NoDeclarations(
+      ) [NoDeclarations]
+      ConstDeclarations(
+        Const_dec(
+          Type(
+           int
+          ) [Type]
+          SingleConstDeclarationPart(
+            ConstIdInt(
+             jedan
+             1
+            ) [ConstIdInt]
+          ) [SingleConstDeclarationPart]
+        ) [Const_dec]
+      ) [ConstDeclarations]
+    ) [Declarations]
+    ConstDeclarations(
+      Const_dec(
+        Type(
+         int
+        ) [Type]
+        SingleConstDeclarationPart(
+          ConstIdInt(
+           dva
+           2
+          ) [ConstIdInt]
+        ) [SingleConstDeclarationPart]
+      ) [Const_dec]
+    ) [ConstDeclarations]
+  ) [Declarations]
+  MainMethod(
+    MainIdent(
+     main
+    ) [MainIdent]
+    MainVariables(
+      NoMainVariables(
+      ) [NoMainVariables]
+      Var_dec(
+        Type(
+         int
+        ) [Type]
+        SingleVarIdList(
+          VarId(
+           rez
+          ) [VarId]
+        ) [SingleVarIdList]
+      ) [Var_dec]
+    ) [MainVariables]
+    NoStatements(
+    ) [NoStatements]
+  ) [MainMethod]
+) [Program]
+INFO  20:11:08,656 - [info] Declared global constant jedan. at line : 5.
+INFO  20:11:08,656 - [info] Declared global constant dva. at line : 6.
+INFO  20:11:08,656 - [info] Main :  at line : 8.
+INFO  20:11:08,656 - [info] Variable rez has been declared. at line : 8.
+INFO  20:11:08,657 - Print calls = 0
+INFO  20:11:08,657 - Generating bytecode file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  20:11:08,661 - Parsiranje uspesno zavrseno!

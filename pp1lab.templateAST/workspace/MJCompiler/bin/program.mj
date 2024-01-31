@@ -1,13 +1,13 @@
 // Test301
+
+
 program test301
+const int jedan = 2;
+const int dva = 4;
 {
-    void main() int niz[]; int jedan;
+    void main() int rez;
     {
-        niz = new int[10];
-
-        niz[1] = 2;
-        niz[3] = 4;
-
-        print(niz[1]);
+ 		rez = jedan^dva;
+ 		print(rez);
     }
 }

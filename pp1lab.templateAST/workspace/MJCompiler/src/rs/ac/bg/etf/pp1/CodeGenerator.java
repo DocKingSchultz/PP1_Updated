@@ -12,7 +12,8 @@ public class CodeGenerator extends VisitorAdaptor {
 	{
 		MullOP,
 		DivOP,
-		ModOP
+		ModOP,
+		SquareBinome
 	}
 	
 	enum PRINTOPT
@@ -186,6 +187,29 @@ public class CodeGenerator extends VisitorAdaptor {
 		}
 	}
 	
+	private void executeSquareBinome()
+	{
+		Code.put(Code.enter);
+		Code.put(2);
+		Code.put(2);
+		Code.put(Code.load_n);
+		Code.put(Code.load_n);
+		Code.put(Code.mul);
+		Code.put(Code.load_1);
+		Code.put(Code.load_1);
+		Code.put(Code.mul);
+		Code.put(Code.load_n);
+		Code.put(Code.load_1);
+		Code.loadConst(2);
+		Code.put(Code.mul);
+		Code.put(Code.mul);
+		Code.put(Code.add);
+		Code.put(Code.add);
+		Code.put(Code.exit);
+		
+		
+	}
+	
 	@Override
 	public void visit(MulopFactor mulop) {
 		// Investigate which kind of operator it is :
@@ -200,6 +224,10 @@ public class CodeGenerator extends VisitorAdaptor {
 				break;
 			case ModOP:
 				Code.put(Code.rem);
+				break;
+			case SquareBinome:
+				executeSquareBinome();
+				break;
 		}
 	}
 	@Override

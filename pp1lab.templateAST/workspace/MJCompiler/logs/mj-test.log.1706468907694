@@ -1,0 +1,252 @@
+INFO  20:06:46,327 - Compiling source file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  20:06:46,355 - #2 program
+INFO  20:06:46,355 - #39 test301
+INFO  20:06:46,356 - #5 namespace
+INFO  20:06:46,356 - #39 Konstante
+INFO  20:06:46,356 - #34 {
+INFO  20:06:46,356 - #39 int
+INFO  20:06:46,357 - #39 nula
+INFO  20:06:46,357 - #28 ;
+INFO  20:06:46,358 - #8 const
+INFO  20:06:46,358 - #39 int
+INFO  20:06:46,358 - #39 jedan
+INFO  20:06:46,358 - #18 =
+INFO  20:06:46,358 - #36 1
+INFO  20:06:46,358 - #28 ;
+INFO  20:06:46,359 - #8 const
+INFO  20:06:46,359 - #39 int
+INFO  20:06:46,359 - #39 pet
+INFO  20:06:46,359 - #18 =
+INFO  20:06:46,359 - #36 5
+INFO  20:06:46,359 - #28 ;
+INFO  20:06:46,360 - #34 {
+INFO  20:06:46,360 - #35 }
+INFO  20:06:46,360 - #35 }
+INFO  20:06:46,360 - #5 namespace
+INFO  20:06:46,360 - #39 Namespace2
+INFO  20:06:46,360 - #34 {
+INFO  20:06:46,360 - #39 int
+INFO  20:06:46,360 - #39 nula
+INFO  20:06:46,360 - #28 ;
+INFO  20:06:46,361 - #8 const
+INFO  20:06:46,361 - #39 int
+INFO  20:06:46,361 - #39 dva
+INFO  20:06:46,361 - #18 =
+INFO  20:06:46,361 - #36 2
+INFO  20:06:46,361 - #28 ;
+INFO  20:06:46,361 - #8 const
+INFO  20:06:46,361 - #39 int
+INFO  20:06:46,361 - #39 cetiri
+INFO  20:06:46,361 - #18 =
+INFO  20:06:46,361 - #36 4
+INFO  20:06:46,361 - #28 ;
+INFO  20:06:46,361 - #34 {
+INFO  20:06:46,361 - #35 }
+INFO  20:06:46,362 - #35 }
+INFO  20:06:46,362 - #34 {
+INFO  20:06:46,362 - #7 void
+INFO  20:06:46,362 - #39 main
+INFO  20:06:46,362 - #32 (
+INFO  20:06:46,362 - #33 )
+INFO  20:06:46,362 - #39 int
+INFO  20:06:46,362 - #39 rez
+INFO  20:06:46,363 - #28 ;
+INFO  20:06:46,363 - #39 int
+INFO  20:06:46,363 - #39 niz
+INFO  20:06:46,363 - #30 [
+INFO  20:06:46,363 - #31 ]
+INFO  20:06:46,363 - #28 ;
+INFO  20:06:46,363 - #39 int
+INFO  20:06:46,363 - #39 jedan
+INFO  20:06:46,363 - #28 ;
+INFO  20:06:46,363 - #34 {
+INFO  20:06:46,363 - #39 rez
+INFO  20:06:46,364 - #18 =
+INFO  20:06:46,365 - #39 dva
+INFO  20:06:46,365 - #39 cetiri
+ERROR 20:06:46,365 - 
+Sintaksna greska na liniji 23
+INFO  20:06:46,365 - #28 ;
+INFO  20:06:46,365 - #35 }
+INFO  20:06:46,365 - #35 }
+ERROR 20:06:46,366 - Izvrsen oporavak do ; u liniji 23
+INFO  20:06:46,367 - Program(
+  Prog_id(
+   test301
+  ) [Prog_id]
+  Namespaces(
+    Namespaces(
+      NoNamespace(
+      ) [NoNamespace]
+      Namespace(
+        NamespaceName(
+         Konstante
+        ) [NamespaceName]
+        NamespaceDeclarations(
+          Declarations(
+            Declarations(
+              Declarations(
+                NoDeclarations(
+                ) [NoDeclarations]
+                VarDeclarations(
+                  Var_dec(
+                    Type(
+                     int
+                    ) [Type]
+                    SingleVarIdList(
+                      VarId(
+                       nula
+                      ) [VarId]
+                    ) [SingleVarIdList]
+                  ) [Var_dec]
+                ) [VarDeclarations]
+              ) [Declarations]
+              ConstDeclarations(
+                Const_dec(
+                  Type(
+                   int
+                  ) [Type]
+                  SingleConstDeclarationPart(
+                    ConstIdInt(
+                     jedan
+                     1
+                    ) [ConstIdInt]
+                  ) [SingleConstDeclarationPart]
+                ) [Const_dec]
+              ) [ConstDeclarations]
+            ) [Declarations]
+            ConstDeclarations(
+              Const_dec(
+                Type(
+                 int
+                ) [Type]
+                SingleConstDeclarationPart(
+                  ConstIdInt(
+                   pet
+                   5
+                  ) [ConstIdInt]
+                ) [SingleConstDeclarationPart]
+              ) [Const_dec]
+            ) [ConstDeclarations]
+          ) [Declarations]
+        ) [NamespaceDeclarations]
+      ) [Namespace]
+    ) [Namespaces]
+    Namespace(
+      NamespaceName(
+       Namespace2
+      ) [NamespaceName]
+      NamespaceDeclarations(
+        Declarations(
+          Declarations(
+            Declarations(
+              NoDeclarations(
+              ) [NoDeclarations]
+              VarDeclarations(
+                Var_dec(
+                  Type(
+                   int
+                  ) [Type]
+                  SingleVarIdList(
+                    VarId(
+                     nula
+                    ) [VarId]
+                  ) [SingleVarIdList]
+                ) [Var_dec]
+              ) [VarDeclarations]
+            ) [Declarations]
+            ConstDeclarations(
+              Const_dec(
+                Type(
+                 int
+                ) [Type]
+                SingleConstDeclarationPart(
+                  ConstIdInt(
+                   dva
+                   2
+                  ) [ConstIdInt]
+                ) [SingleConstDeclarationPart]
+              ) [Const_dec]
+            ) [ConstDeclarations]
+          ) [Declarations]
+          ConstDeclarations(
+            Const_dec(
+              Type(
+               int
+              ) [Type]
+              SingleConstDeclarationPart(
+                ConstIdInt(
+                 cetiri
+                 4
+                ) [ConstIdInt]
+              ) [SingleConstDeclarationPart]
+            ) [Const_dec]
+          ) [ConstDeclarations]
+        ) [Declarations]
+      ) [NamespaceDeclarations]
+    ) [Namespace]
+  ) [Namespaces]
+  NoDeclarations(
+  ) [NoDeclarations]
+  MainMethod(
+    MainIdent(
+     main
+    ) [MainIdent]
+    MainVariables(
+      MainVariables(
+        MainVariables(
+          NoMainVariables(
+          ) [NoMainVariables]
+          Var_dec(
+            Type(
+             int
+            ) [Type]
+            SingleVarIdList(
+              VarId(
+               rez
+              ) [VarId]
+            ) [SingleVarIdList]
+          ) [Var_dec]
+        ) [MainVariables]
+        Var_dec(
+          Type(
+           int
+          ) [Type]
+          SingleVarIdList(
+            VarOrArrayId(
+             niz
+            ) [VarOrArrayId]
+          ) [SingleVarIdList]
+        ) [Var_dec]
+      ) [MainVariables]
+      Var_dec(
+        Type(
+         int
+        ) [Type]
+        SingleVarIdList(
+          VarId(
+           jedan
+          ) [VarId]
+        ) [SingleVarIdList]
+      ) [Var_dec]
+    ) [MainVariables]
+    Statements(
+      NoStatements(
+      ) [NoStatements]
+      StatementDerived1(
+      ) [StatementDerived1]
+    ) [Statements]
+  ) [MainMethod]
+) [Program]
+INFO  20:06:46,373 - [info] Namespace variable Konstante.nula has been declared. at line : 7.
+INFO  20:06:46,373 - [info] Declared namespace constant Konstante.jedan. at line : 8.
+INFO  20:06:46,373 - [info] Declared namespace constant Konstante.pet. at line : 9.
+INFO  20:06:46,373 - [info] Namespace variable Namespace2.nula has been declared. at line : 14.
+INFO  20:06:46,373 - [info] Declared namespace constant Namespace2.dva. at line : 15.
+INFO  20:06:46,373 - [info] Declared namespace constant Namespace2.cetiri. at line : 16.
+INFO  20:06:46,373 - [info] Main :  at line : 21.
+INFO  20:06:46,373 - [info] Variable rez has been declared. at line : 21.
+INFO  20:06:46,373 - [info] Variable niz has been declared. at line : 21.
+INFO  20:06:46,373 - [info] Variable jedan has been declared. at line : 21.
+INFO  20:06:46,373 - Print calls = 0
+ERROR 20:06:46,374 - Parsiranje NIJE uspesno zavrseno!
