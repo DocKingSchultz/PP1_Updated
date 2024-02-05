@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 27/0/2024 18:23:54
+// 5/1/2024 13:8:55
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -20,6 +20,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(Declaration_part declaration_part) { }
     public void visit(Ident_expr_list ident_expr_list) { }
     public void visit(Ident_namespace_expr_list ident_namespace_expr_list) { }
+    public void visit(Var_decl var_decl) { }
     public void visit(Declaration_list declaration_list) { }
     public void visit(Factor factor) { }
     public void visit(Const_declaration_part const_declaration_part) { }
@@ -57,10 +58,11 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(Designator Designator) { visit(); }
     public void visit(Decrement Decrement) { visit(); }
     public void visit(Increment Increment) { visit(); }
+    public void visit(ErrorInAssignment ErrorInAssignment) { visit(); }
     public void visit(Assignment Assignment) { visit(); }
     public void visit(NoConstToPrint NoConstToPrint) { visit(); }
     public void visit(ConstToPrint ConstToPrint) { visit(); }
-    public void visit(StatementDerived1 StatementDerived1) { visit(); }
+    public void visit(ErrorInStatementSemi ErrorInStatementSemi) { visit(); }
     public void visit(ReturnNull ReturnNull) { visit(); }
     public void visit(Read Read) { visit(); }
     public void visit(Print Print) { visit(); }
@@ -73,8 +75,10 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(MainMethod MainMethod) { visit(); }
     public void visit(VarOrArrayId VarOrArrayId) { visit(); }
     public void visit(VarId VarId) { visit(); }
+    public void visit(ErrorInMultipleVarDeclarationComma ErrorInMultipleVarDeclarationComma) { visit(); }
     public void visit(SingleVarIdList SingleVarIdList) { visit(); }
     public void visit(MultipleVarIdList MultipleVarIdList) { visit(); }
+    public void visit(ErrorInVarDeclarationSemi ErrorInVarDeclarationSemi) { visit(); }
     public void visit(Var_dec Var_dec) { visit(); }
     public void visit(ConstIdChar ConstIdChar) { visit(); }
     public void visit(ConstIdBool ConstIdBool) { visit(); }

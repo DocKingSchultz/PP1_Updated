@@ -74,7 +74,7 @@ nonterminal Const_dec const_dec;
 nonterminal Const_decl_list const_decl_list;
 nonterminal Const_declaration_part const_declaration_part;
 nonterminal Const_to_print const_to_print;
-nonterminal Var_dec var_dec;
+nonterminal Var_decl var_decl;
 nonterminal Var_list var_list;
 nonterminal Var_part var_part;
 nonterminal Main_variables main_variables;
@@ -120,7 +120,7 @@ declaration_list ::= (Declarations) declaration_list:d1 declaration_part:d2 {: R
 
 declaration_part ::= (ConstDeclarations) const_dec:c1 {: RESULT=new ConstDeclarations(c1); RESULT.setLine(c1left); :} 
 	                 |
-	                 (VarDeclarations) var_dec:v1 {: RESULT=new VarDeclarations(v1); RESULT.setLine(v1left); :}
+	                 (VarDeclarations) var_decl:v1 {: RESULT=new VarDeclarations(v1); RESULT.setLine(v1left); :}
 ;
 			
 const_dec ::= (Const_dec) CONST type:ct const_decl_list:c1 SEMI {: RESULT=new Const_dec(ct, c1); RESULT.setLine(ctleft); :}
@@ -140,11 +140,15 @@ const_declaration_part ::= (ConstIdInt) IDENT:id EQUAL INT:value {: RESULT=new C
 						   | 
 					       (ConstIdChar) IDENT:id EQUAL  CHAR:value {: RESULT=new ConstIdChar(id, value); RESULT.setLine(idleft); :} 
 ;
-var_dec ::= (Var_dec) type:t var_list:v1 SEMI {: RESULT=new Var_dec(t, v1); RESULT.setLine(tleft); :}
+var_decl ::= (Var_dec) type:t var_list:v1 SEMI {: RESULT=new Var_dec(t, v1); RESULT.setLine(tleft); :}
+			|
+			(ErrorInVarDeclarationSemi) type:t error SEMI:l {: parser.report_error("Oporavak od sintaksne greske ; na liniji u okviru deklaracije " + lleft, null); :} {: RESULT=new ErrorInVarDeclarationSemi(t); RESULT.setLine(tleft); :}
 ;
 var_list ::= (MultipleVarIdList) var_list:v1 COMMA var_part:v2 {: RESULT=new MultipleVarIdList(v1, v2); RESULT.setLine(v1left); :}
 			 |
 			 (SingleVarIdList) var_part:v1 {: RESULT=new SingleVarIdList(v1); RESULT.setLine(v1left); :}
+			 |
+			 (ErrorInMultipleVarDeclarationComma) error COMMA var_part:v1 {: RESULT=new ErrorInMultipleVarDeclarationComma(v1); RESULT.setLine(v1left); :} 
 ;
 var_part ::= (VarId) IDENT: id {: RESULT=new VarId(id); RESULT.setLine(idleft); :}
 			 |
@@ -156,7 +160,7 @@ method_dec ::= (MainMethod) VOID main:m1 LPAREN RPAREN main_variables:m2 LBRACE 
 main ::= (MainIdent)IDENT:name_main {: RESULT=new MainIdent(name_main); RESULT.setLine(name_mainleft); :}
 ;
 
-main_variables ::= (MainVariables) main_variables:m1 var_dec:v2 {: RESULT=new MainVariables(m1, v2); RESULT.setLine(m1left); :}
+main_variables ::= (MainVariables) main_variables:m1 var_decl:v2 {: RESULT=new MainVariables(m1, v2); RESULT.setLine(m1left); :}
 					|
 				   (NoMainVariables) {: RESULT=new NoMainVariables(); :} /* epislon */
 ;
@@ -172,14 +176,17 @@ statement ::= (DesignatorStatement) designator_statement:d1 SEMI {: RESULT=new D
 			  |
 			  (ReturnNull) RETURN SEMI {: RESULT=new ReturnNull(); :}	  
 			  |
-			  error SEMI:l
-			  {: parser.report_error("Izvrsen oporavak do ; u liniji " + lleft, null); :} {: RESULT=new StatementDerived1(); :}
+			  (ErrorInStatementSemi) error SEMI:l
+			  {: parser.report_error("Oporavak od sintaksne greske  ; na liniji u okviru statementa " + lleft, null); :} {: RESULT=new ErrorInStatementSemi(); :}
 ;
 const_to_print ::= (ConstToPrint) COMMA INT:I1 {: RESULT=new ConstToPrint(I1); RESULT.setLine(I1left); :} /* promeniti */
 				   |
 				   (NoConstToPrint) {: RESULT=new NoConstToPrint(); :} /* epsilon */
 ;
 designator_statement ::= (Assignment) designator:o EQUAL expr:t {: RESULT=new Assignment(o, t); RESULT.setLine(oleft); :}
+						 |
+						 (ErrorInAssignment) error SEMI:l 
+						 {: parser.report_error("Izvrsen oporavak od ; u liniji " + lleft, null); :} {: RESULT=new ErrorInAssignment(); :}
 						 |
 						 (Increment) designator:d PLUSINCR {: RESULT=new Increment(d); RESULT.setLine(dleft); :} 
 						 |

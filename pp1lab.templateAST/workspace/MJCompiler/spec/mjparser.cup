@@ -70,7 +70,7 @@ terminal String IDENT;
 
 nonterminal declaration_list, declaration_part;
 nonterminal const_dec, const_decl_list, const_declaration_part, const_to_print;
-nonterminal var_dec, var_list, var_part;
+nonterminal var_decl, var_list, var_part;
 nonterminal main_variables;
 nonterminal namespace, namespace_list, namespaceContent, namespace_name;
 nonterminal statements_list; 
@@ -108,7 +108,7 @@ declaration_list ::= (Declarations) declaration_list declaration_part
 
 declaration_part ::= (ConstDeclarations) const_dec 
 	                 |
-	                 (VarDeclarations) var_dec
+	                 (VarDeclarations) var_decl
 ;
 			
 const_dec ::= (Const_dec) CONST type:ct const_decl_list SEMI
@@ -128,11 +128,15 @@ const_declaration_part ::= (ConstIdInt) IDENT:id EQUAL INT:value
 						   | 
 					       (ConstIdChar) IDENT:id EQUAL  CHAR:value 
 ;
-var_dec ::= (Var_dec) type:t var_list SEMI
+var_decl ::= (Var_dec) type:t var_list SEMI
+			|
+			(ErrorInVarDeclarationSemi) type:t error SEMI:l {: parser.report_error("Oporavak od sintaksne greske ; na liniji u okviru deklaracije " + lleft, null); :}
 ;
 var_list ::= (MultipleVarIdList) var_list COMMA var_part
 			 |
 			 (SingleVarIdList) var_part
+			 |
+			 (ErrorInMultipleVarDeclarationComma) error COMMA var_part 
 ;
 var_part ::= (VarId) IDENT: id
 			 |
@@ -144,7 +148,7 @@ method_dec ::= (MainMethod) VOID main LPAREN RPAREN main_variables LBRACE statem
 main ::= (MainIdent)IDENT:name_main
 ;
 
-main_variables ::= (MainVariables) main_variables var_dec
+main_variables ::= (MainVariables) main_variables var_decl
 					|
 				   (NoMainVariables) /* epislon */
 ;
@@ -160,14 +164,17 @@ statement ::= (DesignatorStatement) designator_statement SEMI
 			  |
 			  (ReturnNull) RETURN SEMI	  
 			  |
-			  error SEMI:l
-			  {: parser.report_error("Izvrsen oporavak do ; u liniji " + lleft, null); :}
+			  (ErrorInStatementSemi) error SEMI:l
+			  {: parser.report_error("Oporavak od sintaksne greske  ; na liniji u okviru statementa " + lleft, null); :}
 ;
 const_to_print ::= (ConstToPrint) COMMA INT /* promeniti */
 				   |
 				   (NoConstToPrint) /* epsilon */
 ;
 designator_statement ::= (Assignment) designator:o EQUAL expr:t
+						 |
+						 (ErrorInAssignment) error SEMI:l 
+						 {: parser.report_error("Izvrsen oporavak od ; u liniji " + lleft, null); :}
 						 |
 						 (Increment) designator:d PLUSINCR 
 						 |

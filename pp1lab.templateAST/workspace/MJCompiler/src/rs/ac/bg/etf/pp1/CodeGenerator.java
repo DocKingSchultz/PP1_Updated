@@ -183,6 +183,9 @@ public class CodeGenerator extends VisitorAdaptor {
 			case MinusOP:
 				Code.put(Code.sub);
 				break;
+			default:
+				// ERROR
+				break;
 		}
 	}
 	
@@ -200,6 +203,11 @@ public class CodeGenerator extends VisitorAdaptor {
 				break;
 			case ModOP:
 				Code.put(Code.rem);
+				break;
+			default:
+				// ERROR
+				break;
+				
 		}
 	}
 	@Override

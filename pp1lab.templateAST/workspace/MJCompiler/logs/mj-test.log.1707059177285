@@ -1,0 +1,38 @@
+INFO  16:05:54,154 - Compiling source file: C:\Users\jf160343d\Desktop\PP1_Updated\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  16:05:54,604 - #2 program
+INFO  16:05:54,604 - #39 test301
+INFO  16:05:54,604 - #5 namespace
+INFO  16:05:54,616 - #39 Konstante
+INFO  16:05:54,616 - #34 {
+INFO  16:05:54,617 - #8 const
+INFO  16:05:54,623 - #39 int
+INFO  16:05:54,623 - #39 nula
+INFO  16:05:54,630 - #18 =
+INFO  16:05:54,630 - #36 0
+INFO  16:05:54,630 - #28 ;
+INFO  16:05:54,630 - #8 const
+INFO  16:05:54,638 - #39 int
+INFO  16:05:54,638 - #39 jedan
+INFO  16:05:54,638 - #18 =
+INFO  16:05:54,638 - #36 1
+INFO  16:05:54,638 - #28 ;
+INFO  16:05:54,638 - #8 const
+INFO  16:05:54,638 - #39 int
+INFO  16:05:54,638 - #39 pet
+INFO  16:05:54,642 - #18 =
+INFO  16:05:54,642 - #36 5
+INFO  16:05:54,642 - #28 ;
+INFO  16:05:54,642 - #8 const
+INFO  16:05:54,642 - #39 bool
+INFO  16:05:54,642 - #39 bvar
+INFO  16:05:54,642 - #18 =
+INFO  16:05:54,642 - #38 1
+INFO  16:05:54,642 - #28 ;
+INFO  16:05:54,642 - #8 const
+INFO  16:05:54,642 - #39 char
+INFO  16:05:54,642 - #39 cvar
+INFO  16:05:54,643 - #18 =
+INFO  16:05:54,643 - #39 c
+ERROR 16:05:54,643 - 
+Sintaksna greska na liniji 10
+ERROR 16:05:54,643 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 10

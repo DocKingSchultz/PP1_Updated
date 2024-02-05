@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 27/0/2024 18:23:54
+// 5/1/2024 13:8:55
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -20,6 +20,7 @@ public interface Visitor {
     public void visit(Declaration_part declaration_part);
     public void visit(Ident_expr_list ident_expr_list);
     public void visit(Ident_namespace_expr_list ident_namespace_expr_list);
+    public void visit(Var_decl var_decl);
     public void visit(Declaration_list declaration_list);
     public void visit(Factor factor);
     public void visit(Const_declaration_part const_declaration_part);
@@ -57,10 +58,11 @@ public interface Visitor {
     public void visit(Designator Designator);
     public void visit(Decrement Decrement);
     public void visit(Increment Increment);
+    public void visit(ErrorInAssignment ErrorInAssignment);
     public void visit(Assignment Assignment);
     public void visit(NoConstToPrint NoConstToPrint);
     public void visit(ConstToPrint ConstToPrint);
-    public void visit(StatementDerived1 StatementDerived1);
+    public void visit(ErrorInStatementSemi ErrorInStatementSemi);
     public void visit(ReturnNull ReturnNull);
     public void visit(Read Read);
     public void visit(Print Print);
@@ -73,8 +75,10 @@ public interface Visitor {
     public void visit(MainMethod MainMethod);
     public void visit(VarOrArrayId VarOrArrayId);
     public void visit(VarId VarId);
+    public void visit(ErrorInMultipleVarDeclarationComma ErrorInMultipleVarDeclarationComma);
     public void visit(SingleVarIdList SingleVarIdList);
     public void visit(MultipleVarIdList MultipleVarIdList);
+    public void visit(ErrorInVarDeclarationSemi ErrorInVarDeclarationSemi);
     public void visit(Var_dec Var_dec);
     public void visit(ConstIdChar ConstIdChar);
     public void visit(ConstIdBool ConstIdBool);

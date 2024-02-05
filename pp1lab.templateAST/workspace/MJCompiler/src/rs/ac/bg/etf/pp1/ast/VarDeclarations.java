@@ -1,25 +1,25 @@
 // generated with ast extension for cup
 // version 0.8
-// 27/0/2024 18:23:54
+// 5/1/2024 13:8:54
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class VarDeclarations extends Declaration_part {
 
-    private Var_dec var_dec;
+    private Var_decl var_decl;
 
-    public VarDeclarations (Var_dec var_dec) {
-        this.var_dec=var_dec;
-        if(var_dec!=null) var_dec.setParent(this);
+    public VarDeclarations (Var_decl var_decl) {
+        this.var_decl=var_decl;
+        if(var_decl!=null) var_decl.setParent(this);
     }
 
-    public Var_dec getVar_dec() {
-        return var_dec;
+    public Var_decl getVar_decl() {
+        return var_decl;
     }
 
-    public void setVar_dec(Var_dec var_dec) {
-        this.var_dec=var_dec;
+    public void setVar_decl(Var_decl var_decl) {
+        this.var_decl=var_decl;
     }
 
     public void accept(Visitor visitor) {
@@ -27,16 +27,16 @@ public class VarDeclarations extends Declaration_part {
     }
 
     public void childrenAccept(Visitor visitor) {
-        if(var_dec!=null) var_dec.accept(visitor);
+        if(var_decl!=null) var_decl.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
-        if(var_dec!=null) var_dec.traverseTopDown(visitor);
+        if(var_decl!=null) var_decl.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
-        if(var_dec!=null) var_dec.traverseBottomUp(visitor);
+        if(var_decl!=null) var_decl.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -45,8 +45,8 @@ public class VarDeclarations extends Declaration_part {
         buffer.append(tab);
         buffer.append("VarDeclarations(\n");
 
-        if(var_dec!=null)
-            buffer.append(var_dec.toString("  "+tab));
+        if(var_decl!=null)
+            buffer.append(var_decl.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");
